@@ -121,13 +121,29 @@ class MilieudestagesController extends AppController {
 
     public function isAuthorized($user) {
         $action = $this->request->getParam('action');
-        // Les actions 'add' et 'tags' sont toujours autorisés pour les utilisateur
-        // authentifiés sur l'application
-        if (in_array($action, ['add', 'edit'])) {
-            return true;
+        $role = $user['role_id'];
+
+        if ($role === "etudiant") {
+            if(in_array($action, ['display', 'view', 'index'])){
+                 return true;
+            } else {
+                return false;
+            }
+        }
+        
+        if($role === "milieu"){
+            if(in_array($action, ['edit','display', 'view', 'index'])) {
+                return true;
+            } else {
+                return false;
+            }
         }
 
-        return false;
+        return true;
     }
-
+    
+    public function initialize() {
+        parent::initialize();
+        $this->Auth->allow(['display', 'view', 'index']);
+    }
 }

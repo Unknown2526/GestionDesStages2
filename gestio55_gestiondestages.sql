@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net
 --
 -- Client :  localhost
--- Généré le :  Dim 23 Septembre 2018 à 00:08
+-- Généré le :  Mer 26 Septembre 2018 à 16:22
 -- Version du serveur :  5.6.37
 -- Version de PHP :  7.1.8
 
@@ -354,14 +354,16 @@ CREATE TABLE IF NOT EXISTS `users` (
   `role_id` varchar(30) COLLATE utf8_unicode_ci NOT NULL,
   `created` datetime NOT NULL,
   `modified` datetime NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Contenu de la table `users`
 --
 
 INSERT INTO `users` (`id`, `username`, `password`, `role_id`, `created`, `modified`) VALUES
-(9, 'aaaa', '$2y$10$GGIHfJAxWKruVmaULiW3b..7j1VHeniKVQlhwjBVPcZ2mObIpPJn.', 'etudiant', '2018-09-22 22:16:55', '2018-09-22 22:16:55');
+(9, 'aaaa', '$2y$10$GGIHfJAxWKruVmaULiW3b..7j1VHeniKVQlhwjBVPcZ2mObIpPJn.', 'etudiant', '2018-09-22 22:16:55', '2018-09-22 22:16:55'),
+(10, 'milieu', '$2y$10$R7RWkV8py8eJXYiXkLyOQeJNpsNzfyRBvYnjreIVOsHKTzK277s.e', 'milieu', '2018-09-23 03:17:22', '2018-09-23 03:17:22'),
+(11, 'admin', '$2y$10$7RNDHsjqzQmaQ6ICuFsE.eX4zNhEhJz.zs5AUzpCp0E7/RrWoCQnS', 'admin', '2018-09-23 03:18:17', '2018-09-23 03:18:17');
 
 --
 -- Index pour les tables exportées
@@ -453,7 +455,8 @@ ALTER TABLE `typeetablissements`
 -- Index pour la table `users`
 --
 ALTER TABLE `users`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `role_id` (`role_id`);
 
 --
 -- AUTO_INCREMENT pour les tables exportées
@@ -498,7 +501,7 @@ ALTER TABLE `typeetablissements`
 -- AUTO_INCREMENT pour la table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=10;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=12;
 --
 -- Contraintes pour les tables exportées
 --

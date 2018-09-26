@@ -3,6 +3,8 @@
  * @var \App\View\AppView $this
  * @var \App\Model\Entity\Offre $offre
  */
+ $loguser = $this->request->session()->read('Auth.User');
+ $userrole = $loguser['role_id'];
 ?>
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
@@ -15,7 +17,7 @@
         ?></li>
         <li><?= $this->Html->link(__('List Offres'), ['action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('List Milieudestages'), ['controller' => 'Milieudestages', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Milieudestage'), ['controller' => 'Milieudestages', 'action' => 'add']) ?></li>
+        <li><?php if($userrole === "admin"){echo $this->Html->link(__('New Milieudestage'), ['controller' => 'Milieudestages', 'action' => 'add']);}?></li>
     </ul>
 </nav>
 <div class="offres form large-9 medium-8 columns content">

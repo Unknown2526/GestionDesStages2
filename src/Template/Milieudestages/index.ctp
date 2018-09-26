@@ -3,23 +3,25 @@
  * @var \App\View\AppView $this
  * @var \App\Model\Entity\Milieudestage[]|\Cake\Collection\CollectionInterface $milieudestages
  */
+ $loguser = $this->request->session()->read('Auth.User');
+ $userrole = $loguser['role_id'];
 ?>
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
         <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('New Milieudestage'), ['action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Regions'), ['controller' => 'Regions', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Region'), ['controller' => 'Regions', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Users'), ['controller' => 'Users', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New User'), ['controller' => 'Users', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Listemissions'), ['controller' => 'Listemissions', 'action' => 'index']) ?></li>
+        <li><?php if($userrole === 'admin'){echo $this->Html->link(__('New Milieudestage'), ['action' => 'add']);} ?></li>
+    <!--<li><?= $this->Html->link(__('List Regions'), ['controller' => 'Regions', 'action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('New Region'), ['controller' => 'Regions', 'action' => 'add']) ?></li>-->
+        <li><?php if($userrole === "admin"){echo $this->Html->link(__('List Users'), ['controller' => 'Users', 'action' => 'index']);} ?></li>
+        <li><?php if($userrole === "admin"){echo $this->Html->link(__('New User'), ['controller' => 'Users', 'action' => 'add']);} ?></li>
+    <!--<li><?= $this->Html->link(__('List Listemissions'), ['controller' => 'Listemissions', 'action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('New Listemission'), ['controller' => 'Listemissions', 'action' => 'add']) ?></li>
         <li><?= $this->Html->link(__('List Listetypeclienteles'), ['controller' => 'Listetypeclienteles', 'action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('New Listetypeclientele'), ['controller' => 'Listetypeclienteles', 'action' => 'add']) ?></li>
         <li><?= $this->Html->link(__('List Listetypeetablissements'), ['controller' => 'Listetypeetablissements', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Listetypeetablissement'), ['controller' => 'Listetypeetablissements', 'action' => 'add']) ?></li>
+        <li><?= $this->Html->link(__('New Listetypeetablissement'), ['controller' => 'Listetypeetablissements', 'action' => 'add']) ?></li>-->
         <li><?= $this->Html->link(__('List Offres'), ['controller' => 'Offres', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Offre'), ['controller' => 'Offres', 'action' => 'add']) ?></li>
+        <li><?php if($userrole !== "etudiant"){echo $this->Html->link(__('New Offre'), ['controller' => 'Offres', 'action' => 'add']);} ?></li>
     </ul>
 </nav>
 <div class="milieudestages index large-9 medium-8 columns content">
@@ -27,13 +29,13 @@
     <table cellpadding="0" cellspacing="0">
         <thead>
             <tr>
-                <th scope="col"><?= $this->Paginator->sort('id') ?></th>
+            <!--<th scope="col"><?= $this->Paginator->sort('id') ?></th>-->
                 <th scope="col"><?= $this->Paginator->sort('nom') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('adresse') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('ville') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('province') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('code_postal') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('nom_respo') ?></th>
+            <!--<th scope="col"><?= $this->Paginator->sort('nom_respo') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('telephone_respo') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('fax_respo') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('courriel_respo') ?></th>
@@ -52,20 +54,20 @@
                 <th scope="col"><?= $this->Paginator->sort('actif') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('user_id') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('created') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('modified') ?></th>
+                <th scope="col"><?= $this->Paginator->sort('modified') ?></th>-->
                 <th scope="col" class="actions"><?= __('Actions') ?></th>
             </tr>
         </thead>
         <tbody>
             <?php foreach ($milieudestages as $milieudestage): ?>
             <tr>
-                <td><?= $this->Number->format($milieudestage->id) ?></td>
+            <!--<td><?= $this->Number->format($milieudestage->id) ?></td>-->
                 <td><?= h($milieudestage->nom) ?></td>
                 <td><?= h($milieudestage->adresse) ?></td>
                 <td><?= h($milieudestage->ville) ?></td>
                 <td><?= h($milieudestage->province) ?></td>
                 <td><?= h($milieudestage->code_postal) ?></td>
-                <td><?= h($milieudestage->nom_respo) ?></td>
+            <!--<td><?= h($milieudestage->nom_respo) ?></td>
                 <td><?= h($milieudestage->telephone_respo) ?></td>
                 <td><?= h($milieudestage->fax_respo) ?></td>
                 <td><?= h($milieudestage->courriel_respo) ?></td>
@@ -84,11 +86,11 @@
                 <td><?= h($milieudestage->actif) ?></td>
                 <td><?= $milieudestage->has('user') ? $this->Html->link($milieudestage->user->id, ['controller' => 'Users', 'action' => 'view', $milieudestage->user->id]) : '' ?></td>
                 <td><?= h($milieudestage->created) ?></td>
-                <td><?= h($milieudestage->modified) ?></td>
+                <td><?= h($milieudestage->modified) ?></td>-->
                 <td class="actions">
                     <?= $this->Html->link(__('View'), ['action' => 'view', $milieudestage->id]) ?>
-                    <?= $this->Html->link(__('Edit'), ['action' => 'edit', $milieudestage->id]) ?>
-                    <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $milieudestage->id], ['confirm' => __('Are you sure you want to delete # {0}?', $milieudestage->id)]) ?>
+                    <?php if($userrole !== "etudiant"){echo $this->Html->link(__('Edit'), ['action' => 'edit', $milieudestage->id]);} ?>
+                    <?php if($userrole === "admin"){echo $this->Form->postLink(__('Delete'), ['action' => 'delete', $milieudestage->id], ['confirm' => __('Are you sure you want to delete # {0}?', $milieudestage->id)]);}?>
                 </td>
             </tr>
             <?php endforeach; ?>

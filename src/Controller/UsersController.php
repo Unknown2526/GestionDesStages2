@@ -110,7 +110,7 @@ class UsersController extends AppController {
             $user = $this->Auth->identify();
             if ($user) {
                 $this->Auth->setUser($user);
-                $this->dirigerVersPage($user['role_id']);
+                return $this->dirigerVersPage($user['role_id']);
             } else {
                 $this->Flash->error('Votre identifiant ou votre mot de passe est incorrect.');
             }
@@ -119,20 +119,30 @@ class UsersController extends AppController {
 
     public function dirigerVersPage($role) {
         if ($role === 'admin') {
-            return $this->redirect(['Controller' => 'Milieudestages', 'action' => 'index']);
+            return $this->redirect(['controller' => 'Milieudestages', 'action' => 'index']);
         } else {
-            return $this->redirect(['Controller' => 'Offres', 'action' => 'index']);
+            return $this->redirect(['controller' => 'Offres', 'action' => 'index']);
         }
     }
 
     public function initialize() {
         parent::initialize();
-        $this->Auth->allow(['logout', 'add']);
+        $this->Auth->allow(['logout']);
     }
 
     public function logout() {
         $this->Flash->success('Vous avez été déconnecté.');
         return $this->redirect($this->Auth->logout());
     }
+    
+    public function isAuthorized($user) {
+        $action = $this->request->getParam('action');
+        $role = $user['role_id'];
 
+        if ($role === "admin") {
+            return true;
+        }
+
+        return false;
+    }
 }

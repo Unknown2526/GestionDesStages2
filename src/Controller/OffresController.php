@@ -109,4 +109,27 @@ class OffresController extends AppController
 
         return $this->redirect(['action' => 'index']);
     }
+    
+    public function isAuthorized($user) {
+        $action = $this->request->getParam('action');
+        $role = $user['role_id'];
+
+        if ($role === "etudiant") {
+            if(in_array($action, ['display', 'view', 'index'])){
+                 return true;
+            } else {
+                return false;
+            }
+        }
+        
+        if($role === "milieu"){
+            if(in_array($action, ['edit','display', 'view', 'index'])) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        return true;
+    }
 }
