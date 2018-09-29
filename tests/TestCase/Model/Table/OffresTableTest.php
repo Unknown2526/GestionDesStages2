@@ -25,6 +25,7 @@ class OffresTableTest extends TestCase
      */
     public $fixtures = [
         'app.offres',
+        'app.users',
         'app.milieudestages'
     ];
 

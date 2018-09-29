@@ -11,10 +11,10 @@ use Cake\Validation\Validator;
  *
  * @property \App\Model\Table\RegionsTable|\Cake\ORM\Association\BelongsTo $Regions
  * @property \App\Model\Table\UsersTable|\Cake\ORM\Association\BelongsTo $Users
- * @property \App\Model\Table\ListemissionsTable|\Cake\ORM\Association\HasMany $Listemissions
- * @property \App\Model\Table\ListetypeclientelesTable|\Cake\ORM\Association\HasMany $Listetypeclienteles
- * @property \App\Model\Table\ListetypeetablissementsTable|\Cake\ORM\Association\HasMany $Listetypeetablissements
  * @property \App\Model\Table\OffresTable|\Cake\ORM\Association\HasMany $Offres
+ * @property \App\Model\Table\MissionsTable|\Cake\ORM\Association\BelongsToMany $Missions
+ * @property \App\Model\Table\TypeclientelesTable|\Cake\ORM\Association\BelongsToMany $Typeclienteles
+ * @property \App\Model\Table\TypeetablissementsTable|\Cake\ORM\Association\BelongsToMany $Typeetablissements
  *
  * @method \App\Model\Entity\Milieudestage get($primaryKey, $options = [])
  * @method \App\Model\Entity\Milieudestage newEntity($data = null, array $options = [])
@@ -47,24 +47,29 @@ class MilieudestagesTable extends Table
         $this->addBehavior('Timestamp');
 
         $this->belongsTo('Regions', [
-            'foreignKey' => 'region_admin_id',
-            'joinType' => 'INNER'
+            'foreignKey' => 'region_admin_id'
         ]);
         $this->belongsTo('Users', [
             'foreignKey' => 'user_id',
             'joinType' => 'INNER'
         ]);
-        $this->hasMany('Listemissions', [
-            'foreignKey' => 'milieudestage_id'
-        ]);
-        $this->hasMany('Listetypeclienteles', [
-            'foreignKey' => 'milieudestage_id'
-        ]);
-        $this->hasMany('Listetypeetablissements', [
-            'foreignKey' => 'milieudestage_id'
-        ]);
         $this->hasMany('Offres', [
             'foreignKey' => 'milieudestage_id'
+        ]);
+        $this->belongsToMany('Missions', [
+            'foreignKey' => 'milieudestage_id',
+            'targetForeignKey' => 'mission_id',
+            'joinTable' => 'milieudestages_missions'
+        ]);
+        $this->belongsToMany('Typeclienteles', [
+            'foreignKey' => 'milieudestage_id',
+            'targetForeignKey' => 'typeclientele_id',
+            'joinTable' => 'milieudestages_typeclienteles'
+        ]);
+        $this->belongsToMany('Typeetablissements', [
+            'foreignKey' => 'milieudestage_id',
+            'targetForeignKey' => 'typeetablissement_id',
+            'joinTable' => 'milieudestages_typeetablissements'
         ]);
     }
 
@@ -112,111 +117,92 @@ class MilieudestagesTable extends Table
 
         $validator
             ->scalar('exigence')
-            ->requirePresence('exigence', 'create')
-            ->notEmpty('exigence');
+            ->allowEmpty('exigence');
 
         $validator
             ->scalar('nom_respo')
             ->maxLength('nom_respo', 255)
-            ->requirePresence('nom_respo', 'create')
-            ->notEmpty('nom_respo');
+            ->allowEmpty('nom_respo');
 
         $validator
             ->scalar('telephone_respo')
             ->maxLength('telephone_respo', 255)
-            ->requirePresence('telephone_respo', 'create')
-            ->notEmpty('telephone_respo');
+            ->allowEmpty('telephone_respo');
 
         $validator
             ->scalar('fax_respo')
             ->maxLength('fax_respo', 255)
-            ->requirePresence('fax_respo', 'create')
-            ->notEmpty('fax_respo');
+            ->allowEmpty('fax_respo');
 
         $validator
             ->scalar('courriel_respo')
             ->maxLength('courriel_respo', 255)
-            ->requirePresence('courriel_respo', 'create')
-            ->notEmpty('courriel_respo');
+            ->allowEmpty('courriel_respo');
 
         $validator
             ->scalar('adresse_admin')
             ->maxLength('adresse_admin', 255)
-            ->requirePresence('adresse_admin', 'create')
-            ->notEmpty('adresse_admin');
+            ->allowEmpty('adresse_admin');
 
         $validator
             ->scalar('ville_admin')
             ->maxLength('ville_admin', 255)
-            ->requirePresence('ville_admin', 'create')
-            ->notEmpty('ville_admin');
+            ->allowEmpty('ville_admin');
 
         $validator
             ->scalar('province_admin')
             ->maxLength('province_admin', 255)
-            ->requirePresence('province_admin', 'create')
-            ->notEmpty('province_admin');
+            ->allowEmpty('province_admin');
 
         $validator
             ->scalar('code_postal_admin')
             ->maxLength('code_postal_admin', 255)
-            ->requirePresence('code_postal_admin', 'create')
-            ->notEmpty('code_postal_admin');
+            ->allowEmpty('code_postal_admin');
 
         $validator
             ->scalar('facilite')
             ->maxLength('facilite', 255)
-            ->requirePresence('facilite', 'create')
-            ->notEmpty('facilite');
+            ->allowEmpty('facilite');
 
         $validator
             ->scalar('tache')
-            ->requirePresence('tache', 'create')
-            ->notEmpty('tache');
+            ->allowEmpty('tache');
 
         $validator
             ->scalar('remarque')
             ->maxLength('remarque', 255)
-            ->requirePresence('remarque', 'create')
-            ->notEmpty('remarque');
+            ->allowEmpty('remarque');
 
         $validator
             ->scalar('info_solicitation')
             ->maxLength('info_solicitation', 255)
-            ->requirePresence('info_solicitation', 'create')
-            ->notEmpty('info_solicitation');
+            ->allowEmpty('info_solicitation');
 
         $validator
             ->scalar('info_contrat')
             ->maxLength('info_contrat', 255)
-            ->requirePresence('info_contrat', 'create')
-            ->notEmpty('info_contrat');
+            ->allowEmpty('info_contrat');
 
         $validator
             ->scalar('reponse_milieu')
             ->maxLength('reponse_milieu', 255)
-            ->requirePresence('reponse_milieu', 'create')
-            ->notEmpty('reponse_milieu');
+            ->allowEmpty('reponse_milieu');
 
         $validator
             ->scalar('autre_info')
-            ->requirePresence('autre_info', 'create')
-            ->notEmpty('autre_info');
+            ->allowEmpty('autre_info');
 
         $validator
             ->dateTime('date_inv')
-            ->requirePresence('date_inv', 'create')
-            ->notEmpty('date_inv');
+            ->allowEmpty('date_inv');
 
         $validator
             ->dateTime('date_rappel')
-            ->requirePresence('date_rappel', 'create')
-            ->notEmpty('date_rappel');
+            ->allowEmpty('date_rappel');
 
         $validator
             ->boolean('actif')
-            ->requirePresence('actif', 'create')
-            ->notEmpty('actif');
+            ->allowEmpty('actif');
 
         return $validator;
     }

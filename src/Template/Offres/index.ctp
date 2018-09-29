@@ -9,9 +9,17 @@ $userrole = $loguser['role_id'];
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
         <li class="heading"><?= __('Actions') ?></li>
-        <li><?php if($userrole !== "etudiant"){echo $this->Html->link(__('New Offre'), ['action' => 'add']);}?></li>
+        <?php if ($userrole !== "etudiant"): ?>
+            <li><?= $this->Html->link(__('New Offre'), ['action' => 'add']) ?></li>
+        <?php endif; ?>
+        <?php if ($userrole === "admin"): ?>
+            <li><?= $this->Html->link(__('List Users'), ['controller' => 'Users', 'action' => 'index']) ?></li>
+            <li><?= $this->Html->link(__('New User'), ['controller' => 'Users', 'action' => 'add']) ?></li>
+        <?php endif; ?>
         <li><?= $this->Html->link(__('List Milieudestages'), ['controller' => 'Milieudestages', 'action' => 'index']) ?></li>
-        <li><?php if($userrole === "admin"){echo $this->Html->link(__('New Milieudestage'), ['controller' => 'Milieudestages', 'action' => 'add']);}?></li>
+        <?php if ($userrole === "admin"): ?>
+            <li><?= $this->Html->link(__('New Milieudestage'), ['controller' => 'Milieudestages', 'action' => 'add']) ?></li>
+        <?php endif; ?>
     </ul>
 </nav>
 <div class="offres index large-9 medium-8 columns content">
@@ -24,7 +32,8 @@ $userrole = $loguser['role_id'];
                 <th scope="col"><?= $this->Paginator->sort('region') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('tache') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('responsabilite') ?></th>
-                <?php if($userrole === "admin"): ?>
+                <?php if ($userrole === "admin"): ?>
+                    <th scope="col"><?= $this->Paginator->sort('user_id') ?></th>
                     <th scope="col"><?= $this->Paginator->sort('milieudestage_id') ?></th>
                     <th scope="col"><?= $this->Paginator->sort('created') ?></th>
                     <th scope="col"><?= $this->Paginator->sort('modified') ?></th>
@@ -34,23 +43,26 @@ $userrole = $loguser['role_id'];
         </thead>
         <tbody>
             <?php foreach ($offres as $offre): ?>
-            <tr>
-                <td><?= $this->Number->format($offre->id) ?></td>
-                <td><?= h($offre->titre) ?></td>
-                <td><?= h($offre->region) ?></td>
-                <td><?= h($offre->tache) ?></td>
-                <td><?= h($offre->responsabilite) ?></td>
-                <?php if($userrole === "admin"): ?>
-                    <td><?= $offre->has('milieudestage') ? $this->Html->link($offre->milieudestage->id, ['controller' => 'Milieudestages', 'action' => 'view', $offre->milieudestage->id]) : '' ?></td>
-                    <td><?= h($offre->created) ?></td>
-                    <td><?= h($offre->modified) ?></td>
-                <?php endif; ?>
-                <td class="actions">
-                    <?= $this->Html->link(__('View'), ['action' => 'view', $offre->id]) ?>
-                    <?php if($userrole === "admin"){echo $this->Html->link(__('Edit'), ['action' => 'edit', $offre->id]);}?>
-                    <?php if($userrole === "admin"){echo $this->Form->postLink(__('Delete'), ['action' => 'delete', $offre->id], ['confirm' => __('Are you sure you want to delete # {0}?', $offre->id)]);}?>
-                </td>
-            </tr>
+                <tr>
+                    <td><?= $this->Number->format($offre->id) ?></td>
+                    <td><?= h($offre->titre) ?></td>
+                    <td><?= h($offre->region) ?></td>
+                    <td><?= h($offre->tache) ?></td>
+                    <td><?= h($offre->responsabilite) ?></td>
+                    <?php if ($userrole === "admin"): ?>
+                        <td><?= $offre->has('user') ? $this->Html->link($offre->user->id, ['controller' => 'Users', 'action' => 'view', $offre->user->id]) : '' ?></td>
+                        <td><?= $offre->has('milieudestage') ? $this->Html->link($offre->milieudestage->id, ['controller' => 'Milieudestages', 'action' => 'view', $offre->milieudestage->id]) : '' ?></td>
+                        <td><?= h($offre->created) ?></td>
+                        <td><?= h($offre->modified) ?></td>
+                    <?php endif; ?>
+                    <td class="actions">
+                        <?= $this->Html->link(__('View'), ['action' => 'view', $offre->id]) ?>
+                        <?php if ($userrole !== "etudiant"): ?>
+                            <?= $this->Html->link(__('Edit'), ['action' => 'edit', $offre->id]) ?>
+                            <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $offre->id], ['confirm' => __('Are you sure you want to delete # {0}?', $offre->id)]) ?>
+                        <?php endif; ?>
+                    </td>
+                </tr>
             <?php endforeach; ?>
         </tbody>
     </table>

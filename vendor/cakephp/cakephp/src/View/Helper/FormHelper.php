@@ -1227,7 +1227,6 @@ class FormHelper extends Helper
         if ($newTemplates) {
             $templater->pop();
         }
-
         return $result;
     }
 

@@ -20,7 +20,8 @@ class UsersControllerTest extends IntegrationTestCase
         'app.roles',
         'app.administrateurs',
         'app.etudiants',
-        'app.milieudestages'
+        'app.milieudestages',
+        'app.offres'
     ];
 
     /**

@@ -38,10 +38,10 @@ use Cake\ORM\Entity;
  *
  * @property \App\Model\Entity\Region $region
  * @property \App\Model\Entity\User $user
- * @property \App\Model\Entity\Listemission[] $listemissions
- * @property \App\Model\Entity\Listetypeclientele[] $listetypeclienteles
- * @property \App\Model\Entity\Listetypeetablissement[] $listetypeetablissements
  * @property \App\Model\Entity\Offre[] $offres
+ * @property \App\Model\Entity\Mission[] $missions
+ * @property \App\Model\Entity\Typeclientele[] $typeclienteles
+ * @property \App\Model\Entity\Typeetablissement[] $typeetablissements
  */
 class Milieudestage extends Entity
 {
@@ -86,9 +86,9 @@ class Milieudestage extends Entity
         'modified' => true,
         'region' => true,
         'user' => true,
-        'listemissions' => true,
-        'listetypeclienteles' => true,
-        'listetypeetablissements' => true,
-        'offres' => true
+        'offres' => true,
+        'missions' => true,
+        'typeclienteles' => true,
+        'typeetablissements' => true
     ];
 }

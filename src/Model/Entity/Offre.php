@@ -11,10 +11,12 @@ use Cake\ORM\Entity;
  * @property string $region
  * @property string $tache
  * @property string $responsabilite
+ * @property int $user_id
  * @property int $milieudestage_id
  * @property \Cake\I18n\FrozenTime $created
  * @property \Cake\I18n\FrozenTime $modified
  *
+ * @property \App\Model\Entity\User $user
  * @property \App\Model\Entity\Milieudestage $milieudestage
  */
 class Offre extends Entity
@@ -34,9 +36,11 @@ class Offre extends Entity
         'region' => true,
         'tache' => true,
         'responsabilite' => true,
+        'user_id' => true,
         'milieudestage_id' => true,
         'created' => true,
         'modified' => true,
+        'user' => true,
         'milieudestage' => true
     ];
 }

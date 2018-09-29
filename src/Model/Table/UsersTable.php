@@ -9,10 +9,11 @@ use Cake\Validation\Validator;
 /**
  * Users Model
  *
- * @property |\Cake\ORM\Association\BelongsTo $Roles
+ * @property \App\Model\Table\RolesTable|\Cake\ORM\Association\BelongsTo $Roles
  * @property \App\Model\Table\AdministrateursTable|\Cake\ORM\Association\HasMany $Administrateurs
  * @property \App\Model\Table\EtudiantsTable|\Cake\ORM\Association\HasMany $Etudiants
  * @property \App\Model\Table\MilieudestagesTable|\Cake\ORM\Association\HasMany $Milieudestages
+ * @property \App\Model\Table\OffresTable|\Cake\ORM\Association\HasMany $Offres
  *
  * @method \App\Model\Entity\User get($primaryKey, $options = [])
  * @method \App\Model\Entity\User newEntity($data = null, array $options = [])
@@ -55,6 +56,9 @@ class UsersTable extends Table
             'foreignKey' => 'user_id'
         ]);
         $this->hasMany('Milieudestages', [
+            'foreignKey' => 'user_id'
+        ]);
+        $this->hasMany('Offres', [
             'foreignKey' => 'user_id'
         ]);
     }

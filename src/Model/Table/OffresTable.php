@@ -9,6 +9,7 @@ use Cake\Validation\Validator;
 /**
  * Offres Model
  *
+ * @property \App\Model\Table\UsersTable|\Cake\ORM\Association\BelongsTo $Users
  * @property \App\Model\Table\MilieudestagesTable|\Cake\ORM\Association\BelongsTo $Milieudestages
  *
  * @method \App\Model\Entity\Offre get($primaryKey, $options = [])
@@ -41,6 +42,10 @@ class OffresTable extends Table
 
         $this->addBehavior('Timestamp');
 
+        $this->belongsTo('Users', [
+            'foreignKey' => 'user_id',
+            'joinType' => 'INNER'
+        ]);
         $this->belongsTo('Milieudestages', [
             'foreignKey' => 'milieudestage_id',
             'joinType' => 'INNER'
@@ -95,6 +100,7 @@ class OffresTable extends Table
      */
     public function buildRules(RulesChecker $rules)
     {
+        $rules->add($rules->existsIn(['user_id'], 'Users'));
         $rules->add($rules->existsIn(['milieudestage_id'], 'Milieudestages'));
 
         return $rules;

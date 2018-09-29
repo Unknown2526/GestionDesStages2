@@ -46,6 +46,9 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
                     if ($loguser) {
                         $user = $loguser['username'];
                         echo '<li>';
+                        echo $this->Html->link(__('Mon profil'), ['controller' => 'Users', 'action' => 'monProfil', $loguser['id']]);
+                        echo '</li>';
+                        echo '<li>';
                         echo $this->Html->link($user . ' logout', ['controller' => 'Users', 'action' => 'logout']);
                         echo '</li>';
                     } else {

@@ -23,6 +23,9 @@ class UsersFixture extends TestFixture
         'role_id' => ['type' => 'string', 'length' => 30, 'null' => false, 'default' => null, 'collate' => 'utf8_unicode_ci', 'comment' => '', 'precision' => null, 'fixed' => null],
         'created' => ['type' => 'datetime', 'length' => null, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null],
         'modified' => ['type' => 'datetime', 'length' => null, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null],
+        '_indexes' => [
+            'role_id' => ['type' => 'index', 'columns' => ['role_id'], 'length' => []],
+        ],
         '_constraints' => [
             'primary' => ['type' => 'primary', 'columns' => ['id'], 'length' => []],
         ],
@@ -46,8 +49,8 @@ class UsersFixture extends TestFixture
                 'username' => 'Lorem ipsum dolor sit amet',
                 'password' => 'Lorem ipsum dolor sit amet',
                 'role_id' => 'Lorem ipsum dolor sit amet',
-                'created' => '2018-09-22 22:10:01',
-                'modified' => '2018-09-22 22:10:01'
+                'created' => '2018-09-27 14:25:29',
+                'modified' => '2018-09-27 14:25:29'
             ],
         ];
         parent::init();

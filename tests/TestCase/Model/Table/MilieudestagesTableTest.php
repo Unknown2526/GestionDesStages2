@@ -27,10 +27,10 @@ class MilieudestagesTableTest extends TestCase
         'app.milieudestages',
         'app.regions',
         'app.users',
-        'app.listemissions',
-        'app.listetypeclienteles',
-        'app.listetypeetablissements',
-        'app.offres'
+        'app.offres',
+        'app.missions',
+        'app.typeclienteles',
+        'app.typeetablissements'
     ];
 
     /**

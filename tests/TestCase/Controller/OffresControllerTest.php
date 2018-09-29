@@ -17,6 +17,7 @@ class OffresControllerTest extends IntegrationTestCase
      */
     public $fixtures = [
         'app.offres',
+        'app.users',
         'app.milieudestages'
     ];
 

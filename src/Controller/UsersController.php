@@ -36,7 +36,7 @@ class UsersController extends AppController {
      */
     public function view($id = null) {
         $user = $this->Users->get($id, [
-            'contain' => ['Roles', 'Administrateurs', 'Etudiants', 'Milieudestages']
+            'contain' => ['Roles', 'Administrateurs', 'Etudiants', 'Milieudestages', 'Offres']
         ]);
 
         $this->set('user', $user);
@@ -124,6 +124,34 @@ class UsersController extends AppController {
             return $this->redirect(['controller' => 'Offres', 'action' => 'index']);
         }
     }
+    
+    public function monProfil(){
+        $user = $this->request->session()->read('Auth.User');
+
+        if($user['role_id'] === 'admin'){
+            $admin = $this->Users->Administrateurs->find('all', [
+                'conditions' => ['user_id' => $user['id']]
+            ]);
+            $first = $admin->first();
+            $this->redirect(['controller' => 'Administrateurs', 'action' => 'view', $first['id']]);
+        }
+        
+        if($user['role_id'] === 'milieu'){
+            $milieu = $this->Users->Milieudestages->find('all', [
+                'conditions' => ['user_id' => $user['id']]
+            ]);
+            $first = $milieu->first();
+            $this->redirect(['controller' => 'Milieudestages', 'action' => 'view', $first['id']]);
+        }
+        
+        if($user['role_id'] === 'etudiant'){
+            $etudiant = $this->Users->Etudiants->find('all', [
+                'conditions' => ['user_id' => $user['id']]
+            ]);
+            $first = $etudiant->first();
+            $this->redirect(['controller' => 'Etudiants', 'action' => 'view', $first['id']]);
+        }
+    }
 
     public function initialize() {
         parent::initialize();
@@ -134,15 +162,16 @@ class UsersController extends AppController {
         $this->Flash->success('Vous avez été déconnecté.');
         return $this->redirect($this->Auth->logout());
     }
-    
+
     public function isAuthorized($user) {
         $action = $this->request->getParam('action');
         $role = $user['role_id'];
 
-        if ($role === "admin") {
-            return true;
+        if ($role !== "admin") {
+            return $action === "monProfil";
         }
 
-        return false;
+        return true;
     }
+
 }

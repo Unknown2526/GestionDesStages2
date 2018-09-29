@@ -9,22 +9,31 @@ $userrole = $loguser['role_id'];
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
         <li class="heading"><?= __('Actions') ?></li>
-        <li><?php if($userrole !== "etudiant"){echo $this->Html->link(__('Edit Milieudestage'), ['action' => 'edit', $milieudestage->id]);}?> </li>
-        <li><?php if($userrole !== "etudiant"){echo $this->Form->postLink(__('Delete Milieudestage'), ['action' => 'delete', $milieudestage->id], ['confirm' => __('Are you sure you want to delete # {0}?', $milieudestage->id)]);}?></li>
-        <li><?= $this->Html->link(__('List Milieudestages'), ['action' => 'index']) ?> </li>
-        <li><?php if($userrole === "admin"){echo $this->Html->link(__('New Milieudestage'), ['action' => 'add']);}?> </li>
-    <!--<li><?= $this->Html->link(__('List Regions'), ['controller' => 'Regions', 'action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New Region'), ['controller' => 'Regions', 'action' => 'add']) ?> </li>-->
-        <li><?php if($userrole === "admin"){echo $this->Html->link(__('List Users'), ['controller' => 'Users', 'action' => 'index']);}?> </li>
-        <li><?php if($userrole === "admin"){echo $this->Html->link(__('New User'), ['controller' => 'Users', 'action' => 'add']);}?> </li>
-    <!--<li><?= $this->Html->link(__('List Listemissions'), ['controller' => 'Listemissions', 'action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New Listemission'), ['controller' => 'Listemissions', 'action' => 'add']) ?> </li>
-        <li><?= $this->Html->link(__('List Listetypeclienteles'), ['controller' => 'Listetypeclienteles', 'action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New Listetypeclientele'), ['controller' => 'Listetypeclienteles', 'action' => 'add']) ?> </li>
-        <li><?= $this->Html->link(__('List Listetypeetablissements'), ['controller' => 'Listetypeetablissements', 'action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New Listetypeetablissement'), ['controller' => 'Listetypeetablissements', 'action' => 'add']) ?> </li>-->
-        <li><?= $this->Html->link(__('List Offres'), ['controller' => 'Offres', 'action' => 'index']) ?> </li>
-        <li><?php if($userrole !== "etudiant"){echo $this->Html->link(__('New Offre'), ['controller' => 'Offres', 'action' => 'add']);}?> </li>
+        <?php if ($userrole !== "etudiant"): ?>
+            <li><?= $this->Html->link(__('Edit Milieudestage'), ['action' => 'edit', $milieudestage->id]) ?> </li>
+            <li><?= $this->Form->postLink(__('Delete Milieudestage'), ['action' => 'delete', $milieudestage->id], ['confirm' => __('Are you sure you want to delete # {0}?', $milieudestage->id)]) ?> </li>
+        <?php endif; ?>
+        <li><?= $this->Html->link(__('List Milieudestages'), ['action' => 'index']) ?></li>
+        <?php if (false): ?>
+            <li><?= $this->Html->link(__('List Regions'), ['controller' => 'Regions', 'action' => 'index']) ?></li>
+            <li><?= $this->Html->link(__('New Region'), ['controller' => 'Regions', 'action' => 'add']) ?></li>
+        <?php endif; ?>
+        <?php if ($userrole === "admin"): ?>
+            <li><?= $this->Html->link(__('List Users'), ['controller' => 'Users', 'action' => 'index']) ?></li>
+            <li><?= $this->Html->link(__('New User'), ['controller' => 'Users', 'action' => 'add']) ?></li>
+        <?php endif; ?>
+        <li><?= $this->Html->link(__('List Offres'), ['controller' => 'Offres', 'action' => 'index']) ?></li>
+        <?php if ($userrole !== "etudiant"): ?>
+            <li><?= $this->Html->link(__('New Offre'), ['controller' => 'Offres', 'action' => 'add']) ?></li>
+        <?php endif; ?>
+        <?php if (false): ?>
+            <li><?= $this->Html->link(__('List Listemissions'), ['controller' => 'Listemissions', 'action' => 'index']) ?></li>
+            <li><?= $this->Html->link(__('New Listemission'), ['controller' => 'Listemissions', 'action' => 'add']) ?></li>
+            <li><?= $this->Html->link(__('List Listetypeclienteles'), ['controller' => 'Listetypeclienteles', 'action' => 'index']) ?></li>
+            <li><?= $this->Html->link(__('New Listetypeclientele'), ['controller' => 'Listetypeclienteles', 'action' => 'add']) ?></li>
+            <li><?= $this->Html->link(__('List Listetypeetablissements'), ['controller' => 'Listetypeetablissements', 'action' => 'index']) ?></li>
+            <li><?= $this->Html->link(__('New Listetypeetablissement'), ['controller' => 'Listetypeetablissements', 'action' => 'add']) ?></li>
+        <?php endif; ?>
     </ul>
 </nav>
 <div class="milieudestages view large-9 medium-8 columns content">
@@ -94,7 +103,7 @@ $userrole = $loguser['role_id'];
             <th scope="row"><?= __('Remarque') ?></th>
             <td><?= h($milieudestage->remarque) ?></td>
         </tr>
-        <?php if($userrole === "admin"): ?>
+        <?php if ($userrole === "admin"): ?>
             <tr>
                 <th scope="row"><?= __('Info Solicitation') ?></th>
                 <td><?= h($milieudestage->info_solicitation) ?></td>
@@ -118,7 +127,7 @@ $userrole = $loguser['role_id'];
             <tr>
                 <th scope="row"><?= __('Date Inv') ?></th>
                 <td><?= h($milieudestage->date_inv) ?></td>
-                </tr>
+            </tr>
             <tr>
                 <th scope="row"><?= __('Date Rappel') ?></th>
                 <td><?= h($milieudestage->date_rappel) ?></td>
@@ -133,7 +142,7 @@ $userrole = $loguser['role_id'];
             </tr>
             <tr>
                 <th scope="row"><?= __('Actif') ?></th>
-                <td><?= $milieudestage->actif ? __('Yes') : __('No') ?></td>
+                <td><?= $milieudestage->actif ? __('Yes') : __('No'); ?></td>
             </tr>
         <?php endif; ?>
     </table>
@@ -150,69 +159,93 @@ $userrole = $loguser['role_id'];
         <?= $this->Text->autoParagraph(h($milieudestage->autre_info)); ?>
     </div>
     <div class="related">
-        <h4><?= __('Related Listemissions') ?></h4>
-        <?php if (!empty($milieudestage->listemissions)): ?>
+        <h4><?= __('Related Missions') ?></h4>
+        <?php if (!empty($milieudestage->missions)): ?>
             <table cellpadding="0" cellspacing="0">
                 <tr>
-                    <th scope="col"><?= __('Milieudestage Id') ?></th>
-                    <th scope="col"><?= __('Mission Id') ?></th>
-                    <th scope="col" class="actions"><?= __('Actions') ?></th>
+                    <?php if ($userrole === 'admin'): ?>
+                        <th scope="col"><?= __('Id') ?></th>
+                    <?php endif; ?>
+                    <th scope="col"><?= __('Nom') ?></th>
+                    <?php if (false): ?>
+                        <th scope="col" class="actions"><?= __('Actions') ?></th>
+                    <?php endif; ?>
                 </tr>
-                <?php foreach ($milieudestage->listemissions as $listemissions): ?>
+                <?php foreach ($milieudestage->missions as $missions): ?>
                     <tr>
-                        <td><?= h($listemissions->milieudestage_id) ?></td>
-                        <td><?= h($listemissions->mission_id) ?></td>
-                        <td class="actions">
-                            <?= $this->Html->link(__('View'), ['controller' => 'Listemissions', 'action' => 'view', $listemissions->milieudestage_id]) ?>
-                            <?= $this->Html->link(__('Edit'), ['controller' => 'Listemissions', 'action' => 'edit', $listemissions->milieudestage_id]) ?>
-                            <?= $this->Form->postLink(__('Delete'), ['controller' => 'Listemissions', 'action' => 'delete', $listemissions->milieudestage_id], ['confirm' => __('Are you sure you want to delete # {0}?', $listemissions->milieudestage_id)]) ?>
-                        </td>
+                        <?php if ($userrole === 'admin'): ?>
+                            <td><?= h($missions->id) ?></td>
+                        <?php endif; ?>
+                        <td><?= h($missions->nom) ?></td>
+                        <?php if (false): ?>
+                            <td class="actions">
+                                <?= $this->Html->link(__('View'), ['controller' => 'Missions', 'action' => 'view', $missions->id]) ?>
+                                <?= $this->Html->link(__('Edit'), ['controller' => 'Missions', 'action' => 'edit', $missions->id]) ?>
+                                <?= $this->Form->postLink(__('Delete'), ['controller' => 'Missions', 'action' => 'delete', $missions->id], ['confirm' => __('Are you sure you want to delete # {0}?', $missions->id)]) ?>
+                            </td>
+                        <?php endif; ?>
                     </tr>
                 <?php endforeach; ?>
             </table>
         <?php endif; ?>
     </div>
     <div class="related">
-        <h4><?= __('Related Listetypeclienteles') ?></h4>
-        <?php if (!empty($milieudestage->listetypeclienteles)): ?>
+        <h4><?= __('Related Typeclienteles') ?></h4>
+        <?php if (!empty($milieudestage->typeclienteles)): ?>
             <table cellpadding="0" cellspacing="0">
                 <tr>
-                    <th scope="col"><?= __('Milieudestage Id') ?></th>
-                    <th scope="col"><?= __('Typeclientele Id') ?></th>
-                    <th scope="col" class="actions"><?= __('Actions') ?></th>
+                    <?php if ($userrole === 'admin'): ?>
+                        <th scope="col"><?= __('Id') ?></th>
+                    <?php endif; ?>
+                    <th scope="col"><?= __('Type') ?></th>
+                    <?php if (false): ?>
+                        <th scope="col" class="actions"><?= __('Actions') ?></th>
+                    <?php endif; ?>
                 </tr>
-                <?php foreach ($milieudestage->listetypeclienteles as $listetypeclienteles): ?>
+                <?php foreach ($milieudestage->typeclienteles as $typeclienteles): ?>
                     <tr>
-                        <td><?= h($listetypeclienteles->milieudestage_id) ?></td>
-                        <td><?= h($listetypeclienteles->typeclientele_id) ?></td>
-                        <td class="actions">
-                            <?= $this->Html->link(__('View'), ['controller' => 'Listetypeclienteles', 'action' => 'view', $listetypeclienteles->milieudestage_id]) ?>
-                            <?= $this->Html->link(__('Edit'), ['controller' => 'Listetypeclienteles', 'action' => 'edit', $listetypeclienteles->milieudestage_id]) ?>
-                            <?= $this->Form->postLink(__('Delete'), ['controller' => 'Listetypeclienteles', 'action' => 'delete', $listetypeclienteles->milieudestage_id], ['confirm' => __('Are you sure you want to delete # {0}?', $listetypeclienteles->milieudestage_id)]) ?>
-                        </td>
+                        <?php if ($userrole === 'admin'): ?>
+                            <td><?= h($typeclienteles->id) ?></td>
+                        <?php endif; ?>
+                        <td><?= h($typeclienteles->type) ?></td>
+                        <?php if (false): ?>
+                            <td class="actions">
+                                <?= $this->Html->link(__('View'), ['controller' => 'Typeclienteles', 'action' => 'view', $typeclienteles->id]) ?>
+                                <?= $this->Html->link(__('Edit'), ['controller' => 'Typeclienteles', 'action' => 'edit', $typeclienteles->id]) ?>
+                                <?= $this->Form->postLink(__('Delete'), ['controller' => 'Typeclienteles', 'action' => 'delete', $typeclienteles->id], ['confirm' => __('Are you sure you want to delete # {0}?', $typeclienteles->id)]) ?>
+                            </td>
+                        <?php endif; ?>
                     </tr>
                 <?php endforeach; ?>
             </table>
         <?php endif; ?>
     </div>
     <div class="related">
-        <h4><?= __('Related Listetypeetablissements') ?></h4>
-        <?php if (!empty($milieudestage->listetypeetablissements)): ?>
+        <h4><?= __('Related Typeetablissements') ?></h4>
+        <?php if (!empty($milieudestage->typeetablissements)): ?>
             <table cellpadding="0" cellspacing="0">
                 <tr>
-                    <th scope="col"><?= __('Milieudestage Id') ?></th>
-                    <th scope="col"><?= __('Typeetablissement Id') ?></th>
-                    <th scope="col" class="actions"><?= __('Actions') ?></th>
+                    <?php if ($userrole === 'admin'): ?>
+                        <th scope="col"><?= __('Id') ?></th>
+                    <?php endif; ?>
+                    <th scope="col"><?= __('Nom') ?></th>
+                    <?php if (false): ?>
+                        <th scope="col" class="actions"><?= __('Actions') ?></th>
+                    <?php endif; ?>
                 </tr>
-                <?php foreach ($milieudestage->listetypeetablissements as $listetypeetablissements): ?>
+                <?php foreach ($milieudestage->typeetablissements as $typeetablissements): ?>
                     <tr>
-                        <td><?= h($listetypeetablissements->milieudestage_id) ?></td>
-                        <td><?= h($listetypeetablissements->typeetablissement_id) ?></td>
-                        <td class="actions">
-                            <?= $this->Html->link(__('View'), ['controller' => 'Listetypeetablissements', 'action' => 'view', $listetypeetablissements->milieudestage_id]) ?>
-                            <?= $this->Html->link(__('Edit'), ['controller' => 'Listetypeetablissements', 'action' => 'edit', $listetypeetablissements->milieudestage_id]) ?>
-                            <?= $this->Form->postLink(__('Delete'), ['controller' => 'Listetypeetablissements', 'action' => 'delete', $listetypeetablissements->milieudestage_id], ['confirm' => __('Are you sure you want to delete # {0}?', $listetypeetablissements->milieudestage_id)]) ?>
-                        </td>
+                        <?php if ($userrole === 'admin'): ?>
+                            <td><?= h($typeetablissements->id) ?></td>
+                        <?php endif; ?>
+                        <td><?= h($typeetablissements->nom) ?></td>
+                        <?php if (false): ?>
+                            <td class="actions">
+                                <?= $this->Html->link(__('View'), ['controller' => 'Typeetablissements', 'action' => 'view', $typeetablissements->id]) ?>
+                                <?= $this->Html->link(__('Edit'), ['controller' => 'Typeetablissements', 'action' => 'edit', $typeetablissements->id]) ?>
+                                <?= $this->Form->postLink(__('Delete'), ['controller' => 'Typeetablissements', 'action' => 'delete', $typeetablissements->id], ['confirm' => __('Are you sure you want to delete # {0}?', $typeetablissements->id)]) ?>
+                            </td>
+                        <?php endif; ?>
                     </tr>
                 <?php endforeach; ?>
             </table>
@@ -228,7 +261,8 @@ $userrole = $loguser['role_id'];
                     <th scope="col"><?= __('Region') ?></th>
                     <th scope="col"><?= __('Tache') ?></th>
                     <th scope="col"><?= __('Responsabilite') ?></th>
-                    <?php if($userrole === "admin"): ?>
+                    <?php if ($userrole === "admin"): ?>
+                        <th scope="col"><?= __('User Id') ?></th>
                         <th scope="col"><?= __('Milieudestage Id') ?></th>
                         <th scope="col"><?= __('Created') ?></th>
                         <th scope="col"><?= __('Modified') ?></th>
@@ -242,15 +276,19 @@ $userrole = $loguser['role_id'];
                         <td><?= h($offres->region) ?></td>
                         <td><?= h($offres->tache) ?></td>
                         <td><?= h($offres->responsabilite) ?></td>
-                        <?php if($userrole === "admin"): ?>
+                        <?php if ($userrole === "admin"): ?>
+                            <td><?= h($offres->milieudestage_id) ?></td>
+                            <td><?= h($offres->user_id) ?></td>
                             <td><?= h($offres->milieudestage_id) ?></td>
                             <td><?= h($offres->created) ?></td>
                             <td><?= h($offres->modified) ?></td>
                         <?php endif; ?>
                         <td class="actions">
                             <?= $this->Html->link(__('View'), ['controller' => 'Offres', 'action' => 'view', $offres->id]) ?>
-                            <?= $this->Html->link(__('Edit'), ['controller' => 'Offres', 'action' => 'edit', $offres->id]) ?>
-                            <?= $this->Form->postLink(__('Delete'), ['controller' => 'Offres', 'action' => 'delete', $offres->id], ['confirm' => __('Are you sure you want to delete # {0}?', $offres->id)]) ?>
+                            <?php if ($userrole !== "etudiant"): ?>
+                                <?= $this->Html->link(__('Edit'), ['controller' => 'Offres', 'action' => 'edit', $offres->id]) ?>
+                                <?= $this->Form->postLink(__('Delete'), ['controller' => 'Offres', 'action' => 'delete', $offres->id], ['confirm' => __('Are you sure you want to delete # {0}?', $offres->id)]) ?>
+                            <?php endif; ?>
                         </td>
                     </tr>
                 <?php endforeach; ?>

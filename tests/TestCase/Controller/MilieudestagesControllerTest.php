@@ -19,10 +19,13 @@ class MilieudestagesControllerTest extends IntegrationTestCase
         'app.milieudestages',
         'app.regions',
         'app.users',
-        'app.listemissions',
-        'app.listetypeclienteles',
-        'app.listetypeetablissements',
-        'app.offres'
+        'app.offres',
+        'app.missions',
+        'app.typeclienteles',
+        'app.typeetablissements',
+        'app.milieudestages_missions',
+        'app.milieudestages_typeclienteles',
+        'app.milieudestages_typeetablissements'
     ];
 
     /**
