@@ -9,6 +9,9 @@ $userrole = $loguser['role_id'];
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
         <li class="heading"><?= __('Actions') ?></li>
+        <?php if ($userrole === "etudiant"): ?>
+            <li><?= $this->Html->link(__('Postuler'), ['controller' => 'Offres', 'action' => 'postuler', $offre['id']]) ?> </li>
+        <?php endif; ?>
         <?php if ($userrole !== "etudiant"): ?>
             <li><?= $this->Html->link(__('Edit Offre'), ['action' => 'edit', $offre->id]) ?> </li>
             <li><?= $this->Form->postLink(__('Delete Offre'), ['action' => 'delete', $offre->id], ['confirm' => __('Are you sure you want to delete # {0}?', $offre->id)]) ?> </li>
@@ -53,7 +56,7 @@ $userrole = $loguser['role_id'];
         <?php if ($userrole === "admin"): ?>      
             <tr>
                 <th scope="row"><?= __('User') ?></th>
-                <td><?= $offre->has('user') ? $this->Html->link($offre->user->id, ['controller' => 'Users', 'action' => 'view', $offre->user->id]) : '' ?></td>
+                <td><?= $offre->has('user') ? $this->Html->link($offre->user->username, ['controller' => 'Users', 'action' => 'view', $offre->user->id]) : '' ?></td>
             </tr>
             <tr>
                 <th scope="row"><?= __('Id') ?></th>

@@ -9,11 +9,13 @@ $userrole = $loguser['role_id'];
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
         <li class="heading"><?= __('Actions') ?></li>
-        <li><?=
-            $this->Form->postLink(
-                    __('Delete'), ['action' => 'delete', $milieudestage->id], ['confirm' => __('Are you sure you want to delete # {0}?', $milieudestage->id)]
-            )
-            ?></li>
+        <?php if ($userrole === "admin"): ?>
+            <li><?=
+                $this->Form->postLink(
+                        __('Delete'), ['action' => 'delete', $milieudestage->id], ['confirm' => __('Are you sure you want to delete # {0}?', $milieudestage->id)]
+                )
+                ?></li>
+        <?php endif; ?>
         <li><?= $this->Html->link(__('List Milieudestages'), ['action' => 'index']) ?></li>
         <?php if (false): ?>
             <li><?= $this->Html->link(__('List Regions'), ['controller' => 'Regions', 'action' => 'index']) ?></li>
@@ -67,7 +69,7 @@ $userrole = $loguser['role_id'];
         echo $this->Form->control('date_inv', ['empty' => true]);
         echo $this->Form->control('date_rappel', ['empty' => true]);
         echo $this->Form->control('actif');
-        echo ($userrole === "admin")?$this->Form->control('user_id', ['options' => $users]):$this->Form->hidden('user_id');
+        echo ($userrole === "admin") ? $this->Form->control('user_id', ['options' => $users]) : $this->Form->hidden('user_id');
         echo $this->Form->control('missions._ids', ['options' => $missions, 'multiple' => 'checkbox']);
         echo $this->Form->control('typeclienteles._ids', ['options' => $typeclienteles, 'multiple' => 'checkbox']);
         echo $this->Form->control('typeetablissements._ids', ['options' => $typeetablissements, 'multiple' => 'checkbox']);

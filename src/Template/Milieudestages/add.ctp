@@ -63,8 +63,6 @@ $userrole = $loguser['role_id'];
         echo $this->Form->control('date_rappel', ['empty' => true]);
         echo $this->Form->control('actif');
         echo ($userrole === "admin")?$this->Form->control('user_id', ['options' => $users]):$this->Form->hidden('user_id');
-        debug($missions);
-        die();
         echo $this->Form->control('missions._ids', ['options' => $missions, 'multiple' => 'checkbox']);
         echo $this->Form->control('typeclienteles._ids', ['options' => $typeclienteles, 'multiple' => 'checkbox']);
         echo $this->Form->control('typeetablissements._ids', ['options' => $typeetablissements, 'multiple' => 'checkbox']);

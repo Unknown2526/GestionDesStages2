@@ -23,6 +23,14 @@
             <td><?= h($administrateur->nom) ?></td>
         </tr>
         <tr>
+            <th scope="row"><?= __('Telephone') ?></th>
+            <td><?= h($administrateur->telephone) ?></td>
+        </tr>
+        <tr>
+            <th scope="row"><?= __('Courriel') ?></th>
+            <td><?= h($administrateur->courriel) ?></td>
+        </tr>
+        <tr>
             <th scope="row"><?= __('User') ?></th>
             <td><?= $administrateur->has('user') ? $this->Html->link($administrateur->user->id, ['controller' => 'Users', 'action' => 'view', $administrateur->user->id]) : '' ?></td>
         </tr>

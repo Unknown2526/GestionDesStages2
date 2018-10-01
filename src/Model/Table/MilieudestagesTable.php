@@ -137,7 +137,7 @@ class MilieudestagesTable extends Table
         $validator
             ->scalar('courriel_respo')
             ->maxLength('courriel_respo', 255)
-            ->allowEmpty('courriel_respo');
+            ->notEmpty('courriel_respo');
 
         $validator
             ->scalar('adresse_admin')

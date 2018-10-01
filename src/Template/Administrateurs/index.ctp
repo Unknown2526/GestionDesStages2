@@ -19,6 +19,8 @@
             <tr>
                 <th scope="col"><?= $this->Paginator->sort('id') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('nom') ?></th>
+                <th scope="col"><?= $this->Paginator->sort('telephone') ?></th>
+                <th scope="col"><?= $this->Paginator->sort('courriel') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('user_id') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('created') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('modified') ?></th>
@@ -30,6 +32,8 @@
             <tr>
                 <td><?= $this->Number->format($administrateur->id) ?></td>
                 <td><?= h($administrateur->nom) ?></td>
+                <td><?= h($administrateur->telephone) ?></td>
+                <td><?= h($administrateur->courriel) ?></td>
                 <td><?= $administrateur->has('user') ? $this->Html->link($administrateur->user->id, ['controller' => 'Users', 'action' => 'view', $administrateur->user->id]) : '' ?></td>
                 <td><?= $this->Number->format($administrateur->created) ?></td>
                 <td><?= $this->Number->format($administrateur->modified) ?></td>

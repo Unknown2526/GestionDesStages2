@@ -8,6 +8,8 @@ use Cake\ORM\Entity;
  *
  * @property int $id
  * @property string $nom
+ * @property string $telephone
+ * @property string $courriel
  * @property int $user_id
  * @property int $created
  * @property int $modified
@@ -28,6 +30,8 @@ class Administrateur extends Entity
      */
     protected $_accessible = [
         'nom' => true,
+        'telephone' => true,
+        'courriel' => true,
         'user_id' => true,
         'created' => true,
         'modified' => true,

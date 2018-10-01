@@ -3,6 +3,8 @@
 namespace App\Controller;
 
 use App\Controller\AppController;
+use Cake\Mailer\Email;
+use Cake\ORM\TableRegistry;
 
 /**
  * Offres Controller
@@ -57,10 +59,10 @@ class OffresController extends AppController {
                 'conditions' => ['user_id' => $loguser['id']]
             ]);
             $first = $milieu->first();
-            
+
             $offre->user_id = $loguser['id'];
             $offre->mileudestage_id = $first['id'];
-            
+
 
             if ($this->Offres->save($offre)) {
                 $this->Flash->success(__('The offre has been saved.'));
@@ -69,8 +71,8 @@ class OffresController extends AppController {
             }
             $this->Flash->error(__('The offre could not be saved. Please, try again.'));
         }
-        $users = $this->Offres->Users->find('list', ['limit' => 200]);
-        $milieudestages = $this->Offres->Milieudestages->find('list', ['limit' => 200]);
+        $users = $this->Offres->Users->find('list', ['limit' => 200, 'keyField' => 'id', 'valueField' => 'nom']);
+        $milieudestages = $this->Offres->Milieudestages->find('list', ['limit' => 200,  'keyField' => 'id', 'valueField' => 'nom']);
         $this->set(compact('offre', 'users', 'milieudestages'));
     }
 
@@ -94,8 +96,8 @@ class OffresController extends AppController {
             }
             $this->Flash->error(__('The offre could not be saved. Please, try again.'));
         }
-        $users = $this->Offres->Users->find('list', ['limit' => 200]);
-        $milieudestages = $this->Offres->Milieudestages->find('list', ['limit' => 200]);
+        $users = $this->Offres->Users->find('list', ['limit' => 200, 'keyField' => 'id', 'valueField' => 'nom']);
+        $milieudestages = $this->Offres->Milieudestages->find('list', ['limit' => 200, 'keyField' => 'id', 'valueField' => 'nom']);
         $this->set(compact('offre', 'users', 'milieudestages'));
     }
 
@@ -123,7 +125,7 @@ class OffresController extends AppController {
         $role = $user['role_id'];
 
         if ($role === "etudiant") {
-            return in_array($action, ['display', 'view', 'index']);
+            return in_array($action, ['display', 'view', 'index', 'postuler']);
         }
 
         if ($role === "milieu") {
@@ -137,6 +139,40 @@ class OffresController extends AppController {
             }
         }
         return true;
+    }
+
+    public function postuler() {
+        $milieuEmail = $this->getEmailMilieu();
+        $etudiant = $this->getInfoEtudiant();
+        $offreid = $this->request->getParam('pass');
+
+        $email = new Email('default');
+        $email->to($milieuEmail)->subject('Postulation d\'un étudiant')
+                ->send('Bonjour,' . $etudiant['prenom'] . ' ' . $etudiant['prenom']
+                        . ' est intéressé à votre offre de stage numéro ' . $offreid[0]
+                        . '. Vous pouvez le contacter à son courriel ' . $etudiant['courriel']
+                        . ' ou à son téléphone ' . $etudiant['telephone'] . '.'); 
+        $this->Flash->success(__('Vous avez postuler.'));
+        return $this->redirect(['action' => 'index']);
+    }
+
+    private function getInfoEtudiant() {
+        $loguser = $this->request->session()->read('Auth.User');
+
+        $etudiant = TableRegistry::get('Etudiants');
+        $etudiant = $etudiant->find('all', [
+            'conditions' => ['user_id' => $loguser['id']]
+        ]);
+        return $etudiant->first();
+    }
+
+    private function getEmailMilieu() {
+        $offre = $this->Offres->get($this->request->getParam('pass'));
+        $milieu = $this->Offres->Milieudestages->find('all', [
+            'conditions' => ['id' => $offre['milieudestage_id']]
+        ]);
+        $first = $milieu->first();
+        return $first['courriel_respo'];
     }
 
 }

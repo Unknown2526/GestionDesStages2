@@ -65,6 +65,18 @@ class AdministrateursTable extends Table
             ->requirePresence('nom', 'create')
             ->notEmpty('nom');
 
+        $validator
+            ->scalar('telephone')
+            ->maxLength('telephone', 30)
+            ->requirePresence('telephone', 'create')
+            ->notEmpty('telephone');
+
+        $validator
+            ->scalar('courriel')
+            ->maxLength('courriel', 255)
+            ->requirePresence('courriel', 'create')
+            ->notEmpty('courriel');
+
         return $validator;
     }
 

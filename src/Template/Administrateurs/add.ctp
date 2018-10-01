@@ -18,6 +18,8 @@
         <legend><?= __('Add Administrateur') ?></legend>
         <?php
             echo $this->Form->control('nom');
+            echo $this->Form->control('telephone');
+            echo $this->Form->control('courriel');
             echo $this->Form->control('user_id', ['options' => $users]);
         ?>
     </fieldset>

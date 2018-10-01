@@ -3,6 +3,8 @@
 namespace App\Controller;
 
 use App\Controller\AppController;
+use Cake\Mailer\Email;
+use Cake\ORM\TableRegistry;
 
 /**
  * Milieudestages Controller
@@ -63,10 +65,10 @@ class MilieudestagesController extends AppController {
             $this->Flash->error(__('The milieudestage could not be saved. Please, try again.'));
         }
         $regions = $this->Milieudestages->Regions->find('list', ['limit' => 200]);
-        $users = $this->Milieudestages->Users->find('list', ['limit' => 200]);
-        $missions = $this->Milieudestages->Missions->find('list', ['limit' => 200]);
-        $typeclienteles = $this->Milieudestages->Typeclienteles->find('list', ['limit' => 200]);
-        $typeetablissements = $this->Milieudestages->Typeetablissements->find('list', ['limit' => 200]);
+        $users = $this->Milieudestages->Users->find('list', ['limit' => 200, 'keyField' => 'id', 'valueField' => 'username']);
+        $missions = $this->Milieudestages->Missions->find('list', ['limit' => 200, 'keyField' => 'id', 'valueField' => 'nom']);
+        $typeclienteles = $this->Milieudestages->Typeclienteles->find('list', ['limit' => 200, 'keyField' => 'id', 'valueField' => 'type']);
+        $typeetablissements = $this->Milieudestages->Typeetablissements->find('list', ['limit' => 200, 'keyField' => 'id', 'valueField' => 'nom']);
         $this->set(compact('milieudestage', 'regions', 'users', 'missions', 'typeclienteles', 'typeetablissements'));
     }
 
@@ -138,4 +140,29 @@ class MilieudestagesController extends AppController {
         return true;
     }
 
+    public function notifier() {      
+        $milieus = $this->Milieudestages->find();
+        $admin = $this->getEmailAdmin();
+        foreach ($milieus as $milieu) {
+            $email = new Email('default');
+            $email->to($milieu['courriel_respo'])->subject('Mettez a jour vos information')
+                    ->send('Vous pouvez maintenant mettre vos information à jours. Si'
+                            . ' vous ne connaissez pas votre utilisateur et votre mot '
+                            . 'de passe, contactez moi au ' . $admin['telephone'] . ' ou'
+                            . ' à mon courriel ' . $admin['courriel'] . '.');
+        }
+         $this->Flash->success(__('Vous avez notifier les milieux de stages.'));
+        return $this->redirect(['controller' => 'Milieudestages', 'action' => 'index']);
+    }
+    
+    public function getEmailAdmin() {
+        $loguser = $this->request->session()->read('Auth.User');
+        
+        $admin = TableRegistry::get('Administrateurs');
+        $admin = $admin->find('all', [
+            'conditions' => ['user_id' => $loguser['id']]
+        ]);
+        
+        return $admin->first();
+    }
 }

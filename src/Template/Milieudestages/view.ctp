@@ -118,7 +118,7 @@ $userrole = $loguser['role_id'];
             </tr>
             <tr>
                 <th scope="row"><?= __('User') ?></th>
-                <td><?= $milieudestage->has('user') ? $this->Html->link($milieudestage->user->id, ['controller' => 'Users', 'action' => 'view', $milieudestage->user->id]) : '' ?></td>
+                <td><?= $milieudestage->has('user') ? $this->Html->link($milieudestage->user->username, ['controller' => 'Users', 'action' => 'view', $milieudestage->user->id]) : '' ?></td>
             </tr>
             <tr>
                 <th scope="row"><?= __('Id') ?></th>

@@ -16,6 +16,7 @@ $userrole = $loguser['role_id'];
         <?php if ($userrole === "admin"): ?>
             <li><?= $this->Html->link(__('List Users'), ['controller' => 'Users', 'action' => 'index']) ?></li>
             <li><?= $this->Html->link(__('New User'), ['controller' => 'Users', 'action' => 'add']) ?></li>
+            <li><?= $this->Html->link(__('New Milieudestage'), ['controller' => 'Milieudestages', 'action' => 'add']) ?></li>
         <?php endif; ?>
         <li><?= $this->Html->link(__('List Offres'), ['controller' => 'Offres', 'action' => 'index']) ?></li>
         <?php if ($userrole !== "etudiant"): ?>
@@ -33,6 +34,9 @@ $userrole = $loguser['role_id'];
 </nav>
 <div class="milieudestages index large-9 medium-8 columns content">
     <h3><?= __('Milieudestages') ?></h3>
+    <?php if ($userrole === "admin"): ?>
+        <?= $this->Html->link(__('Notifier tous les milieux de stage'), ['controller' => 'Milieudestages', 'action' => 'notifier']) ?>
+    <?php endif; ?>
     <table cellpadding="0" cellspacing="0">
         <thead>
             <tr>
@@ -98,7 +102,7 @@ $userrole = $loguser['role_id'];
                         <td><?= h($milieudestage->date_inv) ?></td>
                         <td><?= h($milieudestage->date_rappel) ?></td>
                         <td><?= h($milieudestage->actif) ?></td>
-                        <td><?= $milieudestage->has('user') ? $this->Html->link($milieudestage->user->id, ['controller' => 'Users', 'action' => 'view', $milieudestage->user->id]) : '' ?></td>
+                        <td><?= $milieudestage->has('user') ? $this->Html->link($milieudestage->user->username, ['controller' => 'Users', 'action' => 'view', $milieudestage->user->id]) : '' ?></td>
                         <td><?= h($milieudestage->created) ?></td>
                         <td><?= h($milieudestage->modified) ?></td>
                     <?php endif; ?>
