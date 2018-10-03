@@ -145,7 +145,7 @@ class UsersController extends AppController {
 
     public function dirigerVersPage($role) {
         if ($role === 'admin') {
-            return $this->redirect(['controller' => 'Milieudestages', 'action' => 'index']);
+            return $this->redirect(['controller' => 'Users', 'action' => 'index']);
         } else {
             return $this->redirect(['controller' => 'Offres', 'action' => 'index']);
         }
