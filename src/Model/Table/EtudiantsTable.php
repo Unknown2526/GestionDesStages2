@@ -77,7 +77,8 @@ class EtudiantsTable extends Table
         $validator
             ->scalar('courriel')
             ->maxLength('courriel', 255)
-            ->allowEmpty('courriel');
+            ->requirePresence('courriel', 'create')
+            ->notEmpty('courriel');
 
         $validator
             ->scalar('info_supp')

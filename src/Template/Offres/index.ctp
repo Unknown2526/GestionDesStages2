@@ -50,8 +50,8 @@ $userrole = $loguser['role_id'];
                     <td><?= h($offre->tache) ?></td>
                     <td><?= h($offre->responsabilite) ?></td>
                     <?php if ($userrole === "admin"): ?>
-                        <td><?= $offre->has('user') ? $this->Html->link($offre->user->id, ['controller' => 'Users', 'action' => 'view', $offre->user->id]) : '' ?></td>
-                        <td><?= $offre->has('milieudestage') ? $this->Html->link($offre->milieudestage->id, ['controller' => 'Milieudestages', 'action' => 'view', $offre->milieudestage->id]) : '' ?></td>
+                        <td><?= $offre->has('user') ? $this->Html->link($offre->user->username, ['controller' => 'Users', 'action' => 'view', $offre->user->id]) : '' ?></td>
+                        <td><?= $offre->has('milieudestage') ? $this->Html->link($offre->milieudestage->nom, ['controller' => 'Milieudestages', 'action' => 'view', $offre->milieudestage->id]) : '' ?></td>
                         <td><?= h($offre->created) ?></td>
                         <td><?= h($offre->modified) ?></td>
                     <?php endif; ?>

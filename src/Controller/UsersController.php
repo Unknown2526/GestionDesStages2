@@ -3,6 +3,7 @@
 namespace App\Controller;
 
 use App\Controller\AppController;
+use Cake\ORM\TableRegistry;
 
 /**
  * Users Controller
@@ -52,6 +53,9 @@ class UsersController extends AppController {
         if ($this->request->is('post')) {
             $user = $this->Users->patchEntity($user, $this->request->getData());
             if ($this->Users->save($user)) {
+
+                $this->createRelatedProfil($user);
+
                 $this->Flash->success(__('The user has been saved.'));
 
                 return $this->redirect(['action' => 'index']);
@@ -60,6 +64,28 @@ class UsersController extends AppController {
         }
         $roles = $this->Users->Roles->find('list', ['limit' => 200]);
         $this->set(compact('user', 'roles'));
+    }
+
+    private function createRelatedProfil($user) {
+        if ($user['role_id'] === 'milieu') {
+            $profiltable = TableRegistry::get('Milieudestages');
+            $profil = $profiltable->newEntity();
+            $profil->courriel_respo = $user['username'];
+            
+        } elseif ($user['role_id'] === 'etudiant') {
+            $profiltable = TableRegistry::get('Etudiants');
+            $profil = $profiltable->newEntity();
+            $profil->courriel = $user['username'];
+
+        } elseif ($user['role_id'] === 'admin') {
+            $profiltable = TableRegistry::get('Administrateurs');
+            $profil = $profiltable->newEntity();
+            $profil->courriel = $user['username'];
+
+        }
+        
+        $profil->user_id = $user['id'];
+        $profiltable->save($profil);
     }
 
     /**
@@ -124,27 +150,27 @@ class UsersController extends AppController {
             return $this->redirect(['controller' => 'Offres', 'action' => 'index']);
         }
     }
-    
-    public function monProfil(){
+
+    public function monProfil() {
         $user = $this->request->session()->read('Auth.User');
 
-        if($user['role_id'] === 'admin'){
+        if ($user['role_id'] === 'admin') {
             $admin = $this->Users->Administrateurs->find('all', [
                 'conditions' => ['user_id' => $user['id']]
             ]);
             $first = $admin->first();
             $this->redirect(['controller' => 'Administrateurs', 'action' => 'view', $first['id']]);
         }
-        
-        if($user['role_id'] === 'milieu'){
+
+        if ($user['role_id'] === 'milieu') {
             $milieu = $this->Users->Milieudestages->find('all', [
                 'conditions' => ['user_id' => $user['id']]
             ]);
             $first = $milieu->first();
             $this->redirect(['controller' => 'Milieudestages', 'action' => 'view', $first['id']]);
         }
-        
-        if($user['role_id'] === 'etudiant'){
+
+        if ($user['role_id'] === 'etudiant') {
             $etudiant = $this->Users->Etudiants->find('all', [
                 'conditions' => ['user_id' => $user['id']]
             ]);

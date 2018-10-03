@@ -93,7 +93,7 @@ $userrole = $loguser['role_id'];
         </tr>
         <tr>
             <th scope="row"><?= __('Region') ?></th>
-            <td><?= $milieudestage->has('region') ? $this->Html->link($milieudestage->region->id, ['controller' => 'Regions', 'action' => 'view', $milieudestage->region->id]) : '' ?></td>
+            <td><?= $milieudestage->has('region') ? ($milieudestage->region->nom) : '' ?></td>
         </tr>
         <tr>
             <th scope="row"><?= __('Facilite') ?></th>

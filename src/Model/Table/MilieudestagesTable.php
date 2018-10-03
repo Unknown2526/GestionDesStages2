@@ -88,32 +88,27 @@ class MilieudestagesTable extends Table
         $validator
             ->scalar('nom')
             ->maxLength('nom', 255)
-            ->requirePresence('nom', 'create')
-            ->notEmpty('nom');
+            ->allowEmpty('nom');
 
         $validator
             ->scalar('adresse')
             ->maxLength('adresse', 255)
-            ->requirePresence('adresse', 'create')
-            ->notEmpty('adresse');
+            ->allowEmpty('adresse');
 
         $validator
             ->scalar('ville')
             ->maxLength('ville', 255)
-            ->requirePresence('ville', 'create')
-            ->notEmpty('ville');
+            ->allowEmpty('ville');
 
         $validator
             ->scalar('province')
             ->maxLength('province', 255)
-            ->requirePresence('province', 'create')
-            ->notEmpty('province');
+            ->allowEmpty('province');
 
         $validator
             ->scalar('code_postal')
             ->maxLength('code_postal', 255)
-            ->requirePresence('code_postal', 'create')
-            ->notEmpty('code_postal');
+            ->allowEmpty('code_postal');
 
         $validator
             ->scalar('exigence')
@@ -137,6 +132,7 @@ class MilieudestagesTable extends Table
         $validator
             ->scalar('courriel_respo')
             ->maxLength('courriel_respo', 255)
+            ->requirePresence('courriel_respo', 'create')
             ->notEmpty('courriel_respo');
 
         $validator
