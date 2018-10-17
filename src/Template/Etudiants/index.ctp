@@ -17,36 +17,44 @@
     <table cellpadding="0" cellspacing="0">
         <thead>
             <tr>
-                <th scope="col"><?= $this->Paginator->sort('id') ?></th>
+                <?php if (false): ?>
+                    <th scope="col"><?= $this->Paginator->sort('id') ?></th>
+                <?php endif; ?>
                 <th scope="col"><?= $this->Paginator->sort('nom') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('prenom') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('telephone') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('courriel') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('actif') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('user_id') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('created') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('modified') ?></th>
+                <?php if (false): ?>
+                    <th scope="col"><?= $this->Paginator->sort('actif') ?></th>
+                    <th scope="col"><?= $this->Paginator->sort('user_id') ?></th>
+                    <th scope="col"><?= $this->Paginator->sort('created') ?></th>
+                    <th scope="col"><?= $this->Paginator->sort('modified') ?></th>
+                <?php endif; ?>
                 <th scope="col" class="actions"><?= __('Actions') ?></th>
             </tr>
         </thead>
         <tbody>
             <?php foreach ($etudiants as $etudiant): ?>
-            <tr>
-                <td><?= $this->Number->format($etudiant->id) ?></td>
-                <td><?= h($etudiant->nom) ?></td>
-                <td><?= h($etudiant->prenom) ?></td>
-                <td><?= h($etudiant->telephone) ?></td>
-                <td><?= h($etudiant->courriel) ?></td>
-                <td><?= h($etudiant->actif) ?></td>
-                <td><?= $etudiant->has('user') ? $this->Html->link($etudiant->user->id, ['controller' => 'Users', 'action' => 'view', $etudiant->user->id]) : '' ?></td>
-                <td><?= h($etudiant->created) ?></td>
-                <td><?= h($etudiant->modified) ?></td>
-                <td class="actions">
-                    <?= $this->Html->link(__('View'), ['action' => 'view', $etudiant->id]) ?>
-                    <?= $this->Html->link(__('Edit'), ['action' => 'edit', $etudiant->id]) ?>
-                    <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $etudiant->id], ['confirm' => __('Are you sure you want to delete # {0}?', $etudiant->id)]) ?>
-                </td>
-            </tr>
+                <tr>
+                    <?php if (false): ?>
+                        <td><?= $this->Number->format($etudiant->id) ?></td>
+                    <?php endif; ?>
+                    <td><?= h($etudiant->nom) ?></td>
+                    <td><?= h($etudiant->prenom) ?></td>
+                    <td><?= h($etudiant->telephone) ?></td>
+                    <td><?= h($etudiant->courriel) ?></td>
+                    <?php if (false): ?>
+                        <td><?= h($etudiant->actif) ?></td>
+                        <td><?= $etudiant->has('user') ? $this->Html->link($etudiant->user->id, ['controller' => 'Users', 'action' => 'view', $etudiant->user->id]) : '' ?></td>
+                        <td><?= h($etudiant->created) ?></td>
+                        <td><?= h($etudiant->modified) ?></td>
+                    <?php endif; ?>
+                    <td class="actions">
+                        <?= $this->Html->link(__('View'), ['action' => 'view', $etudiant->id]) ?>
+                        <?= $this->Html->link(__('Edit'), ['action' => 'edit', $etudiant->id]) ?>
+                        <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $etudiant->id], ['confirm' => __('Are you sure you want to delete # {0}?', $etudiant->id)]) ?>
+                    </td>
+                </tr>
             <?php endforeach; ?>
         </tbody>
     </table>

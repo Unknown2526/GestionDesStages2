@@ -31,7 +31,9 @@ $userrole = $loguser['role_id'];
     </ul>
 </nav>
 <div class="offres view large-9 medium-8 columns content">
-    <h3><?= h($offre->id) ?></h3>
+    <?php if (false): ?>
+        <h3><?= h($offre->id) ?></h3>
+    <?php endif; ?>
     <table class="vertical-table">
         <tr>
             <th scope="row"><?= __('Titre') ?></th>
@@ -39,7 +41,7 @@ $userrole = $loguser['role_id'];
         </tr>
         <tr>
             <th scope="row"><?= __('Region') ?></th>
-            <td><?= h($offre->region) ?></td>
+            <td><?= h($offre->region_id) ?></td>
         </tr>
         <tr>
             <th scope="row"><?= __('Tache') ?></th>
@@ -51,16 +53,12 @@ $userrole = $loguser['role_id'];
         </tr>
         <tr>
             <th scope="row"><?= __('Milieudestage') ?></th>
-            <td><?= $offre->has('milieudestage') ? $this->Html->link($offre->milieudestage->id, ['controller' => 'Milieudestages', 'action' => 'view', $offre->milieudestage->id]) : '' ?></td>
+            <td><?= $offre->has('milieudestage') ? $this->Html->link($offre->milieudestage->nom, ['controller' => 'Milieudestages', 'action' => 'view', $offre->milieudestage->id]) : '' ?></td>
         </tr>
         <?php if ($userrole === "admin"): ?>      
             <tr>
                 <th scope="row"><?= __('User') ?></th>
                 <td><?= $offre->has('user') ? $this->Html->link($offre->user->username, ['controller' => 'Users', 'action' => 'view', $offre->user->id]) : '' ?></td>
-            </tr>
-            <tr>
-                <th scope="row"><?= __('Id') ?></th>
-                <td><?= $this->Number->format($offre->id) ?></td>
             </tr>
             <tr>
                 <th scope="row"><?= __('Created') ?></th>

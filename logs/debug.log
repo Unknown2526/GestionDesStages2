@@ -628,3 +628,469 @@ Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
 
 
 
+2018-09-30 17:55:37 Notice: Notice (8): Array to string conversion in [C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\src\Controller\OffresController.php, line 153]
+Request URL: /offres/postuler/1
+Referer URL: http://localhost/projetcake_V_0_2_2/offres
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+App\Controller\OffresController::postuler() - APP/Controller\OffresController.php, line 153
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 596
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 120
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Middleware\CsrfProtectionMiddleware::__invoke() - CORE\src\Http\Middleware\CsrfProtectionMiddleware.php, line 107
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-10-01 17:52:03 Notice: Notice (8): Undefined index: telephone in [C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\src\Controller\MilieudestagesController.php, line 150]
+
+
+2018-10-01 17:52:03 Notice: Notice (8): Undefined index: courriel in [C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\src\Controller\MilieudestagesController.php, line 151]
+
+
+2018-10-01 17:52:03 Notice: Notice (8): Undefined index: telephone in [C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\src\Controller\MilieudestagesController.php, line 150]
+
+
+2018-10-01 17:52:03 Notice: Notice (8): Undefined index: courriel in [C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\src\Controller\MilieudestagesController.php, line 151]
+
+
+2018-10-03 00:40:40 Notice: Notice (8): Use of undefined constant user - assumed 'user' in [C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\src\Controller\UsersController.php, line 73]
+
+
+2018-10-08 13:23:59 Notice: Notice (8): Undefined offset: 0 in [C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\src\Controller\OffresController.php, line 180]
+
+
+2018-10-08 14:59:55 Notice: Notice (8): Array to string conversion in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\FilesController.php, line 53]
+
+
+2018-10-08 15:00:24 Notice: Notice (8): Array to string conversion in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\FilesController.php, line 53]
+
+
+2018-10-08 15:00:34 Notice: Notice (8): Array to string conversion in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\FilesController.php, line 53]
+
+
+2018-10-08 15:01:23 Notice: Notice (8): Array to string conversion in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\FilesController.php, line 53]
+
+
+2018-10-08 15:07:14 Notice: Notice (8): Undefined variable: images in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\edit.ctp, line 41]
+
+
+2018-10-08 15:09:18 Notice: Notice (8): Undefined variable: images in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\edit.ctp, line 41]
+
+
+2018-10-08 15:17:10 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 15:17:10 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 15:17:10 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 15:17:10 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 15:17:10 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 58]
+
+
+2018-10-08 15:17:10 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 58]
+
+
+2018-10-08 15:17:10 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 61]
+
+
+2018-10-08 15:17:10 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 61]
+
+
+2018-10-08 15:17:10 Notice: Notice (8): Uninitialized string offset: 0 in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\View\Helper\UrlHelper.php, line 174]
+
+
+2018-10-08 15:17:28 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 15:17:28 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 15:17:28 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 15:17:28 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 15:17:28 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 58]
+
+
+2018-10-08 15:17:28 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 58]
+
+
+2018-10-08 15:17:28 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 61]
+
+
+2018-10-08 15:17:28 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 61]
+
+
+2018-10-08 15:21:23 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 15:21:23 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 15:21:23 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 15:21:23 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 15:21:23 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 58]
+
+
+2018-10-08 15:21:23 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 58]
+
+
+2018-10-08 15:21:23 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 61]
+
+
+2018-10-08 15:21:23 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 61]
+
+
+2018-10-08 15:21:36 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 15:21:36 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 15:21:36 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 15:21:36 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 15:21:36 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 58]
+
+
+2018-10-08 15:21:36 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 58]
+
+
+2018-10-08 15:21:36 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 61]
+
+
+2018-10-08 15:21:36 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 61]
+
+
+2018-10-08 16:02:05 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 16:02:05 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 16:02:05 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 16:02:05 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 16:02:05 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 58]
+
+
+2018-10-08 16:02:05 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 58]
+
+
+2018-10-08 16:02:05 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 61]
+
+
+2018-10-08 16:02:05 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 61]
+
+
+2018-10-08 16:02:51 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 16:02:51 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 16:02:51 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 16:02:51 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 16:02:51 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 58]
+
+
+2018-10-08 16:02:51 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 58]
+
+
+2018-10-08 16:02:51 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 61]
+
+
+2018-10-08 16:02:51 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 61]
+
+
+2018-10-08 16:02:54 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 16:02:54 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 16:02:54 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 16:02:54 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 16:02:54 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 58]
+
+
+2018-10-08 16:02:54 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 58]
+
+
+2018-10-08 16:02:54 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 61]
+
+
+2018-10-08 16:02:54 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 61]
+
+
+2018-10-08 16:02:56 Notice: Notice (8): Undefined variable: users in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Offres\add.ctp, line 32]
+
+
+2018-10-08 16:02:59 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 16:02:59 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 16:03:00 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 16:03:00 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 16:03:00 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 58]
+
+
+2018-10-08 16:03:00 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 58]
+
+
+2018-10-08 16:03:00 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 61]
+
+
+2018-10-08 16:03:00 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 61]
+
+
+2018-10-08 16:06:24 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 16:06:24 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 16:06:24 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 16:06:24 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 16:06:24 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 58]
+
+
+2018-10-08 16:06:24 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 58]
+
+
+2018-10-08 16:06:24 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 61]
+
+
+2018-10-08 16:06:24 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 61]
+
+
+2018-10-08 16:07:11 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 16:07:11 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 16:07:11 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 16:07:11 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 16:07:11 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 58]
+
+
+2018-10-08 16:07:11 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 58]
+
+
+2018-10-08 16:07:11 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 61]
+
+
+2018-10-08 16:07:11 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 61]
+
+
+2018-10-08 16:07:17 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 16:07:17 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 16:07:17 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 16:07:17 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 16:07:17 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 58]
+
+
+2018-10-08 16:07:17 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 58]
+
+
+2018-10-08 16:07:17 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 61]
+
+
+2018-10-08 16:07:17 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 61]
+
+
+2018-10-08 16:07:25 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 16:07:25 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 16:07:25 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 16:07:25 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 16:07:25 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 58]
+
+
+2018-10-08 16:07:25 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 58]
+
+
+2018-10-08 16:07:25 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 61]
+
+
+2018-10-08 16:07:25 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 61]
+
+
+2018-10-08 16:08:21 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 16:08:21 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 16:08:21 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 16:08:21 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 16:08:21 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 58]
+
+
+2018-10-08 16:08:21 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 58]
+
+
+2018-10-08 16:08:21 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 61]
+
+
+2018-10-08 16:08:21 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 61]
+
+
+2018-10-08 16:09:25 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 55]
+
+
+2018-10-08 16:09:25 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 55]
+
+
+2018-10-08 16:09:25 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 55]
+
+
+2018-10-08 16:09:25 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 55]
+
+
+2018-10-08 16:09:25 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 56]
+
+
+2018-10-08 16:09:25 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 56]
+
+
+2018-10-08 16:09:25 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 59]
+
+
+2018-10-08 16:09:25 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 59]
+
+
+2018-10-08 16:09:25 Notice: Notice (8): Uninitialized string offset: 0 in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\View\Helper\UrlHelper.php, line 174]
+
+
+2018-10-08 16:58:10 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 53]
+
+
+2018-10-08 16:58:10 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 53]
+
+
+2018-10-08 16:58:26 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 53]
+
+
+2018-10-08 16:58:51 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 53]
+
+
+2018-10-09 20:15:08 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 54]
+
+
+2018-10-09 20:17:36 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 56]
+
+
+2018-10-10 04:12:50 Notice: Notice (8): Undefined variable: user in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\login.ctp, line 18]
+
+
+2018-10-10 04:12:50 Notice: Notice (8): Undefined variable: roles in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\login.ctp, line 24]
+
+
+2018-10-10 04:12:50 Notice: Notice (8): Undefined variable: files in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\login.ctp, line 25]
+
+
+2018-10-10 23:01:11 Notice: Notice (8): Only variables should be passed by reference in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\UsersController.php, line 88]
+
+
+2018-10-10 23:02:03 Notice: Notice (8): Only variables should be passed by reference in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\UsersController.php, line 88]
+
+
+2018-10-10 23:04:11 Notice: Notice (8): Only variables should be passed by reference in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\UsersController.php, line 88]
+
+
+2018-10-10 23:06:10 Notice: Notice (8): Only variables should be passed by reference in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\UsersController.php, line 88]
+
+
+2018-10-10 23:08:29 Notice: Notice (8): Only variables should be passed by reference in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\UsersController.php, line 89]
+
+
+2018-10-10 23:11:56 Notice: Notice (8): Only variables should be passed by reference in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\UsersController.php, line 88]
+
+
+2018-10-10 23:13:42 Notice: Notice (8): Only variables should be passed by reference in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\UsersController.php, line 88]
+
+
+2018-10-10 23:14:14 Notice: Notice (8): Only variables should be passed by reference in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\UsersController.php, line 88]
+
+
+2018-10-10 23:22:44 Notice: Notice (8): Only variables should be passed by reference in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\UsersController.php, line 88]
+
+
+2018-10-10 23:23:26 Notice: Notice (8): Only variables should be passed by reference in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\UsersController.php, line 88]
+
+

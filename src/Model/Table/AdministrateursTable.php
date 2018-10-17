@@ -62,12 +62,14 @@ class AdministrateursTable extends Table
         $validator
             ->scalar('nom')
             ->maxLength('nom', 255)
-            ->allowEmpty('nom');
+            ->requirePresence('nom', 'create')
+            ->notEmpty('nom');
 
         $validator
             ->scalar('telephone')
             ->maxLength('telephone', 30)
-            ->allowEmpty('telephone');
+            ->requirePresence('telephone', 'create')
+            ->notEmpty('telephone');
 
         $validator
             ->scalar('courriel')

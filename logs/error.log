@@ -721,3 +721,1443 @@ Stack Trace:
 #21 {main}
 
 
+2018-09-29 22:50:18 Error: [Error] Class 'App\Controller\Email' not found
+Request URL: /?redirect=%2Fmilieudestages%2Fedit%2F6
+Referer URL: http://localhost/projetcake_V_0_2_2/milieudestages/view/6
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Controller\Controller.php(596): App\Controller\UsersController->login()
+#1 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#2 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#3 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\webroot\index.php(40): Cake\Http\Server->run()
+#18 {main}
+
+
+2018-09-30 17:03:08 Error: [ParseError] syntax error, unexpected ')', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$'
+Request URL: /offres/postuler/1
+Referer URL: http://localhost/projetcake_V_0_2_2/offres
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\composer\ClassLoader.php(301): Composer\Autoload\includeFile('C:\\Program File...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#2 [internal function]: spl_autoload_call('App\\Controller\\...')
+#3 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Core\App.php(152): class_exists('App\\Controller\\...')
+#4 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Core\App.php(64): Cake\Core\App::_classExistsInBase('\\Controller\\Off...', 'App')
+#5 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(89): Cake\Core\App::className('Offres', 'Controller', 'Controller')
+#6 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(37): Cake\Http\ControllerFactory->getControllerClass(Object(Cake\Http\ServerRequest))
+#7 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\webroot\index.php(40): Cake\Http\Server->run()
+#23 {main}
+
+
+2018-09-30 17:07:04 Error: [Error] Call to undefined function App\Controller\getEmail()
+Request URL: /offres/postuler/1
+Referer URL: http://localhost/projetcake_V_0_2_2/offres
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Controller\Controller.php(596): App\Controller\OffresController->postuler('1')
+#1 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#2 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\OffresController))
+#3 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\webroot\index.php(40): Cake\Http\Server->run()
+#18 {main}
+
+
+2018-09-30 17:07:15 Error: [Error] Call to undefined function App\Controller\getEmail()
+Request URL: /offres/postuler/1
+Referer URL: http://localhost/projetcake_V_0_2_2/offres
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Controller\Controller.php(596): App\Controller\OffresController->postuler('1')
+#1 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#2 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\OffresController))
+#3 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\webroot\index.php(40): Cake\Http\Server->run()
+#18 {main}
+
+
+2018-09-30 17:16:29 Error: [Error] Call to undefined method App\Controller\OffresController::getEmail()
+Request URL: /offres/postuler/1
+Referer URL: http://localhost/projetcake_V_0_2_2/offres
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Controller\Controller.php(596): App\Controller\OffresController->postuler('1')
+#1 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#2 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\OffresController))
+#3 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\webroot\index.php(40): Cake\Http\Server->run()
+#18 {main}
+
+
+2018-09-30 17:16:58 Error: [Error] Call to undefined method App\Model\Entity\Etudiant::find()
+Request URL: /offres/postuler/1
+Referer URL: http://localhost/projetcake_V_0_2_2/offres
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Controller\Controller.php(596): App\Controller\OffresController->postuler('1')
+#1 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#2 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\OffresController))
+#3 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\webroot\index.php(40): Cake\Http\Server->run()
+#18 {main}
+
+
+2018-09-30 17:19:50 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'gestio55_gestiondestages.etudiant' doesn't exist
+Request URL: /offres/postuler/1
+Referer URL: http://localhost/projetcake_V_0_2_2/offres
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'etudiant', Array, Object(Cake\Database\Schema\TableSchema))
+#1 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(63): Cake\Database\Schema\Collection->describe('etudiant', Array)
+#2 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\ORM\Table.php(548): Cake\Database\Schema\CachedCollection->describe('etudiant')
+#3 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\ORM\Query.php(271): Cake\ORM\Table->getSchema()
+#4 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\ORM\Query.php(169): Cake\ORM\Query->addDefaultTypes(Object(Cake\ORM\Table))
+#5 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\ORM\Table.php(1758): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(Cake\ORM\Table))
+#6 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\ORM\Table.php(1350): Cake\ORM\Table->query()
+#7 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\src\Controller\OffresController.php(151): Cake\ORM\Table->find()
+#8 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Controller\Controller.php(596): App\Controller\OffresController->postuler('1')
+#9 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#10 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\OffresController))
+#11 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#21 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#23 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\webroot\index.php(40): Cake\Http\Server->run()
+#26 {main}
+
+
+2018-09-30 17:41:01 Error: [Cake\View\Exception\MissingTemplateException] Template file "Offres\postuler.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Offres\\postuler.ctp',
+)
+Request URL: /offres/postuler/1
+Referer URL: http://localhost/projetcake_V_0_2_2/offres
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\View\View.php(799): Cake\View\View->_getViewFileName('Offres\\postuler')
+#1 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Controller\Controller.php(777): Cake\View\View->render(NULL, NULL)
+#2 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(126): Cake\Controller\Controller->render()
+#3 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\OffresController))
+#4 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\webroot\index.php(40): Cake\Http\Server->run()
+#19 {main}
+
+
+2018-09-30 17:42:35 Error: [Cake\View\Exception\MissingTemplateException] Template file "Offres\postuler.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Offres\\postuler.ctp',
+)
+Request URL: /offres/postuler/1
+Referer URL: http://localhost/projetcake_V_0_2_2/offres
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\View\View.php(799): Cake\View\View->_getViewFileName('Offres\\postuler')
+#1 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Controller\Controller.php(777): Cake\View\View->render(NULL, NULL)
+#2 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(126): Cake\Controller\Controller->render()
+#3 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\OffresController))
+#4 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\webroot\index.php(40): Cake\Http\Server->run()
+#19 {main}
+
+
+2018-09-30 17:44:01 Error: [Cake\View\Exception\MissingTemplateException] Template file "Offres\postuler.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Offres\\postuler.ctp',
+)
+Request URL: /offres/postuler/1
+Referer URL: http://localhost/projetcake_V_0_2_2/offres
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\View\View.php(799): Cake\View\View->_getViewFileName('Offres\\postuler')
+#1 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Controller\Controller.php(777): Cake\View\View->render(NULL, NULL)
+#2 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(126): Cake\Controller\Controller->render()
+#3 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\OffresController))
+#4 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\webroot\index.php(40): Cake\Http\Server->run()
+#19 {main}
+
+
+2018-09-30 17:51:25 Error: [Error] Call to a member function first() on array
+Request URL: /offres/postuler/1
+Referer URL: http://localhost/projetcake_V_0_2_2/offres
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Controller\Controller.php(596): App\Controller\OffresController->postuler('1')
+#1 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#2 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\OffresController))
+#3 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\webroot\index.php(40): Cake\Http\Server->run()
+#18 {main}
+
+
+2018-09-30 17:53:49 Error: [InvalidArgumentException] Invalid email set for "to". You passed "a".
+Request URL: /offres/postuler/1
+Referer URL: http://localhost/projetcake_V_0_2_2/offres
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Mailer\Email.php(958): Cake\Mailer\Email->_validateEmail('a', 'to')
+#1 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Mailer\Email.php(623): Cake\Mailer\Email->_setEmail('_to', 'a', NULL)
+#2 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Mailer\Email.php(653): Cake\Mailer\Email->setTo('a', NULL)
+#3 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\src\Controller\OffresController.php(151): Cake\Mailer\Email->to('a')
+#4 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Controller\Controller.php(596): App\Controller\OffresController->postuler('1')
+#5 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#6 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\OffresController))
+#7 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\webroot\index.php(40): Cake\Http\Server->run()
+#22 {main}
+
+
+2018-09-30 17:55:38 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Error\Debugger.php line=853 in [C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+Request URL: /offres/postuler/1
+Referer URL: http://localhost/projetcake_V_0_2_2/offres
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-09-30 17:55:38 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 148]
+Request URL: /offres/postuler/1
+Referer URL: http://localhost/projetcake_V_0_2_2/offres
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE\src\Http\ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-09-30 17:55:38 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /offres/postuler/1
+Referer URL: http://localhost/projetcake_V_0_2_2/offres
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-09-30 17:55:38 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /offres/postuler/1
+Referer URL: http://localhost/projetcake_V_0_2_2/offres
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-09-30 17:55:38 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /offres/postuler/1
+Referer URL: http://localhost/projetcake_V_0_2_2/offres
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-10-01 17:01:58 Error: [PDOException] SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+Request URL: /
+Referer URL: http://localhost/projetcake_V_0_2_2/
+2018-10-01 17:08:28 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::notifier() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'notifier',
+  'prefix' => '',
+  'plugin' => false,
+)
+Request URL: /users/notifier
+Referer URL: http://localhost/projetcake_V_0_2_2/pages
+2018-10-01 17:08:28 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::notifier() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'notifier',
+  'prefix' => '',
+  'plugin' => false,
+)
+Request URL: /users/notifier
+Referer URL: http://localhost/projetcake_V_0_2_2/pages
+2018-10-01 17:08:28 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::notifier() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'notifier',
+  'prefix' => '',
+  'plugin' => false,
+)
+Request URL: /users/notifier
+Referer URL: http://localhost/projetcake_V_0_2_2/pages
+2018-10-01 17:08:28 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::notifier() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'notifier',
+  'prefix' => '',
+  'plugin' => false,
+)
+Request URL: /users/notifier
+Referer URL: http://localhost/projetcake_V_0_2_2/pages
+2018-10-01 17:08:28 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::notifier() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'notifier',
+  'prefix' => '',
+  'plugin' => false,
+)
+Request URL: /users/notifier
+Referer URL: http://localhost/projetcake_V_0_2_2/pages
+2018-10-01 17:08:29 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::notifier() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'notifier',
+  'prefix' => '',
+  'plugin' => false,
+)
+Request URL: /users/notifier
+Referer URL: http://localhost/projetcake_V_0_2_2/pages
+2018-10-01 17:08:29 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::notifier() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'notifier',
+  'prefix' => '',
+  'plugin' => false,
+)
+Request URL: /users/notifier
+Referer URL: http://localhost/projetcake_V_0_2_2/pages
+2018-10-01 17:13:04 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::notifier() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'notifier',
+  'prefix' => '',
+  'plugin' => false,
+)
+Request URL: /users/notifier
+Referer URL: http://localhost/projetcake_V_0_2_2/pages
+2018-10-01 17:13:43 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Milieudesatges could not be found.
+Exception Attributes: array (
+  'class' => 'Milieudesatges',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /milieudesatges/notifier
+Referer URL: http://localhost/projetcake_V_0_2_2/pages
+2018-10-01 17:14:02 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Milieudesatges could not be found.
+Exception Attributes: array (
+  'class' => 'Milieudesatges',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /milieudesatges/notifier
+Referer URL: http://localhost/projetcake_V_0_2_2/pages
+2018-10-01 17:48:50 Error: [Cake\View\Exception\MissingTemplateException] Template file "Milieudestages\notifier.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Milieudestages\\notifier.ctp',
+)
+Request URL: /milieudestages/notifier
+Referer URL: http://localhost/projetcake_V_0_2_2/pages
+2018-10-01 17:52:04 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Error\Debugger.php line=853 in [C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+
+
+2018-10-01 17:52:04 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 148]
+
+
+2018-10-01 17:52:04 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-10-01 17:52:04 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-10-01 17:52:04 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-10-01 17:57:08 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'gestio55_gestiondestages.adminnistrateurs' doesn't exist
+Request URL: /milieudestages/notifier
+Referer URL: http://localhost/projetcake_V_0_2_2/pages
+2018-10-03 00:40:40 Warning: Warning (2): Illegal string offset 'username' in [C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\src\Controller\UsersController.php, line 73]
+
+
+2018-10-03 00:40:40 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`gestio55_gestiondestages`.`milieudestages`, CONSTRAINT `milieudestages_ibfk_4` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+Request URL: /users/add
+Referer URL: http://localhost/projetcake_V_0_2_2/users/add
+2018-10-03 00:40:40 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Error\Debugger.php line=853 in [C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+
+
+2018-10-03 00:40:40 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 148]
+
+
+2018-10-03 00:40:40 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-10-03 00:40:40 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-10-03 00:41:44 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`gestio55_gestiondestages`.`milieudestages`, CONSTRAINT `milieudestages_ibfk_4` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+Request URL: /users/add
+Referer URL: http://localhost/projetcake_V_0_2_2/users/add
+2018-10-08 12:18:09 Warning: Warning (512): Association property name "region" clashes with field of same name of table "offres". You should explicitly specify the "propertyName" option. in [C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\ORM\Association.php, line 760]
+
+
+2018-10-08 12:18:09 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`gestio55_gestiondestages`.`offres`, CONSTRAINT `offres_ibfk_2` FOREIGN KEY (`milieudestage_id`) REFERENCES `milieudestages` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+Request URL: /offres/add
+Referer URL: http://localhost/projetcake_V_0_2_2/offres/add
+2018-10-08 12:20:15 Warning: Warning (512): Association property name "region" clashes with field of same name of table "offres". You should explicitly specify the "propertyName" option. in [C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\ORM\Association.php, line 760]
+
+
+2018-10-08 12:20:15 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`gestio55_gestiondestages`.`offres`, CONSTRAINT `offres_ibfk_2` FOREIGN KEY (`milieudestage_id`) REFERENCES `milieudestages` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+Request URL: /offres/add
+Referer URL: http://localhost/projetcake_V_0_2_2/offres/add
+2018-10-08 12:21:49 Warning: Warning (512): Association property name "region" clashes with field of same name of table "offres". You should explicitly specify the "propertyName" option. in [C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\ORM\Association.php, line 760]
+
+
+2018-10-08 12:24:26 Warning: Warning (512): Association property name "region" clashes with field of same name of table "offres". You should explicitly specify the "propertyName" option. in [C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\ORM\Association.php, line 760]
+
+
+2018-10-08 12:24:26 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`gestio55_gestiondestages`.`offres`, CONSTRAINT `offres_ibfk_2` FOREIGN KEY (`milieudestage_id`) REFERENCES `milieudestages` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+Request URL: /offres/add
+Referer URL: http://localhost/projetcake_V_0_2_2/offres/add
+2018-10-08 12:44:24 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`gestio55_gestiondestages`.`offres`, CONSTRAINT `offres_ibfk_2` FOREIGN KEY (`milieudestage_id`) REFERENCES `milieudestages` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+Request URL: /offres/add
+Referer URL: http://localhost/projetcake_V_0_2_2/offres/add
+2018-10-08 12:47:32 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`gestio55_gestiondestages`.`offres`, CONSTRAINT `offres_ibfk_2` FOREIGN KEY (`milieudestage_id`) REFERENCES `milieudestages` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+Request URL: /offres/add
+Referer URL: http://localhost/projetcake_V_0_2_2/offres/add
+2018-10-08 13:06:31 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "offres"
+Request URL: /offres/view/1
+Referer URL: http://localhost/projetcake_V_0_2_2/offres
+2018-10-08 13:23:59 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Error\Debugger.php line=853 in [C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+
+
+2018-10-08 13:23:59 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 148]
+
+
+2018-10-08 13:23:59 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-10-08 13:23:59 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-10-08 13:23:59 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-10-08 13:30:46 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'usre_id' in 'where clause'
+Request URL: /offres/edit/2
+Referer URL: http://localhost/projetcake_V_0_2_2/offres/edit/2
+2018-10-08 14:59:55 Warning: Warning (2): move_uploaded_file() expects parameter 1 to be string, array given in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\FilesController.php, line 54]
+
+
+2018-10-08 14:59:55 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Error\Debugger.php line=853 in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+
+
+2018-10-08 14:59:55 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 148]
+
+
+2018-10-08 14:59:55 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-10-08 14:59:55 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-10-08 15:00:24 Warning: Warning (2): move_uploaded_file() expects parameter 1 to be string, array given in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\FilesController.php, line 55]
+
+
+2018-10-08 15:00:24 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Error\Debugger.php line=853 in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+
+
+2018-10-08 15:00:24 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 148]
+
+
+2018-10-08 15:00:24 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-10-08 15:00:24 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-10-08 15:00:34 Warning: Warning (2): move_uploaded_file() expects parameter 1 to be string, array given in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\FilesController.php, line 55]
+
+
+2018-10-08 15:00:34 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Error\Debugger.php line=853 in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+
+
+2018-10-08 15:00:34 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 148]
+
+
+2018-10-08 15:00:34 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-10-08 15:00:34 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-10-08 15:01:23 Warning: Warning (2): move_uploaded_file(img/Files/Array) [<a href='https://secure.php.net/function.move-uploaded-file'>function.move-uploaded-file</a>]: failed to open stream: No such file or directory in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\FilesController.php, line 54]
+
+
+2018-10-08 15:01:23 Warning: Warning (2): move_uploaded_file() [<a href='https://secure.php.net/function.move-uploaded-file'>function.move-uploaded-file</a>]: Unable to move 'C:\Program Files (x86)\Ampps\tmp\php347A.tmp' to 'img/Files/Array' in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\FilesController.php, line 54]
+
+
+2018-10-08 15:01:23 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Error\Debugger.php line=853 in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+
+
+2018-10-08 15:01:23 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 148]
+
+
+2018-10-08 15:01:23 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-10-08 15:01:23 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-10-08 15:01:55 Warning: Warning (2): move_uploaded_file(img/Files/CMS_Creative_164657191_Kingfisher.jpg): failed to open stream: No such file or directory in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\FilesController.php, line 54]
+
+
+2018-10-08 15:01:55 Warning: Warning (2): move_uploaded_file() [<a href='https://secure.php.net/function.move-uploaded-file'>function.move-uploaded-file</a>]: Unable to move 'C:\Program Files (x86)\Ampps\tmp\phpB469.tmp' to 'img/Files/CMS_Creative_164657191_Kingfisher.jpg' in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\FilesController.php, line 54]
+
+
+2018-10-08 15:01:56 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Error\Debugger.php line=853 in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+
+
+2018-10-08 15:01:56 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 148]
+
+
+2018-10-08 15:01:56 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-10-08 15:01:56 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-10-08 15:03:20 Warning: Warning (2): move_uploaded_file(img/Files/CMS_Creative_164657191_Kingfisher.jpg): failed to open stream: No such file or directory in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\FilesController.php, line 54]
+
+
+2018-10-08 15:03:20 Warning: Warning (2): move_uploaded_file() [<a href='https://secure.php.net/function.move-uploaded-file'>function.move-uploaded-file</a>]: Unable to move 'C:\Program Files (x86)\Ampps\tmp\phpFEBC.tmp' to 'img/Files/CMS_Creative_164657191_Kingfisher.jpg' in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\FilesController.php, line 54]
+
+
+2018-10-08 15:03:20 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Error\Debugger.php line=853 in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+
+
+2018-10-08 15:03:20 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 148]
+
+
+2018-10-08 15:03:20 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-10-08 15:03:20 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-10-08 15:04:15 Warning: Warning (2): move_uploaded_file(C:\Program Files (x86)\Ampps\www\tp1\webroot\img/Files/CMS_Creative_164657191_Kingfisher.jpg): failed to open stream: No such file or directory in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\FilesController.php, line 54]
+
+
+2018-10-08 15:04:15 Warning: Warning (2): move_uploaded_file() [<a href='https://secure.php.net/function.move-uploaded-file'>function.move-uploaded-file</a>]: Unable to move 'C:\Program Files (x86)\Ampps\tmp\phpD585.tmp' to 'C:\Program Files (x86)\Ampps\www\tp1\webroot\img/Files/CMS_Creative_164657191_Kingfisher.jpg' in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\FilesController.php, line 54]
+
+
+2018-10-08 15:04:15 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Error\Debugger.php line=853 in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+
+
+2018-10-08 15:04:15 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 148]
+
+
+2018-10-08 15:04:15 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-10-08 15:04:15 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-10-08 15:05:27 Warning: Warning (2): mb_strlen() expects parameter 1 to be string, array given in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Validation\Validation.php, line 844]
+
+
+2018-10-08 15:06:17 Error: [InvalidArgumentException] The Images association is not defined on Users.
+Request URL: /users
+2018-10-08 15:17:11 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /img/
+Referer URL: http://localhost/tp1/users
+2018-10-08 15:17:28 Warning: Warning (512): Method Cake\View\Helper\HtmlHelper::file does not exist in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\View\Helper.php, line 139]
+
+
+2018-10-08 15:21:23 Warning: Warning (512): Method Cake\View\Helper\HtmlHelper::file does not exist in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\View\Helper.php, line 139]
+
+
+2018-10-08 15:21:36 Warning: Warning (512): Method Cake\View\Helper\HtmlHelper::file does not exist in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\View\Helper.php, line 139]
+
+
+2018-10-08 15:22:57 Warning: Warning (2): mb_strlen() expects parameter 1 to be string, array given in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Validation\Validation.php, line 844]
+
+
+2018-10-08 15:25:20 Warning: Warning (512): Method Cake\View\Helper\HtmlHelper::file does not exist in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\View\Helper.php, line 139]
+
+
+2018-10-08 15:29:25 Warning: Warning (2): move_uploaded_file(): The second argument to copy() function cannot be a directory in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\FilesController.php, line 54]
+
+
+2018-10-08 15:29:25 Warning: Warning (2): move_uploaded_file() [<a href='https://secure.php.net/function.move-uploaded-file'>function.move-uploaded-file</a>]: Unable to move 'C:\Program Files (x86)\Ampps\tmp\phpDF4D.tmp' to 'C:\Program Files (x86)\Ampps\www\tp1\webroot\img\Files\' in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\FilesController.php, line 54]
+
+
+2018-10-08 15:29:25 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Error\Debugger.php line=853 in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+
+
+2018-10-08 15:29:25 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 148]
+
+
+2018-10-08 15:29:25 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-10-08 15:29:25 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-10-08 15:30:16 Warning: Warning (2): move_uploaded_file(): The second argument to copy() function cannot be a directory in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\FilesController.php, line 54]
+
+
+2018-10-08 15:30:16 Warning: Warning (2): move_uploaded_file() [<a href='https://secure.php.net/function.move-uploaded-file'>function.move-uploaded-file</a>]: Unable to move 'C:\Program Files (x86)\Ampps\tmp\phpA770.tmp' to 'C:\Program Files (x86)\Ampps\www\tp1\webroot\img\Files\' in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\FilesController.php, line 54]
+
+
+2018-10-08 15:30:16 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Error\Debugger.php line=853 in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+
+
+2018-10-08 15:30:16 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 148]
+
+
+2018-10-08 15:30:16 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-10-08 15:30:16 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-10-08 15:30:46 Warning: Warning (2): move_uploaded_file(): The second argument to copy() function cannot be a directory in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\FilesController.php, line 54]
+
+
+2018-10-08 15:30:46 Warning: Warning (2): move_uploaded_file() [<a href='https://secure.php.net/function.move-uploaded-file'>function.move-uploaded-file</a>]: Unable to move 'C:\Program Files (x86)\Ampps\tmp\php1B78.tmp' to 'C:\Program Files (x86)\Ampps\www\tp1\webroot\img\Files\' in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\FilesController.php, line 54]
+
+
+2018-10-08 15:30:46 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Error\Debugger.php line=853 in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+
+
+2018-10-08 15:30:46 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 148]
+
+
+2018-10-08 15:30:46 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-10-08 15:30:46 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-10-08 15:30:53 Warning: Warning (2): move_uploaded_file(): The second argument to copy() function cannot be a directory in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\FilesController.php, line 54]
+
+
+2018-10-08 15:30:53 Warning: Warning (2): move_uploaded_file() [<a href='https://secure.php.net/function.move-uploaded-file'>function.move-uploaded-file</a>]: Unable to move 'C:\Program Files (x86)\Ampps\tmp\php3625.tmp' to 'C:\Program Files (x86)\Ampps\www\tp1\webroot\img\Files\' in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\FilesController.php, line 54]
+
+
+2018-10-08 15:30:53 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Error\Debugger.php line=853 in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+
+
+2018-10-08 15:30:53 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 148]
+
+
+2018-10-08 15:30:53 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-10-08 15:30:53 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-10-08 15:31:56 Warning: Warning (2): mb_strlen() expects parameter 1 to be string, array given in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Validation\Validation.php, line 844]
+
+
+2018-10-08 15:33:09 Warning: Warning (2): mb_strlen() expects parameter 1 to be string, array given in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Validation\Validation.php, line 844]
+
+
+2018-10-08 15:36:55 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /img/CMS_Creative_164657191_Kingfisher.jpg
+Referer URL: http://localhost/tp1/files
+2018-10-08 15:42:01 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /img/webroot/img/Files/CMS_Creative_164657191_Kingfisher.jpg
+Referer URL: http://localhost/tp1/files
+2018-10-08 15:43:17 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /img/webroot/img/Files/CMS_Creative_164657191_Kingfisher.jpg
+Referer URL: http://localhost/tp1/files
+2018-10-08 15:44:30 Error: [Cake\Controller\Exception\MissingActionException] Action FilesController::cMSCreative164657191Kingfisher.jpg() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'FilesController',
+  'action' => 'cMSCreative164657191Kingfisher.jpg',
+  'prefix' => '',
+  'plugin' => false,
+)
+Request URL: /Files/CMS_Creative_164657191_Kingfisher.jpg
+Referer URL: http://localhost/tp1/files
+2018-10-08 15:45:05 Error: [Cake\Controller\Exception\MissingActionException] Action FilesController::cMSCreative164657191Kingfisher.jpg() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'FilesController',
+  'action' => 'cMSCreative164657191Kingfisher.jpg',
+  'prefix' => '',
+  'plugin' => false,
+)
+Request URL: /Files/CMS_Creative_164657191_Kingfisher.jpg
+Referer URL: http://localhost/tp1/files/
+2018-10-08 15:47:55 Warning: Warning (2): move_uploaded_file(Files/3.jpg): failed to open stream: No such file or directory in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\FilesController.php, line 54]
+
+
+2018-10-08 15:47:55 Warning: Warning (2): move_uploaded_file() [<a href='https://secure.php.net/function.move-uploaded-file'>function.move-uploaded-file</a>]: Unable to move 'C:\Program Files (x86)\Ampps\tmp\phpD165.tmp' to 'Files/3.jpg' in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\FilesController.php, line 54]
+
+
+2018-10-08 15:47:56 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Error\Debugger.php line=853 in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+
+
+2018-10-08 15:47:56 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 148]
+
+
+2018-10-08 15:47:56 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-10-08 15:47:56 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-10-08 15:54:35 Warning: Warning (2): move_uploaded_file(C:\Program Files (x86)\Ampps\www\tp1Files/3.jpg): failed to open stream: No such file or directory in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\FilesController.php, line 54]
+
+
+2018-10-08 15:54:35 Warning: Warning (2): move_uploaded_file() [<a href='https://secure.php.net/function.move-uploaded-file'>function.move-uploaded-file</a>]: Unable to move 'C:\Program Files (x86)\Ampps\tmp\phpEA14.tmp' to 'C:\Program Files (x86)\Ampps\www\tp1Files/3.jpg' in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\FilesController.php, line 54]
+
+
+2018-10-08 15:54:35 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Error\Debugger.php line=853 in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+
+
+2018-10-08 15:54:35 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 148]
+
+
+2018-10-08 15:54:35 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-10-08 15:54:35 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-10-08 15:54:41 Warning: Warning (2): move_uploaded_file(C:\Program Files (x86)\Ampps\www\tp1Files/CMS_Creative_164657191_Kingfisher.jpg): failed to open stream: No such file or directory in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\FilesController.php, line 54]
+
+
+2018-10-08 15:54:41 Warning: Warning (2): move_uploaded_file() [<a href='https://secure.php.net/function.move-uploaded-file'>function.move-uploaded-file</a>]: Unable to move 'C:\Program Files (x86)\Ampps\tmp\phpC9.tmp' to 'C:\Program Files (x86)\Ampps\www\tp1Files/CMS_Creative_164657191_Kingfisher.jpg' in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\FilesController.php, line 54]
+
+
+2018-10-08 15:54:41 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Error\Debugger.php line=853 in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+
+
+2018-10-08 15:54:41 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 148]
+
+
+2018-10-08 15:54:41 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-10-08 15:54:41 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-10-08 15:55:45 Warning: Warning (2): mb_strlen() expects parameter 1 to be string, array given in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Validation\Validation.php, line 844]
+
+
+2018-10-08 15:55:45 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'
+Request URL: /files/add
+Referer URL: http://localhost/tp1/files/add
+2018-10-08 15:55:55 Warning: Warning (2): mb_strlen() expects parameter 1 to be string, array given in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Validation\Validation.php, line 844]
+
+
+2018-10-08 15:55:55 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'
+Request URL: /files/add
+Referer URL: http://localhost/tp1/files/add
+2018-10-08 15:57:35 Warning: Warning (2): mb_strlen() expects parameter 1 to be string, array given in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Validation\Validation.php, line 844]
+
+
+2018-10-08 16:02:05 Warning: Warning (512): Method Cake\View\Helper\HtmlHelper::file does not exist in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\View\Helper.php, line 139]
+
+
+2018-10-08 16:02:51 Warning: Warning (512): Method Cake\View\Helper\HtmlHelper::file does not exist in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\View\Helper.php, line 139]
+
+
+2018-10-08 16:02:54 Warning: Warning (512): Method Cake\View\Helper\HtmlHelper::file does not exist in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\View\Helper.php, line 139]
+
+
+2018-10-08 16:03:00 Warning: Warning (512): Method Cake\View\Helper\HtmlHelper::file does not exist in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\View\Helper.php, line 139]
+
+
+2018-10-08 16:06:24 Warning: Warning (512): Method Cake\View\Helper\HtmlHelper::file does not exist in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\View\Helper.php, line 139]
+
+
+2018-10-08 16:07:11 Warning: Warning (512): Method Cake\View\Helper\HtmlHelper::file does not exist in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\View\Helper.php, line 139]
+
+
+2018-10-08 16:07:17 Warning: Warning (512): Method Cake\View\Helper\HtmlHelper::file does not exist in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\View\Helper.php, line 139]
+
+
+2018-10-08 16:07:25 Warning: Warning (512): Method Cake\View\Helper\HtmlHelper::file does not exist in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\View\Helper.php, line 139]
+
+
+2018-10-08 16:08:21 Warning: Warning (512): Method Cake\View\Helper\HtmlHelper::file does not exist in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\View\Helper.php, line 139]
+
+
+2018-10-08 16:09:25 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /img/
+Referer URL: http://localhost/tp1/users
+2018-10-08 16:19:35 Warning: Warning (2): mb_strlen() expects parameter 1 to be string, array given in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Validation\Validation.php, line 844]
+
+
+2018-10-08 16:22:09 Warning: Warning (2): mb_strlen() expects parameter 1 to be string, array given in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Validation\Validation.php, line 844]
+
+
+2018-10-08 16:22:13 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /img/Files/3.jpg
+Referer URL: http://localhost/tp1/files/
+2018-10-08 16:23:01 Warning: Warning (2): mb_strlen() expects parameter 1 to be string, array given in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Validation\Validation.php, line 844]
+
+
+2018-10-08 16:35:09 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Users.files_id' in 'field list'
+Request URL: /users
+Referer URL: http://localhost/tp1/users/edit/10
+2018-10-08 16:35:13 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Users.files_id' in 'field list'
+Request URL: /users
+Referer URL: http://localhost/tp1/users/edit/10
+2018-10-08 16:43:38 Error: [Cake\Controller\Exception\MissingActionException] Action FilesController::changeLang() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'FilesController',
+  'action' => 'changeLang',
+  'prefix' => '',
+  'plugin' => false,
+)
+Request URL: /files/change-lang/fr_CA
+Referer URL: http://localhost/tp1/files/view/3
+2018-10-08 16:44:48 Error: [Error] Class 'App\Controller\I18n' not found
+Request URL: /files/change-lang/fr_CA
+Referer URL: http://localhost/tp1/files/view/3
+2018-10-08 16:58:26 Error: [InvalidArgumentException] Cannot get an empty property
+Request URL: /users
+Referer URL: http://localhost/tp1/users
+2018-10-08 16:58:51 Error: [InvalidArgumentException] Cannot get an empty property
+Request URL: /users
+Referer URL: http://localhost/tp1/users
+2018-10-09 20:15:08 Error: [InvalidArgumentException] Cannot get an empty property
+Request URL: /users
+Referer URL: http://localhost/tp1/?redirect=%2Fusers
+2018-10-09 20:17:37 Error: [InvalidArgumentException] Cannot get an empty property
+Request URL: /users
+Referer URL: http://localhost/tp1/?redirect=%2Fusers
+2018-10-10 00:58:57 Warning: Warning (2): Declaration of App\Controller\AppController::beforeFilter() should be compatible with Cake\Controller\Controller::beforeFilter(Cake\Event\Event $event) in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\AppController.php, line 31]
+
+
+2018-10-10 00:58:57 Warning: Warning (2): Declaration of App\Controller\AppController::beforeFilter() should be compatible with Cake\Controller\Controller::beforeFilter(Cake\Event\Event $event) in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\AppController.php, line 31]
+
+
+2018-10-10 00:58:58 Warning: Warning (2): Declaration of App\Controller\AppController::beforeFilter() should be compatible with Cake\Controller\Controller::beforeFilter(Cake\Event\Event $event) in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\AppController.php, line 31]
+
+
+2018-10-10 00:58:58 Warning: Warning (2): Declaration of App\Controller\AppController::beforeFilter() should be compatible with Cake\Controller\Controller::beforeFilter(Cake\Event\Event $event) in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\AppController.php, line 31]
+
+
+2018-10-10 00:58:58 Warning: Warning (2): Declaration of App\Controller\AppController::beforeFilter() should be compatible with Cake\Controller\Controller::beforeFilter(Cake\Event\Event $event) in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\AppController.php, line 31]
+
+
+2018-10-10 00:58:59 Warning: Warning (2): Declaration of App\Controller\AppController::beforeFilter() should be compatible with Cake\Controller\Controller::beforeFilter(Cake\Event\Event $event) in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\AppController.php, line 31]
+
+
+2018-10-10 00:58:59 Warning: Warning (2): Declaration of App\Controller\AppController::beforeFilter() should be compatible with Cake\Controller\Controller::beforeFilter(Cake\Event\Event $event) in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\AppController.php, line 31]
+
+
+2018-10-10 00:58:59 Warning: Warning (2): Declaration of App\Controller\AppController::beforeFilter() should be compatible with Cake\Controller\Controller::beforeFilter(Cake\Event\Event $event) in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\AppController.php, line 31]
+
+
+2018-10-10 00:59:00 Warning: Warning (2): Declaration of App\Controller\AppController::beforeFilter() should be compatible with Cake\Controller\Controller::beforeFilter(Cake\Event\Event $event) in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\AppController.php, line 31]
+
+
+2018-10-10 00:59:00 Warning: Warning (2): Declaration of App\Controller\AppController::beforeFilter() should be compatible with Cake\Controller\Controller::beforeFilter(Cake\Event\Event $event) in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\AppController.php, line 31]
+
+
+2018-10-10 00:59:00 Warning: Warning (2): Declaration of App\Controller\AppController::beforeFilter() should be compatible with Cake\Controller\Controller::beforeFilter(Cake\Event\Event $event) in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\AppController.php, line 31]
+
+
+2018-10-10 00:59:01 Warning: Warning (2): Declaration of App\Controller\AppController::beforeFilter() should be compatible with Cake\Controller\Controller::beforeFilter(Cake\Event\Event $event) in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\AppController.php, line 31]
+
+
+2018-10-10 00:59:01 Warning: Warning (2): Declaration of App\Controller\AppController::beforeFilter() should be compatible with Cake\Controller\Controller::beforeFilter(Cake\Event\Event $event) in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\AppController.php, line 31]
+
+
+2018-10-10 00:59:01 Warning: Warning (2): Declaration of App\Controller\AppController::beforeFilter() should be compatible with Cake\Controller\Controller::beforeFilter(Cake\Event\Event $event) in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\AppController.php, line 31]
+
+
+2018-10-10 00:59:01 Warning: Warning (2): Declaration of App\Controller\AppController::beforeFilter() should be compatible with Cake\Controller\Controller::beforeFilter(Cake\Event\Event $event) in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\AppController.php, line 31]
+
+
+2018-10-10 00:59:02 Warning: Warning (2): Declaration of App\Controller\AppController::beforeFilter() should be compatible with Cake\Controller\Controller::beforeFilter(Cake\Event\Event $event) in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\AppController.php, line 31]
+
+
+2018-10-10 00:59:02 Warning: Warning (2): Declaration of App\Controller\AppController::beforeFilter() should be compatible with Cake\Controller\Controller::beforeFilter(Cake\Event\Event $event) in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\AppController.php, line 31]
+
+
+2018-10-10 00:59:02 Warning: Warning (2): Declaration of App\Controller\AppController::beforeFilter() should be compatible with Cake\Controller\Controller::beforeFilter(Cake\Event\Event $event) in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\AppController.php, line 31]
+
+
+2018-10-10 00:59:03 Warning: Warning (2): Declaration of App\Controller\AppController::beforeFilter() should be compatible with Cake\Controller\Controller::beforeFilter(Cake\Event\Event $event) in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\AppController.php, line 31]
+
+
+2018-10-10 00:59:03 Warning: Warning (2): Declaration of App\Controller\AppController::beforeFilter() should be compatible with Cake\Controller\Controller::beforeFilter(Cake\Event\Event $event) in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\AppController.php, line 31]
+
+
+2018-10-10 00:59:03 Warning: Warning (2): Declaration of App\Controller\AppController::beforeFilter() should be compatible with Cake\Controller\Controller::beforeFilter(Cake\Event\Event $event) in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\AppController.php, line 31]
+
+
+2018-10-10 00:59:04 Warning: Warning (2): Declaration of App\Controller\AppController::beforeFilter() should be compatible with Cake\Controller\Controller::beforeFilter(Cake\Event\Event $event) in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\AppController.php, line 31]
+
+
+2018-10-10 00:59:04 Warning: Warning (2): Declaration of App\Controller\AppController::beforeFilter() should be compatible with Cake\Controller\Controller::beforeFilter(Cake\Event\Event $event) in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\AppController.php, line 31]
+
+
+2018-10-10 00:59:04 Warning: Warning (2): Declaration of App\Controller\AppController::beforeFilter() should be compatible with Cake\Controller\Controller::beforeFilter(Cake\Event\Event $event) in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\AppController.php, line 31]
+
+
+2018-10-10 00:59:05 Warning: Warning (2): Declaration of App\Controller\AppController::beforeFilter() should be compatible with Cake\Controller\Controller::beforeFilter(Cake\Event\Event $event) in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\AppController.php, line 31]
+
+
+2018-10-10 00:59:05 Warning: Warning (2): Declaration of App\Controller\AppController::beforeFilter() should be compatible with Cake\Controller\Controller::beforeFilter(Cake\Event\Event $event) in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\AppController.php, line 31]
+
+
+2018-10-10 00:59:05 Warning: Warning (2): Declaration of App\Controller\AppController::beforeFilter() should be compatible with Cake\Controller\Controller::beforeFilter(Cake\Event\Event $event) in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\AppController.php, line 31]
+
+
+2018-10-10 00:59:06 Warning: Warning (2): Declaration of App\Controller\AppController::beforeFilter() should be compatible with Cake\Controller\Controller::beforeFilter(Cake\Event\Event $event) in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\AppController.php, line 31]
+
+
+2018-10-10 00:59:06 Warning: Warning (2): Declaration of App\Controller\AppController::beforeFilter() should be compatible with Cake\Controller\Controller::beforeFilter(Cake\Event\Event $event) in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\AppController.php, line 31]
+
+
+2018-10-10 01:03:01 Warning: Warning (2): Declaration of App\Controller\AppController::beforeFilter() should be compatible with Cake\Controller\Controller::beforeFilter(Cake\Event\Event $event) in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\AppController.php, line 31]
+
+
+2018-10-10 01:03:02 Warning: Warning (2): Declaration of App\Controller\AppController::beforeFilter() should be compatible with Cake\Controller\Controller::beforeFilter(Cake\Event\Event $event) in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\AppController.php, line 31]
+
+
+2018-10-10 01:03:02 Warning: Warning (2): Declaration of App\Controller\AppController::beforeFilter() should be compatible with Cake\Controller\Controller::beforeFilter(Cake\Event\Event $event) in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\AppController.php, line 31]
+
+
+2018-10-10 01:03:03 Warning: Warning (2): Declaration of App\Controller\AppController::beforeFilter() should be compatible with Cake\Controller\Controller::beforeFilter(Cake\Event\Event $event) in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\AppController.php, line 31]
+
+
+2018-10-10 01:03:03 Warning: Warning (2): Declaration of App\Controller\AppController::beforeFilter() should be compatible with Cake\Controller\Controller::beforeFilter(Cake\Event\Event $event) in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\AppController.php, line 31]
+
+
+2018-10-10 01:03:03 Warning: Warning (2): Declaration of App\Controller\AppController::beforeFilter() should be compatible with Cake\Controller\Controller::beforeFilter(Cake\Event\Event $event) in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\AppController.php, line 31]
+
+
+2018-10-10 01:03:03 Warning: Warning (2): Declaration of App\Controller\AppController::beforeFilter() should be compatible with Cake\Controller\Controller::beforeFilter(Cake\Event\Event $event) in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\AppController.php, line 31]
+
+
+2018-10-10 01:03:03 Warning: Warning (2): Declaration of App\Controller\AppController::beforeFilter() should be compatible with Cake\Controller\Controller::beforeFilter(Cake\Event\Event $event) in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\AppController.php, line 31]
+
+
+2018-10-10 01:03:04 Warning: Warning (2): Declaration of App\Controller\AppController::beforeFilter() should be compatible with Cake\Controller\Controller::beforeFilter(Cake\Event\Event $event) in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\AppController.php, line 31]
+
+
+2018-10-10 01:03:04 Warning: Warning (2): Declaration of App\Controller\AppController::beforeFilter() should be compatible with Cake\Controller\Controller::beforeFilter(Cake\Event\Event $event) in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\AppController.php, line 31]
+
+
+2018-10-10 01:03:04 Warning: Warning (2): Declaration of App\Controller\AppController::beforeFilter() should be compatible with Cake\Controller\Controller::beforeFilter(Cake\Event\Event $event) in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\AppController.php, line 31]
+
+
+2018-10-10 01:03:04 Warning: Warning (2): Declaration of App\Controller\AppController::beforeFilter() should be compatible with Cake\Controller\Controller::beforeFilter(Cake\Event\Event $event) in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\AppController.php, line 31]
+
+
+2018-10-10 01:03:05 Warning: Warning (2): Declaration of App\Controller\AppController::beforeFilter() should be compatible with Cake\Controller\Controller::beforeFilter(Cake\Event\Event $event) in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\AppController.php, line 31]
+
+
+2018-10-10 01:03:05 Warning: Warning (2): Declaration of App\Controller\AppController::beforeFilter() should be compatible with Cake\Controller\Controller::beforeFilter(Cake\Event\Event $event) in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\AppController.php, line 31]
+
+
+2018-10-10 01:03:05 Warning: Warning (2): Declaration of App\Controller\AppController::beforeFilter() should be compatible with Cake\Controller\Controller::beforeFilter(Cake\Event\Event $event) in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\AppController.php, line 31]
+
+
+2018-10-10 01:03:05 Warning: Warning (2): Declaration of App\Controller\AppController::beforeFilter() should be compatible with Cake\Controller\Controller::beforeFilter(Cake\Event\Event $event) in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\AppController.php, line 31]
+
+
+2018-10-10 01:03:06 Warning: Warning (2): Declaration of App\Controller\AppController::beforeFilter() should be compatible with Cake\Controller\Controller::beforeFilter(Cake\Event\Event $event) in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\AppController.php, line 31]
+
+
+2018-10-10 01:03:06 Warning: Warning (2): Declaration of App\Controller\AppController::beforeFilter() should be compatible with Cake\Controller\Controller::beforeFilter(Cake\Event\Event $event) in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\AppController.php, line 31]
+
+
+2018-10-10 01:03:06 Warning: Warning (2): Declaration of App\Controller\AppController::beforeFilter() should be compatible with Cake\Controller\Controller::beforeFilter(Cake\Event\Event $event) in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\AppController.php, line 31]
+
+
+2018-10-10 01:03:06 Warning: Warning (2): Declaration of App\Controller\AppController::beforeFilter() should be compatible with Cake\Controller\Controller::beforeFilter(Cake\Event\Event $event) in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\AppController.php, line 31]
+
+
+2018-10-10 01:03:06 Warning: Warning (2): Declaration of App\Controller\AppController::beforeFilter() should be compatible with Cake\Controller\Controller::beforeFilter(Cake\Event\Event $event) in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\AppController.php, line 31]
+
+
+2018-10-10 01:03:07 Warning: Warning (2): Declaration of App\Controller\AppController::beforeFilter() should be compatible with Cake\Controller\Controller::beforeFilter(Cake\Event\Event $event) in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\AppController.php, line 31]
+
+
+2018-10-10 01:03:07 Warning: Warning (2): Declaration of App\Controller\AppController::beforeFilter() should be compatible with Cake\Controller\Controller::beforeFilter(Cake\Event\Event $event) in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\AppController.php, line 31]
+
+
+2018-10-10 01:03:07 Warning: Warning (2): Declaration of App\Controller\AppController::beforeFilter() should be compatible with Cake\Controller\Controller::beforeFilter(Cake\Event\Event $event) in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\AppController.php, line 31]
+
+
+2018-10-10 01:03:07 Warning: Warning (2): Declaration of App\Controller\AppController::beforeFilter() should be compatible with Cake\Controller\Controller::beforeFilter(Cake\Event\Event $event) in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\AppController.php, line 31]
+
+
+2018-10-10 01:03:08 Warning: Warning (2): Declaration of App\Controller\AppController::beforeFilter() should be compatible with Cake\Controller\Controller::beforeFilter(Cake\Event\Event $event) in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\AppController.php, line 31]
+
+
+2018-10-10 01:03:08 Warning: Warning (2): Declaration of App\Controller\AppController::beforeFilter() should be compatible with Cake\Controller\Controller::beforeFilter(Cake\Event\Event $event) in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\AppController.php, line 31]
+
+
+2018-10-10 01:03:08 Warning: Warning (2): Declaration of App\Controller\AppController::beforeFilter() should be compatible with Cake\Controller\Controller::beforeFilter(Cake\Event\Event $event) in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\AppController.php, line 31]
+
+
+2018-10-10 01:03:08 Warning: Warning (2): Declaration of App\Controller\AppController::beforeFilter() should be compatible with Cake\Controller\Controller::beforeFilter(Cake\Event\Event $event) in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\AppController.php, line 31]
+
+
+2018-10-10 01:03:08 Warning: Warning (2): Declaration of App\Controller\AppController::beforeFilter() should be compatible with Cake\Controller\Controller::beforeFilter(Cake\Event\Event $event) in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\AppController.php, line 31]
+
+
+2018-10-10 01:03:09 Warning: Warning (2): Declaration of App\Controller\AppController::beforeFilter() should be compatible with Cake\Controller\Controller::beforeFilter(Cake\Event\Event $event) in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\AppController.php, line 31]
+
+
+2018-10-10 01:03:09 Warning: Warning (2): Declaration of App\Controller\AppController::beforeFilter() should be compatible with Cake\Controller\Controller::beforeFilter(Cake\Event\Event $event) in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\AppController.php, line 31]
+
+
+2018-10-10 01:03:09 Warning: Warning (2): Declaration of App\Controller\AppController::beforeFilter() should be compatible with Cake\Controller\Controller::beforeFilter(Cake\Event\Event $event) in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\AppController.php, line 31]
+
+
+2018-10-10 01:03:09 Warning: Warning (2): Declaration of App\Controller\AppController::beforeFilter() should be compatible with Cake\Controller\Controller::beforeFilter(Cake\Event\Event $event) in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\AppController.php, line 31]
+
+
+2018-10-10 01:03:10 Warning: Warning (2): Declaration of App\Controller\AppController::beforeFilter() should be compatible with Cake\Controller\Controller::beforeFilter(Cake\Event\Event $event) in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\AppController.php, line 31]
+
+
+2018-10-10 01:03:10 Warning: Warning (2): Declaration of App\Controller\AppController::beforeFilter() should be compatible with Cake\Controller\Controller::beforeFilter(Cake\Event\Event $event) in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\AppController.php, line 31]
+
+
+2018-10-10 01:03:10 Warning: Warning (2): Declaration of App\Controller\AppController::beforeFilter() should be compatible with Cake\Controller\Controller::beforeFilter(Cake\Event\Event $event) in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\AppController.php, line 31]
+
+
+2018-10-10 01:03:10 Warning: Warning (2): Declaration of App\Controller\AppController::beforeFilter() should be compatible with Cake\Controller\Controller::beforeFilter(Cake\Event\Event $event) in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\AppController.php, line 31]
+
+
+2018-10-10 01:03:11 Warning: Warning (2): Declaration of App\Controller\AppController::beforeFilter() should be compatible with Cake\Controller\Controller::beforeFilter(Cake\Event\Event $event) in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\AppController.php, line 31]
+
+
+2018-10-10 01:03:11 Warning: Warning (2): Declaration of App\Controller\AppController::beforeFilter() should be compatible with Cake\Controller\Controller::beforeFilter(Cake\Event\Event $event) in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\AppController.php, line 31]
+
+
+2018-10-10 01:03:16 Warning: Warning (2): Declaration of App\Controller\AppController::beforeFilter() should be compatible with Cake\Controller\Controller::beforeFilter(Cake\Event\Event $event) in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\AppController.php, line 31]
+
+
+2018-10-10 01:03:16 Warning: Warning (2): Declaration of App\Controller\AppController::beforeFilter() should be compatible with Cake\Controller\Controller::beforeFilter(Cake\Event\Event $event) in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\AppController.php, line 31]
+
+
+2018-10-10 01:03:16 Warning: Warning (2): Declaration of App\Controller\AppController::beforeFilter() should be compatible with Cake\Controller\Controller::beforeFilter(Cake\Event\Event $event) in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\AppController.php, line 31]
+
+
+2018-10-10 01:03:17 Warning: Warning (2): Declaration of App\Controller\AppController::beforeFilter() should be compatible with Cake\Controller\Controller::beforeFilter(Cake\Event\Event $event) in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\AppController.php, line 31]
+
+
+2018-10-10 01:03:17 Warning: Warning (2): Declaration of App\Controller\AppController::beforeFilter() should be compatible with Cake\Controller\Controller::beforeFilter(Cake\Event\Event $event) in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\AppController.php, line 31]
+
+
+2018-10-10 01:03:17 Warning: Warning (2): Declaration of App\Controller\AppController::beforeFilter() should be compatible with Cake\Controller\Controller::beforeFilter(Cake\Event\Event $event) in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\AppController.php, line 31]
+
+
+2018-10-10 01:03:17 Warning: Warning (2): Declaration of App\Controller\AppController::beforeFilter() should be compatible with Cake\Controller\Controller::beforeFilter(Cake\Event\Event $event) in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\AppController.php, line 31]
+
+
+2018-10-10 01:03:24 Warning: Warning (2): Declaration of App\Controller\AppController::beforeFilter() should be compatible with Cake\Controller\Controller::beforeFilter(Cake\Event\Event $event) in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\AppController.php, line 31]
+
+
+2018-10-10 01:33:48 Warning: Warning (2): mb_strlen() expects parameter 1 to be string, array given in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Validation\Validation.php, line 844]
+
+
+2018-10-10 01:33:53 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /img/Files/vnjxvbdso.jpg
+Referer URL: http://localhost/tp1/files/
+2018-10-10 01:38:27 Warning: Warning (2): mb_strlen() expects parameter 1 to be string, array given in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Validation\Validation.php, line 844]
+
+
+2018-10-10 01:38:30 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /img/Files/vnjxvbdso.jpg
+Referer URL: http://localhost/tp1/files/
+2018-10-10 01:38:41 Warning: Warning (2): mb_strlen() expects parameter 1 to be string, array given in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Validation\Validation.php, line 844]
+
+
+2018-10-10 02:13:00 Error: [PDOException] SQLSTATE[HY000] [14] unable to open database file
+Request URL: /
+Referer URL: http://localhost/tp1/
+2018-10-10 02:59:02 Error: [PDOException] SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)
+Request URL: /
+Referer URL: http://localhost/tp1/
+2018-10-10 03:29:42 Error: [PDOException] SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)
+Request URL: /users/add
+Referer URL: http://localhost/tp1/users
+2018-10-10 03:47:55 Error: [InvalidArgumentException] Cannot convert value of type `array` to string
+Request URL: /users/mon-profil/11
+Referer URL: http://localhost/tp1/users
+2018-10-10 03:50:05 Error: [InvalidArgumentException] Cannot convert value of type `array` to string
+Request URL: /users/mon-profil/11
+Referer URL: http://localhost/tp1/users
+2018-10-10 03:50:08 Error: [InvalidArgumentException] Cannot convert value of type `array` to string
+Request URL: /users/mon-profil/11
+Referer URL: http://localhost/tp1/users
+2018-10-10 04:25:26 Error: [Cake\View\Exception\MissingTemplateException] Template file "Users\add_student.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users\\add_student.ctp',
+)
+Request URL: /users/add-student
+Referer URL: http://localhost/tp1/
+2018-10-10 22:41:51 Error: [InvalidArgumentException] Invalid email set for "to". You passed "a".
+Request URL: /users/add-student
+Referer URL: http://localhost/tp1/users/add-student
+2018-10-10 23:01:11 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Error\Debugger.php line=853 in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+
+
+2018-10-10 23:01:11 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 148]
+
+
+2018-10-10 23:01:11 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-10-10 23:01:11 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-10-10 23:01:11 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-10-10 23:02:04 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Error\Debugger.php line=853 in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+
+
+2018-10-10 23:02:04 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 148]
+
+
+2018-10-10 23:02:04 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-10-10 23:02:04 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-10-10 23:02:04 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-10-10 23:04:12 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Error\Debugger.php line=853 in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+
+
+2018-10-10 23:04:12 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 148]
+
+
+2018-10-10 23:04:12 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-10-10 23:04:12 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-10-10 23:04:12 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-10-10 23:06:10 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Error\Debugger.php line=853 in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+
+
+2018-10-10 23:06:10 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 148]
+
+
+2018-10-10 23:06:10 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-10-10 23:06:10 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-10-10 23:06:10 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-10-10 23:08:30 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Error\Debugger.php line=853 in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+
+
+2018-10-10 23:08:30 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 148]
+
+
+2018-10-10 23:08:30 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-10-10 23:08:30 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-10-10 23:08:30 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-10-10 23:11:57 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Error\Debugger.php line=853 in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+
+
+2018-10-10 23:11:57 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 148]
+
+
+2018-10-10 23:11:57 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-10-10 23:11:57 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-10-10 23:11:57 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-10-10 23:13:44 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Error\Debugger.php line=853 in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+
+
+2018-10-10 23:13:44 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 148]
+
+
+2018-10-10 23:13:44 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-10-10 23:13:44 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-10-10 23:13:44 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-10-10 23:14:15 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Error\Debugger.php line=853 in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+
+
+2018-10-10 23:14:15 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 148]
+
+
+2018-10-10 23:14:15 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-10-10 23:14:15 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-10-10 23:14:15 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-10-11 02:02:17 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /img/Files/database.png
+Referer URL: http://localhost/tp1/apropos
+2018-10-11 02:03:47 Warning: Warning (2): mb_strlen() expects parameter 1 to be string, array given in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Validation\Validation.php, line 844]
+
+
+2018-10-11 02:05:30 Warning: Warning (2): mb_strlen() expects parameter 1 to be string, array given in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Validation\Validation.php, line 844]
+
+
+2018-10-11 02:06:35 Warning: Warning (2): mb_strlen() expects parameter 1 to be string, array given in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Validation\Validation.php, line 844]
+
+
+2018-10-11 02:06:57 Warning: Warning (2): mb_strlen() expects parameter 1 to be string, array given in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\Validation\Validation.php, line 844]
+
+
+2018-10-16 02:28:13 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Roles could not be found.
+Exception Attributes: array (
+  'class' => 'Roles',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /roles/view/etudiant
+Referer URL: http://localhost/tp1/users

@@ -11,6 +11,7 @@ use Cake\Validation\Validator;
  * Users Model
  *
  * @property \App\Model\Table\RolesTable|\Cake\ORM\Association\BelongsTo $Roles
+ * @property \App\Model\Table\FilesTable|\Cake\ORM\Association\BelongsTo $Files
  * @property \App\Model\Table\AdministrateursTable|\Cake\ORM\Association\HasMany $Administrateurs
  * @property \App\Model\Table\EtudiantsTable|\Cake\ORM\Association\HasMany $Etudiants
  * @property \App\Model\Table\MilieudestagesTable|\Cake\ORM\Association\HasMany $Milieudestages
@@ -48,6 +49,9 @@ class UsersTable extends Table {
             'foreignKey' => 'role_id',
             'joinType' => 'INNER'
         ]);
+        $this->belongsTo('Files', [
+            'foreignKey' => 'file_id'
+        ]);
         $this->hasMany('Administrateurs', [
             'foreignKey' => 'user_id'
         ]);
@@ -83,8 +87,19 @@ class UsersTable extends Table {
         $validator
                 ->scalar('password')
                 ->maxLength('password', 255)
+                ->minLength('password', 5)
                 ->requirePresence('password', 'create')
                 ->notEmpty('password');
+
+        $validator
+                ->scalar('uuid')
+                ->maxLength('uuid', 255)
+                ->requirePresence('uuid', 'create')
+                ->notEmpty('uuid');
+
+        $validator
+                ->boolean('verify')
+                ->allowEmpty('verify');
 
         return $validator;
     }
@@ -99,6 +114,7 @@ class UsersTable extends Table {
     public function buildRules(RulesChecker $rules) {
         $rules->add($rules->isUnique(['username']));
         $rules->add($rules->existsIn(['role_id'], 'Roles'));
+        $rules->add($rules->existsIn(['file_id'], 'Files'));
 
         return $rules;
     }

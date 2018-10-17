@@ -34,9 +34,6 @@ $userrole = $loguser['role_id'];
 </nav>
 <div class="milieudestages index large-9 medium-8 columns content">
     <h3><?= __('Milieudestages') ?></h3>
-    <?php if ($userrole === "admin"): ?>
-        <?= $this->Html->link(__('Notifier tous les milieux de stage'), ['controller' => 'Milieudestages', 'action' => 'notifier']) ?>
-    <?php endif; ?>
     <table cellpadding="0" cellspacing="0">
         <thead>
             <tr>

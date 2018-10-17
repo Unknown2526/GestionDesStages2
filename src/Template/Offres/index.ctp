@@ -27,12 +27,14 @@ $userrole = $loguser['role_id'];
     <table cellpadding="0" cellspacing="0">
         <thead>
             <tr>
-                <th scope="col"><?= $this->Paginator->sort('id') ?></th>
+                <?php if (false): ?> 
+                    <th scope="col"><?= $this->Paginator->sort('id') ?></th>
+                <?php endif; ?>
                 <th scope="col"><?= $this->Paginator->sort('titre') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('region') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('tache') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('responsabilite') ?></th>
-                <?php if ($userrole === "admin"): ?>
+                <th scope="col"><?= $this->Paginator->sort('region') ?></th> 
+                <?php if (false): ?>
+                    <th scope="col"><?= $this->Paginator->sort('tache') ?></th>
+                    <th scope="col"><?= $this->Paginator->sort('responsabilite') ?></th>
                     <th scope="col"><?= $this->Paginator->sort('user_id') ?></th>
                     <th scope="col"><?= $this->Paginator->sort('milieudestage_id') ?></th>
                     <th scope="col"><?= $this->Paginator->sort('created') ?></th>
@@ -44,12 +46,14 @@ $userrole = $loguser['role_id'];
         <tbody>
             <?php foreach ($offres as $offre): ?>
                 <tr>
-                    <td><?= $this->Number->format($offre->id) ?></td>
+                    <?php if (false): ?> 
+                        <td><?= $this->Number->format($offre->id) ?></td>
+                    <?php endif; ?>
                     <td><?= h($offre->titre) ?></td>
-                    <td><?= h($offre->region) ?></td>
-                    <td><?= h($offre->tache) ?></td>
-                    <td><?= h($offre->responsabilite) ?></td>
-                    <?php if ($userrole === "admin"): ?>
+                    <td><?= h($offre->region->nom) ?></td>
+                    <?php if (false): ?>
+                        <td><?= h($offre->tache) ?></td>
+                        <td><?= h($offre->responsabilite) ?></td>
                         <td><?= $offre->has('user') ? $this->Html->link($offre->user->username, ['controller' => 'Users', 'action' => 'view', $offre->user->id]) : '' ?></td>
                         <td><?= $offre->has('milieudestage') ? $this->Html->link($offre->milieudestage->nom, ['controller' => 'Milieudestages', 'action' => 'view', $offre->milieudestage->id]) : '' ?></td>
                         <td><?= h($offre->created) ?></td>

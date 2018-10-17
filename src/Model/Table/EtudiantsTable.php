@@ -34,7 +34,9 @@ class EtudiantsTable extends Table
     public function initialize(array $config)
     {
         parent::initialize($config);
-
+        
+        $this->addBehavior('Translate', ['fields' => ['info_supp']]);
+        
         $this->setTable('etudiants');
         $this->setDisplayField('id');
         $this->setPrimaryKey('id');

@@ -9,6 +9,7 @@ use Cake\Validation\Validator;
 /**
  * Offres Model
  *
+ * @property \App\Model\Table\RegionsTable|\Cake\ORM\Association\BelongsTo $Regions
  * @property \App\Model\Table\UsersTable|\Cake\ORM\Association\BelongsTo $Users
  * @property \App\Model\Table\MilieudestagesTable|\Cake\ORM\Association\BelongsTo $Milieudestages
  *
@@ -35,6 +36,8 @@ class OffresTable extends Table
     public function initialize(array $config)
     {
         parent::initialize($config);
+        
+        $this->addBehavior('Translate', ['fields' => ['tache', 'responsabilite', 'titre']]);
 
         $this->setTable('offres');
         $this->setDisplayField('id');
@@ -42,6 +45,10 @@ class OffresTable extends Table
 
         $this->addBehavior('Timestamp');
 
+        $this->belongsTo('Regions', [
+            'foreignKey' => 'region_id',
+            'joinType' => 'INNER'
+        ]);
         $this->belongsTo('Users', [
             'foreignKey' => 'user_id',
             'joinType' => 'INNER'
@@ -71,12 +78,6 @@ class OffresTable extends Table
             ->notEmpty('titre');
 
         $validator
-            ->scalar('region')
-            ->maxLength('region', 255)
-            ->requirePresence('region', 'create')
-            ->notEmpty('region');
-
-        $validator
             ->scalar('tache')
             ->maxLength('tache', 255)
             ->requirePresence('tache', 'create')
@@ -100,6 +101,7 @@ class OffresTable extends Table
      */
     public function buildRules(RulesChecker $rules)
     {
+        $rules->add($rules->existsIn(['region_id'], 'Regions'));
         $rules->add($rules->existsIn(['user_id'], 'Users'));
         $rules->add($rules->existsIn(['milieudestage_id'], 'Milieudestages'));
 

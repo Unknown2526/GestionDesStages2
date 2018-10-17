@@ -11,10 +11,14 @@ use Cake\ORM\Entity;
  * @property string $username
  * @property string $password
  * @property string $role_id
+ * @property int $file_id
+ * @property string $uuid
+ * @property bool $verify
  * @property \Cake\I18n\FrozenTime $created
  * @property \Cake\I18n\FrozenTime $modified
  *
  * @property \App\Model\Entity\Role $role
+ * @property \App\Model\Entity\File $file
  * @property \App\Model\Entity\Administrateur[] $administrateurs
  * @property \App\Model\Entity\Etudiant[] $etudiants
  * @property \App\Model\Entity\Milieudestage[] $milieudestages
@@ -36,9 +40,13 @@ class User extends Entity
         'username' => true,
         'password' => true,
         'role_id' => true,
+        'file_id' => true,
+        'uuid' => true,
+        'verify' => true,
         'created' => true,
         'modified' => true,
         'role' => true,
+        'file' => true,
         'administrateurs' => true,
         'etudiants' => true,
         'milieudestages' => true,

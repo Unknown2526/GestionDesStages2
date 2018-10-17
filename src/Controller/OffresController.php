@@ -22,7 +22,7 @@ class OffresController extends AppController {
      */
     public function index() {
         $this->paginate = [
-            'contain' => ['Users', 'Milieudestages']
+            'contain' => ['Users', 'Milieudestages', 'Regions']
         ];
         $offres = $this->paginate($this->Offres);
 
@@ -38,7 +38,7 @@ class OffresController extends AppController {
      */
     public function view($id = null) {
         $offre = $this->Offres->get($id, [
-            'contain' => ['Users', 'Milieudestages']
+            'contain' => ['Users', 'Milieudestages', 'Regions']
         ]);
 
         $this->set('offre', $offre);
@@ -54,15 +54,7 @@ class OffresController extends AppController {
         if ($this->request->is('post')) {
             $offre = $this->Offres->patchEntity($offre, $this->request->getData());
 
-            $loguser = $this->request->session()->read('Auth.User');
-            $milieu = $this->Offres->Milieudestages->find('all', [
-                'conditions' => ['user_id' => $loguser['id']]
-            ]);
-            $first = $milieu->first();
-
-            $offre->user_id = $loguser['id'];
-            $offre->mileudestage_id = $first['id'];
-
+            $offre = $this->secureAssociation($offre);
 
             if ($this->Offres->save($offre)) {
                 $this->Flash->success(__('The offre has been saved.'));
@@ -71,9 +63,11 @@ class OffresController extends AppController {
             }
             $this->Flash->error(__('The offre could not be saved. Please, try again.'));
         }
-        $users = $this->Offres->Users->find('list', ['limit' => 200, 'keyField' => 'id', 'valueField' => 'nom']);
-        $milieudestages = $this->Offres->Milieudestages->find('list', ['limit' => 200,  'keyField' => 'id', 'valueField' => 'nom']);
-        $this->set(compact('offre', 'users', 'milieudestages'));
+
+        $regions = $this->Offres->Regions->find('list', ['limit' => 200, 'keyField' => 'id', 'valueField' => 'nom']);
+        /* $users = $this->Offres->Users->find('list', ['limit' => 200, 'keyField' => 'id', 'valueField' => 'username']); */
+        $milieudestages = $this->Offres->Milieudestages->find('list', ['limit' => 200, 'keyField' => 'id', 'valueField' => 'nom']);
+        $this->set(compact('offre', 'regions', 'users', 'milieudestages'));
     }
 
     /**
@@ -89,6 +83,9 @@ class OffresController extends AppController {
         ]);
         if ($this->request->is(['patch', 'post', 'put'])) {
             $offre = $this->Offres->patchEntity($offre, $this->request->getData());
+
+            $offre = $this->secureAssociation($offre);
+
             if ($this->Offres->save($offre)) {
                 $this->Flash->success(__('The offre has been saved.'));
 
@@ -96,9 +93,11 @@ class OffresController extends AppController {
             }
             $this->Flash->error(__('The offre could not be saved. Please, try again.'));
         }
-        $users = $this->Offres->Users->find('list', ['limit' => 200, 'keyField' => 'id', 'valueField' => 'nom']);
+
+        $regions = $this->Offres->Regions->find('list', ['limit' => 200, 'keyField' => 'id', 'valueField' => 'nom']);
+        $users = $this->Offres->Users->find('list', ['limit' => 200, 'keyField' => 'id', 'valueField' => 'username']);
         $milieudestages = $this->Offres->Milieudestages->find('list', ['limit' => 200, 'keyField' => 'id', 'valueField' => 'nom']);
-        $this->set(compact('offre', 'users', 'milieudestages'));
+        $this->set(compact('offre', 'regions', 'users', 'milieudestages'));
     }
 
     /**
@@ -129,7 +128,7 @@ class OffresController extends AppController {
         }
 
         if ($role === "milieu") {
-            if ($action === "edit") {
+            if (in_array($action, ['edit', 'delete'])) {
                 $passParam = $this->request->getParam('pass');
                 $sujet = $this->Offres->get($passParam);
 
@@ -142,17 +141,18 @@ class OffresController extends AppController {
     }
 
     public function postuler() {
-        $milieuEmail = $this->getEmailMilieu();
+        $offre = $this->Offres->get($this->request->getParam('pass'));
+        $milieu = $this->getInfoMilieu($offre['milieudestage_id']);
         $etudiant = $this->getInfoEtudiant();
         $offreid = $this->request->getParam('pass');
 
         $email = new Email('default');
-        $email->to($milieuEmail)->subject('Postulation d\'un étudiant')
+        $email->to($milieu['courriel_respo'])->subject('Postulation d\'un étudiant')
                 ->send('Bonjour,' . $etudiant['prenom'] . ' ' . $etudiant['prenom']
                         . ' est intéressé à votre offre de stage numéro ' . $offreid[0]
                         . '. Vous pouvez le contacter à son courriel ' . $etudiant['courriel']
-                        . ' ou à son téléphone ' . $etudiant['telephone'] . '.'); 
-        $this->Flash->success(__('Vous avez postuler.'));
+                        . ' ou à son téléphone ' . $etudiant['telephone'] . '.');
+        $this->Flash->success(__('You applied.'));
         return $this->redirect(['action' => 'index']);
     }
 
@@ -166,13 +166,25 @@ class OffresController extends AppController {
         return $etudiant->first();
     }
 
-    private function getEmailMilieu() {
-        $offre = $this->Offres->get($this->request->getParam('pass'));
+    private function getInfoMilieu($id) {
         $milieu = $this->Offres->Milieudestages->find('all', [
-            'conditions' => ['id' => $offre['milieudestage_id']]
+            'conditions' => ['user_id' => $id],
         ]);
-        $first = $milieu->first();
-        return $first['courriel_respo'];
+
+        return $milieu->first();
+    }
+
+    private function secureAssociation($offre) {
+        $loguser = $this->request->session()->read('Auth.User');
+
+        if ($loguser['role_id'] === 'milieu') {
+            $milieu = $this->getInfoMilieu($loguser['id']);
+
+            $offre['user_id'] = $loguser['id'];
+            $offre['milieudestage_id'] = $milieu['id'];
+        }
+
+        return $offre;
     }
 
 }

@@ -4,6 +4,8 @@ namespace App\Controller;
 
 use App\Controller\AppController;
 use Cake\ORM\TableRegistry;
+use Cake\Utility\Text;
+use Cake\Mailer\Email;
 
 /**
  * Users Controller
@@ -21,7 +23,7 @@ class UsersController extends AppController {
      */
     public function index() {
         $this->paginate = [
-            'contain' => ['Roles']
+            'contain' => ['Roles', 'Files']
         ];
         $users = $this->paginate($this->Users);
 
@@ -37,7 +39,7 @@ class UsersController extends AppController {
      */
     public function view($id = null) {
         $user = $this->Users->get($id, [
-            'contain' => ['Roles', 'Administrateurs', 'Etudiants', 'Milieudestages', 'Offres']
+            'contain' => ['Files', 'Roles', 'Administrateurs', 'Etudiants', 'Milieudestages', 'Offres']
         ]);
 
         $this->set('user', $user);
@@ -52,6 +54,9 @@ class UsersController extends AppController {
         $user = $this->Users->newEntity();
         if ($this->request->is('post')) {
             $user = $this->Users->patchEntity($user, $this->request->getData());
+            $user['uuid'] = Text::uuid();
+            $user['verify'] = FALSE;
+
             if ($this->Users->save($user)) {
 
                 $this->createRelatedProfil($user);
@@ -60,10 +65,41 @@ class UsersController extends AppController {
 
                 return $this->redirect(['action' => 'index']);
             }
-            $this->Flash->error(__('Le username doit être un courriel valide.'));
+            $this->Flash->error(__('The username need to be a valide email.'));
         }
         $roles = $this->Users->Roles->find('list', ['limit' => 200]);
-        $this->set(compact('user', 'roles'));
+        $files = $this->Users->Files->find('list', ['limit' => 200, 'keyField' => 'id', 'valueField' => 'name']);
+        $this->set(compact('user', 'roles', 'files'));
+    }
+    
+    public function addStudent() {
+        $user = $this->Users->newEntity();
+        if ($this->request->is('post')) {
+            $user = $this->Users->patchEntity($user, $this->request->getData());
+            $user['uuid'] = Text::uuid();
+            $user['verify'] = FALSE;
+            $user['role_id'] = 'etudiant';
+            
+            if ($this->Users->save($user)) {
+
+                $this->createRelatedProfil($user);
+                
+                $username = $user['username'];
+                $split = explode('\\', ROOT);
+                $local = end($split);
+                $uuid = $user['uuid'];
+                
+                $email = new Email('default');
+                $email->to($username)->subject('Postulation d\'un étudiant')
+                ->send('Copier le lien dans la bar de recherche pour confirmer le compte: localhost/' . $local . '/users/verifyEmail/' . $uuid);
+                
+                $this->Flash->success(__('Now verify your email.'));
+                return $this->redirect(['action' => 'login']);
+            }
+            $this->Flash->error(__('The username need to be a valide email.'));
+        }
+        $files = $this->Users->Files->find('list', ['limit' => 200, 'keyField' => 'id', 'valueField' => 'name']);
+        $this->set(compact('user', 'files'));
     }
 
     private function createRelatedProfil($user) {
@@ -71,19 +107,16 @@ class UsersController extends AppController {
             $profiltable = TableRegistry::get('Milieudestages');
             $profil = $profiltable->newEntity();
             $profil->courriel_respo = $user['username'];
-            
         } elseif ($user['role_id'] === 'etudiant') {
             $profiltable = TableRegistry::get('Etudiants');
             $profil = $profiltable->newEntity();
             $profil->courriel = $user['username'];
-
         } elseif ($user['role_id'] === 'admin') {
             $profiltable = TableRegistry::get('Administrateurs');
             $profil = $profiltable->newEntity();
             $profil->courriel = $user['username'];
-
         }
-        
+
         $profil->user_id = $user['id'];
         $profiltable->save($profil);
     }
@@ -109,7 +142,8 @@ class UsersController extends AppController {
             $this->Flash->error(__('The user could not be saved. Please, try again.'));
         }
         $roles = $this->Users->Roles->find('list', ['limit' => 200]);
-        $this->set(compact('user', 'roles'));
+        $files = $this->Users->Files->find('list', ['limit' => 200, 'keyField' => 'id', 'valueField' => 'name']);
+        $this->set(compact('user', 'roles', 'files'));
     }
 
     /**
@@ -134,11 +168,16 @@ class UsersController extends AppController {
     public function login() {
         if ($this->request->is('post')) {
             $user = $this->Auth->identify();
+
             if ($user) {
-                $this->Auth->setUser($user);
-                return $this->dirigerVersPage($user['role_id']);
+                if ($user['verify'] == TRUE) {
+                    $this->Auth->setUser($user);
+                    return $this->dirigerVersPage($user['role_id']);
+                } else {
+                    $this->Flash->error(__('You need to verify your email in order to login.'));
+                }
             } else {
-                $this->Flash->error('Votre identifiant ou votre mot de passe est incorrect.');
+                $this->Flash->error(__('Your username or password is incorrect.'));
             }
         }
     }
@@ -181,11 +220,11 @@ class UsersController extends AppController {
 
     public function initialize() {
         parent::initialize();
-        $this->Auth->allow(['logout']);
+        $this->Auth->allow(['logout', 'addStudent', 'verifyEmail']);
     }
 
     public function logout() {
-        $this->Flash->success('Vous avez été déconnecté.');
+        $this->Flash->success(__('You have been disconnected.'));
         return $this->redirect($this->Auth->logout());
     }
 
@@ -198,6 +237,25 @@ class UsersController extends AppController {
         }
 
         return true;
+    }
+
+    public function verifyEmail() {
+        $uuid = $this->request->getParam('pass');
+        $sujet = $this->Users->find('all', [
+            'conditions' => ['uuid' => $uuid['0']],
+        ]);
+        $sujet = $sujet->first();
+        
+        if (!empty($sujet)) {
+            $sujet['verify'] = TRUE;
+            $this->Users->save($sujet);
+            $this->Flash->success(__('Your account is now active.'));
+            
+        } else {
+            $this->Flash->error(__('The identification is not valide.'));
+        }
+        
+        $this->redirect(['controller' => 'Users', 'action' => 'login']);
     }
 
 }

@@ -11,6 +11,8 @@ $userrole = $loguser['role_id'];
         <li class="heading"><?= __('Actions') ?></li>
         <?php if ($userrole !== "etudiant"): ?>
             <li><?= $this->Html->link(__('Edit Milieudestage'), ['action' => 'edit', $milieudestage->id]) ?> </li>
+        <?php endif; ?>
+        <?php if ($userrole == "admin"): ?>
             <li><?= $this->Form->postLink(__('Delete Milieudestage'), ['action' => 'delete', $milieudestage->id], ['confirm' => __('Are you sure you want to delete # {0}?', $milieudestage->id)]) ?> </li>
         <?php endif; ?>
         <li><?= $this->Html->link(__('List Milieudestages'), ['action' => 'index']) ?></li>
@@ -37,7 +39,9 @@ $userrole = $loguser['role_id'];
     </ul>
 </nav>
 <div class="milieudestages view large-9 medium-8 columns content">
-    <h3><?= h($milieudestage->id) ?></h3>
+    <?php if (false): ?>
+        <h3><?= h($milieudestage->id) ?></h3>
+    <?php endif; ?>
     <table class="vertical-table">
         <tr>
             <th scope="row"><?= __('Nom') ?></th>
@@ -121,10 +125,6 @@ $userrole = $loguser['role_id'];
                 <td><?= $milieudestage->has('user') ? $this->Html->link($milieudestage->user->username, ['controller' => 'Users', 'action' => 'view', $milieudestage->user->id]) : '' ?></td>
             </tr>
             <tr>
-                <th scope="row"><?= __('Id') ?></th>
-                <td><?= $this->Number->format($milieudestage->id) ?></td>
-            </tr>
-            <tr>
                 <th scope="row"><?= __('Date Inv') ?></th>
                 <td><?= h($milieudestage->date_inv) ?></td>
             </tr>
@@ -163,7 +163,7 @@ $userrole = $loguser['role_id'];
         <?php if (!empty($milieudestage->missions)): ?>
             <table cellpadding="0" cellspacing="0">
                 <tr>
-                    <?php if ($userrole === 'admin'): ?>
+                    <?php if (false): ?>
                         <th scope="col"><?= __('Id') ?></th>
                     <?php endif; ?>
                     <th scope="col"><?= __('Nom') ?></th>
@@ -173,7 +173,7 @@ $userrole = $loguser['role_id'];
                 </tr>
                 <?php foreach ($milieudestage->missions as $missions): ?>
                     <tr>
-                        <?php if ($userrole === 'admin'): ?>
+                        <?php if (false): ?>
                             <td><?= h($missions->id) ?></td>
                         <?php endif; ?>
                         <td><?= h($missions->nom) ?></td>
@@ -194,7 +194,7 @@ $userrole = $loguser['role_id'];
         <?php if (!empty($milieudestage->typeclienteles)): ?>
             <table cellpadding="0" cellspacing="0">
                 <tr>
-                    <?php if ($userrole === 'admin'): ?>
+                    <?php if (false): ?>
                         <th scope="col"><?= __('Id') ?></th>
                     <?php endif; ?>
                     <th scope="col"><?= __('Type') ?></th>
@@ -204,7 +204,7 @@ $userrole = $loguser['role_id'];
                 </tr>
                 <?php foreach ($milieudestage->typeclienteles as $typeclienteles): ?>
                     <tr>
-                        <?php if ($userrole === 'admin'): ?>
+                        <?php if (false): ?>
                             <td><?= h($typeclienteles->id) ?></td>
                         <?php endif; ?>
                         <td><?= h($typeclienteles->type) ?></td>
@@ -225,7 +225,7 @@ $userrole = $loguser['role_id'];
         <?php if (!empty($milieudestage->typeetablissements)): ?>
             <table cellpadding="0" cellspacing="0">
                 <tr>
-                    <?php if ($userrole === 'admin'): ?>
+                    <?php if (false): ?>
                         <th scope="col"><?= __('Id') ?></th>
                     <?php endif; ?>
                     <th scope="col"><?= __('Nom') ?></th>
@@ -235,7 +235,7 @@ $userrole = $loguser['role_id'];
                 </tr>
                 <?php foreach ($milieudestage->typeetablissements as $typeetablissements): ?>
                     <tr>
-                        <?php if ($userrole === 'admin'): ?>
+                        <?php if (false): ?>
                             <td><?= h($typeetablissements->id) ?></td>
                         <?php endif; ?>
                         <td><?= h($typeetablissements->nom) ?></td>
@@ -256,7 +256,9 @@ $userrole = $loguser['role_id'];
         <?php if (!empty($milieudestage->offres)): ?>
             <table cellpadding="0" cellspacing="0">
                 <tr>
-                    <th scope="col"><?= __('Id') ?></th>
+                    <?php if (false): ?>
+                        <th scope="col"><?= __('Id') ?></th>
+                    <?php endif; ?>
                     <th scope="col"><?= __('Titre') ?></th>
                     <th scope="col"><?= __('Region') ?></th>
                     <th scope="col"><?= __('Tache') ?></th>
@@ -271,7 +273,9 @@ $userrole = $loguser['role_id'];
                 </tr>
                 <?php foreach ($milieudestage->offres as $offres): ?>
                     <tr>
-                        <td><?= h($offres->id) ?></td>
+                        <?php if (false): ?>
+                            <td><?= h($offres->id) ?></td>
+                        <?php endif; ?>
                         <td><?= h($offres->titre) ?></td>
                         <td><?= h($offres->region) ?></td>
                         <td><?= h($offres->tache) ?></td>

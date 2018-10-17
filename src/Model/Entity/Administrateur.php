@@ -11,8 +11,8 @@ use Cake\ORM\Entity;
  * @property string $telephone
  * @property string $courriel
  * @property int $user_id
- * @property int $created
- * @property int $modified
+ * @property \Cake\I18n\FrozenTime $created
+ * @property \Cake\I18n\FrozenTime $modified
  *
  * @property \App\Model\Entity\User $user
  */

@@ -31,11 +31,11 @@
         <legend><?= __('Edit Offre') ?></legend>
         <?php
         echo $this->Form->control('titre');
-        echo $this->Form->control('region');
+        echo $this->Form->control('region_id', ['options' => $regions, 'empty' => true]);
         echo $this->Form->control('tache');
         echo $this->Form->control('responsabilite');
-        echo ($userrole === "admin")?$this->Form->control('user_id', ['options' => $users]):$this->Form->hidden('user_id');
-        echo ($userrole === "admin")?$this->Form->control('milieudestage_id', ['options' => $milieudestages]):$this->Form->hidden('milieudestage_id');
+        echo ($userrole === "admin")?$this->Form->control('user_id', ['options' => $users]):'';
+        echo ($userrole === "admin")?$this->Form->control('milieudestage_id', ['options' => $milieudestages]):'';
         ?>
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>

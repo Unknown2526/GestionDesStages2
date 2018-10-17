@@ -8,7 +8,7 @@ use Cake\ORM\Entity;
  *
  * @property int $id
  * @property string $titre
- * @property string $region
+ * @property int $region_id
  * @property string $tache
  * @property string $responsabilite
  * @property int $user_id
@@ -16,6 +16,7 @@ use Cake\ORM\Entity;
  * @property \Cake\I18n\FrozenTime $created
  * @property \Cake\I18n\FrozenTime $modified
  *
+ * @property \App\Model\Entity\Region $region
  * @property \App\Model\Entity\User $user
  * @property \App\Model\Entity\Milieudestage $milieudestage
  */
@@ -33,13 +34,14 @@ class Offre extends Entity
      */
     protected $_accessible = [
         'titre' => true,
-        'region' => true,
+        'region_id' => true,
         'tache' => true,
         'responsabilite' => true,
         'user_id' => true,
         'milieudestage_id' => true,
         'created' => true,
         'modified' => true,
+        'region' => true,
         'user' => true,
         'milieudestage' => true
     ];

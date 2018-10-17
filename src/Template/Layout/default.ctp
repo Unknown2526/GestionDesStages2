@@ -44,21 +44,26 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
                     <?php
                     $loguser = $this->request->session()->read('Auth.User');
                     if ($loguser) {
-                        $user = $loguser['username'];
+                        
                         echo '<li>';
                         echo $this->Html->link(__('Mon profil'), ['controller' => 'Users', 'action' => 'monProfil', $loguser['id']]);
                         echo '</li>';
                         echo '<li>';
-                        echo $this->Html->link($user . ' logout', ['controller' => 'Users', 'action' => 'logout']);
+                        echo $this->Html->link($loguser['role_id'] . ' ' . $loguser['username'] . ' logout', ['controller' => 'Users', 'action' => 'logout']);
                         echo '</li>';
                     } else {
                         echo '<li>';
-                        echo $this->Html->link('login', ['controller' => 'Users', 'action' => 'login']);
+                        echo $this->Html->link(__('Login'), ['controller' => 'Users', 'action' => 'login']);
                         echo '</li>';
                     }
                     ?>
-                    <li><a target="_blank" href="https://book.cakephp.org/3.0/">Documentation</a></li>
-                    <li><a target="_blank" href="https://api.cakephp.org/3.0/">API</a></li>
+                    <li>
+                        <?= $this->Html->link('Français', ['action' => 'changeLang', 'fr_CA'], ['escape' => false]) ?>
+                    </li>
+                    <li>
+                        <?= $this->Html->link('English', ['action' => 'changeLang', 'en_US'], ['escape' => false]) ?>
+                    </li>
+                    <li><?= $this->Html->link(__('About'), ['controller' => 'Apropos', 'action' => 'index']) ?></li>
                 </ul>
             </div>
         </nav>

@@ -168,12 +168,20 @@ return [
      *   the memory limit by when a fatal error is encountered. This allows
      *   breathing room to complete logging or error handling.
      */
+     
+     /* DISABLE FOR NOW
     'Error' => [
         'errorLevel' => E_ALL,
         'exceptionRenderer' => 'Cake\Error\ExceptionRenderer',
         'skipLog' => [],
         'log' => true,
         'trace' => true,
+    ],
+    
+    */
+    
+    'Error' => [
+        'errorLevel' => E_ALL & ~E_DEPRECATED & ~E_USER_DEPRECATED,
     ],
 
     /**
@@ -210,6 +218,13 @@ return [
             'tls' => null,
             'url' => env('EMAIL_TRANSPORT_DEFAULT_URL', null),
         ],
+        'systemeNotification' => [
+            'host' => 'ssl://mail.gestiondestages.ca',
+            'port' => 465,
+            'username' => 'systemenotification@gestiondestages.ca',
+            'password' => '@Ry#F.D;Viu&',
+            'className' => 'Smtp'
+        ],
     ],
 
     /**
@@ -223,8 +238,8 @@ return [
      */
     'Email' => [
         'default' => [
-            'transport' => 'default',
-            'from' => 'you@localhost',
+            'transport' => 'systemeNotification',
+            'from' => 'systemenotification@gestiondestages',
             //'charset' => 'utf-8',
             //'headerCharset' => 'utf-8',
         ],
@@ -257,7 +272,7 @@ return [
             //'port' => 'non_standard_port_number',
             'username' => 'root',
             'password' => 'mysql',
-            'database' => 'gestio55_gestiondestages',
+            'database' => 'tp1',
             /*
              * You do not need to set this flag to use full utf-8 encoding (internal default since CakePHP 3.6).
              */

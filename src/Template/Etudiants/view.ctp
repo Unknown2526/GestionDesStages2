@@ -22,7 +22,9 @@ $userrole = $loguser['role_id'];
     </ul>
 </nav>
 <div class="etudiants view large-9 medium-8 columns content">
-    <h3><?= h($etudiant->id) ?></h3>
+    <?php if (false): ?>
+        <h3><?= h($etudiant->id) ?></h3>
+    <?php endif; ?>
     <table class="vertical-table">
         <tr>
             <th scope="row"><?= __('Nom') ?></th>
@@ -44,10 +46,6 @@ $userrole = $loguser['role_id'];
             <tr>
                 <th scope="row"><?= __('User') ?></th>
                 <td><?= $etudiant->has('user') ? $this->Html->link($etudiant->user->id, ['controller' => 'Users', 'action' => 'view', $etudiant->user->id]) : '' ?></td>
-            </tr>
-            <tr>
-                <th scope="row"><?= __('Id') ?></th>
-                <td><?= $this->Number->format($etudiant->id) ?></td>
             </tr>
             <tr>
                 <th scope="row"><?= __('Created') ?></th>

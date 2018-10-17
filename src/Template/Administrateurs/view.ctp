@@ -16,7 +16,9 @@
     </ul>
 </nav>
 <div class="administrateurs view large-9 medium-8 columns content">
-    <h3><?= h($administrateur->id) ?></h3>
+    <?php if (false): ?>
+        <h3><?= h($administrateur->id) ?></h3>
+    <?php endif; ?>
     <table class="vertical-table">
         <tr>
             <th scope="row"><?= __('Nom') ?></th>
@@ -33,10 +35,6 @@
         <tr>
             <th scope="row"><?= __('User') ?></th>
             <td><?= $administrateur->has('user') ? $this->Html->link($administrateur->user->id, ['controller' => 'Users', 'action' => 'view', $administrateur->user->id]) : '' ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Id') ?></th>
-            <td><?= $this->Number->format($administrateur->id) ?></td>
         </tr>
         <tr>
             <th scope="row"><?= __('Created') ?></th>

@@ -64,7 +64,7 @@ class MilieudestagesController extends AppController {
             }
             $this->Flash->error(__('The milieudestage could not be saved. Please, try again.'));
         }
-        $regions = $this->Milieudestages->Regions->find('list', ['limit' => 200]);
+        $regions = $this->Milieudestages->Regions->find('list', ['limit' => 200, 'keyField' => 'id', 'valueField' => 'nom']);
         $users = $this->Milieudestages->Users->find('list', ['limit' => 200, 'keyField' => 'id', 'valueField' => 'username']);
         $missions = $this->Milieudestages->Missions->find('list', ['limit' => 200, 'keyField' => 'id', 'valueField' => 'nom']);
         $typeclienteles = $this->Milieudestages->Typeclienteles->find('list', ['limit' => 200, 'keyField' => 'id', 'valueField' => 'type']);
@@ -85,6 +85,9 @@ class MilieudestagesController extends AppController {
         ]);
         if ($this->request->is(['patch', 'post', 'put'])) {
             $milieudestage = $this->Milieudestages->patchEntity($milieudestage, $this->request->getData());
+            
+            $milieudestage = $this->secureAssociation($milieudestage);
+            
             if ($this->Milieudestages->save($milieudestage)) {
                 $this->Flash->success(__('The milieudestage has been saved.'));
 
@@ -92,7 +95,7 @@ class MilieudestagesController extends AppController {
             }
             $this->Flash->error(__('The milieudestage could not be saved. Please, try again.'));
         }
-        $regions = $this->Milieudestages->Regions->find('list', ['limit' => 200]);
+        $regions = $this->Milieudestages->Regions->find('list', ['limit' => 200, 'keyField' => 'id', 'valueField' => 'nom']);
         $users = $this->Milieudestages->Users->find('list', ['limit' => 200]);
         $missions = $this->Milieudestages->Missions->find('list', ['limit' => 200, 'keyField' => 'id', 'valueField' => 'nom']);
         $typeclienteles = $this->Milieudestages->Typeclienteles->find('list', ['limit' => 200, 'keyField' => 'id', 'valueField' => 'type']);
@@ -151,7 +154,7 @@ class MilieudestagesController extends AppController {
                             . 'de passe, contactez moi au ' . $admin['telephone'] . ' ou'
                             . ' à mon courriel ' . $admin['courriel'] . '.');
         }
-         $this->Flash->success(__('Vous avez notifier les milieux de stages.'));
+         $this->Flash->success(__('You have notified the internship circles.'));
         return $this->redirect(['controller' => 'Milieudestages', 'action' => 'index']);
     }
     
@@ -164,5 +167,15 @@ class MilieudestagesController extends AppController {
         ]);
         
         return $admin->first();
+    }
+    
+    private function secureAssociation($milieudestage) {
+        $loguser = $this->request->session()->read('Auth.User');
+
+        if ($loguser['role_id'] === 'milieu') {
+            $milieudestage['user_id'] = $loguser['id'];
+        }
+
+        return $milieudestage;
     }
 }

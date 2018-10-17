@@ -17,32 +17,40 @@
     <table cellpadding="0" cellspacing="0">
         <thead>
             <tr>
-                <th scope="col"><?= $this->Paginator->sort('id') ?></th>
+                <?php if (false): ?>
+                    <th scope="col"><?= $this->Paginator->sort('id') ?></th>
+                <?php endif; ?>
                 <th scope="col"><?= $this->Paginator->sort('nom') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('telephone') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('courriel') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('user_id') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('created') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('modified') ?></th>
+                <?php if (false): ?>
+                    <th scope="col"><?= $this->Paginator->sort('user_id') ?></th>
+                    <th scope="col"><?= $this->Paginator->sort('created') ?></th>
+                    <th scope="col"><?= $this->Paginator->sort('modified') ?></th>
+                <?php endif; ?>
                 <th scope="col" class="actions"><?= __('Actions') ?></th>
             </tr>
         </thead>
         <tbody>
             <?php foreach ($administrateurs as $administrateur): ?>
-            <tr>
-                <td><?= $this->Number->format($administrateur->id) ?></td>
-                <td><?= h($administrateur->nom) ?></td>
-                <td><?= h($administrateur->telephone) ?></td>
-                <td><?= h($administrateur->courriel) ?></td>
-                <td><?= $administrateur->has('user') ? $this->Html->link($administrateur->user->id, ['controller' => 'Users', 'action' => 'view', $administrateur->user->id]) : '' ?></td>
-                <td><?= $this->Number->format($administrateur->created) ?></td>
-                <td><?= $this->Number->format($administrateur->modified) ?></td>
-                <td class="actions">
-                    <?= $this->Html->link(__('View'), ['action' => 'view', $administrateur->id]) ?>
-                    <?= $this->Html->link(__('Edit'), ['action' => 'edit', $administrateur->id]) ?>
-                    <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $administrateur->id], ['confirm' => __('Are you sure you want to delete # {0}?', $administrateur->id)]) ?>
-                </td>
-            </tr>
+                <tr>
+                    <?php if (false): ?>
+                        <td><?= $this->Number->format($administrateur->id) ?></td>
+                    <?php endif; ?>
+                    <td><?= h($administrateur->nom) ?></td>
+                    <td><?= h($administrateur->telephone) ?></td>
+                    <td><?= h($administrateur->courriel) ?></td>
+                    <?php if (false): ?>
+                        <td><?= $administrateur->has('user') ? $this->Html->link($administrateur->user->id, ['controller' => 'Users', 'action' => 'view', $administrateur->user->id]) : '' ?></td>
+                        <td><?= $this->Number->format($administrateur->created) ?></td>
+                        <td><?= $this->Number->format($administrateur->modified) ?></td>
+                    <?php endif; ?>
+                    <td class="actions">
+                        <?= $this->Html->link(__('View'), ['action' => 'view', $administrateur->id]) ?>
+                        <?= $this->Html->link(__('Edit'), ['action' => 'edit', $administrateur->id]) ?>
+                        <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $administrateur->id], ['confirm' => __('Are you sure you want to delete # {0}?', $administrateur->id)]) ?>
+                    </td>
+                </tr>
             <?php endforeach; ?>
         </tbody>
     </table>

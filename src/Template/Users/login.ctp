@@ -3,6 +3,12 @@
  * @var \App\View\AppView $this
  */
 ?>
+<nav class="large-3 medium-4 columns" id="actions-sidebar">
+    <ul class="side-nav">
+        <li class="heading"><?= __('Actions') ?></li>
+        <li><?= $this->Html->link(__('Create new account'), ['controller' => 'Users', 'action' => 'addStudent']) ?></li>
+    </ul>
+</nav>
 <div class="users form">
     <?= $this->Flash->render('auth') ?>
     <?= $this->Form->create() ?>
