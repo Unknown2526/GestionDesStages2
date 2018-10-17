@@ -58,7 +58,8 @@ class OffresController extends AppController {
 
             if ($this->Offres->save($offre)) {
                 $this->Flash->success(__('The offre has been saved.'));
-
+                $this->notifierEtudiants($offre['id']);
+                
                 return $this->redirect(['action' => 'index']);
             }
             $this->Flash->error(__('The offre could not be saved. Please, try again.'));
@@ -186,5 +187,28 @@ class OffresController extends AppController {
 
         return $offre;
     }
+    
+    public function notifierEtudiants($id) {
+        $webroot = $this->request->webroot;
+        $etudiants = $this->getEmailStudents();
 
+        foreach ($etudiants as $etudiant) {
+            $destination = $etudiant['courriel'];
+            
+            $email = new Email('default');
+            $email->emailFormat('html');
+            $email->to($destination);
+            $email->subject('New offer');
+            $email->send('We have a new internship offer.<br><br><a href="localhost' . $webroot . 'offres/view/' . $id . '">Click here to see the new offer</a>');
+        }
+        $this->Flash->success(__('You have notified the students.'));
+        return $this->redirect(['controller' => 'Offres', 'action' => 'index']);
+    }
+
+    public function getEmailStudents() {
+        $etudiants = TableRegistry::get('Etudiants');
+        $etudiants = $etudiants->find('all');
+
+        return $etudiants->toArray();
+    }
 }
