@@ -2161,3 +2161,15 @@ Exception Attributes: array (
 )
 Request URL: /roles/view/etudiant
 Referer URL: http://localhost/tp1/users
+2018-10-17 19:25:49 Error: [BadMethodCallException] You need specify one destination on to, cc or bcc.
+Request URL: /offres/postuler/1
+Referer URL: http://localhost/GestionDesStages2/offres
+2018-10-17 19:26:36 Error: [BadMethodCallException] You need specify one destination on to, cc or bcc.
+Request URL: /offres/postuler/1
+Referer URL: http://localhost/GestionDesStages2/offres
+2018-10-17 19:26:46 Error: [BadMethodCallException] You need specify one destination on to, cc or bcc.
+Request URL: /offres/postuler/1
+Referer URL: http://localhost/GestionDesStages2/offres
+2018-10-17 19:27:06 Error: [BadMethodCallException] You need specify one destination on to, cc or bcc.
+Request URL: /offres/postuler/1
+Referer URL: http://localhost/GestionDesStages2/offres

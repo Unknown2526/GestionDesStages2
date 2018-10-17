@@ -146,13 +146,15 @@ class OffresController extends AppController {
         $milieu = $this->getInfoMilieu($offre['milieudestage_id']);
         $etudiant = $this->getInfoEtudiant();
         $offreid = $this->request->getParam('pass');
-
+        
         $email = new Email('default');
-        $email->to($milieu['courriel_respo'])->subject('Postulation d\'un étudiant')
-                ->send('Bonjour,' . $etudiant['prenom'] . ' ' . $etudiant['prenom']
+        $email->to($milieu['courriel_respo']);
+        $email->subject('Postulation d\'un étudiant');
+        $email->send('Bonjour,' . $etudiant['prenom'] . ' ' . $etudiant['prenom']
                         . ' est intéressé à votre offre de stage numéro ' . $offreid[0]
                         . '. Vous pouvez le contacter à son courriel ' . $etudiant['courriel']
                         . ' ou à son téléphone ' . $etudiant['telephone'] . '.');
+        
         $this->Flash->success(__('You applied.'));
         return $this->redirect(['action' => 'index']);
     }
@@ -168,10 +170,8 @@ class OffresController extends AppController {
     }
 
     private function getInfoMilieu($id) {
-        $milieu = $this->Offres->Milieudestages->find('all', [
-            'conditions' => ['user_id' => $id],
-        ]);
-
+        $milieu = $this->Offres->Milieudestages->find('all', ['user_id' => $id]);
+        
         return $milieu->first();
     }
 
