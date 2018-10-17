@@ -1,0 +1,1144 @@
+2018-09-27 16:05:17 Notice: Notice (8): Undefined index: user_id in [C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\src\Controller\OffresController.php, line 59]
+Request URL: /offres/add
+Referer URL: http://localhost/projetcake_V_0_2_2/offres/add
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+App\Controller\OffresController::add() - APP/Controller\OffresController.php, line 59
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 596
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 120
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Middleware\CsrfProtectionMiddleware::__invoke() - CORE\src\Http\Middleware\CsrfProtectionMiddleware.php, line 107
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-09-27 16:07:54 Notice: Notice (8): Undefined index: id in [C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\src\Controller\OffresController.php, line 61]
+Request URL: /offres/add
+Referer URL: http://localhost/projetcake_V_0_2_2/offres/add
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+App\Controller\OffresController::add() - APP/Controller\OffresController.php, line 61
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 596
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 120
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Middleware\CsrfProtectionMiddleware::__invoke() - CORE\src\Http\Middleware\CsrfProtectionMiddleware.php, line 107
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-09-27 16:07:54 Notice: Notice (8): Undefined index: id in [C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\src\Controller\OffresController.php, line 62]
+Request URL: /offres/add
+Referer URL: http://localhost/projetcake_V_0_2_2/offres/add
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+App\Controller\OffresController::add() - APP/Controller\OffresController.php, line 62
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 596
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 120
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Middleware\CsrfProtectionMiddleware::__invoke() - CORE\src\Http\Middleware\CsrfProtectionMiddleware.php, line 107
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-09-27 16:08:29 Notice: Notice (8): Undefined index: id in [C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\src\Controller\OffresController.php, line 61]
+Request URL: /offres/add
+Referer URL: http://localhost/projetcake_V_0_2_2/offres/add
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+App\Controller\OffresController::add() - APP/Controller\OffresController.php, line 61
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 596
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 120
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Middleware\CsrfProtectionMiddleware::__invoke() - CORE\src\Http\Middleware\CsrfProtectionMiddleware.php, line 107
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-09-27 18:46:17 Notice: Notice (8): Undefined variable: first in [C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\src\Controller\OffresController.php, line 59]
+Request URL: /offres/add
+Referer URL: http://localhost/projetcake_V_0_2_2/offres/add
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+App\Controller\OffresController::add() - APP/Controller\OffresController.php, line 59
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 596
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 120
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Middleware\CsrfProtectionMiddleware::__invoke() - CORE\src\Http\Middleware\CsrfProtectionMiddleware.php, line 107
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-09-27 18:54:35 Notice: Notice (8): Undefined variable: userrole in [C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\src\Template\Offres\edit.ctp, line 16]
+Request URL: /offres/edit/2
+Referer URL: http://localhost/projetcake_V_0_2_2/offres
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+include - APP/Template\Offres\edit.ctp, line 16
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::render() - CORE\src\View\View.php, line 803
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 777
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Middleware\CsrfProtectionMiddleware::__invoke() - CORE\src\Http\Middleware\CsrfProtectionMiddleware.php, line 107
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-09-27 18:54:35 Notice: Notice (8): Undefined variable: userrole in [C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\src\Template\Offres\edit.ctp, line 21]
+Request URL: /offres/edit/2
+Referer URL: http://localhost/projetcake_V_0_2_2/offres
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+include - APP/Template\Offres\edit.ctp, line 21
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::render() - CORE\src\View\View.php, line 803
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 777
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Middleware\CsrfProtectionMiddleware::__invoke() - CORE\src\Http\Middleware\CsrfProtectionMiddleware.php, line 107
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-09-27 19:25:19 Notice: Notice (8): Undefined variable: milieudestage in [C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\src\Template\Layout\default.ctp, line 49]
+Request URL: /offres
+Referer URL: http://localhost/projetcake_V_0_2_2/milieudestages/view/6
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+include - APP/Template\Layout\default.ctp, line 49
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 850
+Cake\View\View::render() - CORE\src\View\View.php, line 808
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 777
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Middleware\CsrfProtectionMiddleware::__invoke() - CORE\src\Http\Middleware\CsrfProtectionMiddleware.php, line 107
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-09-27 19:25:19 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\src\Template\Layout\default.ctp, line 49]
+Request URL: /offres
+Referer URL: http://localhost/projetcake_V_0_2_2/milieudestages/view/6
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+include - APP/Template\Layout\default.ctp, line 49
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 850
+Cake\View\View::render() - CORE\src\View\View.php, line 808
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 777
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Middleware\CsrfProtectionMiddleware::__invoke() - CORE\src\Http\Middleware\CsrfProtectionMiddleware.php, line 107
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-09-29 14:07:27 Notice: Notice (8): Undefined variable: id in [C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\src\Controller\UsersController.php, line 129]
+Request URL: /users/mon-profil/11
+Referer URL: http://localhost/projetcake_V_0_2_2/pages
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+App\Controller\UsersController::monProfil() - APP/Controller\UsersController.php, line 129
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 596
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 120
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Middleware\CsrfProtectionMiddleware::__invoke() - CORE\src\Http\Middleware\CsrfProtectionMiddleware.php, line 107
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-09-29 14:09:56 Notice: Notice (8): Undefined index: role in [C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\src\Controller\UsersController.php, line 131]
+Request URL: /users/mon-profil/11
+Referer URL: http://localhost/projetcake_V_0_2_2/pages
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+App\Controller\UsersController::monProfil() - APP/Controller\UsersController.php, line 131
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 596
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 120
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Middleware\CsrfProtectionMiddleware::__invoke() - CORE\src\Http\Middleware\CsrfProtectionMiddleware.php, line 107
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-09-29 14:27:25 Notice: Notice (8): Undefined variable: userrole in [C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\src\Template\Etudiants\view.ctp, line 10]
+Request URL: /etudiants/view/1
+Referer URL: http://localhost/projetcake_V_0_2_2/offres
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+include - APP/Template\Etudiants\view.ctp, line 10
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::render() - CORE\src\View\View.php, line 803
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 777
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Middleware\CsrfProtectionMiddleware::__invoke() - CORE\src\Http\Middleware\CsrfProtectionMiddleware.php, line 107
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-09-29 14:27:25 Notice: Notice (8): Undefined variable: userrole in [C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\src\Template\Etudiants\view.ctp, line 41]
+Request URL: /etudiants/view/1
+Referer URL: http://localhost/projetcake_V_0_2_2/offres
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+include - APP/Template\Etudiants\view.ctp, line 41
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::render() - CORE\src\View\View.php, line 803
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 777
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Middleware\CsrfProtectionMiddleware::__invoke() - CORE\src\Http\Middleware\CsrfProtectionMiddleware.php, line 107
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-09-29 14:50:16 Notice: Notice (8): Undefined variable: userrole in [C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\src\Template\Offres\add.ctp, line 11]
+Request URL: /offres/add
+Referer URL: http://localhost/projetcake_V_0_2_2/users
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+include - APP/Template\Offres\add.ctp, line 11
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::render() - CORE\src\View\View.php, line 803
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 777
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Middleware\CsrfProtectionMiddleware::__invoke() - CORE\src\Http\Middleware\CsrfProtectionMiddleware.php, line 107
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-09-29 14:50:16 Notice: Notice (8): Undefined variable: userrole in [C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\src\Template\Offres\add.ctp, line 16]
+Request URL: /offres/add
+Referer URL: http://localhost/projetcake_V_0_2_2/users
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+include - APP/Template\Offres\add.ctp, line 16
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::render() - CORE\src\View\View.php, line 803
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 777
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Middleware\CsrfProtectionMiddleware::__invoke() - CORE\src\Http\Middleware\CsrfProtectionMiddleware.php, line 107
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-09-29 14:50:16 Notice: Deprecated (16384): ServerRequest::session() is deprecated. Use getSession() instead. The setter part will be removed. - C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\src\Template\Layout\default.ctp, line: 45
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Request URL: /offres/add
+Referer URL: http://localhost/projetcake_V_0_2_2/users
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Http\ServerRequest::session() - CORE\src\Http\ServerRequest.php, line 563
+include - APP/Template\Layout\default.ctp, line 45
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 850
+Cake\View\View::render() - CORE\src\View\View.php, line 808
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 777
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Middleware\CsrfProtectionMiddleware::__invoke() - CORE\src\Http\Middleware\CsrfProtectionMiddleware.php, line 107
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-09-29 15:31:02 Notice: Notice (8): Undefined variable: userrole in [C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\src\Template\Milieudestages\edit.ctp, line 22]
+Request URL: /milieudestages/edit/6
+Referer URL: http://localhost/projetcake_V_0_2_2/pages
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+include - APP/Template\Milieudestages\edit.ctp, line 22
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::render() - CORE\src\View\View.php, line 803
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 777
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Middleware\CsrfProtectionMiddleware::__invoke() - CORE\src\Http\Middleware\CsrfProtectionMiddleware.php, line 107
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-09-29 15:31:02 Notice: Notice (8): Undefined variable: userrole in [C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\src\Template\Milieudestages\edit.ctp, line 27]
+Request URL: /milieudestages/edit/6
+Referer URL: http://localhost/projetcake_V_0_2_2/pages
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+include - APP/Template\Milieudestages\edit.ctp, line 27
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::render() - CORE\src\View\View.php, line 803
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 777
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Middleware\CsrfProtectionMiddleware::__invoke() - CORE\src\Http\Middleware\CsrfProtectionMiddleware.php, line 107
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-09-29 15:31:02 Notice: Notice (8): Undefined variable: userrole in [C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\src\Template\Milieudestages\edit.ctp, line 70]
+Request URL: /milieudestages/edit/6
+Referer URL: http://localhost/projetcake_V_0_2_2/pages
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+include - APP/Template\Milieudestages\edit.ctp, line 70
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::render() - CORE\src\View\View.php, line 803
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 777
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Middleware\CsrfProtectionMiddleware::__invoke() - CORE\src\Http\Middleware\CsrfProtectionMiddleware.php, line 107
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-09-29 15:31:31 Notice: Notice (8): Undefined variable: userrole in [C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\src\Template\Milieudestages\edit.ctp, line 27]
+Request URL: /milieudestages/edit/6
+Referer URL: http://localhost/projetcake_V_0_2_2/pages
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+include - APP/Template\Milieudestages\edit.ctp, line 27
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::render() - CORE\src\View\View.php, line 803
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 777
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Middleware\CsrfProtectionMiddleware::__invoke() - CORE\src\Http\Middleware\CsrfProtectionMiddleware.php, line 107
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-09-29 15:31:31 Notice: Notice (8): Undefined variable: userrole in [C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\src\Template\Milieudestages\edit.ctp, line 70]
+Request URL: /milieudestages/edit/6
+Referer URL: http://localhost/projetcake_V_0_2_2/pages
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+include - APP/Template\Milieudestages\edit.ctp, line 70
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::render() - CORE\src\View\View.php, line 803
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 777
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Middleware\CsrfProtectionMiddleware::__invoke() - CORE\src\Http\Middleware\CsrfProtectionMiddleware.php, line 107
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-09-30 17:55:37 Notice: Notice (8): Array to string conversion in [C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\src\Controller\OffresController.php, line 153]
+Request URL: /offres/postuler/1
+Referer URL: http://localhost/projetcake_V_0_2_2/offres
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+App\Controller\OffresController::postuler() - APP/Controller\OffresController.php, line 153
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 596
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 120
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Middleware\CsrfProtectionMiddleware::__invoke() - CORE\src\Http\Middleware\CsrfProtectionMiddleware.php, line 107
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-10-01 17:52:03 Notice: Notice (8): Undefined index: telephone in [C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\src\Controller\MilieudestagesController.php, line 150]
+
+
+2018-10-01 17:52:03 Notice: Notice (8): Undefined index: courriel in [C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\src\Controller\MilieudestagesController.php, line 151]
+
+
+2018-10-01 17:52:03 Notice: Notice (8): Undefined index: telephone in [C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\src\Controller\MilieudestagesController.php, line 150]
+
+
+2018-10-01 17:52:03 Notice: Notice (8): Undefined index: courriel in [C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\src\Controller\MilieudestagesController.php, line 151]
+
+
+2018-10-03 00:40:40 Notice: Notice (8): Use of undefined constant user - assumed 'user' in [C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\src\Controller\UsersController.php, line 73]
+
+
+2018-10-08 13:23:59 Notice: Notice (8): Undefined offset: 0 in [C:\Program Files (x86)\Ampps\www\projetcake_V_0_2_2\src\Controller\OffresController.php, line 180]
+
+
+2018-10-08 14:59:55 Notice: Notice (8): Array to string conversion in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\FilesController.php, line 53]
+
+
+2018-10-08 15:00:24 Notice: Notice (8): Array to string conversion in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\FilesController.php, line 53]
+
+
+2018-10-08 15:00:34 Notice: Notice (8): Array to string conversion in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\FilesController.php, line 53]
+
+
+2018-10-08 15:01:23 Notice: Notice (8): Array to string conversion in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\FilesController.php, line 53]
+
+
+2018-10-08 15:07:14 Notice: Notice (8): Undefined variable: images in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\edit.ctp, line 41]
+
+
+2018-10-08 15:09:18 Notice: Notice (8): Undefined variable: images in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\edit.ctp, line 41]
+
+
+2018-10-08 15:17:10 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 15:17:10 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 15:17:10 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 15:17:10 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 15:17:10 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 58]
+
+
+2018-10-08 15:17:10 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 58]
+
+
+2018-10-08 15:17:10 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 61]
+
+
+2018-10-08 15:17:10 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 61]
+
+
+2018-10-08 15:17:10 Notice: Notice (8): Uninitialized string offset: 0 in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\View\Helper\UrlHelper.php, line 174]
+
+
+2018-10-08 15:17:28 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 15:17:28 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 15:17:28 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 15:17:28 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 15:17:28 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 58]
+
+
+2018-10-08 15:17:28 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 58]
+
+
+2018-10-08 15:17:28 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 61]
+
+
+2018-10-08 15:17:28 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 61]
+
+
+2018-10-08 15:21:23 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 15:21:23 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 15:21:23 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 15:21:23 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 15:21:23 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 58]
+
+
+2018-10-08 15:21:23 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 58]
+
+
+2018-10-08 15:21:23 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 61]
+
+
+2018-10-08 15:21:23 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 61]
+
+
+2018-10-08 15:21:36 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 15:21:36 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 15:21:36 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 15:21:36 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 15:21:36 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 58]
+
+
+2018-10-08 15:21:36 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 58]
+
+
+2018-10-08 15:21:36 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 61]
+
+
+2018-10-08 15:21:36 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 61]
+
+
+2018-10-08 16:02:05 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 16:02:05 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 16:02:05 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 16:02:05 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 16:02:05 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 58]
+
+
+2018-10-08 16:02:05 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 58]
+
+
+2018-10-08 16:02:05 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 61]
+
+
+2018-10-08 16:02:05 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 61]
+
+
+2018-10-08 16:02:51 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 16:02:51 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 16:02:51 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 16:02:51 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 16:02:51 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 58]
+
+
+2018-10-08 16:02:51 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 58]
+
+
+2018-10-08 16:02:51 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 61]
+
+
+2018-10-08 16:02:51 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 61]
+
+
+2018-10-08 16:02:54 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 16:02:54 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 16:02:54 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 16:02:54 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 16:02:54 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 58]
+
+
+2018-10-08 16:02:54 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 58]
+
+
+2018-10-08 16:02:54 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 61]
+
+
+2018-10-08 16:02:54 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 61]
+
+
+2018-10-08 16:02:56 Notice: Notice (8): Undefined variable: users in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Offres\add.ctp, line 32]
+
+
+2018-10-08 16:02:59 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 16:02:59 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 16:03:00 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 16:03:00 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 16:03:00 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 58]
+
+
+2018-10-08 16:03:00 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 58]
+
+
+2018-10-08 16:03:00 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 61]
+
+
+2018-10-08 16:03:00 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 61]
+
+
+2018-10-08 16:06:24 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 16:06:24 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 16:06:24 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 16:06:24 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 16:06:24 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 58]
+
+
+2018-10-08 16:06:24 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 58]
+
+
+2018-10-08 16:06:24 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 61]
+
+
+2018-10-08 16:06:24 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 61]
+
+
+2018-10-08 16:07:11 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 16:07:11 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 16:07:11 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 16:07:11 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 16:07:11 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 58]
+
+
+2018-10-08 16:07:11 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 58]
+
+
+2018-10-08 16:07:11 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 61]
+
+
+2018-10-08 16:07:11 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 61]
+
+
+2018-10-08 16:07:17 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 16:07:17 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 16:07:17 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 16:07:17 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 16:07:17 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 58]
+
+
+2018-10-08 16:07:17 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 58]
+
+
+2018-10-08 16:07:17 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 61]
+
+
+2018-10-08 16:07:17 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 61]
+
+
+2018-10-08 16:07:25 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 16:07:25 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 16:07:25 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 16:07:25 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 16:07:25 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 58]
+
+
+2018-10-08 16:07:25 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 58]
+
+
+2018-10-08 16:07:25 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 61]
+
+
+2018-10-08 16:07:25 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 61]
+
+
+2018-10-08 16:08:21 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 16:08:21 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 16:08:21 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 16:08:21 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 57]
+
+
+2018-10-08 16:08:21 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 58]
+
+
+2018-10-08 16:08:21 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 58]
+
+
+2018-10-08 16:08:21 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 61]
+
+
+2018-10-08 16:08:21 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 61]
+
+
+2018-10-08 16:09:25 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 55]
+
+
+2018-10-08 16:09:25 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 55]
+
+
+2018-10-08 16:09:25 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 55]
+
+
+2018-10-08 16:09:25 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 55]
+
+
+2018-10-08 16:09:25 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 56]
+
+
+2018-10-08 16:09:25 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 56]
+
+
+2018-10-08 16:09:25 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 59]
+
+
+2018-10-08 16:09:25 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 59]
+
+
+2018-10-08 16:09:25 Notice: Notice (8): Uninitialized string offset: 0 in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\cakephp\src\View\Helper\UrlHelper.php, line 174]
+
+
+2018-10-08 16:58:10 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 53]
+
+
+2018-10-08 16:58:10 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 53]
+
+
+2018-10-08 16:58:26 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 53]
+
+
+2018-10-08 16:58:51 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 53]
+
+
+2018-10-09 20:15:08 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 54]
+
+
+2018-10-09 20:17:36 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\index.ctp, line 56]
+
+
+2018-10-10 04:12:50 Notice: Notice (8): Undefined variable: user in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\login.ctp, line 18]
+
+
+2018-10-10 04:12:50 Notice: Notice (8): Undefined variable: roles in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\login.ctp, line 24]
+
+
+2018-10-10 04:12:50 Notice: Notice (8): Undefined variable: files in [C:\Program Files (x86)\Ampps\www\tp1\src\Template\Users\login.ctp, line 25]
+
+
+2018-10-10 23:01:11 Notice: Notice (8): Only variables should be passed by reference in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\UsersController.php, line 88]
+
+
+2018-10-10 23:02:03 Notice: Notice (8): Only variables should be passed by reference in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\UsersController.php, line 88]
+
+
+2018-10-10 23:04:11 Notice: Notice (8): Only variables should be passed by reference in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\UsersController.php, line 88]
+
+
+2018-10-10 23:06:10 Notice: Notice (8): Only variables should be passed by reference in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\UsersController.php, line 88]
+
+
+2018-10-10 23:08:29 Notice: Notice (8): Only variables should be passed by reference in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\UsersController.php, line 89]
+
+
+2018-10-10 23:11:56 Notice: Notice (8): Only variables should be passed by reference in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\UsersController.php, line 88]
+
+
+2018-10-10 23:13:42 Notice: Notice (8): Only variables should be passed by reference in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\UsersController.php, line 88]
+
+
+2018-10-10 23:14:14 Notice: Notice (8): Only variables should be passed by reference in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\UsersController.php, line 88]
+
+
+2018-10-10 23:22:44 Notice: Notice (8): Only variables should be passed by reference in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\UsersController.php, line 88]
+
+
+2018-10-10 23:23:26 Notice: Notice (8): Only variables should be passed by reference in [C:\Program Files (x86)\Ampps\www\tp1\src\Controller\UsersController.php, line 88]
+
+
+2018-10-17 01:37:40 Notice: Notice (8): Undefined variable: users in [E:\Program Files\Ampps\www\GestionDesStages2\src\Template\Offres\add.ctp, line 32]
+
+
+2018-10-17 02:18:12 Notice: Notice (8): Undefined variable: etudiants in [E:\Program Files\Ampps\www\GestionDesStages2\src\Controller\OffresController.php, line 197]
+
+
+2018-10-17 02:18:25 Notice: Notice (8): Undefined variable: etudiants in [E:\Program Files\Ampps\www\GestionDesStages2\src\Controller\OffresController.php, line 197]
+
+
+2018-10-17 02:37:46 Notice: Notice (8): Undefined index: courriel in [E:\Program Files\Ampps\www\GestionDesStages2\src\Controller\OffresController.php, line 195]
+
+
+2018-10-17 02:43:36 Notice: Notice (8): Undefined index: courriel in [E:\Program Files\Ampps\www\GestionDesStages2\src\Controller\OffresController.php, line 195]
+
+
+2018-10-17 02:44:27 Notice: Notice (8): Undefined index: username in [E:\Program Files\Ampps\www\GestionDesStages2\src\Controller\OffresController.php, line 195]
+
+
+2018-10-17 03:19:18 Notice: Notice (8): Undefined index: courriel in [E:\Program Files\Ampps\www\GestionDesStages2\src\Controller\OffresController.php, line 197]
+
+
+2018-10-17 03:42:07 Notice: Notice (8): Undefined variable: etudiant in [E:\Program Files\Ampps\www\GestionDesStages2\src\Controller\OffresController.php, line 211]
+
+
+2018-10-17 03:42:30 Notice: Notice (8): Undefined variable: etudiant in [E:\Program Files\Ampps\www\GestionDesStages2\src\Controller\OffresController.php, line 211]
+
+
+2018-10-17 03:50:38 Notice: Notice (8): Undefined index: courriel in [E:\Program Files\Ampps\www\GestionDesStages2\src\Controller\OffresController.php, line 193]
+
+
+2018-10-17 03:58:43 Notice: Notice (8): Array to string conversion in [E:\Program Files\Ampps\www\GestionDesStages2\src\Controller\OffresController.php, line 201]
+
+
+2018-10-17 03:58:44 Notice: Notice (8): Array to string conversion in [E:\Program Files\Ampps\www\GestionDesStages2\src\Controller\OffresController.php, line 201]
+
+
+2018-10-17 03:58:46 Notice: Notice (8): Array to string conversion in [E:\Program Files\Ampps\www\GestionDesStages2\src\Controller\OffresController.php, line 201]
+
+
+2018-10-17 04:04:11 Notice: Notice (8): Array to string conversion in [E:\Program Files\Ampps\www\GestionDesStages2\src\Controller\OffresController.php, line 201]
+
+
+2018-10-17 04:04:13 Notice: Notice (8): Array to string conversion in [E:\Program Files\Ampps\www\GestionDesStages2\src\Controller\OffresController.php, line 201]
+
+
+2018-10-17 04:04:14 Notice: Notice (8): Array to string conversion in [E:\Program Files\Ampps\www\GestionDesStages2\src\Controller\OffresController.php, line 201]
+
+
