@@ -65,4 +65,34 @@ $userrole = $loguser['role_id'];
         <h4><?= __('Info Supp') ?></h4>
         <?= $this->Text->autoParagraph(h($etudiant->info_supp)); ?>
     </div>
+    <?php if ($userrole !== "milieu"): ?>
+        <div class="related">
+            <h4><?= __('Related Offres') ?></h4>
+            <?php if (!empty($etudiant->offres)): ?>
+                <table cellpadding="0" cellspacing="0">
+                    <tr>
+                        <th scope="col"><?= __('Titre') ?></th>
+                        <th scope="col"><?= __('Milieudestages') ?></th>
+                        <th scope="col" class="actions"><?= __('Actions') ?></th>
+                    </tr>
+                    <?php foreach ($etudiant->offres as $offres): ?>
+                        <tr>
+                            <td><?= h($offres->titre) ?></td>
+                            <td><?= h($offres->milieudestage_id) ?></td>
+                            <td class="actions">
+                                <?= $this->Html->link(__('View'), ['controller' => 'Offres', 'action' => 'view', $offres->id]) ?>
+                                <?php if ($userrole === "admin"): ?>
+                                    <?= $this->Html->link(__('Edit'), ['controller' => 'Offres', 'action' => 'edit', $offres->id]) ?>
+                                    <?= $this->Form->postLink(__('Delete'), ['controller' => 'Offres', 'action' => 'delete', $offres->id], ['confirm' => __('Are you sure you want to delete # {0}?', $offres->id)]) ?>
+                                <?php endif; ?>
+                                <?php if ($userrole === "etudiant"): ?>
+                                    <?= $this->Html->link(__('Unapply'), ['controller' => 'Offres','action' => 'unapply', $offres->id]) ?>
+                                <?php endif; ?>
+                            </td>
+                        </tr>
+                    <?php endforeach; ?>
+                </table>
+            <?php endif; ?>
+        </div>
+    <?php endif; ?>
 </div>

@@ -38,8 +38,9 @@ class EtudiantsController extends AppController
     public function view($id = null)
     {
         $etudiant = $this->Etudiants->get($id, [
-            'contain' => ['Users']
+            'contain' => ['Users', 'Offres']
         ]);
+        
 
         $this->set('etudiant', $etudiant);
     }
@@ -130,4 +131,5 @@ class EtudiantsController extends AppController
         }
         return true;
     }
+   
 }

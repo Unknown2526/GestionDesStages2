@@ -70,4 +70,35 @@ $userrole = $loguser['role_id'];
             </tr>
         <?php endif; ?>
     </table>
+    <?php if ($userrole !== "etudiant"): ?>
+        <div class="related">
+            <h4><?= __('Related Etudiants') ?></h4>
+            <?php if (!empty($offre->etudiants)): ?>
+                <table cellpadding="0" cellspacing="0">
+                    <tr>
+                        <th scope="col"><?= __('Nom') ?></th>
+                        <th scope="col"><?= __('Prenom') ?></th>
+                        <th scope="col"><?= __('Telephone') ?></th>
+                        <th scope="col"><?= __('Courriel') ?></th>
+                        <th scope="col" class="actions"><?= __('Actions') ?></th>
+                    </tr>
+                    <?php foreach ($offre->etudiants as $etudiants): ?>
+                        <tr>                       
+                            <td><?= h($etudiants->nom) ?></td>
+                            <td><?= h($etudiants->prenom) ?></td>
+                            <td><?= h($etudiants->telephone) ?></td>
+                            <td><?= h($etudiants->courriel) ?></td>
+                            <td class="actions">
+                                <?= $this->Html->link(__('View'), ['controller' => 'Etudiants', 'action' => 'view', $etudiants->id]) ?>
+                                <?php if ($userrole === "admin"): ?>
+                                    <?= $this->Html->link(__('Edit'), ['controller' => 'Etudiants', 'action' => 'edit', $etudiants->id]) ?>
+                                    <?= $this->Form->postLink(__('Delete'), ['controller' => 'Etudiants', 'action' => 'delete', $etudiants->id], ['confirm' => __('Are you sure you want to delete # {0}?', $etudiants->id)]) ?>
+                                <?php endif; ?>
+                            </td>
+                        </tr>
+                    <?php endforeach; ?>
+                </table>
+            <?php endif; ?>
+        </div>
+    <?php endif; ?>
 </div>

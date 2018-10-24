@@ -45,7 +45,7 @@ class OffresController extends AppController {
      */
     public function view($id = null) {
         $offre = $this->Offres->get($id, [
-            'contain' => ['Users', 'Milieudestages', 'Regions']
+            'contain' => ['Users', 'Milieudestages', 'Regions', 'Etudiants']
         ]);
 
         $this->set('offre', $offre);
@@ -132,7 +132,7 @@ class OffresController extends AppController {
         $role = $user['role_id'];
 
         if ($role === "etudiant") {
-            return in_array($action, ['display', 'view', 'index', 'postuler']);
+            return in_array($action, ['display', 'view', 'index', 'postuler', 'unapply']);
         }
 
         if ($role === "milieu") {
@@ -154,21 +154,40 @@ class OffresController extends AppController {
         $etudiant = $this->getInfoEtudiant();
 
         if ($this->linkStudantAndOffer($etudiant['id'], $offre['id'])) {
-            /*
-              $email = new Email('default');
-              $email->to($milieu['courriel_respo']);
-              $email->subject('Postulation d\'un étudiant');
-              $email->send('Bonjour,' . $etudiant['prenom'] . ' ' . $etudiant['prenom']
-              . ' est intéressé à votre offre de stage numéro ' . $offre['id']
-              . '. Vous pouvez le contacter à son courriel ' . $etudiant['courriel']
-              . ' ou à son téléphone ' . $etudiant['telephone'] . '.');
+            $email = new Email('default');
+            $email->to($milieu['courriel_respo']);
+            $email->subject('Postulation d\'un étudiant');
+            $email->send('Bonjour,' . $etudiant['prenom'] . ' ' . $etudiant['nom']
+                    . ' est intéressé à votre offre de stage numéro ' . $offre['id']
+                    . '. Vous pouvez le contacter à son courriel ' . $etudiant['courriel']
+                    . ' ou à son téléphone ' . $etudiant['telephone'] . '.');
 
-              $this->Flash->success(__('You applied.'));
-             */
+            $this->Flash->success(__('You applied.'));
         } else {
             $this->Flash->error(__('Your application failed. Please, try again.'));
         }
-        
+
+        return $this->redirect(['action' => 'index']);
+    }
+
+    public function unapply() {
+        $offre = $this->Offres->get($this->request->getParam('pass'));
+        $milieu = $this->getInfoMilieu($offre['milieudestage_id']);
+        $etudiant = $this->getInfoEtudiant();
+
+        if ($this->separateStudantAndOffer($etudiant['id'], $offre['id'])) {
+            $email = new Email('default');
+            $email->to($milieu['courriel_respo']);
+            $email->subject('Postulation d\'un étudiant');
+            $email->send('Bonjour,' . $etudiant['prenom'] . ' ' . $etudiant['nom']
+                    . ' a rétracter son apllication pour votre offre de stage numéro ' . $offre['id']
+                    . '.');
+
+            $this->Flash->success(__('You rectrated your application.'));
+        } else {
+            $this->Flash->error(__('Your rectratation failed. Please, try again.'));
+        }
+
         return $this->redirect(['action' => 'index']);
     }
 
@@ -181,6 +200,14 @@ class OffresController extends AppController {
         debug($newLink);
 
         return $links->save($newLink);
+    }
+    
+    private function separateStudantAndOffer($etudiantId, $offreId) {
+        $links = TableRegistry::get('EtudiantsOffres');
+        $data = $links->find()->where(['etudiant_id' => $etudiantId])->where(['offre_id' => $offreId]);
+        $toBeDeleted = $data->first();
+        
+        return $links->delete($toBeDeleted);
     }
 
     private function getInfoEtudiant() {
@@ -211,7 +238,7 @@ class OffresController extends AppController {
 
         return $offre;
     }
-
+    
     public function notifierEtudiants($id) {
         $webroot = $this->request->webroot;
         $etudiants = $this->getEmailStudents();
@@ -241,11 +268,12 @@ class OffresController extends AppController {
         $links = TableRegistry::get('EtudiantsOffres');
         $links = $links->find()->where(['etudiant_id' => $etudiant['id']])->all();
         $array = array();
-        foreach ( $links as $row ) {
+        foreach ($links as $row) {
             $array[] = $row['offre_id'];
         }
-        
+
         return $array;
     }
-
+    
+    
 }

@@ -27,7 +27,8 @@ class OffresTableTest extends TestCase
         'app.offres',
         'app.regions',
         'app.users',
-        'app.milieudestages'
+        'app.milieudestages',
+        'app.etudiants'
     ];
 
     /**
