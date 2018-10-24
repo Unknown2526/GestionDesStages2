@@ -247,5 +247,30 @@ class OffresController extends AppController {
         
         return $array;
     }
+    
+    
+        public function sendEconvocation() {
+
+        $id = $this->request->getParam('pass');
+        
+        $etudiants = TableRegistry::get('Etudiants');
+        $etudiant = $etudiants->get($id);
+        
+        $milieu = $this->getInfoMilieu('user_id');
+        
+        $receveur = $etudiant['courriel'];
+        $email = new Email('default');
+        $email->emailFormat('html');
+        $email->to($receveur);
+        $email->subject('Convocation');
+        $email->send('Bonjour,' . $etudiant['prenom'] . ' ' . $etudiant['nom']
+                . '. Compte tenu de votre profil, nous voudrions vous rencontrer pour une entrevue'
+                . 'le lundi 12 novembre à 9h30. '
+                . 'Contactez nous au numéro de téléphone:' . $milieu ['telephone_respo']
+                . 'ou par courriel:' . $milieu ['courriel_respo']
+        );
+        $this->Flash->success(__('L\'étudiant est convoqué.'));
+        return $this->redirect(['controller' => 'Etudiants', 'action' => 'index']);
+    }
 
 }

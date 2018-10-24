@@ -2257,3 +2257,6 @@ Referer URL: http://localhost/GestionDesStages2/
 2018-10-24 16:31:52 Warning: Warning (2): in_array() expects parameter 2 to be array, integer given in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\src\Controller\OffresController.php, line 248]
 
 
+2018-10-24 20:02:14 Error: [PDOException] SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+Request URL: /
+Referer URL: http://localhost/GestionDesStages2/

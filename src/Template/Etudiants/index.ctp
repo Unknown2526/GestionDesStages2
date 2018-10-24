@@ -50,6 +50,7 @@
                         <td><?= h($etudiant->modified) ?></td>
                     <?php endif; ?>
                     <td class="actions">
+                        <?= $this->Html->link(__('Convocation'), ['controller' => 'Offres', 'action' => 'sendEconvocation', $etudiant->id]) ?>
                         <?= $this->Html->link(__('View'), ['action' => 'view', $etudiant->id]) ?>
                         <?= $this->Html->link(__('Edit'), ['action' => 'edit', $etudiant->id]) ?>
                         <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $etudiant->id], ['confirm' => __('Are you sure you want to delete # {0}?', $etudiant->id)]) ?>
