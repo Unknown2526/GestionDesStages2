@@ -5,8 +5,6 @@
  */
 $loguser = $this->request->session()->read('Auth.User');
 $userrole = $loguser['role_id'];
-debug($milieudestage);
-die();
 ?>
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
@@ -29,6 +27,7 @@ die();
         <li><?= $this->Html->link(__('List Offres'), ['controller' => 'Offres', 'action' => 'index']) ?></li>
         <?php if ($userrole !== "etudiant"): ?>
             <li><?= $this->Html->link(__('New Offre'), ['controller' => 'Offres', 'action' => 'add']) ?></li>
+            <li><?= $this->Html->link(__('List Etudiants'), ['controller' => 'Etudiants', 'action' => 'index']) ?> </li>
         <?php endif; ?>
         <?php if (false): ?>
             <li><?= $this->Html->link(__('List Listemissions'), ['controller' => 'Listemissions', 'action' => 'index']) ?></li>

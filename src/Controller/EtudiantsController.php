@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Controller;
 
 use App\Controller\AppController;
@@ -10,16 +11,14 @@ use App\Controller\AppController;
  *
  * @method \App\Model\Entity\Etudiant[]|\Cake\Datasource\ResultSetInterface paginate($object = null, array $settings = [])
  */
-class EtudiantsController extends AppController
-{
+class EtudiantsController extends AppController {
 
     /**
      * Index method
      *
      * @return \Cake\Http\Response|void
      */
-    public function index()
-    {
+    public function index() {
         $this->paginate = [
             'contain' => ['Users']
         ];
@@ -35,12 +34,11 @@ class EtudiantsController extends AppController
      * @return \Cake\Http\Response|void
      * @throws \Cake\Datasource\Exception\RecordNotFoundException When record not found.
      */
-    public function view($id = null)
-    {
+    public function view($id = null) {
         $etudiant = $this->Etudiants->get($id, [
             'contain' => ['Users', 'Offres']
         ]);
-        
+
 
         $this->set('etudiant', $etudiant);
     }
@@ -50,8 +48,7 @@ class EtudiantsController extends AppController
      *
      * @return \Cake\Http\Response|null Redirects on successful add, renders view otherwise.
      */
-    public function add()
-    {
+    public function add() {
         $etudiant = $this->Etudiants->newEntity();
         if ($this->request->is('post')) {
             $etudiant = $this->Etudiants->patchEntity($etudiant, $this->request->getData());
@@ -73,8 +70,7 @@ class EtudiantsController extends AppController
      * @return \Cake\Http\Response|null Redirects on successful edit, renders view otherwise.
      * @throws \Cake\Network\Exception\NotFoundException When record not found.
      */
-    public function edit($id = null)
-    {
+    public function edit($id = null) {
         $etudiant = $this->Etudiants->get($id, [
             'contain' => []
         ]);
@@ -98,8 +94,7 @@ class EtudiantsController extends AppController
      * @return \Cake\Http\Response|null Redirects to index.
      * @throws \Cake\Datasource\Exception\RecordNotFoundException When record not found.
      */
-    public function delete($id = null)
-    {
+    public function delete($id = null) {
         $this->request->allowMethod(['post', 'delete']);
         $etudiant = $this->Etudiants->get($id);
         if ($this->Etudiants->delete($etudiant)) {
@@ -110,13 +105,13 @@ class EtudiantsController extends AppController
 
         return $this->redirect(['action' => 'index']);
     }
-    
+
     public function isAuthorized($user) {
         $action = $this->request->getParam('action');
         $role = $user['role_id'];
 
         if ($role === "milieu") {
-            return false;
+            return in_array($action, ['view', 'index']);
         }
 
         if ($role === "etudiant") {
@@ -131,5 +126,5 @@ class EtudiantsController extends AppController
         }
         return true;
     }
-   
+
 }

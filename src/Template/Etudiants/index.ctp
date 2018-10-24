@@ -3,14 +3,19 @@
  * @var \App\View\AppView $this
  * @var \App\Model\Entity\Etudiant[]|\Cake\Collection\CollectionInterface $etudiants
  */
+$loguser = $this->request->session()->read('Auth.User');
+$userrole = $loguser['role_id'];
 ?>
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
         <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('New Etudiant'), ['action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Users'), ['controller' => 'Users', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New User'), ['controller' => 'Users', 'action' => 'add']) ?></li>
-    </ul>
+        <?php if ($userrole === "admin"): ?>
+            <li><?= $this->Html->link(__('New Etudiant'), ['action' => 'add']) ?></li>
+            <li><?= $this->Html->link(__('List Users'), ['controller' => 'Users', 'action' => 'index']) ?></li>
+            <li><?= $this->Html->link(__('New User'), ['controller' => 'Users', 'action' => 'add']) ?></li>
+        <?php endif; ?>
+        <li><?= $this->Html->link(__('List Milieudestages'), ['controller' => 'Milieudestages', 'action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('List Offres'), ['controller' => 'Offres', 'action' => 'index']) ?></li>    </ul>
 </nav>
 <div class="etudiants index large-9 medium-8 columns content">
     <h3><?= __('Etudiants') ?></h3>
@@ -51,8 +56,13 @@
                     <?php endif; ?>
                     <td class="actions">
                         <?= $this->Html->link(__('View'), ['action' => 'view', $etudiant->id]) ?>
-                        <?= $this->Html->link(__('Edit'), ['action' => 'edit', $etudiant->id]) ?>
-                        <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $etudiant->id], ['confirm' => __('Are you sure you want to delete # {0}?', $etudiant->id)]) ?>
+                        <?php if ($userrole === "admin"): ?>
+                            <?= $this->Html->link(__('Edit'), ['action' => 'edit', $etudiant->id]) ?>
+                            <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $etudiant->id], ['confirm' => __('Are you sure you want to delete # {0}?', $etudiant->id)]) ?>
+                        <?php endif; ?>
+                        <?php if ($userrole === "milieu"): ?>    
+                            <?= $this->Html->link(__('Convocation'), ['controller' => 'Offres', 'action' => 'sendEconvocation', $etudiant->id]) ?>
+                        <?php endif; ?>
                     </td>
                 </tr>
             <?php endforeach; ?>

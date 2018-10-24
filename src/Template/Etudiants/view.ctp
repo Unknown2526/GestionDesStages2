@@ -9,13 +9,18 @@ $userrole = $loguser['role_id'];
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
         <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('Edit Etudiant'), ['action' => 'edit', $etudiant->id]) ?> </li>
+        <?php if ($userrole !== "milieu"): ?>
+            <li><?= $this->Html->link(__('Edit Etudiant'), ['action' => 'edit', $etudiant->id]) ?> </li>
+        <?php endif; ?>
         <?php if ($userrole === "admin"): ?>
             <li><?= $this->Form->postLink(__('Delete Etudiant'), ['action' => 'delete', $etudiant->id], ['confirm' => __('Are you sure you want to delete # {0}?', $etudiant->id)]) ?> </li>
-            <li><?= $this->Html->link(__('List Etudiants'), ['action' => 'index']) ?> </li>
             <li><?= $this->Html->link(__('New Etudiant'), ['action' => 'add']) ?> </li>
             <li><?= $this->Html->link(__('List Users'), ['controller' => 'Users', 'action' => 'index']) ?> </li>
             <li><?= $this->Html->link(__('New User'), ['controller' => 'Users', 'action' => 'add']) ?> </li>
+        <?php endif; ?>
+        <?php if ($userrole !== "etudiant"): ?>
+            <li><?= $this->Html->link(__('List Etudiants'), ['action' => 'index']) ?> </li>
+            <li><?= $this->Html->link(__('Convocation'), ['controller' => 'Offres', 'action' => 'sendEconvocation', $etudiant->id]) ?></li>
         <?php endif; ?>
         <li><?= $this->Html->link(__('List Milieudestages'), ['controller' => 'Milieudestages', 'action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('List Offres'), ['controller' => 'Offres', 'action' => 'index']) ?></li>
