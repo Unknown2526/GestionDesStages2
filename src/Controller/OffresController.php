@@ -21,12 +21,19 @@ class OffresController extends AppController {
      * @return \Cake\Http\Response|void
      */
     public function index() {
+        $loguser = $this->request->session()->read('Auth.User');
+
         $this->paginate = [
             'contain' => ['Users', 'Milieudestages', 'Regions']
         ];
         $offres = $this->paginate($this->Offres);
 
-        $this->set(compact('offres'));
+        if ($loguser['role_id'] === 'etudiant') {
+            $links = $this->getLinks();
+            $this->set(compact('offres', 'links'));
+        } else {
+            $this->set(compact('offres'));
+        }
     }
 
     /**
@@ -59,7 +66,7 @@ class OffresController extends AppController {
             if ($this->Offres->save($offre)) {
                 $this->Flash->success(__('The offre has been saved.'));
                 $this->notifierEtudiants($offre['id']);
-                
+
                 return $this->redirect(['action' => 'index']);
             }
             $this->Flash->error(__('The offre could not be saved. Please, try again.'));
@@ -145,18 +152,35 @@ class OffresController extends AppController {
         $offre = $this->Offres->get($this->request->getParam('pass'));
         $milieu = $this->getInfoMilieu($offre['milieudestage_id']);
         $etudiant = $this->getInfoEtudiant();
-        $offreid = $this->request->getParam('pass');
+
+        if ($this->linkStudantAndOffer($etudiant['id'], $offre['id'])) {
+            /*
+              $email = new Email('default');
+              $email->to($milieu['courriel_respo']);
+              $email->subject('Postulation d\'un étudiant');
+              $email->send('Bonjour,' . $etudiant['prenom'] . ' ' . $etudiant['prenom']
+              . ' est intéressé à votre offre de stage numéro ' . $offre['id']
+              . '. Vous pouvez le contacter à son courriel ' . $etudiant['courriel']
+              . ' ou à son téléphone ' . $etudiant['telephone'] . '.');
+
+              $this->Flash->success(__('You applied.'));
+             */
+        } else {
+            $this->Flash->error(__('Your application failed. Please, try again.'));
+        }
         
-        $email = new Email('default');
-        $email->to($milieu['courriel_respo']);
-        $email->subject('Postulation d\'un étudiant');
-        $email->send('Bonjour,' . $etudiant['prenom'] . ' ' . $etudiant['prenom']
-                        . ' est intéressé à votre offre de stage numéro ' . $offreid[0]
-                        . '. Vous pouvez le contacter à son courriel ' . $etudiant['courriel']
-                        . ' ou à son téléphone ' . $etudiant['telephone'] . '.');
-        
-        $this->Flash->success(__('You applied.'));
         return $this->redirect(['action' => 'index']);
+    }
+
+    private function linkStudantAndOffer($etudiantId, $offreId) {
+        $links = TableRegistry::get('EtudiantsOffres');
+        $newLink = $links->newEntity();
+
+        $newLink->etudiant_id = $etudiantId;
+        $newLink->offre_id = $offreId;
+        debug($newLink);
+
+        return $links->save($newLink);
     }
 
     private function getInfoEtudiant() {
@@ -171,7 +195,7 @@ class OffresController extends AppController {
 
     private function getInfoMilieu($id) {
         $milieu = $this->Offres->Milieudestages->find('all', ['user_id' => $id]);
-        
+
         return $milieu->first();
     }
 
@@ -187,14 +211,14 @@ class OffresController extends AppController {
 
         return $offre;
     }
-    
+
     public function notifierEtudiants($id) {
         $webroot = $this->request->webroot;
         $etudiants = $this->getEmailStudents();
 
         foreach ($etudiants as $etudiant) {
             $destination = $etudiant['courriel'];
-            
+
             $email = new Email('default');
             $email->emailFormat('html');
             $email->to($destination);
@@ -211,4 +235,17 @@ class OffresController extends AppController {
 
         return $etudiants->toArray();
     }
+
+    private function getLinks() {
+        $etudiant = $this->getInfoEtudiant();
+        $links = TableRegistry::get('EtudiantsOffres');
+        $links = $links->find()->where(['etudiant_id' => $etudiant['id']])->all();
+        $array = array();
+        foreach ( $links as $row ) {
+            $array[] = $row['offre_id'];
+        }
+        
+        return $array;
+    }
+
 }

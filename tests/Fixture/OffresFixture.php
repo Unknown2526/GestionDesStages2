@@ -60,8 +60,8 @@ class OffresFixture extends TestFixture
                 'responsabilite' => 'Lorem ipsum dolor sit amet',
                 'user_id' => 1,
                 'milieudestage_id' => 1,
-                'created' => '2018-10-08 13:08:43',
-                'modified' => '2018-10-08 13:08:43'
+                'created' => '2018-10-24 13:46:07',
+                'modified' => '2018-10-24 13:46:07'
             ],
         ];
         parent::init();

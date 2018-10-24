@@ -10,6 +10,7 @@ use Cake\Validation\Validator;
  * Etudiants Model
  *
  * @property \App\Model\Table\UsersTable|\Cake\ORM\Association\BelongsTo $Users
+ * @property |\Cake\ORM\Association\BelongsToMany $Offres
  *
  * @method \App\Model\Entity\Etudiant get($primaryKey, $options = [])
  * @method \App\Model\Entity\Etudiant newEntity($data = null, array $options = [])
@@ -34,9 +35,7 @@ class EtudiantsTable extends Table
     public function initialize(array $config)
     {
         parent::initialize($config);
-        
-        $this->addBehavior('Translate', ['fields' => ['info_supp']]);
-        
+
         $this->setTable('etudiants');
         $this->setDisplayField('id');
         $this->setPrimaryKey('id');
@@ -46,6 +45,11 @@ class EtudiantsTable extends Table
         $this->belongsTo('Users', [
             'foreignKey' => 'user_id',
             'joinType' => 'INNER'
+        ]);
+        $this->belongsToMany('Offres', [
+            'foreignKey' => 'etudiant_id',
+            'targetForeignKey' => 'offre_id',
+            'joinTable' => 'etudiants_offres'
         ]);
     }
 

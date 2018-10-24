@@ -12,6 +12,7 @@ use Cake\Validation\Validator;
  * @property \App\Model\Table\RegionsTable|\Cake\ORM\Association\BelongsTo $Regions
  * @property \App\Model\Table\UsersTable|\Cake\ORM\Association\BelongsTo $Users
  * @property \App\Model\Table\MilieudestagesTable|\Cake\ORM\Association\BelongsTo $Milieudestages
+ * @property |\Cake\ORM\Association\BelongsToMany $Etudiants
  *
  * @method \App\Model\Entity\Offre get($primaryKey, $options = [])
  * @method \App\Model\Entity\Offre newEntity($data = null, array $options = [])
@@ -36,8 +37,6 @@ class OffresTable extends Table
     public function initialize(array $config)
     {
         parent::initialize($config);
-        
-        $this->addBehavior('Translate', ['fields' => ['tache', 'responsabilite', 'titre']]);
 
         $this->setTable('offres');
         $this->setDisplayField('id');
@@ -56,6 +55,11 @@ class OffresTable extends Table
         $this->belongsTo('Milieudestages', [
             'foreignKey' => 'milieudestage_id',
             'joinType' => 'INNER'
+        ]);
+        $this->belongsToMany('Etudiants', [
+            'foreignKey' => 'offre_id',
+            'targetForeignKey' => 'etudiant_id',
+            'joinTable' => 'etudiants_offres'
         ]);
     }
 

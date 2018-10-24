@@ -65,8 +65,8 @@ $userrole = $loguser['role_id'];
                             <?= $this->Html->link(__('Edit'), ['action' => 'edit', $offre->id]) ?>
                             <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $offre->id], ['confirm' => __('Are you sure you want to delete # {0}?', $offre->id)]) ?>
                         <?php endif; ?>
-                        <?php if ($userrole === "etudiant"): ?>
-                            <?= $this->Html->link(__('Postuler'), ['action' => 'postuler', $offre->id]) ?>
+                        <?php if ($userrole === "etudiant"): ?> 
+                            <?= (in_array($offre->id, $links)) ? $this->Html->link(__('Unapply'), ['action' => 'unapply', $offre->id]) : $this->Html->link(__('Postuler'), ['action' => 'postuler', $offre->id]) ?>
                         <?php endif; ?>
                     </td>
                 </tr>
