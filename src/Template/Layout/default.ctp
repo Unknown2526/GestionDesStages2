@@ -19,10 +19,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
     <head>
         <?= $this->Html->charset() ?>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>
-            <?= $cakeDescription ?>:
-            <?= $this->fetch('title') ?>
-        </title>
+        <title>Gestiondestages</title>
         <?= $this->Html->meta('icon') ?>
 
         <?= $this->Html->css('base.css') ?>
@@ -40,30 +37,24 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
                 </li>
             </ul>
             <div class="top-bar-section">
-                <ul class="right">
+                <ul >
+                    <li>
                     <?php
                     $loguser = $this->request->session()->read('Auth.User');
                     if ($loguser) {
-                        
+
                         echo '<li>';
                         echo $this->Html->link(__('Mon profil'), ['controller' => 'Users', 'action' => 'monProfil', $loguser['id']]);
                         echo '</li>';
-                        echo '<li>';
+                        echo '<li class="right">';
                         echo $this->Html->link($loguser['role_id'] . ' ' . $loguser['username'] . ' logout', ['controller' => 'Users', 'action' => 'logout']);
                         echo '</li>';
                     } else {
-                        echo '<li>';
+                        echo '<li class="right">';
                         echo $this->Html->link(__('Login'), ['controller' => 'Users', 'action' => 'login']);
                         echo '</li>';
                     }
                     ?>
-                    <li>
-                        <?= $this->Html->link('Français', ['action' => 'changeLang', 'fr_CA'], ['escape' => false]) ?>
-                    </li>
-                    <li>
-                        <?= $this->Html->link('English', ['action' => 'changeLang', 'en_US'], ['escape' => false]) ?>
-                    </li>
-                    <li><?= $this->Html->link(__('About'), ['controller' => 'Apropos', 'action' => 'index']) ?></li>
                 </ul>
             </div>
         </nav>

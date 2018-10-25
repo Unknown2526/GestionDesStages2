@@ -12,6 +12,9 @@ $userrole = $loguser['role_id'];
         <?php if ($userrole !== "milieu"): ?>
             <li><?= $this->Html->link(__('Edit Etudiant'), ['action' => 'edit', $etudiant->id]) ?> </li>
         <?php endif; ?>
+        <?php if ($userrole !== "milieu"): ?>
+            <?= $this->Html->link(__('Demander entrevue'), ['controller' => 'Offres', 'action' => 'sendEconvocation', $etudiant->id]) ?>
+        <?php endif; ?>
         <?php if ($userrole === "admin"): ?>
             <li><?= $this->Form->postLink(__('Delete Etudiant'), ['action' => 'delete', $etudiant->id], ['confirm' => __('Are you sure you want to delete # {0}?', $etudiant->id)]) ?> </li>
             <li><?= $this->Html->link(__('New Etudiant'), ['action' => 'add']) ?> </li>
@@ -91,7 +94,7 @@ $userrole = $loguser['role_id'];
                                     <?= $this->Form->postLink(__('Delete'), ['controller' => 'Offres', 'action' => 'delete', $offres->id], ['confirm' => __('Are you sure you want to delete # {0}?', $offres->id)]) ?>
                                 <?php endif; ?>
                                 <?php if ($userrole === "etudiant"): ?>
-                                    <?= $this->Html->link(__('Unapply'), ['controller' => 'Offres','action' => 'unapply', $offres->id]) ?>
+                                    <?= $this->Html->link(__('Unapply'), ['controller' => 'Offres', 'action' => 'unapply', $offres->id]) ?>
                                 <?php endif; ?>
                             </td>
                         </tr>

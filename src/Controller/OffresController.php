@@ -250,7 +250,7 @@ class OffresController extends AppController {
             $email->emailFormat('html');
             $email->to($destination);
             $email->subject('New offer');
-            $email->send('We have a new internship offer.<br><br><a href="localhost' . $webroot . 'offres/view/' . $id . '">Click here to see the new offer</a>');
+            $email->send('We have a new internship offer.<br><br><a href="https://gestiondestages.ca/offres/view/' . $id . '">Click here to see the new offer</a>');
         }
         $this->Flash->success(__('You have notified the students.'));
         return $this->redirect(['controller' => 'Offres', 'action' => 'index']);
@@ -289,7 +289,7 @@ class OffresController extends AppController {
         $email->to($receveur);
         $email->subject('Convocation');
         $email->send('Bonjour,' . $etudiant['prenom'] . ' ' . $etudiant['nom']
-                . '. Compte tenu de votre profil, nous voudrions vous rencontrer pour une entrevue'
+                . ' nous voudrions vous rencontrer pour une entrevue'
                 . 'Contactez nous au numéro de téléphone:' . $milieu ['telephone_respo']
                 . 'ou par courriel:' . $milieu ['courriel_respo']
         );

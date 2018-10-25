@@ -61,7 +61,7 @@ $userrole = $loguser['role_id'];
                             <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $etudiant->id], ['confirm' => __('Are you sure you want to delete # {0}?', $etudiant->id)]) ?>
                         <?php endif; ?>
                         <?php if ($userrole === "milieu"): ?>    
-                            <?= $this->Html->link(__('Convocation'), ['controller' => 'Offres', 'action' => 'sendEconvocation', $etudiant->id]) ?>
+                            <?= $this->Html->link(__('Demander entrevue'), ['controller' => 'Offres', 'action' => 'sendEconvocation', $etudiant->id]) ?>
                         <?php endif; ?>
                     </td>
                 </tr>

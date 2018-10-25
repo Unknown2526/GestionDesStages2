@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net
 --
 -- Client :  localhost
--- Généré le :  Mer 24 Octobre 2018 à 16:36
+-- Généré le :  Jeu 25 Octobre 2018 à 16:11
 -- Version du serveur :  5.6.37
 -- Version de PHP :  7.1.8
 
@@ -67,7 +67,7 @@ CREATE TABLE IF NOT EXISTS `etudiants` (
 --
 
 INSERT INTO `etudiants` (`id`, `nom`, `prenom`, `telephone`, `courriel`, `info_supp`, `actif`, `user_id`, `created`, `modified`) VALUES
-(1, NULL, NULL, NULL, 'etudiant', NULL, NULL, 12, '2018-10-24 13:32:06', '2018-10-24 13:32:06');
+(1, 'Builder', 'Bob', '', 'adrienthereader@gmail.com', '', 0, 12, '2018-10-24 13:32:06', '2018-10-24 19:43:40');
 
 -- --------------------------------------------------------
 
@@ -87,30 +87,7 @@ CREATE TABLE IF NOT EXISTS `etudiants_offres` (
 --
 
 INSERT INTO `etudiants_offres` (`etudiant_id`, `offre_id`, `created`, `modified`) VALUES
-(1, 1, '2018-10-24 14:57:03', '2018-10-24 14:58:40'),
-(1, 2, '2018-10-24 16:35:18', '2018-10-24 16:35:18');
-
--- --------------------------------------------------------
-
---
--- Structure de la table `files`
---
-
-CREATE TABLE IF NOT EXISTS `files` (
-  `id` int(11) NOT NULL,
-  `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `path` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `created` int(11) NOT NULL,
-  `modified` int(11) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
-
---
--- Contenu de la table `files`
---
-
-INSERT INTO `files` (`id`, `name`, `path`, `created`, `modified`) VALUES
-(11, 'CMS_Creative_164657191_Kingfisher.jpg', 'Files/', 18, 18),
-(12, 'track.jpg', 'Files/', 18, 18);
+(1, 1, '2018-10-24 19:14:25', '2018-10-24 19:14:25');
 
 -- --------------------------------------------------------
 
@@ -441,7 +418,6 @@ CREATE TABLE IF NOT EXISTS `users` (
   `username` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `password` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `role_id` varchar(30) COLLATE utf8_unicode_ci NOT NULL,
-  `file_id` int(11) DEFAULT NULL,
   `uuid` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `verify` tinyint(1) DEFAULT NULL,
   `created` datetime NOT NULL,
@@ -452,10 +428,10 @@ CREATE TABLE IF NOT EXISTS `users` (
 -- Contenu de la table `users`
 --
 
-INSERT INTO `users` (`id`, `username`, `password`, `role_id`, `file_id`, `uuid`, `verify`, `created`, `modified`) VALUES
-(10, 'milieu', '$2y$10$R7RWkV8py8eJXYiXkLyOQeJNpsNzfyRBvYnjreIVOsHKTzK277s.e', 'milieu', NULL, '', 1, '2018-09-23 03:17:22', '2018-10-10 04:09:49'),
-(11, 'admin', '$2y$10$7RNDHsjqzQmaQ6ICuFsE.eX4zNhEhJz.zs5AUzpCp0E7/RrWoCQnS', 'admin', NULL, '', 1, '2018-09-23 03:18:17', '2018-10-10 03:58:14'),
-(12, 'etudiant', '$2y$10$DS6bfZ7ahzk9nQCqvIMEQO.SObW9nhWEXyAiiIreLr8uNJPY2WORO', 'etudiant', NULL, '', 1, '2018-10-24 13:32:06', '2018-10-24 13:32:06');
+INSERT INTO `users` (`id`, `username`, `password`, `role_id`, `uuid`, `verify`, `created`, `modified`) VALUES
+(10, 'milieu', '$2y$10$R7RWkV8py8eJXYiXkLyOQeJNpsNzfyRBvYnjreIVOsHKTzK277s.e', 'milieu', '', 1, '2018-09-23 03:17:22', '2018-10-10 04:09:49'),
+(11, 'admin', '$2y$10$7RNDHsjqzQmaQ6ICuFsE.eX4zNhEhJz.zs5AUzpCp0E7/RrWoCQnS', 'admin', '', 1, '2018-09-23 03:18:17', '2018-10-10 03:58:14'),
+(12, 'etudiant', '$2y$10$DS6bfZ7ahzk9nQCqvIMEQO.SObW9nhWEXyAiiIreLr8uNJPY2WORO', 'etudiant', '', 1, '2018-10-24 13:32:06', '2018-10-24 13:32:06');
 
 --
 -- Index pour les tables exportées
@@ -481,12 +457,6 @@ ALTER TABLE `etudiants`
 ALTER TABLE `etudiants_offres`
   ADD PRIMARY KEY (`etudiant_id`,`offre_id`),
   ADD KEY `offre_id` (`offre_id`);
-
---
--- Index pour la table `files`
---
-ALTER TABLE `files`
-  ADD PRIMARY KEY (`id`);
 
 --
 -- Index pour la table `milieudestages`
@@ -562,8 +532,7 @@ ALTER TABLE `typeetablissements`
 --
 ALTER TABLE `users`
   ADD PRIMARY KEY (`id`),
-  ADD KEY `role_id` (`role_id`),
-  ADD KEY `image_id` (`file_id`);
+  ADD KEY `role_id` (`role_id`);
 
 --
 -- AUTO_INCREMENT pour les tables exportées
@@ -579,11 +548,6 @@ ALTER TABLE `administrateurs`
 --
 ALTER TABLE `etudiants`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
---
--- AUTO_INCREMENT pour la table `files`
---
-ALTER TABLE `files`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=13;
 --
 -- AUTO_INCREMENT pour la table `milieudestages`
 --
@@ -682,8 +646,7 @@ ALTER TABLE `offres`
 -- Contraintes pour la table `users`
 --
 ALTER TABLE `users`
-  ADD CONSTRAINT `users_ibfk_1` FOREIGN KEY (`role_id`) REFERENCES `roles` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
-  ADD CONSTRAINT `users_ibfk_2` FOREIGN KEY (`file_id`) REFERENCES `files` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+  ADD CONSTRAINT `users_ibfk_1` FOREIGN KEY (`role_id`) REFERENCES `roles` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
