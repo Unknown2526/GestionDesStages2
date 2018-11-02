@@ -90,8 +90,18 @@ class UsersController extends AppController {
                 $uuid = $user['uuid'];
                 
                 $email = new Email('default');
+<<<<<<< HEAD
                 $email->to($username)->subject('Postulation d\'un étudiant')
                 ->send('Copier le lien dans la bar de recherche pour confirmer le compte: localhost/' . $local . '/users/verifyEmail/' . $uuid);
+=======
+                $email->emailFormat('html');
+                $email->to($username);
+                $email->subject('Postulation d\'un étudiant');
+                $email->send('CLiquer le lien dans la bar de recherche pour confirmer le compte: <a href="https://gestiondestages.ca/users/verifyEmail/' . $uuid . '"></a>');
+                
+                $this->Flash->success(__('Now verify your email.'));
+                return $this->redirect(['action' => 'login']);
+>>>>>>> 77ffb0775b5d26c8068c64ac1ea5246f3b0d27ab
                 
                 $this->Flash->success(__('Now verify your email.'));
                 return $this->redirect(['action' => 'login']);

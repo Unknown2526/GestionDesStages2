@@ -3,7 +3,11 @@
 -- https://www.phpmyadmin.net
 --
 -- Client :  localhost
+<<<<<<< HEAD
 -- Généré le :  Jeu 11 Octobre 2018 à 02:14
+=======
+-- Généré le :  Mer 24 Octobre 2018 à 16:36
+>>>>>>> 77ffb0775b5d26c8068c64ac1ea5246f3b0d27ab
 -- Version du serveur :  5.6.37
 -- Version de PHP :  7.1.8
 
@@ -60,7 +64,39 @@ CREATE TABLE IF NOT EXISTS `etudiants` (
   `user_id` int(11) NOT NULL,
   `created` datetime DEFAULT NULL,
   `modified` datetime DEFAULT NULL
+<<<<<<< HEAD
 ) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+=======
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Contenu de la table `etudiants`
+--
+
+INSERT INTO `etudiants` (`id`, `nom`, `prenom`, `telephone`, `courriel`, `info_supp`, `actif`, `user_id`, `created`, `modified`) VALUES
+(1, NULL, NULL, NULL, 'etudiant', NULL, NULL, 12, '2018-10-24 13:32:06', '2018-10-24 13:32:06');
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `etudiants_offres`
+--
+
+CREATE TABLE IF NOT EXISTS `etudiants_offres` (
+  `etudiant_id` int(11) NOT NULL,
+  `offre_id` int(11) NOT NULL,
+  `created` datetime NOT NULL,
+  `modified` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Contenu de la table `etudiants_offres`
+--
+
+INSERT INTO `etudiants_offres` (`etudiant_id`, `offre_id`, `created`, `modified`) VALUES
+(1, 1, '2018-10-24 14:57:03', '2018-10-24 14:58:40'),
+(1, 2, '2018-10-24 16:35:18', '2018-10-24 16:35:18');
+>>>>>>> 77ffb0775b5d26c8068c64ac1ea5246f3b0d27ab
 
 -- --------------------------------------------------------
 
@@ -120,7 +156,11 @@ CREATE TABLE IF NOT EXISTS `milieudestages` (
   `user_id` int(11) NOT NULL,
   `created` datetime NOT NULL,
   `modified` datetime NOT NULL
+<<<<<<< HEAD
 ) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+=======
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+>>>>>>> 77ffb0775b5d26c8068c64ac1ea5246f3b0d27ab
 
 --
 -- Contenu de la table `milieudestages`
@@ -128,8 +168,12 @@ CREATE TABLE IF NOT EXISTS `milieudestages` (
 
 INSERT INTO `milieudestages` (`id`, `nom`, `adresse`, `ville`, `province`, `code_postal`, `exigence`, `nom_respo`, `telephone_respo`, `fax_respo`, `courriel_respo`, `adresse_admin`, `ville_admin`, `province_admin`, `code_postal_admin`, `region_admin_id`, `facilite`, `tache`, `remarque`, `info_solicitation`, `info_contrat`, `reponse_milieu`, `autre_info`, `date_inv`, `date_rappel`, `actif`, `user_id`, `created`, `modified`) VALUES
 (6, 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'adrienthereader@gmail.com', 'a', 'a', 'a', 'a', 1, 'a', 'a', 'a', 'a', 'a', 'a', 'a', '2018-09-27 00:03:00', '2018-09-27 00:03:00', 1, 10, '0000-00-00 00:00:00', '2018-09-29 15:50:49'),
+<<<<<<< HEAD
 (7, 'b', 'b', 'b', 'b', 'b', '', 'b', 'b', 'b', 'adrienthereader@gmail.com', 'b', 'b', 'b', 'b', 5, 'b', 'b', 'b', 'b', 'b', 'b', 'b', NULL, NULL, 0, 11, '2018-10-01 17:10:08', '2018-10-01 17:16:04'),
 (8, 'Test', '', '', '', '', '', '', '', '', 'milieu@milieu.milieu', '', '', '', '', NULL, '', '', '', '', '', '', '', NULL, NULL, 0, 37, '2018-10-11 00:21:26', '2018-10-11 00:26:25');
+=======
+(7, 'b', 'b', 'b', 'b', 'b', '', 'b', 'b', 'b', 'adrienthereader@gmail.com', 'b', 'b', 'b', 'b', 5, 'b', 'b', 'b', 'b', 'b', 'b', 'b', NULL, NULL, 0, 11, '2018-10-01 17:10:08', '2018-10-01 17:16:04');
+>>>>>>> 77ffb0775b5d26c8068c64ac1ea5246f3b0d27ab
 
 -- --------------------------------------------------------
 
@@ -419,7 +463,11 @@ CREATE TABLE IF NOT EXISTS `users` (
   `verify` tinyint(1) DEFAULT NULL,
   `created` datetime NOT NULL,
   `modified` datetime NOT NULL
+<<<<<<< HEAD
 ) ENGINE=InnoDB AUTO_INCREMENT=38 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+=======
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+>>>>>>> 77ffb0775b5d26c8068c64ac1ea5246f3b0d27ab
 
 --
 -- Contenu de la table `users`
@@ -428,7 +476,11 @@ CREATE TABLE IF NOT EXISTS `users` (
 INSERT INTO `users` (`id`, `username`, `password`, `role_id`, `file_id`, `uuid`, `verify`, `created`, `modified`) VALUES
 (10, 'milieu', '$2y$10$R7RWkV8py8eJXYiXkLyOQeJNpsNzfyRBvYnjreIVOsHKTzK277s.e', 'milieu', NULL, '', 1, '2018-09-23 03:17:22', '2018-10-10 04:09:49'),
 (11, 'admin', '$2y$10$7RNDHsjqzQmaQ6ICuFsE.eX4zNhEhJz.zs5AUzpCp0E7/RrWoCQnS', 'admin', NULL, '', 1, '2018-09-23 03:18:17', '2018-10-10 03:58:14'),
+<<<<<<< HEAD
 (37, 'milieu@milieu.milieu', '$2y$10$oIKNUPVDw5QqSl8Ncg/ENObrQhowsshw1RyajUQ97jhv2hxIfFY5W', 'milieu', NULL, '8251588a-3a56-4b1b-b96f-8946632dfe6e', 1, '2018-10-11 00:21:26', '2018-10-11 00:21:36');
+=======
+(12, 'etudiant', '$2y$10$DS6bfZ7ahzk9nQCqvIMEQO.SObW9nhWEXyAiiIreLr8uNJPY2WORO', 'etudiant', NULL, '', 1, '2018-10-24 13:32:06', '2018-10-24 13:32:06');
+>>>>>>> 77ffb0775b5d26c8068c64ac1ea5246f3b0d27ab
 
 --
 -- Index pour les tables exportées
@@ -449,6 +501,16 @@ ALTER TABLE `etudiants`
   ADD KEY `user_id` (`user_id`);
 
 --
+<<<<<<< HEAD
+=======
+-- Index pour la table `etudiants_offres`
+--
+ALTER TABLE `etudiants_offres`
+  ADD PRIMARY KEY (`etudiant_id`,`offre_id`),
+  ADD KEY `offre_id` (`offre_id`);
+
+--
+>>>>>>> 77ffb0775b5d26c8068c64ac1ea5246f3b0d27ab
 -- Index pour la table `files`
 --
 ALTER TABLE `files`
@@ -544,7 +606,11 @@ ALTER TABLE `administrateurs`
 -- AUTO_INCREMENT pour la table `etudiants`
 --
 ALTER TABLE `etudiants`
+<<<<<<< HEAD
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=20;
+=======
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
+>>>>>>> 77ffb0775b5d26c8068c64ac1ea5246f3b0d27ab
 --
 -- AUTO_INCREMENT pour la table `files`
 --
@@ -554,7 +620,11 @@ ALTER TABLE `files`
 -- AUTO_INCREMENT pour la table `milieudestages`
 --
 ALTER TABLE `milieudestages`
+<<<<<<< HEAD
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=9;
+=======
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=8;
+>>>>>>> 77ffb0775b5d26c8068c64ac1ea5246f3b0d27ab
 --
 -- AUTO_INCREMENT pour la table `missions`
 --
@@ -584,7 +654,11 @@ ALTER TABLE `typeetablissements`
 -- AUTO_INCREMENT pour la table `users`
 --
 ALTER TABLE `users`
+<<<<<<< HEAD
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=38;
+=======
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=13;
+>>>>>>> 77ffb0775b5d26c8068c64ac1ea5246f3b0d27ab
 --
 -- Contraintes pour les tables exportées
 --
@@ -602,6 +676,16 @@ ALTER TABLE `etudiants`
   ADD CONSTRAINT `etudiants_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
+<<<<<<< HEAD
+=======
+-- Contraintes pour la table `etudiants_offres`
+--
+ALTER TABLE `etudiants_offres`
+  ADD CONSTRAINT `etudiants_offres_ibfk_1` FOREIGN KEY (`etudiant_id`) REFERENCES `etudiants` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `etudiants_offres_ibfk_2` FOREIGN KEY (`offre_id`) REFERENCES `offres` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+--
+>>>>>>> 77ffb0775b5d26c8068c64ac1ea5246f3b0d27ab
 -- Contraintes pour la table `milieudestages`
 --
 ALTER TABLE `milieudestages`

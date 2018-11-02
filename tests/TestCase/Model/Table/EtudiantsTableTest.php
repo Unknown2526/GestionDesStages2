@@ -57,28 +57,71 @@ class EtudiantsTableTest extends TestCase
      *
      * @return void
      */
+<<<<<<< HEAD
     public function testInitialize()
     {
         $this->markTestIncomplete('Not implemented yet.');
     }
+=======
+    /*public function testInitialize()
+    {
+        $this->markTestIncomplete('Not implemented yet.');
+    }*/
+>>>>>>> 77ffb0775b5d26c8068c64ac1ea5246f3b0d27ab
 
     /**
      * Test validationDefault method
      *
      * @return void
      */
+<<<<<<< HEAD
     public function testValidationDefault()
     {
         $this->markTestIncomplete('Not implemented yet.');
     }
+=======
+    /*public function testValidationDefault()
+    {
+        $this->markTestIncomplete('Not implemented yet.');
+    }*/
+>>>>>>> 77ffb0775b5d26c8068c64ac1ea5246f3b0d27ab
 
     /**
      * Test buildRules method
      *
      * @return void
      */
+<<<<<<< HEAD
     public function testBuildRules()
     {
         $this->markTestIncomplete('Not implemented yet.');
+=======
+    /*public function testBuildRules()
+    {
+        $this->markTestIncomplete('Not implemented yet.');
+    }*/
+    
+    public function testFindEtudiant()
+    {
+        $query = $this->Etudiants->find('etudiant');
+        $this->assertInstanceOf('Cake\ORM\Query', $query);
+        $result = $query->hydrate(false)->toArray();
+        $expected = [
+            [
+                'id' => 1,
+                'nom' => 'Lorem ipsum dolor sit amet',
+                'prenom' => 'Lorem ipsum dolor sit amet',
+                'telephone' => 'Lorem ipsum dolor sit amet',
+                'courriel' => 'Lorem ipsum dolor sit amet',
+                'info_supp' => 'Lorem ipsum dolor sit amet, aliquet feugiat. Convallis morbi fringilla gravida, phasellus feugiat dapibus velit nunc, pulvinar eget sollicitudin venenatis cum nullam, vivamus ut a sed, mollitia lectus. Nulla vestibulum massa neque ut et, id hendrerit sit, feugiat in taciti enim proin nibh, tempor dignissim, rhoncus duis vestibulum nunc mattis convallis.',
+                'actif' => 1,
+                'user_id' => 1,
+                'created' => null,
+                'modified' => null
+            ]
+        ];
+
+        $this->assertEquals($expected, $result);
+>>>>>>> 77ffb0775b5d26c8068c64ac1ea5246f3b0d27ab
     }
 }

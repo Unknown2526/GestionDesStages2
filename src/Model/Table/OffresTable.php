@@ -12,6 +12,10 @@ use Cake\Validation\Validator;
  * @property \App\Model\Table\RegionsTable|\Cake\ORM\Association\BelongsTo $Regions
  * @property \App\Model\Table\UsersTable|\Cake\ORM\Association\BelongsTo $Users
  * @property \App\Model\Table\MilieudestagesTable|\Cake\ORM\Association\BelongsTo $Milieudestages
+<<<<<<< HEAD
+=======
+ * @property |\Cake\ORM\Association\BelongsToMany $Etudiants
+>>>>>>> 77ffb0775b5d26c8068c64ac1ea5246f3b0d27ab
  *
  * @method \App\Model\Entity\Offre get($primaryKey, $options = [])
  * @method \App\Model\Entity\Offre newEntity($data = null, array $options = [])
@@ -36,8 +40,11 @@ class OffresTable extends Table
     public function initialize(array $config)
     {
         parent::initialize($config);
+<<<<<<< HEAD
         
         $this->addBehavior('Translate', ['fields' => ['tache', 'responsabilite', 'titre']]);
+=======
+>>>>>>> 77ffb0775b5d26c8068c64ac1ea5246f3b0d27ab
 
         $this->setTable('offres');
         $this->setDisplayField('id');
@@ -57,6 +64,14 @@ class OffresTable extends Table
             'foreignKey' => 'milieudestage_id',
             'joinType' => 'INNER'
         ]);
+<<<<<<< HEAD
+=======
+        $this->belongsToMany('Etudiants', [
+            'foreignKey' => 'offre_id',
+            'targetForeignKey' => 'etudiant_id',
+            'joinTable' => 'etudiants_offres'
+        ]);
+>>>>>>> 77ffb0775b5d26c8068c64ac1ea5246f3b0d27ab
     }
 
     /**

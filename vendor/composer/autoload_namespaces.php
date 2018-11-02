@@ -9,6 +9,10 @@ return array(
     'josegonzalez\\Dotenv' => array($vendorDir . '/josegonzalez/dotenv/src', $vendorDir . '/josegonzalez/dotenv/tests'),
     'Umpirsky\\' => array($vendorDir . '/umpirsky/twig-php-function/src'),
     'Twig_' => array($vendorDir . '/twig/twig/lib'),
+<<<<<<< HEAD
+=======
+    'Prophecy\\' => array($vendorDir . '/phpspec/prophecy/src'),
+>>>>>>> 77ffb0775b5d26c8068c64ac1ea5246f3b0d27ab
     'JakubOnderka\\PhpConsoleHighlighter' => array($vendorDir . '/jakub-onderka/php-console-highlighter/src'),
     'JakubOnderka\\PhpConsoleColor' => array($vendorDir . '/jakub-onderka/php-console-color/src'),
     'Detection' => array($vendorDir . '/mobiledetect/mobiledetectlib/namespaced'),

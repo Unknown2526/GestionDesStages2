@@ -65,11 +65,16 @@ $userrole = $loguser['role_id'];
                             <?= $this->Html->link(__('Edit'), ['action' => 'edit', $offre->id]) ?>
                             <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $offre->id], ['confirm' => __('Are you sure you want to delete # {0}?', $offre->id)]) ?>
                         <?php endif; ?>
+<<<<<<< HEAD
                         <?php if ($userrole === "etudiant"): ?>
                             <?= $this->Html->link(__('Postuler'), ['action' => 'postuler', $offre->id]) ?>
                         <?php endif; ?>
                         <?php if ($userrole === "milieu"): ?>
                             <?= $this->Html->link(__('Notifier les étudiants'), ['action' => 'notifierEtudiants', $offre->id]) ?>
+=======
+                        <?php if ($userrole === "etudiant"): ?> 
+                            <?= (in_array($offre->id, $links)) ? $this->Html->link(__('Unapply'), ['action' => 'unapply', $offre->id]) : $this->Html->link(__('Postuler'), ['action' => 'postuler', $offre->id]) ?>
+>>>>>>> 77ffb0775b5d26c8068c64ac1ea5246f3b0d27ab
                         <?php endif; ?>
                     </td>
                 </tr>

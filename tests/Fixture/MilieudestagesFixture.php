@@ -44,8 +44,13 @@ class MilieudestagesFixture extends TestFixture
         'date_rappel' => ['type' => 'datetime', 'length' => null, 'null' => true, 'default' => null, 'comment' => '', 'precision' => null],
         'actif' => ['type' => 'boolean', 'length' => null, 'null' => true, 'default' => null, 'comment' => '', 'precision' => null],
         'user_id' => ['type' => 'integer', 'length' => 11, 'unsigned' => false, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null, 'autoIncrement' => null],
+<<<<<<< HEAD
         'created' => ['type' => 'datetime', 'length' => null, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null],
         'modified' => ['type' => 'datetime', 'length' => null, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null],
+=======
+        'created' => ['type' => 'datetime', 'length' => null, 'null' => true, 'default' => null, 'comment' => '', 'precision' => null],
+        'modified' => ['type' => 'datetime', 'length' => null, 'null' => true, 'default' => null, 'comment' => '', 'precision' => null],
+>>>>>>> 77ffb0775b5d26c8068c64ac1ea5246f3b0d27ab
         '_indexes' => [
             'region_admin_id' => ['type' => 'index', 'columns' => ['region_admin_id'], 'length' => []],
             'user_id' => ['type' => 'index', 'columns' => ['user_id'], 'length' => []],
@@ -94,12 +99,21 @@ class MilieudestagesFixture extends TestFixture
                 'info_contrat' => 'Lorem ipsum dolor sit amet',
                 'reponse_milieu' => 'Lorem ipsum dolor sit amet',
                 'autre_info' => 'Lorem ipsum dolor sit amet, aliquet feugiat. Convallis morbi fringilla gravida, phasellus feugiat dapibus velit nunc, pulvinar eget sollicitudin venenatis cum nullam, vivamus ut a sed, mollitia lectus. Nulla vestibulum massa neque ut et, id hendrerit sit, feugiat in taciti enim proin nibh, tempor dignissim, rhoncus duis vestibulum nunc mattis convallis.',
+<<<<<<< HEAD
                 'date_inv' => '2018-10-03 00:25:47',
                 'date_rappel' => '2018-10-03 00:25:47',
                 'actif' => 1,
                 'user_id' => 1,
                 'created' => '2018-10-03 00:25:47',
                 'modified' => '2018-10-03 00:25:47'
+=======
+                'date_inv' => null,
+                'date_rappel' => null,
+                'actif' => 1,
+                'user_id' => 2,
+                'created' => null,
+                'modified' => null
+>>>>>>> 77ffb0775b5d26c8068c64ac1ea5246f3b0d27ab
             ],
         ];
         parent::init();

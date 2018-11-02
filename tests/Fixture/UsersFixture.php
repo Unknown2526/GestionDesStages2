@@ -24,8 +24,13 @@ class UsersFixture extends TestFixture
         'file_id' => ['type' => 'integer', 'length' => 11, 'unsigned' => false, 'null' => true, 'default' => null, 'comment' => '', 'precision' => null, 'autoIncrement' => null],
         'uuid' => ['type' => 'string', 'length' => 255, 'null' => false, 'default' => null, 'collate' => 'utf8_unicode_ci', 'comment' => '', 'precision' => null, 'fixed' => null],
         'verify' => ['type' => 'boolean', 'length' => null, 'null' => true, 'default' => null, 'comment' => '', 'precision' => null],
+<<<<<<< HEAD
         'created' => ['type' => 'datetime', 'length' => null, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null],
         'modified' => ['type' => 'datetime', 'length' => null, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null],
+=======
+        'created' => ['type' => 'datetime', 'length' => null, 'null' => true, 'default' => null, 'comment' => '', 'precision' => null],
+        'modified' => ['type' => 'datetime', 'length' => null, 'null' => true, 'default' => null, 'comment' => '', 'precision' => null],
+>>>>>>> 77ffb0775b5d26c8068c64ac1ea5246f3b0d27ab
         '_indexes' => [
             'role_id' => ['type' => 'index', 'columns' => ['role_id'], 'length' => []],
             'image_id' => ['type' => 'index', 'columns' => ['file_id'], 'length' => []],
@@ -52,6 +57,7 @@ class UsersFixture extends TestFixture
         $this->records = [
             [
                 'id' => 1,
+<<<<<<< HEAD
                 'username' => 'Lorem ipsum dolor sit amet',
                 'password' => 'Lorem ipsum dolor sit amet',
                 'role_id' => 'Lorem ipsum dolor sit amet',
@@ -60,6 +66,38 @@ class UsersFixture extends TestFixture
                 'verify' => 1,
                 'created' => '2018-10-10 03:31:06',
                 'modified' => '2018-10-10 03:31:06'
+=======
+                'username' => 'milieu',
+                'password' => 'milieu',
+                'role_id' => 'milieu',
+                'file_id' => null,
+                'uuid' => '',
+                'verify' => 1,
+                'created' => null,
+                'modified' => null
+            ],
+            [
+                'id' => 2,
+                'username' => 'admin',
+                'password' => 'admin',
+                'role_id' => 'admin',
+                'file_id' => null,
+                'uuid' => '',
+                'verify' => 1,
+                'created' => null,
+                'modified' => null
+            ],
+            [
+                'id' => 3,
+                'username' => 'etudiant',
+                'password' => 'etudiant',
+                'role_id' => 'etudiant',
+                'file_id' => null,
+                'uuid' => '',
+                'verify' => 1,
+                'created' => null,
+                'modified' => null
+>>>>>>> 77ffb0775b5d26c8068c64ac1ea5246f3b0d27ab
             ],
         ];
         parent::init();

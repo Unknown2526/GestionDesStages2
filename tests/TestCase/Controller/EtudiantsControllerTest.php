@@ -17,7 +17,13 @@ class EtudiantsControllerTest extends IntegrationTestCase
      */
     public $fixtures = [
         'app.etudiants',
+<<<<<<< HEAD
         'app.users'
+=======
+        'app.users',
+        'app.offres',
+        //'app.etudiants_offres'
+>>>>>>> 77ffb0775b5d26c8068c64ac1ea5246f3b0d27ab
     ];
 
     /**
@@ -27,7 +33,12 @@ class EtudiantsControllerTest extends IntegrationTestCase
      */
     public function testIndex()
     {
+<<<<<<< HEAD
         $this->markTestIncomplete('Not implemented yet.');
+=======
+        $this->get('/etudiants');
+        $this->assertResponseSuccess();
+>>>>>>> 77ffb0775b5d26c8068c64ac1ea5246f3b0d27ab
     }
 
     /**
@@ -37,7 +48,12 @@ class EtudiantsControllerTest extends IntegrationTestCase
      */
     public function testView()
     {
+<<<<<<< HEAD
         $this->markTestIncomplete('Not implemented yet.');
+=======
+        $this->get('/etudiants/view/1');
+        $this->assertResponseSuccess();
+>>>>>>> 77ffb0775b5d26c8068c64ac1ea5246f3b0d27ab
     }
 
     /**
@@ -45,28 +61,49 @@ class EtudiantsControllerTest extends IntegrationTestCase
      *
      * @return void
      */
+<<<<<<< HEAD
     public function testAdd()
     {
         $this->markTestIncomplete('Not implemented yet.');
     }
+=======
+    /*public function testAdd()
+    {
+        $this->markTestIncomplete('Not implemented yet.');
+    }*/
+>>>>>>> 77ffb0775b5d26c8068c64ac1ea5246f3b0d27ab
 
     /**
      * Test edit method
      *
      * @return void
      */
+<<<<<<< HEAD
     public function testEdit()
     {
         $this->markTestIncomplete('Not implemented yet.');
     }
+=======
+    /*public function testEdit()
+    {
+        $this->markTestIncomplete('Not implemented yet.');
+    }*/
+>>>>>>> 77ffb0775b5d26c8068c64ac1ea5246f3b0d27ab
 
     /**
      * Test delete method
      *
      * @return void
      */
+<<<<<<< HEAD
     public function testDelete()
     {
         $this->markTestIncomplete('Not implemented yet.');
     }
+=======
+    /*public function testDelete()
+    {
+        $this->markTestIncomplete('Not implemented yet.');
+    }*/
+>>>>>>> 77ffb0775b5d26c8068c64ac1ea5246f3b0d27ab
 }

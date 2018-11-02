@@ -62,28 +62,49 @@ class MilieudestagesTableTest extends TestCase
      *
      * @return void
      */
+<<<<<<< HEAD
     public function testInitialize()
     {
         $this->markTestIncomplete('Not implemented yet.');
     }
+=======
+    /*public function testInitialize()
+    {
+        $this->markTestIncomplete('Not implemented yet.');
+    }*/
+>>>>>>> 77ffb0775b5d26c8068c64ac1ea5246f3b0d27ab
 
     /**
      * Test validationDefault method
      *
      * @return void
      */
+<<<<<<< HEAD
     public function testValidationDefault()
     {
         $this->markTestIncomplete('Not implemented yet.');
     }
+=======
+    /*public function testValidationDefault()
+    {
+        $this->markTestIncomplete('Not implemented yet.');
+    }*/
+>>>>>>> 77ffb0775b5d26c8068c64ac1ea5246f3b0d27ab
 
     /**
      * Test buildRules method
      *
      * @return void
      */
+<<<<<<< HEAD
     public function testBuildRules()
     {
         $this->markTestIncomplete('Not implemented yet.');
     }
+=======
+    /*public function testBuildRules()
+    {
+        $this->markTestIncomplete('Not implemented yet.');
+    }*/
+>>>>>>> 77ffb0775b5d26c8068c64ac1ea5246f3b0d27ab
 }

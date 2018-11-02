@@ -13,9 +13,13 @@
 namespace Composer\Autoload;
 
 /**
+<<<<<<< HEAD
  * ClassLoader implements a PSR-0 class loader
  *
  * See https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-0.md
+=======
+ * ClassLoader implements a PSR-0, PSR-4 and classmap class loader.
+>>>>>>> 77ffb0775b5d26c8068c64ac1ea5246f3b0d27ab
  *
  *     $loader = new \Composer\Autoload\ClassLoader();
  *
@@ -39,6 +43,11 @@ namespace Composer\Autoload;
  *
  * @author Fabien Potencier <fabien@symfony.com>
  * @author Jordi Boggiano <j.boggiano@seld.be>
+<<<<<<< HEAD
+=======
+ * @see    http://www.php-fig.org/psr/psr-0/
+ * @see    http://www.php-fig.org/psr/psr-4/
+>>>>>>> 77ffb0775b5d26c8068c64ac1ea5246f3b0d27ab
  */
 class ClassLoader
 {
@@ -53,8 +62,14 @@ class ClassLoader
 
     private $useIncludePath = false;
     private $classMap = array();
+<<<<<<< HEAD
 
     private $classMapAuthoritative = false;
+=======
+    private $classMapAuthoritative = false;
+    private $missingClasses = array();
+    private $apcuPrefix;
+>>>>>>> 77ffb0775b5d26c8068c64ac1ea5246f3b0d27ab
 
     public function getPrefixes()
     {
@@ -147,7 +162,11 @@ class ClassLoader
      * appending or prepending to the ones previously set for this namespace.
      *
      * @param string       $prefix  The prefix/namespace, with trailing '\\'
+<<<<<<< HEAD
      * @param array|string $paths   The PSR-0 base directories
+=======
+     * @param array|string $paths   The PSR-4 base directories
+>>>>>>> 77ffb0775b5d26c8068c64ac1ea5246f3b0d27ab
      * @param bool         $prepend Whether to prepend the directories
      *
      * @throws \InvalidArgumentException
@@ -272,6 +291,29 @@ class ClassLoader
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * APCu prefix to use to cache found/not-found classes, if the extension is enabled.
+     *
+     * @param string|null $apcuPrefix
+     */
+    public function setApcuPrefix($apcuPrefix)
+    {
+        $this->apcuPrefix = function_exists('apcu_fetch') && filter_var(ini_get('apc.enabled'), FILTER_VALIDATE_BOOLEAN) ? $apcuPrefix : null;
+    }
+
+    /**
+     * The APCu prefix in use, or null if APCu caching is not enabled.
+     *
+     * @return string|null
+     */
+    public function getApcuPrefix()
+    {
+        return $this->apcuPrefix;
+    }
+
+    /**
+>>>>>>> 77ffb0775b5d26c8068c64ac1ea5246f3b0d27ab
      * Registers this instance as an autoloader.
      *
      * @param bool $prepend Whether to prepend the autoloader or not
@@ -313,22 +355,38 @@ class ClassLoader
      */
     public function findFile($class)
     {
+<<<<<<< HEAD
         // work around for PHP 5.3.0 - 5.3.2 https://bugs.php.net/50731
         if ('\\' == $class[0]) {
             $class = substr($class, 1);
         }
 
+=======
+>>>>>>> 77ffb0775b5d26c8068c64ac1ea5246f3b0d27ab
         // class map lookup
         if (isset($this->classMap[$class])) {
             return $this->classMap[$class];
         }
+<<<<<<< HEAD
         if ($this->classMapAuthoritative) {
             return false;
         }
+=======
+        if ($this->classMapAuthoritative || isset($this->missingClasses[$class])) {
+            return false;
+        }
+        if (null !== $this->apcuPrefix) {
+            $file = apcu_fetch($this->apcuPrefix.$class, $hit);
+            if ($hit) {
+                return $file;
+            }
+        }
+>>>>>>> 77ffb0775b5d26c8068c64ac1ea5246f3b0d27ab
 
         $file = $this->findFileWithExtension($class, '.php');
 
         // Search for Hack files if we are running on HHVM
+<<<<<<< HEAD
         if ($file === null && defined('HHVM_VERSION')) {
             $file = $this->findFileWithExtension($class, '.hh');
         }
@@ -336,6 +394,19 @@ class ClassLoader
         if ($file === null) {
             // Remember that this class does not exist.
             return $this->classMap[$class] = false;
+=======
+        if (false === $file && defined('HHVM_VERSION')) {
+            $file = $this->findFileWithExtension($class, '.hh');
+        }
+
+        if (null !== $this->apcuPrefix) {
+            apcu_add($this->apcuPrefix.$class, $file);
+        }
+
+        if (false === $file) {
+            // Remember that this class does not exist.
+            $this->missingClasses[$class] = true;
+>>>>>>> 77ffb0775b5d26c8068c64ac1ea5246f3b0d27ab
         }
 
         return $file;
@@ -348,10 +419,21 @@ class ClassLoader
 
         $first = $class[0];
         if (isset($this->prefixLengthsPsr4[$first])) {
+<<<<<<< HEAD
             foreach ($this->prefixLengthsPsr4[$first] as $prefix => $length) {
                 if (0 === strpos($class, $prefix)) {
                     foreach ($this->prefixDirsPsr4[$prefix] as $dir) {
                         if (file_exists($file = $dir . DIRECTORY_SEPARATOR . substr($logicalPathPsr4, $length))) {
+=======
+            $subPath = $class;
+            while (false !== $lastPos = strrpos($subPath, '\\')) {
+                $subPath = substr($subPath, 0, $lastPos);
+                $search = $subPath . '\\';
+                if (isset($this->prefixDirsPsr4[$search])) {
+                    $pathEnd = DIRECTORY_SEPARATOR . substr($logicalPathPsr4, $lastPos + 1);
+                    foreach ($this->prefixDirsPsr4[$search] as $dir) {
+                        if (file_exists($file = $dir . $pathEnd)) {
+>>>>>>> 77ffb0775b5d26c8068c64ac1ea5246f3b0d27ab
                             return $file;
                         }
                     }
@@ -399,6 +481,11 @@ class ClassLoader
         if ($this->useIncludePath && $file = stream_resolve_include_path($logicalPathPsr0)) {
             return $file;
         }
+<<<<<<< HEAD
+=======
+
+        return false;
+>>>>>>> 77ffb0775b5d26c8068c64ac1ea5246f3b0d27ab
     }
 }
 
