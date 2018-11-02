@@ -1,0 +1,46 @@
+2018-09-27 14:14:55 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'test.milieudestage' doesn't exist in C:\Program Files (x86)\Ampps\www\cake\vendor\cakephp\cakephp\src\Database\Schema\Collection.php on line 131
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\cake\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'milieudestage', Array, Object(Cake\Database\Schema\TableSchema))
+#1 C:\Program Files (x86)\Ampps\www\cake\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(63): Cake\Database\Schema\Collection->describe('milieudestage', Array)
+#2 C:\Program Files (x86)\Ampps\www\cake\vendor\cakephp\cakephp\src\ORM\Table.php(548): Cake\Database\Schema\CachedCollection->describe('milieudestage')
+#3 C:\Program Files (x86)\Ampps\www\cake\vendor\cakephp\cakephp\src\ORM\Table.php(673): Cake\ORM\Table->getSchema()
+#4 C:\Program Files (x86)\Ampps\www\cake\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(221): Cake\ORM\Table->getPrimaryKey()
+#5 C:\Program Files (x86)\Ampps\www\cake\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(131): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 C:\Program Files (x86)\Ampps\www\cake\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(114): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'milieudestage', 'Milieudestage')
+#7 C:\Program Files (x86)\Ampps\www\cake\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(101): Bake\Shell\Task\ModelTask->bake('Milieudestage')
+#8 C:\Program Files (x86)\Ampps\www\cake\vendor\cakephp\bake\src\Shell\BakeShell.php(273): Bake\Shell\Task\ModelTask->main('Milieudestage')
+#9 C:\Program Files (x86)\Ampps\www\cake\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('Milieudestage', 0)
+#10 C:\Program Files (x86)\Ampps\www\cake\vendor\cakephp\bake\src\Shell\BakeShell.php(274): Cake\Collection\Collection->each(Object(Closure))
+#11 C:\Program Files (x86)\Ampps\www\cake\vendor\cakephp\cakephp\src\Console\Shell.php(518): Bake\Shell\BakeShell->all('milieudestage')
+#12 C:\Program Files (x86)\Ampps\www\cake\vendor\cakephp\cakephp\src\Console\CommandRunner.php(342): Cake\Console\Shell->runCommand(Array, true)
+#13 C:\Program Files (x86)\Ampps\www\cake\vendor\cakephp\cakephp\src\Console\CommandRunner.php(164): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#14 C:\Program Files (x86)\Ampps\www\cake\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#15 {main}
+
+
+2018-10-24 19:32:40 Error: Fatal Error (1): Class 'PHPUnit\Framework\BaseTestListener' not found in [C:\Program Files (x86)\Ampps\www\CakePHP-3.6.10\GestionDesStages\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureInjector.php, line 28]
+
+
+2018-10-24 19:32:45 Error: Fatal Error (1): Class 'PHPUnit\Framework\BaseTestListener' not found in [C:\Program Files (x86)\Ampps\www\CakePHP-3.6.10\GestionDesStages\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureInjector.php, line 28]
+
+
+2018-10-26 10:14:07 Warning: Warning (2): require(Offre.php): failed to open stream: No such file or directory in [C:\Program Files (x86)\Ampps\www\CakePHP-3.6.10\GestionDesStages\tests\TestCase\Model\Table\EtudiantsTableTest.php, line 3]
+
+
+2018-10-26 10:14:07 Warning: Warning (2): require(Offre.php): failed to open stream: No such file or directory in [C:\Program Files (x86)\Ampps\www\CakePHP-3.6.10\GestionDesStages\tests\TestCase\Model\Table\EtudiantsTableTest.php, line 3]
+
+
+2018-10-26 10:25:27 Error: [Cake\Http\Exception\MethodNotAllowedException] Method Not Allowed
+Request URL: /etudiants/delete
+2018-10-26 14:43:35 Error: [Cake\Http\Exception\MethodNotAllowedException] Method Not Allowed
+Request URL: /milieudestages/delete
+2018-10-26 14:44:25 Error: [Cake\Http\Exception\MethodNotAllowedException] Method Not Allowed
+Request URL: /milieudestages/delete
+2018-10-26 14:44:53 Error: [Cake\Http\Exception\MethodNotAllowedException] Method Not Allowed
+Request URL: /milieudestages/delete
+2018-10-26 14:47:20 Error: [Cake\Http\Exception\MethodNotAllowedException] Method Not Allowed
+Request URL: /milieudestages/delete
+2018-10-26 15:19:18 Error: [Cake\Http\Exception\InvalidCsrfTokenException] Missing CSRF token cookie
+Request URL: /
+2018-10-26 15:29:16 Error: [Cake\Http\Exception\InvalidCsrfTokenException] Missing CSRF token cookie
+Request URL: /

@@ -1,0 +1,764 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2018-10-09 20:49+0000\n"
+"PO-Revision-Date: 2018-10-12 16:15-0400\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 2.2\n"
+"Last-Translator: \n"
+"Language: fr_CA\n"
+
+#: Controller/AdministrateursController.php:58;83
+msgid "The administrateur has been saved."
+msgstr "L'administrateur a été enregistré."
+
+#: Controller/AdministrateursController.php:62;87
+msgid "The administrateur could not be saved. Please, try again."
+msgstr "L'administrateur n'a pas pu être sauvé. Veuillez réessayer."
+
+#: Controller/AdministrateursController.php:105
+msgid "The administrateur has been deleted."
+msgstr "L'administrateur a été supprimé."
+
+#: Controller/AdministrateursController.php:107
+msgid "The administrateur could not be deleted. Please, try again."
+msgstr "L'administrateur n'a pas pu être supprimé. Veuillez réessayer."
+
+#: Controller/EtudiantsController.php:58;83
+msgid "The etudiant has been saved."
+msgstr "L'étudiant a été enregistré."
+
+#: Controller/EtudiantsController.php:62;87
+msgid "The etudiant could not be saved. Please, try again."
+msgstr "L'étudiant n'a pas pu être sauvé. Veuillez réessayer."
+
+#: Controller/EtudiantsController.php:105
+msgid "The etudiant has been deleted."
+msgstr "L'étudiant a été supprimé."
+
+#: Controller/EtudiantsController.php:107
+msgid "The etudiant could not be deleted. Please, try again."
+msgstr "L'étudiant n'a pas pu être supprimé. Veuillez réessayer."
+
+#: Controller/FilesController.php:60
+msgid "File has been uploaded and inserted successfully."
+msgstr "Le fichier a été téléchargé et inséré avec succès."
+
+#: Controller/FilesController.php:62
+msgid "Unable to upload file, please try again."
+msgstr "Impossible de télécharger le fichier, veuillez réessayer."
+
+#: Controller/FilesController.php:65
+msgid "Unable to save file, please try again."
+msgstr "Impossible de sauvegarder le fichier, veuillez réessayer."
+
+#: Controller/FilesController.php:68
+msgid "Please choose a file to upload."
+msgstr "Veuillez choisir un fichier à télécharger."
+
+#: Controller/FilesController.php:88
+msgid "The file has been saved."
+msgstr "Le fichier a été enregistré."
+
+#: Controller/FilesController.php:92
+msgid "The file could not be saved. Please, try again."
+msgstr "Le fichier n'a pas pu être enregistré. Veuillez réessayer."
+
+#: Controller/FilesController.php:108
+msgid "The file has been deleted."
+msgstr "Le fichier a été supprimé."
+
+#: Controller/FilesController.php:110
+msgid "The file could not be deleted. Please, try again."
+msgstr "Le fichier n'a pas pu être supprimé. Veuillez réessayer."
+
+#: Controller/MilieudestagesController.php:61;89
+msgid "The milieudestage has been saved."
+msgstr "Le milieudestage a été enregistré."
+
+#: Controller/MilieudestagesController.php:65;93
+msgid "The milieudestage could not be saved. Please, try again."
+msgstr "Le milieudestage n'a pas pu être sauvé. Veuillez réessayer."
+
+#: Controller/MilieudestagesController.php:114
+msgid "The milieudestage has been deleted."
+msgstr "Le milieudestage a été supprimé."
+
+#: Controller/MilieudestagesController.php:116
+msgid "The milieudestage could not be deleted. Please, try again."
+msgstr "Le milieudestage n'a pas pu être supprimé. Veuillez réessayer."
+
+#: Controller/MilieudestagesController.php:154
+msgid "You have notified the internship circles."
+msgstr "Vous avez notifier les milieux de stages."
+
+#: Controller/OffresController.php:60;90
+msgid "The offre has been saved."
+msgstr "L'offre a été sauvegardée."
+
+#: Controller/OffresController.php:64;94
+msgid "The offre could not be saved. Please, try again."
+msgstr "L'offre n'a pu être sauvegardée. Veuillez réessayer."
+
+#: Controller/OffresController.php:114
+msgid "The offre has been deleted."
+msgstr "L'offre a été supprimée."
+
+#: Controller/OffresController.php:116
+msgid "The offre could not be deleted. Please, try again."
+msgstr "L'offre n'a pas pu être supprimée. Veuillez réessayer."
+
+#: Controller/OffresController.php:155
+msgid "You applied."
+msgstr "Vous avez postuler."
+
+#: Controller/UsersController.php:59;106
+msgid "The user has been saved."
+msgstr "L'utilisateur a été enregistré."
+
+#: Controller/UsersController.php:63
+msgid "The username need to be a valide email."
+msgstr "Le nom d'utilisateur doit être un email valide."
+
+#: Controller/UsersController.php:110
+msgid "The user could not be saved. Please, try again."
+msgstr "L'utilisateur n'a pas pu être enregistré. Veuillez réessayer."
+
+#: Controller/UsersController.php:128
+msgid "The user has been deleted."
+msgstr "L'utilisateur a été supprimé."
+
+#: Controller/UsersController.php:130
+msgid "The user could not be deleted. Please, try again."
+msgstr "L'utilisateur n'a pas pu être supprimé. Veuillez réessayer."
+
+#: Template/Administrateurs/add.ctp:9 Template/Administrateurs/edit.ctp:9
+#: Template/Administrateurs/index.ctp:9;27 Template/Administrateurs/view.ctp:9
+#: Template/Etudiants/add.ctp:9 Template/Etudiants/edit.ctp:11
+#: Template/Etudiants/index.ctp:9;29 Template/Etudiants/view.ctp:11
+#: Template/Files/add.ctp:9 Template/Files/edit.ctp:10
+#: Template/Files/index.ctp:9;24 Template/Files/view.ctp:9
+#: Template/Milieudestages/add.ctp:11 Template/Milieudestages/edit.ctp:11
+#: Template/Milieudestages/index.ctp:11;73
+#: Template/Milieudestages/view.ctp:11;171;202;233;270
+#: Template/Offres/add.ctp:11 Template/Offres/edit.ctp:11
+#: Template/Offres/index.ctp:11;41 Template/Offres/view.ctp:11
+#: Template/Users/add.ctp:9 Template/Users/edit.ctp:9
+#: Template/Users/index.ctp:9;41 Template/Users/view.ctp:9;74;110;170;231
+msgid "Actions"
+msgstr "Actions"
+
+#: Template/Administrateurs/add.ctp:10 Template/Administrateurs/edit.ctp:16
+#: Template/Administrateurs/view.ctp:12 Template/Users/add.ctp:17
+#: Template/Users/edit.ctp:22 Template/Users/index.ctp:17
+#: Template/Users/view.ctp:20
+msgid "List Administrateurs"
+msgstr "Liste Administrateurs"
+
+#: Template/Administrateurs/add.ctp:11 Template/Administrateurs/edit.ctp:17
+#: Template/Administrateurs/index.ctp:11 Template/Administrateurs/view.ctp:14
+#: Template/Etudiants/add.ctp:11 Template/Etudiants/edit.ctp:19
+#: Template/Etudiants/index.ctp:11 Template/Etudiants/view.ctp:17
+#: Template/Files/add.ctp:11 Template/Files/edit.ctp:18
+#: Template/Files/index.ctp:11 Template/Files/view.ctp:14
+#: Template/Milieudestages/add.ctp:18 Template/Milieudestages/edit.ctp:25
+#: Template/Milieudestages/index.ctp:17 Template/Milieudestages/view.ctp:22
+#: Template/Offres/add.ctp:14 Template/Offres/edit.ctp:19
+#: Template/Offres/index.ctp:16 Template/Offres/view.ctp:24
+#: Template/Users/add.ctp:10 Template/Users/edit.ctp:15
+#: Template/Users/view.ctp:12
+msgid "List Users"
+msgstr "Liste des utilisateurs"
+
+#: Template/Administrateurs/add.ctp:12 Template/Administrateurs/edit.ctp:18
+#: Template/Administrateurs/index.ctp:12 Template/Administrateurs/view.ctp:15
+#: Template/Etudiants/add.ctp:12 Template/Etudiants/edit.ctp:20
+#: Template/Etudiants/index.ctp:12 Template/Etudiants/view.ctp:18
+#: Template/Milieudestages/add.ctp:19 Template/Milieudestages/edit.ctp:26
+#: Template/Milieudestages/index.ctp:18 Template/Milieudestages/view.ctp:23
+#: Template/Offres/add.ctp:15 Template/Offres/edit.ctp:20
+#: Template/Offres/index.ctp:17 Template/Offres/view.ctp:25
+#: Template/Users/index.ctp:10 Template/Users/view.ctp:13
+msgid "New User"
+msgstr "Nouvel utilisateur"
+
+#: Template/Administrateurs/add.ctp:18
+msgid "Add Administrateur"
+msgstr "Ajouter un administrateur"
+
+#: Template/Administrateurs/add.ctp:26 Template/Administrateurs/edit.ctp:32
+#: Template/Etudiants/add.ctp:29 Template/Etudiants/edit.ctp:40
+#: Template/Files/add.ctp:22 Template/Files/edit.ctp:29
+#: Template/Milieudestages/add.ctp:71 Template/Milieudestages/edit.ctp:78
+#: Template/Offres/add.ctp:36 Template/Offres/edit.ctp:41
+#: Template/Users/add.ctp:38 Template/Users/edit.ctp:43
+msgid "Submit"
+msgstr "Soumettre"
+
+#: Template/Administrateurs/edit.ctp:11 Template/Administrateurs/index.ctp:43
+#: Template/Etudiants/edit.ctp:15 Template/Etudiants/index.ctp:47
+#: Template/Files/edit.ctp:12 Template/Files/index.ctp:47
+#: Template/Milieudestages/edit.ctp:15 Template/Milieudestages/index.ctp:113
+#: Template/Milieudestages/view.ctp:184;215;246;290 Template/Offres/edit.ctp:14
+#: Template/Offres/index.ctp:62 Template/Users/edit.ctp:12
+#: Template/Users/index.ctp:65 Template/Users/view.ctp:88;127;208;249
+msgid "Delete"
+msgstr "Effacer"
+
+#: Template/Administrateurs/edit.ctp:13 Template/Administrateurs/index.ctp:43
+#: Template/Administrateurs/view.ctp:11 Template/Etudiants/edit.ctp:15
+#: Template/Etudiants/index.ctp:47 Template/Etudiants/view.ctp:14
+#: Template/Files/edit.ctp:14 Template/Files/index.ctp:47
+#: Template/Files/view.ctp:11 Template/Milieudestages/edit.ctp:15
+#: Template/Milieudestages/index.ctp:113
+#: Template/Milieudestages/view.ctp:14;184;215;246;290
+#: Template/Offres/edit.ctp:14 Template/Offres/index.ctp:62
+#: Template/Offres/view.ctp:17 Template/Users/edit.ctp:12
+#: Template/Users/index.ctp:65 Template/Users/view.ctp:11;88;127;208;249
+msgid "Are you sure you want to delete # {0}?"
+msgstr "Êtes-vous sûr de vouloir supprimer # {0}?"
+
+#: Template/Administrateurs/edit.ctp:24 Template/Administrateurs/view.ctp:10
+msgid "Edit Administrateur"
+msgstr "Editer Administrateur"
+
+#: Template/Administrateurs/index.ctp:10 Template/Administrateurs/view.ctp:13
+#: Template/Users/add.ctp:18 Template/Users/edit.ctp:23
+#: Template/Users/index.ctp:18 Template/Users/view.ctp:21
+msgid "New Administrateur"
+msgstr "Nouveau administrateur"
+
+#: Template/Administrateurs/index.ctp:16
+msgid "Administrateurs"
+msgstr "Administrateurs"
+
+#: Template/Administrateurs/index.ctp:41 Template/Etudiants/index.ctp:45
+#: Template/Files/index.ctp:45 Template/Milieudestages/index.ctp:110
+#: Template/Milieudestages/view.ctp:182;213;244;287
+#: Template/Offres/index.ctp:59 Template/Users/index.ctp:63
+#: Template/Users/view.ctp:86;125;206;247
+msgid "View"
+msgstr "Vue"
+
+#: Template/Administrateurs/index.ctp:42 Template/Etudiants/index.ctp:46
+#: Template/Files/index.ctp:46 Template/Milieudestages/index.ctp:112
+#: Template/Milieudestages/view.ctp:183;214;245;289
+#: Template/Offres/index.ctp:61 Template/Users/index.ctp:64
+#: Template/Users/view.ctp:87;126;207;248
+msgid "Edit"
+msgstr "Modifier"
+
+#: Template/Administrateurs/index.ctp:51 Template/Etudiants/index.ctp:55
+#: Template/Files/index.ctp:55 Template/Milieudestages/index.ctp:122
+#: Template/Offres/index.ctp:74 Template/Users/index.ctp:73
+msgid "first"
+msgstr "premier"
+
+#: Template/Administrateurs/index.ctp:52 Template/Etudiants/index.ctp:56
+#: Template/Files/index.ctp:56 Template/Milieudestages/index.ctp:123
+#: Template/Offres/index.ctp:75 Template/Users/index.ctp:74
+msgid "previous"
+msgstr "précédent"
+
+#: Template/Administrateurs/index.ctp:54 Template/Etudiants/index.ctp:58
+#: Template/Files/index.ctp:58 Template/Milieudestages/index.ctp:125
+#: Template/Offres/index.ctp:77 Template/Users/index.ctp:76
+msgid "next"
+msgstr "prochain"
+
+#: Template/Administrateurs/index.ctp:55 Template/Etudiants/index.ctp:59
+#: Template/Files/index.ctp:59 Template/Milieudestages/index.ctp:126
+#: Template/Offres/index.ctp:78 Template/Users/index.ctp:77
+msgid "last"
+msgstr "dernier"
+
+#: Template/Administrateurs/index.ctp:57 Template/Etudiants/index.ctp:61
+#: Template/Files/index.ctp:61 Template/Milieudestages/index.ctp:128
+#: Template/Offres/index.ctp:80 Template/Users/index.ctp:79
+msgid "Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} total"
+msgstr "Page {{page}} sur {{pages}}, affichant le {{current}} enregistrement (s) sur le {{count}} total"
+
+#: Template/Administrateurs/view.ctp:11
+msgid "Delete Administrateur"
+msgstr "Supprimer Administrateur"
+
+#: Template/Administrateurs/view.ctp:22 Template/Etudiants/view.ctp:28
+#: Template/Files/view.ctp:30 Template/Milieudestages/view.ctp:43;169;231
+#: Template/Users/view.ctp:68;101;140
+msgid "Nom"
+msgstr "Nom"
+
+#: Template/Administrateurs/view.ctp:26 Template/Etudiants/view.ctp:36
+#: Template/Users/view.ctp:69;103
+msgid "Telephone"
+msgstr "Téléphone"
+
+#: Template/Administrateurs/view.ctp:30 Template/Etudiants/view.ctp:40
+#: Template/Users/view.ctp:70;104
+msgid "Courriel"
+msgstr "Courriel"
+
+#: Template/Administrateurs/view.ctp:34 Template/Etudiants/view.ctp:45
+#: Template/Milieudestages/view.ctp:120 Template/Offres/view.ctp:58
+msgid "User"
+msgstr "Utilisateur"
+
+#: Template/Administrateurs/view.ctp:38 Template/Etudiants/view.ctp:49
+#: Template/Files/view.ctp:38
+#: Template/Milieudestages/view.ctp:124;167;198;229;259
+#: Template/Offres/view.ctp:62 Template/Users/view.ctp:50;67;100;139;220
+msgid "Id"
+msgstr "Identifiant"
+
+#: Template/Administrateurs/view.ctp:42 Template/Etudiants/view.ctp:53
+#: Template/Files/view.ctp:42 Template/Milieudestages/view.ctp:136;267
+#: Template/Offres/view.ctp:66 Template/Users/view.ctp:54;72;108;167;228
+msgid "Created"
+msgstr "Créé"
+
+#: Template/Administrateurs/view.ctp:46 Template/Etudiants/view.ctp:57
+#: Template/Files/view.ctp:46 Template/Milieudestages/view.ctp:140;268
+#: Template/Offres/view.ctp:70 Template/Users/view.ctp:58;73;109;168;229
+msgid "Modified"
+msgstr "Modifié"
+
+#: Template/Etudiants/add.ctp:10 Template/Etudiants/edit.ctp:18
+#: Template/Etudiants/view.ctp:15 Template/Users/add.ctp:19
+#: Template/Users/edit.ctp:24 Template/Users/index.ctp:19
+#: Template/Users/view.ctp:22
+msgid "List Etudiants"
+msgstr "Liste des étudiants"
+
+#: Template/Etudiants/add.ctp:18
+msgid "Add Etudiant"
+msgstr "Ajouter un étudiant"
+
+#: Template/Etudiants/edit.ctp:22 Template/Etudiants/view.ctp:20
+#: Template/Milieudestages/add.ctp:12 Template/Milieudestages/edit.ctp:19
+#: Template/Milieudestages/view.ctp:16 Template/Offres/add.ctp:17
+#: Template/Offres/edit.ctp:22 Template/Offres/index.ctp:19
+#: Template/Offres/view.ctp:27 Template/Users/add.ctp:21
+#: Template/Users/edit.ctp:26 Template/Users/index.ctp:21
+#: Template/Users/view.ctp:24
+msgid "List Milieudestages"
+msgstr "Liste des Milieudestages"
+
+#: Template/Etudiants/edit.ctp:23 Template/Etudiants/view.ctp:21
+#: Template/Milieudestages/add.ctp:21 Template/Milieudestages/edit.ctp:28
+#: Template/Milieudestages/index.ctp:21 Template/Milieudestages/view.ctp:25
+#: Template/Offres/add.ctp:12 Template/Offres/edit.ctp:17
+#: Template/Offres/view.ctp:19 Template/Users/add.ctp:23
+#: Template/Users/edit.ctp:28 Template/Users/index.ctp:23
+#: Template/Users/view.ctp:26
+msgid "List Offres"
+msgstr "Liste Offres"
+
+#: Template/Etudiants/edit.ctp:29 Template/Etudiants/view.ctp:12
+msgid "Edit Etudiant"
+msgstr "Editer un étudiant"
+
+#: Template/Etudiants/index.ctp:10 Template/Etudiants/view.ctp:16
+#: Template/Users/add.ctp:20 Template/Users/edit.ctp:25
+#: Template/Users/index.ctp:20 Template/Users/view.ctp:23
+msgid "New Etudiant"
+msgstr "Nouvel étudiant"
+
+#: Template/Etudiants/index.ctp:16
+msgid "Etudiants"
+msgstr "Étudiant"
+
+#: Template/Etudiants/view.ctp:14
+msgid "Delete Etudiant"
+msgstr "Delete Student"
+
+#: Template/Etudiants/view.ctp:32 Template/Users/view.ctp:102
+msgid "Prenom"
+msgstr "Prénom"
+
+#: Template/Etudiants/view.ctp:61 Template/Milieudestages/view.ctp:144
+#: Template/Users/view.ctp:106;165
+msgid "Actif"
+msgstr "Actif"
+
+#: Template/Etudiants/view.ctp:62 Template/Milieudestages/view.ctp:145
+msgid "Yes"
+msgstr "Oui"
+
+#: Template/Etudiants/view.ctp:62 Template/Milieudestages/view.ctp:145
+msgid "No"
+msgstr "Non"
+
+#: Template/Etudiants/view.ctp:67 Template/Users/view.ctp:105
+msgid "Info Supp"
+msgstr "Info Supp"
+
+#: Template/Files/add.ctp:10 Template/Files/edit.ctp:17
+#: Template/Files/view.ctp:12 Template/Users/add.ctp:15
+#: Template/Users/edit.ctp:20 Template/Users/index.ctp:15
+#: Template/Users/view.ctp:18
+msgid "List Files"
+msgstr "Liste des fichiers"
+
+#: Template/Files/add.ctp:17
+msgid "Add File"
+msgstr "Ajouter le fichier"
+
+#: Template/Files/edit.ctp:24 Template/Files/view.ctp:10
+msgid "Edit File"
+msgstr "Editer le fichier"
+
+#: Template/Files/index.ctp:10 Template/Files/view.ctp:13
+#: Template/Users/add.ctp:16 Template/Users/edit.ctp:21
+#: Template/Users/index.ctp:16 Template/Users/view.ctp:19
+msgid "New File"
+msgstr "Nouveau fichier"
+
+#: Template/Files/index.ctp:15
+msgid "Files"
+msgstr "Fichiers"
+
+#: Template/Files/view.ctp:11
+msgid "Delete File"
+msgstr "Supprimer le fichier"
+
+#: Template/Files/view.ctp:34
+msgid "Path"
+msgstr "Chemin"
+
+#: Template/Layout/default.ctp:49
+msgid "Mon profil"
+msgstr "Mon profil"
+
+#: Template/Layout/error.ctp:35
+msgid "Error"
+msgstr "Erreur"
+
+#: Template/Layout/error.ctp:43
+msgid "Back"
+msgstr "Reculer"
+
+#: Template/Milieudestages/add.ctp:14 Template/Milieudestages/edit.ctp:21
+#: Template/Milieudestages/index.ctp:13 Template/Milieudestages/view.ctp:18
+msgid "List Regions"
+msgstr "Liste des régions"
+
+#: Template/Milieudestages/add.ctp:15 Template/Milieudestages/edit.ctp:22
+#: Template/Milieudestages/index.ctp:14 Template/Milieudestages/view.ctp:19
+msgid "New Region"
+msgstr "Nouvelle région"
+
+#: Template/Milieudestages/add.ctp:23 Template/Milieudestages/edit.ctp:30
+#: Template/Milieudestages/index.ctp:23 Template/Milieudestages/view.ctp:27
+#: Template/Offres/index.ctp:13 Template/Offres/view.ctp:21
+#: Template/Users/add.ctp:24 Template/Users/edit.ctp:29
+#: Template/Users/index.ctp:24 Template/Users/view.ctp:27
+msgid "New Offre"
+msgstr "Nouvelle offre"
+
+#: Template/Milieudestages/add.ctp:26 Template/Milieudestages/edit.ctp:33
+#: Template/Milieudestages/index.ctp:26 Template/Milieudestages/view.ctp:30
+msgid "List Listemissions"
+msgstr "List Listemissions"
+
+#: Template/Milieudestages/add.ctp:27 Template/Milieudestages/edit.ctp:34
+#: Template/Milieudestages/index.ctp:27 Template/Milieudestages/view.ctp:31
+msgid "New Listemission"
+msgstr "Nouveau Listemission"
+
+#: Template/Milieudestages/add.ctp:28 Template/Milieudestages/edit.ctp:35
+#: Template/Milieudestages/index.ctp:28 Template/Milieudestages/view.ctp:32
+msgid "List Listetypeclienteles"
+msgstr "Liste listeeclienteles"
+
+#: Template/Milieudestages/add.ctp:29 Template/Milieudestages/edit.ctp:36
+#: Template/Milieudestages/index.ctp:29 Template/Milieudestages/view.ctp:33
+msgid "New Listetypeclientele"
+msgstr "Nouveau Listetypeclientele"
+
+#: Template/Milieudestages/add.ctp:30 Template/Milieudestages/edit.ctp:37
+#: Template/Milieudestages/index.ctp:30 Template/Milieudestages/view.ctp:34
+msgid "List Listetypeetablissements"
+msgstr "Liste listeetablissements"
+
+#: Template/Milieudestages/add.ctp:31 Template/Milieudestages/edit.ctp:38
+#: Template/Milieudestages/index.ctp:31 Template/Milieudestages/view.ctp:35
+msgid "New Listetypeetablissement"
+msgstr "Nouveau Listetypeetablissement"
+
+#: Template/Milieudestages/add.ctp:38
+msgid "Add Milieudestage"
+msgstr "Ajouter Milieudestage"
+
+#: Template/Milieudestages/edit.ctp:45 Template/Milieudestages/view.ctp:13
+msgid "Edit Milieudestage"
+msgstr "Modifier le milieu"
+
+#: Template/Milieudestages/index.ctp:19 Template/Offres/add.ctp:19
+#: Template/Offres/edit.ctp:24 Template/Offres/index.ctp:21
+#: Template/Offres/view.ctp:29 Template/Users/add.ctp:22
+#: Template/Users/edit.ctp:27 Template/Users/index.ctp:22
+#: Template/Users/view.ctp:25
+msgid "New Milieudestage"
+msgstr "Nouveau Milieudestage"
+
+#: Template/Milieudestages/index.ctp:36
+msgid "Milieudestages"
+msgstr "Milieudestages"
+
+#: Template/Milieudestages/index.ctp:38
+msgid "Notifier tous les milieux de stage"
+msgstr "Notifier tous les milieux de stage"
+
+#: Template/Milieudestages/view.ctp:14
+msgid "Delete Milieudestage"
+msgstr "Effacer Milieudestage"
+
+#: Template/Milieudestages/view.ctp:47 Template/Users/view.ctp:141
+msgid "Adresse"
+msgstr "Adresse"
+
+#: Template/Milieudestages/view.ctp:51 Template/Users/view.ctp:142
+msgid "Ville"
+msgstr "Ville"
+
+#: Template/Milieudestages/view.ctp:55 Template/Users/view.ctp:143
+msgid "Province"
+msgstr "Province"
+
+#: Template/Milieudestages/view.ctp:59 Template/Users/view.ctp:144
+msgid "Code Postal"
+msgstr "Code postal"
+
+#: Template/Milieudestages/view.ctp:63 Template/Users/view.ctp:147
+msgid "Nom Respo"
+msgstr "Nom Respo"
+
+#: Template/Milieudestages/view.ctp:67 Template/Users/view.ctp:148
+msgid "Telephone Respo"
+msgstr "Téléphone Respo"
+
+#: Template/Milieudestages/view.ctp:71 Template/Users/view.ctp:149
+msgid "Fax Respo"
+msgstr "Fax Respo"
+
+#: Template/Milieudestages/view.ctp:75 Template/Users/view.ctp:150
+msgid "Courriel Respo"
+msgstr "Courriel Respo"
+
+#: Template/Milieudestages/view.ctp:79 Template/Users/view.ctp:151
+msgid "Adresse Admin"
+msgstr "Adresse Admin"
+
+#: Template/Milieudestages/view.ctp:83 Template/Users/view.ctp:152
+msgid "Ville Admin"
+msgstr "Ville Admin"
+
+#: Template/Milieudestages/view.ctp:87 Template/Users/view.ctp:153
+msgid "Province Admin"
+msgstr "Province Admin"
+
+#: Template/Milieudestages/view.ctp:91 Template/Users/view.ctp:154
+msgid "Code Postal Admin"
+msgstr "Code postal Admin"
+
+#: Template/Milieudestages/view.ctp:95;261 Template/Offres/view.ctp:41
+msgid "Region"
+msgstr "Region"
+
+#: Template/Milieudestages/view.ctp:99 Template/Users/view.ctp:156
+msgid "Facilite"
+msgstr "Facilite"
+
+#: Template/Milieudestages/view.ctp:103 Template/Users/view.ctp:158
+msgid "Remarque"
+msgstr "Remarque"
+
+#: Template/Milieudestages/view.ctp:108 Template/Users/view.ctp:159
+msgid "Info Solicitation"
+msgstr "Info Solicitation"
+
+#: Template/Milieudestages/view.ctp:112 Template/Users/view.ctp:160
+msgid "Info Contract"
+msgstr "Contrat Info"
+
+#: Template/Milieudestages/view.ctp:116 Template/Users/view.ctp:161
+msgid "Reponse Milieu"
+msgstr "Réponse Milieu"
+
+#: Template/Milieudestages/view.ctp:128 Template/Users/view.ctp:163
+msgid "Date Inv"
+msgstr "Date Inv"
+
+#: Template/Milieudestages/view.ctp:132 Template/Users/view.ctp:164
+msgid "Date Rappel"
+msgstr "Date Rappel"
+
+#: Template/Milieudestages/view.ctp:150 Template/Users/view.ctp:146
+msgid "Exigence"
+msgstr "Exigence"
+
+#: Template/Milieudestages/view.ctp:154;262 Template/Offres/view.ctp:45
+#: Template/Users/view.ctp:157;224
+msgid "Tache"
+msgstr "Tache"
+
+#: Template/Milieudestages/view.ctp:158 Template/Users/view.ctp:162
+msgid "Autre Info"
+msgstr "Autre Info"
+
+#: Template/Milieudestages/view.ctp:162
+msgid "Related Missions"
+msgstr "Missions connexes"
+
+#: Template/Milieudestages/view.ctp:193
+msgid "Related Typeclienteles"
+msgstr "Typeclienteles connexes"
+
+#: Template/Milieudestages/view.ctp:200
+msgid "Type"
+msgstr "Type"
+
+#: Template/Milieudestages/view.ctp:224
+msgid "Related Typeetablissements"
+msgstr "Typeetablissements connexes"
+
+#: Template/Milieudestages/view.ctp:255 Template/Users/view.ctp:216
+msgid "Related Offres"
+msgstr "Offres connexes"
+
+#: Template/Milieudestages/view.ctp:260 Template/Offres/view.ctp:37
+#: Template/Users/view.ctp:221
+msgid "Titre"
+msgstr "Titre"
+
+#: Template/Milieudestages/view.ctp:263 Template/Offres/view.ctp:49
+#: Template/Users/view.ctp:225
+msgid "Responsabilite"
+msgstr "Responsabilite"
+
+#: Template/Milieudestages/view.ctp:265 Template/Users/view.ctp:71;107;166;226
+msgid "User Id"
+msgstr "Identifiant d'utilisateur"
+
+#: Template/Milieudestages/view.ctp:266 Template/Users/view.ctp:227
+msgid "Milieudestage Id"
+msgstr "Identifiant du Milieudestage"
+
+#: Template/Offres/add.ctp:26
+msgid "Add Offre"
+msgstr "Ajouter une offre"
+
+#: Template/Offres/edit.ctp:31 Template/Offres/view.ctp:16
+msgid "Edit Offre"
+msgstr "Modifier l'offre"
+
+#: Template/Offres/index.ctp:26
+msgid "Offres"
+msgstr "Offres"
+
+#: Template/Offres/index.ctp:65 Template/Offres/view.ctp:13
+msgid "Postuler"
+msgstr "Postuler"
+
+#: Template/Offres/view.ctp:17
+msgid "Delete Offre"
+msgstr "Supprimer l'offre"
+
+#: Template/Offres/view.ctp:53
+msgid "Milieudestage"
+msgstr "Milieudestage"
+
+#: Template/Users/add.ctp:12 Template/Users/edit.ctp:17
+#: Template/Users/index.ctp:12 Template/Users/view.ctp:15
+msgid "List Roles"
+msgstr "Liste des rôles"
+
+#: Template/Users/add.ctp:13 Template/Users/edit.ctp:18
+#: Template/Users/index.ctp:13 Template/Users/view.ctp:16
+msgid "New Role"
+msgstr "Nouveau rôle"
+
+#: Template/Users/add.ctp:30
+msgid "Add User"
+msgstr "Ajouter un utilisateur"
+
+#: Template/Users/edit.ctp:35 Template/Users/view.ctp:10
+msgid "Edit User"
+msgstr "Modifier l'utilisateur"
+
+#: Template/Users/index.ctp:28
+msgid "Users"
+msgstr "Utilisateurs"
+
+#: Template/Users/login.ctp:8
+msgid "Create new account"
+msgstr "Créer un nouveau compte"
+
+#: Template/Users/login.ctp:10
+msgid "Please enter your username and password"
+msgstr "Veuillez s'il vous plaît entrer votre nom d'utilisateur et votre mot de passe"
+
+#: Template/Users/view.ctp:11
+msgid "Delete User"
+msgstr "Supprimer l'utilisateur"
+
+#: Template/Users/view.ctp:34
+msgid "Username"
+msgstr "Nom d'utilisateur"
+
+#: Template/Users/view.ctp:38
+msgid "Password"
+msgstr "Mot de passe"
+
+#: Template/Users/view.ctp:42
+msgid "Role"
+msgstr "Rôle"
+
+#: Template/Users/view.ctp:46
+msgid "File"
+msgstr "Fichier"
+
+#: Template/Users/view.ctp:63
+msgid "Related Administrateurs"
+msgstr "Administrateurs connexes"
+
+#: Template/Users/view.ctp:96
+msgid "Related Student"
+msgstr "Étudiant connexes"
+
+#: Template/Users/view.ctp:135
+msgid "Related Milieudestages"
+msgstr "Milieudestages connexes"
+
+#: Template/Users/view.ctp:155
+msgid "Region Admin Id"
+msgstr "Identifiant d'administrateur de région"
+
+#: Template/Users/view.ctp:222
+msgid "Region Id"
+msgstr "Identifiant de région"
+
+msgid "Login"
+msgstr "Connexion"
+
+msgid "Now verify your email."
+msgstr "Vérifier votre courriel maintenant."
+
+msgid "Your username or password is incorrect."
+msgstr "Votre nom d'utilisateur ou votre mot de passe est incorrect."
+
+msgid "You need to verify your email in order to login."
+msgstr "Vous devez confirmer votre courriel pour vous connecter."
+
+msgid "You have been disconnected."
+msgstr "Vous avez été déconnecté."
+
+msgid "About"
+msgstr "À propos"

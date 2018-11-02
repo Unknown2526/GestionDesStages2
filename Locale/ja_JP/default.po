@@ -1,0 +1,754 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2018-10-09 23:06+0000\n"
+"PO-Revision-Date: 2018-10-09 19:49-0400\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 2.2\n"
+"Last-Translator: \n"
+"Language: ja_JP\n"
+
+#: Controller/AdministrateursController.php:58;83
+msgid "The administrateur has been saved."
+msgstr "管理者が保存されました。"
+
+#: Controller/AdministrateursController.php:62;87
+msgid "The administrateur could not be saved. Please, try again."
+msgstr "管理者を救うことができませんでした。 もう一度やり直してください。"
+
+#: Controller/AdministrateursController.php:105
+msgid "The administrateur has been deleted."
+msgstr "管理者は削除されました。"
+
+#: Controller/AdministrateursController.php:107
+msgid "The administrateur could not be deleted. Please, try again."
+msgstr "管理者を削除できませんでした。 もう一度やり直してください。"
+
+#: Controller/EtudiantsController.php:58;83
+msgid "The etudiant has been saved."
+msgstr "生徒は救われました。"
+
+#: Controller/EtudiantsController.php:62;87
+msgid "The etudiant could not be saved. Please, try again."
+msgstr "生徒を救うことができませんでした。 もう一度やり直してください。"
+
+#: Controller/EtudiantsController.php:105
+msgid "The etudiant has been deleted."
+msgstr "生徒は削除されました。"
+
+#: Controller/EtudiantsController.php:107
+msgid "The etudiant could not be deleted. Please, try again."
+msgstr "生徒を削除できませんでした。 もう一度やり直してください。"
+
+#: Controller/FilesController.php:60
+msgid "File has been uploaded and inserted successfully."
+msgstr "ファイルがアップロードされ、正常に挿入されました。"
+
+#: Controller/FilesController.php:62
+msgid "Unable to upload file, please try again."
+msgstr "ファイルをアップロードできません。もう一度お試しください。"
+
+#: Controller/FilesController.php:65
+msgid "Unable to save file, please try again."
+msgstr "ファイルを保存できませんでした。もう一度お試しください。"
+
+#: Controller/FilesController.php:68
+msgid "Please choose a file to upload."
+msgstr "アップロードするファイルを選択してください。"
+
+#: Controller/FilesController.php:88
+msgid "The file has been saved."
+msgstr "ファイルが保存されました。"
+
+#: Controller/FilesController.php:92
+msgid "The file could not be saved. Please, try again."
+msgstr "ファイルを保存できませんでした。 もう一度やり直してください。"
+
+#: Controller/FilesController.php:108
+msgid "The file has been deleted."
+msgstr "ファイルが削除されました。"
+
+#: Controller/FilesController.php:110
+msgid "The file could not be deleted. Please, try again."
+msgstr "ファイルを削除できませんでした。 もう一度やり直してください。"
+
+#: Controller/MilieudestagesController.php:61;89
+msgid "The milieudestage has been saved."
+msgstr "雇用主は救われました。"
+
+#: Controller/MilieudestagesController.php:65;93
+msgid "The milieudestage could not be saved. Please, try again."
+msgstr "雇用主は救われなかった。 もう一度やり直してください。"
+
+#: Controller/MilieudestagesController.php:114
+msgid "The milieudestage has been deleted."
+msgstr "雇用主は削除されました。"
+
+#: Controller/MilieudestagesController.php:116
+msgid "The milieudestage could not be deleted. Please, try again."
+msgstr "雇用者は削除できませんでした。 もう一度やり直してください。"
+
+#: Controller/MilieudestagesController.php:154
+msgid "Vous avez notifier les milieux de stages."
+msgstr "あなたはインターンシップのサークルに通知しました。"
+
+#: Controller/OffresController.php:60;90
+msgid "The offre has been saved."
+msgstr "オファーは保存されました。"
+
+#: Controller/OffresController.php:64;94
+msgid "The offre could not be saved. Please, try again."
+msgstr "オファーは保存できませんでした。 もう一度やり直してください。"
+
+#: Controller/OffresController.php:114
+msgid "The offre has been deleted."
+msgstr "オファーは削除されました。"
+
+#: Controller/OffresController.php:116
+msgid "The offre could not be deleted. Please, try again."
+msgstr "オファーを削除できませんでした。 もう一度やり直してください。"
+
+#: Controller/OffresController.php:155
+msgid "Vous avez postuler."
+msgstr "あなたは申し込んだ。"
+
+#: Controller/UsersController.php:59;106
+msgid "The user has been saved."
+msgstr "ユーザーは保存されました。"
+
+#: Controller/UsersController.php:63
+msgid "Le username doit être un courriel valide."
+msgstr "ユーザー名は有効なメールでなければなりません。"
+
+#: Controller/UsersController.php:110
+msgid "The user could not be saved. Please, try again."
+msgstr "ユーザーを保存できませんでした。 もう一度やり直してください。"
+
+#: Controller/UsersController.php:128
+msgid "The user has been deleted."
+msgstr "ユーザーは削除されました。"
+
+#: Controller/UsersController.php:130
+msgid "The user could not be deleted. Please, try again."
+msgstr "ユーザーは削除できませんでした。 もう一度やり直してください。"
+
+#: Template/Administrateurs/add.ctp:9 Template/Administrateurs/edit.ctp:9
+#: Template/Administrateurs/index.ctp:9;27 Template/Administrateurs/view.ctp:9
+#: Template/Etudiants/add.ctp:9 Template/Etudiants/edit.ctp:11
+#: Template/Etudiants/index.ctp:9;29 Template/Etudiants/view.ctp:11
+#: Template/Files/add.ctp:9 Template/Files/edit.ctp:10
+#: Template/Files/index.ctp:9;24 Template/Files/view.ctp:9
+#: Template/Milieudestages/add.ctp:11 Template/Milieudestages/edit.ctp:11
+#: Template/Milieudestages/index.ctp:11;73
+#: Template/Milieudestages/view.ctp:11;171;202;233;270
+#: Template/Offres/add.ctp:11 Template/Offres/edit.ctp:11
+#: Template/Offres/index.ctp:11;41 Template/Offres/view.ctp:11
+#: Template/Users/add.ctp:9 Template/Users/edit.ctp:9
+#: Template/Users/index.ctp:9;41 Template/Users/view.ctp:9;74;110;170;231
+msgid "Actions"
+msgstr "行動"
+
+#: Template/Administrateurs/add.ctp:10 Template/Administrateurs/edit.ctp:16
+#: Template/Administrateurs/view.ctp:12 Template/Users/add.ctp:17
+#: Template/Users/edit.ctp:22 Template/Users/index.ctp:17
+#: Template/Users/view.ctp:20
+msgid "List Administrateurs"
+msgstr "管理者のリスト"
+
+#: Template/Administrateurs/add.ctp:11 Template/Administrateurs/edit.ctp:17
+#: Template/Administrateurs/index.ctp:11 Template/Administrateurs/view.ctp:14
+#: Template/Etudiants/add.ctp:11 Template/Etudiants/edit.ctp:19
+#: Template/Etudiants/index.ctp:11 Template/Etudiants/view.ctp:17
+#: Template/Files/add.ctp:11 Template/Files/edit.ctp:18
+#: Template/Files/index.ctp:11 Template/Files/view.ctp:14
+#: Template/Milieudestages/add.ctp:18 Template/Milieudestages/edit.ctp:25
+#: Template/Milieudestages/index.ctp:17 Template/Milieudestages/view.ctp:22
+#: Template/Offres/add.ctp:14 Template/Offres/edit.ctp:19
+#: Template/Offres/index.ctp:16 Template/Offres/view.ctp:24
+#: Template/Users/add.ctp:10 Template/Users/edit.ctp:15
+#: Template/Users/view.ctp:12
+msgid "List Users"
+msgstr "ユーザーを一覧表示する"
+
+#: Template/Administrateurs/add.ctp:12 Template/Administrateurs/edit.ctp:18
+#: Template/Administrateurs/index.ctp:12 Template/Administrateurs/view.ctp:15
+#: Template/Etudiants/add.ctp:12 Template/Etudiants/edit.ctp:20
+#: Template/Etudiants/index.ctp:12 Template/Etudiants/view.ctp:18
+#: Template/Milieudestages/add.ctp:19 Template/Milieudestages/edit.ctp:26
+#: Template/Milieudestages/index.ctp:18 Template/Milieudestages/view.ctp:23
+#: Template/Offres/add.ctp:15 Template/Offres/edit.ctp:20
+#: Template/Offres/index.ctp:17 Template/Offres/view.ctp:25
+#: Template/Users/index.ctp:10 Template/Users/view.ctp:13
+msgid "New User"
+msgstr "新しいユーザー"
+
+#: Template/Administrateurs/add.ctp:18
+msgid "Add Administrateur"
+msgstr "管理者の追加"
+
+#: Template/Administrateurs/add.ctp:26 Template/Administrateurs/edit.ctp:32
+#: Template/Etudiants/add.ctp:29 Template/Etudiants/edit.ctp:40
+#: Template/Files/add.ctp:22 Template/Files/edit.ctp:29
+#: Template/Milieudestages/add.ctp:71 Template/Milieudestages/edit.ctp:78
+#: Template/Offres/add.ctp:36 Template/Offres/edit.ctp:41
+#: Template/Users/add.ctp:38 Template/Users/edit.ctp:43
+msgid "Submit"
+msgstr "提出する"
+
+#: Template/Administrateurs/edit.ctp:11 Template/Administrateurs/index.ctp:43
+#: Template/Etudiants/edit.ctp:15 Template/Etudiants/index.ctp:47
+#: Template/Files/edit.ctp:12 Template/Files/index.ctp:47
+#: Template/Milieudestages/edit.ctp:15 Template/Milieudestages/index.ctp:113
+#: Template/Milieudestages/view.ctp:184;215;246;290 Template/Offres/edit.ctp:14
+#: Template/Offres/index.ctp:62 Template/Users/edit.ctp:12
+#: Template/Users/index.ctp:65 Template/Users/view.ctp:88;127;208;249
+msgid "Delete"
+msgstr "削除"
+
+#: Template/Administrateurs/edit.ctp:13 Template/Administrateurs/index.ctp:43
+#: Template/Administrateurs/view.ctp:11 Template/Etudiants/edit.ctp:15
+#: Template/Etudiants/index.ctp:47 Template/Etudiants/view.ctp:14
+#: Template/Files/edit.ctp:14 Template/Files/index.ctp:47
+#: Template/Files/view.ctp:11 Template/Milieudestages/edit.ctp:15
+#: Template/Milieudestages/index.ctp:113
+#: Template/Milieudestages/view.ctp:14;184;215;246;290
+#: Template/Offres/edit.ctp:14 Template/Offres/index.ctp:62
+#: Template/Offres/view.ctp:17 Template/Users/edit.ctp:12
+#: Template/Users/index.ctp:65 Template/Users/view.ctp:11;88;127;208;249
+msgid "Are you sure you want to delete # {0}?"
+msgstr "を削除してもよろしいですか＃{0}？"
+
+#: Template/Administrateurs/edit.ctp:24 Template/Administrateurs/view.ctp:10
+msgid "Edit Administrateur"
+msgstr "編集者"
+
+#: Template/Administrateurs/index.ctp:10 Template/Administrateurs/view.ctp:13
+#: Template/Users/add.ctp:18 Template/Users/edit.ctp:23
+#: Template/Users/index.ctp:18 Template/Users/view.ctp:21
+msgid "New Administrateur"
+msgstr "新しい管理者"
+
+#: Template/Administrateurs/index.ctp:16
+msgid "Administrateurs"
+msgstr "管理者"
+
+#: Template/Administrateurs/index.ctp:41 Template/Etudiants/index.ctp:45
+#: Template/Files/index.ctp:45 Template/Milieudestages/index.ctp:110
+#: Template/Milieudestages/view.ctp:182;213;244;287
+#: Template/Offres/index.ctp:59 Template/Users/index.ctp:63
+#: Template/Users/view.ctp:86;125;206;247
+msgid "View"
+msgstr "ビュー"
+
+#: Template/Administrateurs/index.ctp:42 Template/Etudiants/index.ctp:46
+#: Template/Files/index.ctp:46 Template/Milieudestages/index.ctp:112
+#: Template/Milieudestages/view.ctp:183;214;245;289
+#: Template/Offres/index.ctp:61 Template/Users/index.ctp:64
+#: Template/Users/view.ctp:87;126;207;248
+msgid "Edit"
+msgstr "編集"
+
+#: Template/Administrateurs/index.ctp:51 Template/Etudiants/index.ctp:55
+#: Template/Files/index.ctp:55 Template/Milieudestages/index.ctp:122
+#: Template/Offres/index.ctp:74 Template/Users/index.ctp:73
+msgid "first"
+msgstr "最初"
+
+#: Template/Administrateurs/index.ctp:52 Template/Etudiants/index.ctp:56
+#: Template/Files/index.ctp:56 Template/Milieudestages/index.ctp:123
+#: Template/Offres/index.ctp:75 Template/Users/index.ctp:74
+msgid "previous"
+msgstr "前"
+
+#: Template/Administrateurs/index.ctp:54 Template/Etudiants/index.ctp:58
+#: Template/Files/index.ctp:58 Template/Milieudestages/index.ctp:125
+#: Template/Offres/index.ctp:77 Template/Users/index.ctp:76
+msgid "next"
+msgstr "次"
+
+#: Template/Administrateurs/index.ctp:55 Template/Etudiants/index.ctp:59
+#: Template/Files/index.ctp:59 Template/Milieudestages/index.ctp:126
+#: Template/Offres/index.ctp:78 Template/Users/index.ctp:77
+msgid "last"
+msgstr "最終"
+
+#: Template/Administrateurs/index.ctp:57 Template/Etudiants/index.ctp:61
+#: Template/Files/index.ctp:61 Template/Milieudestages/index.ctp:128
+#: Template/Offres/index.ctp:80 Template/Users/index.ctp:79
+msgid ""
+"Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} "
+"total"
+msgstr ""
+"{{count}}件のうち{{current}}件のレコードを表示している{{pages}}の{{page}}ペー"
+"ジ"
+
+#: Template/Administrateurs/view.ctp:11
+msgid "Delete Administrateur"
+msgstr "管理者の削除"
+
+#: Template/Administrateurs/view.ctp:22 Template/Etudiants/view.ctp:28
+#: Template/Milieudestages/view.ctp:43;169;231
+#: Template/Users/view.ctp:68;101;140
+msgid "Nom"
+msgstr "名前"
+
+#: Template/Administrateurs/view.ctp:26 Template/Etudiants/view.ctp:36
+#: Template/Users/view.ctp:69;103
+msgid "Telephone"
+msgstr "電話"
+
+#: Template/Administrateurs/view.ctp:30 Template/Etudiants/view.ctp:40
+#: Template/Users/view.ctp:70;104
+msgid "Courriel"
+msgstr "メール"
+
+#: Template/Administrateurs/view.ctp:34 Template/Etudiants/view.ctp:45
+#: Template/Milieudestages/view.ctp:120 Template/Offres/view.ctp:58
+msgid "User"
+msgstr "ユーザー"
+
+#: Template/Administrateurs/view.ctp:38 Template/Etudiants/view.ctp:49
+#: Template/Files/view.ctp:38
+#: Template/Milieudestages/view.ctp:124;167;198;229;259
+#: Template/Offres/view.ctp:62 Template/Users/view.ctp:50;67;100;139;220
+msgid "Id"
+msgstr "イド"
+
+#: Template/Administrateurs/view.ctp:42 Template/Etudiants/view.ctp:53
+#: Template/Files/view.ctp:42 Template/Milieudestages/view.ctp:136;267
+#: Template/Offres/view.ctp:66 Template/Users/view.ctp:54;72;108;167;228
+msgid "Created"
+msgstr "作成した"
+
+#: Template/Administrateurs/view.ctp:46 Template/Etudiants/view.ctp:57
+#: Template/Files/view.ctp:46 Template/Milieudestages/view.ctp:140;268
+#: Template/Offres/view.ctp:70 Template/Users/view.ctp:58;73;109;168;229
+msgid "Modified"
+msgstr "変更された"
+
+#: Template/Etudiants/add.ctp:10 Template/Etudiants/edit.ctp:18
+#: Template/Etudiants/view.ctp:15 Template/Users/add.ctp:19
+#: Template/Users/edit.ctp:24 Template/Users/index.ctp:19
+#: Template/Users/view.ctp:22
+msgid "List Etudiants"
+msgstr "学生リスト"
+
+#: Template/Etudiants/add.ctp:18
+msgid "Add Etudiant"
+msgstr "学生を追加する"
+
+#: Template/Etudiants/edit.ctp:22 Template/Etudiants/view.ctp:20
+#: Template/Milieudestages/add.ctp:12 Template/Milieudestages/edit.ctp:19
+#: Template/Milieudestages/view.ctp:16 Template/Offres/add.ctp:17
+#: Template/Offres/edit.ctp:22 Template/Offres/index.ctp:19
+#: Template/Offres/view.ctp:27 Template/Users/add.ctp:21
+#: Template/Users/edit.ctp:26 Template/Users/index.ctp:21
+#: Template/Users/view.ctp:24
+msgid "List Milieudestages"
+msgstr "ミドルプレイスを一覧表示する"
+
+#: Template/Etudiants/edit.ctp:23 Template/Etudiants/view.ctp:21
+#: Template/Milieudestages/add.ctp:21 Template/Milieudestages/edit.ctp:28
+#: Template/Milieudestages/index.ctp:21 Template/Milieudestages/view.ctp:25
+#: Template/Offres/add.ctp:12 Template/Offres/edit.ctp:17
+#: Template/Offres/view.ctp:19 Template/Users/add.ctp:23
+#: Template/Users/edit.ctp:28 Template/Users/index.ctp:23
+#: Template/Users/view.ctp:26
+msgid "List Offres"
+msgstr "リストのオファー"
+
+#: Template/Etudiants/edit.ctp:29 Template/Etudiants/view.ctp:12
+msgid "Edit Etudiant"
+msgstr "学生を編集する"
+
+#: Template/Etudiants/index.ctp:10 Template/Etudiants/view.ctp:16
+#: Template/Users/add.ctp:20 Template/Users/edit.ctp:25
+#: Template/Users/index.ctp:20 Template/Users/view.ctp:23
+msgid "New Etudiant"
+msgstr "新入生"
+
+#: Template/Etudiants/index.ctp:16
+msgid "Etudiants"
+msgstr "学生"
+
+#: Template/Etudiants/view.ctp:14
+msgid "Delete Etudiant"
+msgstr "学生を削除する"
+
+#: Template/Etudiants/view.ctp:32 Template/Users/view.ctp:102
+msgid "Prenom"
+msgstr "姓"
+
+#: Template/Etudiants/view.ctp:61 Template/Milieudestages/view.ctp:144
+#: Template/Users/view.ctp:106;165
+msgid "Actif"
+msgstr "財産"
+
+#: Template/Etudiants/view.ctp:62 Template/Milieudestages/view.ctp:145
+msgid "Yes"
+msgstr "はい"
+
+#: Template/Etudiants/view.ctp:62 Template/Milieudestages/view.ctp:145
+msgid "No"
+msgstr "いいえ"
+
+#: Template/Etudiants/view.ctp:67 Template/Users/view.ctp:105
+msgid "Info Supp"
+msgstr "情報サプライ"
+
+#: Template/Files/add.ctp:10 Template/Files/edit.ctp:17
+#: Template/Files/view.ctp:12 Template/Users/add.ctp:15
+#: Template/Users/edit.ctp:20 Template/Users/index.ctp:15
+#: Template/Users/view.ctp:18
+msgid "List Files"
+msgstr "リストファイル"
+
+#: Template/Files/add.ctp:17
+msgid "Add File"
+msgstr "ファイルを追加"
+
+#: Template/Files/edit.ctp:24 Template/Files/view.ctp:10
+msgid "Edit File"
+msgstr "ファイルの編集"
+
+#: Template/Files/index.ctp:10 Template/Files/view.ctp:13
+#: Template/Users/add.ctp:16 Template/Users/edit.ctp:21
+#: Template/Users/index.ctp:16 Template/Users/view.ctp:19
+msgid "New File"
+msgstr "新しいファイル"
+
+#: Template/Files/index.ctp:15
+msgid "Files"
+msgstr "ファイル"
+
+#: Template/Files/view.ctp:11
+msgid "Delete File"
+msgstr "ファイルを削除する"
+
+#: Template/Files/view.ctp:30
+msgid "Name"
+msgstr "名"
+
+#: Template/Files/view.ctp:34
+msgid "Path"
+msgstr "パス"
+
+#: Template/Layout/default.ctp:49
+msgid "Mon profil"
+msgstr "私のプロフィール"
+
+#: Template/Layout/error.ctp:35
+msgid "Error"
+msgstr "エラー"
+
+#: Template/Layout/error.ctp:43
+msgid "Back"
+msgstr "バック"
+
+#: Template/Milieudestages/add.ctp:14 Template/Milieudestages/edit.ctp:21
+#: Template/Milieudestages/index.ctp:13 Template/Milieudestages/view.ctp:18
+msgid "List Regions"
+msgstr "リスト領域"
+
+#: Template/Milieudestages/add.ctp:15 Template/Milieudestages/edit.ctp:22
+#: Template/Milieudestages/index.ctp:14 Template/Milieudestages/view.ctp:19
+msgid "New Region"
+msgstr "新しい地域"
+
+#: Template/Milieudestages/add.ctp:23 Template/Milieudestages/edit.ctp:30
+#: Template/Milieudestages/index.ctp:23 Template/Milieudestages/view.ctp:27
+#: Template/Offres/index.ctp:13 Template/Offres/view.ctp:21
+#: Template/Users/add.ctp:24 Template/Users/edit.ctp:29
+#: Template/Users/index.ctp:24 Template/Users/view.ctp:27
+msgid "New Offre"
+msgstr "新しいオフア"
+
+#: Template/Milieudestages/add.ctp:26 Template/Milieudestages/edit.ctp:33
+#: Template/Milieudestages/index.ctp:26 Template/Milieudestages/view.ctp:30
+msgid "List Listemissions"
+msgstr "リストのリスト"
+
+#: Template/Milieudestages/add.ctp:27 Template/Milieudestages/edit.ctp:34
+#: Template/Milieudestages/index.ctp:27 Template/Milieudestages/view.ctp:31
+msgid "New Listemission"
+msgstr "新しいリストメーション"
+
+#: Template/Milieudestages/add.ctp:28 Template/Milieudestages/edit.ctp:35
+#: Template/Milieudestages/index.ctp:28 Template/Milieudestages/view.ctp:32
+msgid "List Listetypeclienteles"
+msgstr "Listetyplientelesのリスト"
+
+#: Template/Milieudestages/add.ctp:29 Template/Milieudestages/edit.ctp:36
+#: Template/Milieudestages/index.ctp:29 Template/Milieudestages/view.ctp:33
+msgid "New Listetypeclientele"
+msgstr "新しいListetypeclientele"
+
+#: Template/Milieudestages/add.ctp:30 Template/Milieudestages/edit.ctp:37
+#: Template/Milieudestages/index.ctp:30 Template/Milieudestages/view.ctp:34
+msgid "List Listetypeetablissements"
+msgstr "リストの種類の設定"
+
+#: Template/Milieudestages/add.ctp:31 Template/Milieudestages/edit.ctp:38
+#: Template/Milieudestages/index.ctp:31 Template/Milieudestages/view.ctp:35
+msgid "New Listetypeetablissement"
+msgstr "新しいリストタイプの設定"
+
+#: Template/Milieudestages/add.ctp:38
+msgid "Add Milieudestage"
+msgstr "Milieudestageを追加"
+
+#: Template/Milieudestages/edit.ctp:45 Template/Milieudestages/view.ctp:13
+msgid "Edit Milieudestage"
+msgstr "Milieudestageを編集"
+
+#: Template/Milieudestages/index.ctp:19 Template/Offres/add.ctp:19
+#: Template/Offres/edit.ctp:24 Template/Offres/index.ctp:21
+#: Template/Offres/view.ctp:29 Template/Users/add.ctp:22
+#: Template/Users/edit.ctp:27 Template/Users/index.ctp:22
+#: Template/Users/view.ctp:25
+msgid "New Milieudestage"
+msgstr "新しいMilieudestage"
+
+#: Template/Milieudestages/index.ctp:36
+msgid "Milieudestages"
+msgstr "舞台"
+
+#: Template/Milieudestages/index.ctp:38
+msgid "Notifier tous les milieux de stage"
+msgstr "ノーティファイヤー・トゥ・レ・ミユー・ド・ステージ"
+
+#: Template/Milieudestages/view.ctp:14
+msgid "Delete Milieudestage"
+msgstr "環境を削除する"
+
+#: Template/Milieudestages/view.ctp:47 Template/Users/view.ctp:141
+msgid "Adresse"
+msgstr "住所"
+
+#: Template/Milieudestages/view.ctp:51 Template/Users/view.ctp:142
+msgid "Ville"
+msgstr "街"
+
+#: Template/Milieudestages/view.ctp:55 Template/Users/view.ctp:143
+msgid "Province"
+msgstr "州"
+
+#: Template/Milieudestages/view.ctp:59 Template/Users/view.ctp:144
+msgid "Code Postal"
+msgstr "郵便番号"
+
+#: Template/Milieudestages/view.ctp:63 Template/Users/view.ctp:147
+msgid "Nom Respo"
+msgstr "責任者名"
+
+#: Template/Milieudestages/view.ctp:67 Template/Users/view.ctp:148
+msgid "Telephone Respo"
+msgstr "責任電話"
+
+#: Template/Milieudestages/view.ctp:71 Template/Users/view.ctp:149
+msgid "Fax Respo"
+msgstr "責任ファックス"
+
+#: Template/Milieudestages/view.ctp:75 Template/Users/view.ctp:150
+msgid "Courriel Respo"
+msgstr "責任ある電子メール"
+
+#: Template/Milieudestages/view.ctp:79 Template/Users/view.ctp:151
+msgid "Adresse Admin"
+msgstr "管理者アドレス"
+
+#: Template/Milieudestages/view.ctp:83 Template/Users/view.ctp:152
+msgid "Ville Admin"
+msgstr "市の管理者"
+
+#: Template/Milieudestages/view.ctp:87 Template/Users/view.ctp:153
+msgid "Province Admin"
+msgstr "管理者省"
+
+#: Template/Milieudestages/view.ctp:91 Template/Users/view.ctp:154
+msgid "Code Postal Admin"
+msgstr "管理者郵便番号"
+
+#: Template/Milieudestages/view.ctp:95;261 Template/Offres/view.ctp:41
+msgid "Region"
+msgstr "地域"
+
+#: Template/Milieudestages/view.ctp:99 Template/Users/view.ctp:156
+msgid "Facilite"
+msgstr "容易にします"
+
+#: Template/Milieudestages/view.ctp:103 Template/Users/view.ctp:158
+msgid "Remarque"
+msgstr "リマーク"
+
+#: Template/Milieudestages/view.ctp:108 Template/Users/view.ctp:159
+msgid "Info Solicitation"
+msgstr "情報募集"
+
+#: Template/Milieudestages/view.ctp:112 Template/Users/view.ctp:160
+msgid "Info Contrat"
+msgstr "契約情報"
+
+#: Template/Milieudestages/view.ctp:116 Template/Users/view.ctp:161
+msgid "Reponse Milieu"
+msgstr "ミドルアンサー"
+
+#: Template/Milieudestages/view.ctp:128 Template/Users/view.ctp:163
+msgid "Date Inv"
+msgstr "日程招待"
+
+#: Template/Milieudestages/view.ctp:132 Template/Users/view.ctp:164
+msgid "Date Rappel"
+msgstr "リコール日"
+
+#: Template/Milieudestages/view.ctp:150 Template/Users/view.ctp:146
+msgid "Exigence"
+msgstr "要件"
+
+#: Template/Milieudestages/view.ctp:154;262 Template/Offres/view.ctp:45
+#: Template/Users/view.ctp:157;224
+msgid "Tache"
+msgstr "スポット"
+
+#: Template/Milieudestages/view.ctp:158 Template/Users/view.ctp:162
+msgid "Autre Info"
+msgstr "その他の情報"
+
+#: Template/Milieudestages/view.ctp:162
+msgid "Related Missions"
+msgstr "関連ミッション"
+
+#: Template/Milieudestages/view.ctp:193
+msgid "Related Typeclienteles"
+msgstr "関連するタイプクリエイティブ"
+
+#: Template/Milieudestages/view.ctp:200
+msgid "Type"
+msgstr "タイプ"
+
+#: Template/Milieudestages/view.ctp:224
+msgid "Related Typeetablissements"
+msgstr "関連タイプ"
+
+#: Template/Milieudestages/view.ctp:255 Template/Users/view.ctp:216
+msgid "Related Offres"
+msgstr "関連オファー"
+
+#: Template/Milieudestages/view.ctp:260 Template/Offres/view.ctp:37
+#: Template/Users/view.ctp:221
+msgid "Titre"
+msgstr "タイトレ"
+
+#: Template/Milieudestages/view.ctp:263 Template/Offres/view.ctp:49
+#: Template/Users/view.ctp:225
+msgid "Responsabilite"
+msgstr "責任"
+
+#: Template/Milieudestages/view.ctp:265 Template/Users/view.ctp:71;107;166;226
+msgid "User Id"
+msgstr "ユーザー識別"
+
+#: Template/Milieudestages/view.ctp:266 Template/Users/view.ctp:227
+msgid "Milieudestage Id"
+msgstr "舞台挨拶"
+
+#: Template/Offres/add.ctp:26
+msgid "Add Offre"
+msgstr "オファーを追加"
+
+#: Template/Offres/edit.ctp:31 Template/Offres/view.ctp:16
+msgid "Edit Offre"
+msgstr "編集オファー"
+
+#: Template/Offres/index.ctp:26
+msgid "Offres"
+msgstr "提供"
+
+#: Template/Offres/index.ctp:65 Template/Offres/view.ctp:13
+msgid "Postuler"
+msgstr "適用します"
+
+#: Template/Offres/view.ctp:17
+msgid "Delete Offre"
+msgstr "削除申し込み"
+
+#: Template/Offres/view.ctp:53
+msgid "Milieudestage"
+msgstr "中段"
+
+#: Template/Users/add.ctp:12 Template/Users/edit.ctp:17
+#: Template/Users/index.ctp:12 Template/Users/view.ctp:15
+msgid "List Roles"
+msgstr "リストロール"
+
+#: Template/Users/add.ctp:13 Template/Users/edit.ctp:18
+#: Template/Users/index.ctp:13 Template/Users/view.ctp:16
+msgid "New Role"
+msgstr "新しい役割"
+
+#: Template/Users/add.ctp:30
+msgid "Add User"
+msgstr "ユーザーを追加する"
+
+#: Template/Users/edit.ctp:35 Template/Users/view.ctp:10
+msgid "Edit User"
+msgstr "ユーザーの編集"
+
+#: Template/Users/index.ctp:28
+msgid "Users"
+msgstr "ユーザー"
+
+#: Template/Users/login.ctp:10
+msgid "Please enter your username and password"
+msgstr "あなたのユーザー名とパスワードを入力してください"
+
+#: Template/Users/login.ctp:14
+msgid "Login"
+msgstr "ログイン"
+
+#: Template/Users/view.ctp:11
+msgid "Delete User"
+msgstr "ユーザーを削除"
+
+#: Template/Users/view.ctp:34
+msgid "Username"
+msgstr "ユーザー名"
+
+#: Template/Users/view.ctp:38
+msgid "Password"
+msgstr "パスワード"
+
+#: Template/Users/view.ctp:42
+msgid "Role"
+msgstr "役割"
+
+#: Template/Users/view.ctp:46
+msgid "File"
+msgstr "ファイル"
+
+#: Template/Users/view.ctp:63
+msgid "Related Administrateurs"
+msgstr "関連管理者"
+
+#: Template/Users/view.ctp:96
+msgid "Related Etudiants"
+msgstr "関連するEtudiants"
+
+#: Template/Users/view.ctp:135
+msgid "Related Milieudestages"
+msgstr "関連インターンシップ"
+
+#: Template/Users/view.ctp:155
+msgid "Region Admin Id"
+msgstr "地域管理者識別子"
+
+#: Template/Users/view.ctp:222
+msgid "Region Id"
+msgstr "地域識別子"
