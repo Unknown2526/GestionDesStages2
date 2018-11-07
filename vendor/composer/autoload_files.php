@@ -6,26 +6,6 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-<<<<<<< HEAD
-    $vendorDir . '/symfony/polyfill-ctype/bootstrap.php',
-    $vendorDir . '/symfony/polyfill-mbstring/bootstrap.php',
-    $vendorDir . '/cakephp/chronos/src/carbon_compat.php',
-    $vendorDir . '/zendframework/zend-diactoros/src/functions/create_uploaded_file.php',
-    $vendorDir . '/zendframework/zend-diactoros/src/functions/marshal_headers_from_sapi.php',
-    $vendorDir . '/zendframework/zend-diactoros/src/functions/marshal_method_from_sapi.php',
-    $vendorDir . '/zendframework/zend-diactoros/src/functions/marshal_protocol_version_from_sapi.php',
-    $vendorDir . '/zendframework/zend-diactoros/src/functions/marshal_uri_from_sapi.php',
-    $vendorDir . '/zendframework/zend-diactoros/src/functions/normalize_server.php',
-    $vendorDir . '/zendframework/zend-diactoros/src/functions/normalize_uploaded_files.php',
-    $vendorDir . '/zendframework/zend-diactoros/src/functions/parse_cookie_header.php',
-    $vendorDir . '/cakephp/cakephp/src/Core/functions.php',
-    $vendorDir . '/cakephp/cakephp/src/Collection/functions.php',
-    $vendorDir . '/cakephp/cakephp/src/I18n/functions.php',
-    $vendorDir . '/cakephp/cakephp/src/Utility/bootstrap.php',
-    $vendorDir . '/symfony/polyfill-php72/bootstrap.php',
-    $vendorDir . '/symfony/var-dumper/Resources/functions/dump.php',
-    $vendorDir . '/psy/psysh/src/functions.php',
-=======
     '320cde22f66dd4f5d3fd621d3e88b98f' => $vendorDir . '/symfony/polyfill-ctype/bootstrap.php',
     '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => $vendorDir . '/symfony/polyfill-mbstring/bootstrap.php',
     '34122c0574b76bf21c9a8db62b5b9cf3' => $vendorDir . '/cakephp/chronos/src/carbon_compat.php',
@@ -45,5 +25,4 @@ return array(
     '6124b4c8570aa390c21fafd04a26c69f' => $vendorDir . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
     '667aeda72477189d0494fecd327c3641' => $vendorDir . '/symfony/var-dumper/Resources/functions/dump.php',
     '801c31d8ed748cfa537fa45402288c95' => $vendorDir . '/psy/psysh/src/functions.php',
->>>>>>> 77ffb0775b5d26c8068c64ac1ea5246f3b0d27ab
 );

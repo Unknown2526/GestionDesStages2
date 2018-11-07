@@ -51,51 +51,70 @@ class EtudiantsTableTest extends TestCase
 
         parent::tearDown();
     }
+    
+    public function testAdd()
+    {
+        $data = [
+            'id' => 1,
+            'nom' => 'Chow',
+            'prenom' => 'Anthony',
+            'telephone' => '911',
+            'courriel' => 'anthonychow8@gmail.com',
+            'info_supp' => 'Lorem ipsum dolor sit amet, aliquet feugiat. Convallis morbi fringilla gravida, phasellus feugiat dapibus velit nunc, pulvinar eget sollicitudin venenatis cum nullam, vivamus ut a sed, mollitia lectus. Nulla vestibulum massa neque ut et, id hendrerit sit, feugiat in taciti enim proin nibh, tempor dignissim, rhoncus duis vestibulum nunc mattis convallis.',
+            'actif' => 1,
+            'user_id' => 3,
+            'created' => null,
+            'modified' => null
+        ];
+        
+        $data2 = [
+            'id' => 1,
+            'nom' => 'a',
+            'prenom' => 'b',
+            'telephone' => '911',
+            'courriel' => 'ab@gmail.com',
+            'info_supp' => 'Lorem ipsum dolor sit amet, aliquet feugiat. Convallis morbi fringilla gravida, phasellus feugiat dapibus velit nunc, pulvinar eget sollicitudin venenatis cum nullam, vivamus ut a sed, mollitia lectus. Nulla vestibulum massa neque ut et, id hendrerit sit, feugiat in taciti enim proin nibh, tempor dignissim, rhoncus duis vestibulum nunc mattis convallis.',
+            'actif' => 1,
+            'user_id' => 3,
+            'created' => null,
+            'modified' => null
+        ];
+        
+        $firstCount = $this->Etudiants->find()->count();
+        $firstEtud = $this->Etudiants->newEntity($data);
+        $secondEtud = $this->Etudiants->newEntity($data2);
+        $this->Etudiants->save($firstEtud);
+        $this->Etudiants->save($secondEtud);
+        $count = $this->Etudiants->find()->count();
+    
+        $this->assertEquals($count, $firstCount + 2);
+    }
 
     /**
      * Test initialize method
      *
      * @return void
      */
-<<<<<<< HEAD
-    public function testInitialize()
-    {
-        $this->markTestIncomplete('Not implemented yet.');
-    }
-=======
     /*public function testInitialize()
     {
         $this->markTestIncomplete('Not implemented yet.');
     }*/
->>>>>>> 77ffb0775b5d26c8068c64ac1ea5246f3b0d27ab
 
     /**
      * Test validationDefault method
      *
      * @return void
      */
-<<<<<<< HEAD
-    public function testValidationDefault()
-    {
-        $this->markTestIncomplete('Not implemented yet.');
-    }
-=======
     /*public function testValidationDefault()
     {
         $this->markTestIncomplete('Not implemented yet.');
     }*/
->>>>>>> 77ffb0775b5d26c8068c64ac1ea5246f3b0d27ab
 
     /**
      * Test buildRules method
      *
      * @return void
      */
-<<<<<<< HEAD
-    public function testBuildRules()
-    {
-        $this->markTestIncomplete('Not implemented yet.');
-=======
     /*public function testBuildRules()
     {
         $this->markTestIncomplete('Not implemented yet.');
@@ -103,25 +122,21 @@ class EtudiantsTableTest extends TestCase
     
     public function testFindEtudiant()
     {
-        $query = $this->Etudiants->find('etudiant');
-        $this->assertInstanceOf('Cake\ORM\Query', $query);
-        $result = $query->hydrate(false)->toArray();
+        $query = $this->Etudiants->find('all');
+        $result = $query->first()->toArray();
         $expected = [
-            [
                 'id' => 1,
-                'nom' => 'Lorem ipsum dolor sit amet',
-                'prenom' => 'Lorem ipsum dolor sit amet',
-                'telephone' => 'Lorem ipsum dolor sit amet',
-                'courriel' => 'Lorem ipsum dolor sit amet',
+                'nom' => 'Chow',
+                'prenom' => 'Anthony',
+                'telephone' => '911',
+                'courriel' => 'anthonychow8@gmail.com',
                 'info_supp' => 'Lorem ipsum dolor sit amet, aliquet feugiat. Convallis morbi fringilla gravida, phasellus feugiat dapibus velit nunc, pulvinar eget sollicitudin venenatis cum nullam, vivamus ut a sed, mollitia lectus. Nulla vestibulum massa neque ut et, id hendrerit sit, feugiat in taciti enim proin nibh, tempor dignissim, rhoncus duis vestibulum nunc mattis convallis.',
                 'actif' => 1,
-                'user_id' => 1,
+                'user_id' => 3,
                 'created' => null,
                 'modified' => null
-            ]
         ];
 
         $this->assertEquals($expected, $result);
->>>>>>> 77ffb0775b5d26c8068c64ac1ea5246f3b0d27ab
     }
 }

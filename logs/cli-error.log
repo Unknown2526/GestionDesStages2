@@ -18,8 +18,6 @@ Stack Trace:
 #15 {main}
 
 
-<<<<<<< HEAD
-=======
 2018-10-24 19:32:40 Error: Fatal Error (1): Class 'PHPUnit\Framework\BaseTestListener' not found in [C:\Program Files (x86)\Ampps\www\CakePHP-3.6.10\GestionDesStages\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureInjector.php, line 28]
 
 
@@ -46,4 +44,15 @@ Request URL: /milieudestages/delete
 Request URL: /
 2018-10-26 15:29:16 Error: [Cake\Http\Exception\InvalidCsrfTokenException] Missing CSRF token cookie
 Request URL: /
->>>>>>> 77ffb0775b5d26c8068c64ac1ea5246f3b0d27ab
+2018-11-07 02:18:37 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'test_tp1.files' doesn't exist
+Request URL: /users/add_student
+2018-11-07 02:19:19 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'test_tp1.files' doesn't exist
+Request URL: /users/add-student
+2018-11-07 02:19:56 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'test_tp1.files' doesn't exist
+Request URL: /users/add-student
+2018-11-07 02:21:10 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'test_tp1.files' doesn't exist
+Request URL: /users/add-student
+2018-11-07 02:21:37 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'test_tp1.files' doesn't exist
+Request URL: /users/add-student
+2018-11-07 02:28:44 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'test_tp1.files' doesn't exist
+Request URL: /users/add-student

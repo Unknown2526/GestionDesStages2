@@ -2161,167 +2161,6 @@ Exception Attributes: array (
 )
 Request URL: /roles/view/etudiant
 Referer URL: http://localhost/tp1/users
-<<<<<<< HEAD
-2018-10-17 01:37:05 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'tp1.i18n' doesn't exist
-Request URL: /milieudestages/view/6
-Referer URL: http://localhost/GestionDesStages2/pages
-2018-10-17 01:37:25 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'tp1.i18n' doesn't exist
-Request URL: /offres
-Referer URL: http://localhost/GestionDesStages2/pages
-2018-10-17 01:37:49 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'tp1.i18n' doesn't exist
-Request URL: /users/view/10
-Referer URL: http://localhost/GestionDesStages2/users
-2018-10-17 02:37:46 Error: [Error] Call to a member function subject() on array
-Request URL: /offres/notifier-etudiants/1
-Referer URL: http://localhost/GestionDesStages2/offres
-2018-10-17 02:37:46 Warning: Warning (512): Unable to emit headers. Headers sent in file=E:\Program Files\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php line=853 in [E:\Program Files\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
-
-
-2018-10-17 02:37:46 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at E:\Program Files\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [E:\Program Files\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 148]
-
-
-2018-10-17 02:37:46 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at E:\Program Files\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [E:\Program Files\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
-
-
-2018-10-17 02:37:46 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at E:\Program Files\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [E:\Program Files\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
-
-
-2018-10-17 02:43:37 Error: [Error] Call to a member function subject() on array
-Request URL: /offres/notifier-etudiants/1
-Referer URL: http://localhost/GestionDesStages2/offres
-2018-10-17 02:43:37 Warning: Warning (512): Unable to emit headers. Headers sent in file=E:\Program Files\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php line=853 in [E:\Program Files\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
-
-
-2018-10-17 02:43:37 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at E:\Program Files\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [E:\Program Files\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 148]
-
-
-2018-10-17 02:43:37 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at E:\Program Files\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [E:\Program Files\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
-
-
-2018-10-17 02:43:37 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at E:\Program Files\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [E:\Program Files\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
-
-
-2018-10-17 02:44:27 Error: [Error] Call to a member function subject() on array
-Request URL: /offres/notifier-etudiants/1
-Referer URL: http://localhost/GestionDesStages2/offres
-2018-10-17 02:44:27 Warning: Warning (512): Unable to emit headers. Headers sent in file=E:\Program Files\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php line=853 in [E:\Program Files\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
-
-
-2018-10-17 02:44:27 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at E:\Program Files\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [E:\Program Files\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 148]
-
-
-2018-10-17 02:44:27 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at E:\Program Files\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [E:\Program Files\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
-
-
-2018-10-17 02:44:27 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at E:\Program Files\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [E:\Program Files\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
-
-
-2018-10-17 03:19:18 Error: [Error] Call to a member function subject() on array
-Request URL: /offres/notifier-etudiants/1
-Referer URL: http://localhost/GestionDesStages2/offres
-2018-10-17 03:19:18 Warning: Warning (512): Unable to emit headers. Headers sent in file=E:\Program Files\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php line=853 in [E:\Program Files\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
-
-
-2018-10-17 03:19:18 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at E:\Program Files\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [E:\Program Files\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 148]
-
-
-2018-10-17 03:19:18 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at E:\Program Files\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [E:\Program Files\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
-
-
-2018-10-17 03:19:18 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at E:\Program Files\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [E:\Program Files\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
-
-
-2018-10-17 03:22:36 Error: [Error] Cannot use object of type Cake\Database\Statement\CallbackStatement as array
-Request URL: /offres/notifier-etudiants/1
-Referer URL: http://localhost/GestionDesStages2/offres
-2018-10-17 03:22:40 Error: [Error] Cannot use object of type Cake\Database\Statement\CallbackStatement as array
-Request URL: /offres/notifier-etudiants/1
-Referer URL: http://localhost/GestionDesStages2/offres
-2018-10-17 03:41:26 Error: [Error] Cannot use object of type Cake\Database\Statement\CallbackStatement as array
-Request URL: /offres/notifier-etudiants/1
-Referer URL: http://localhost/GestionDesStages2/offres
-2018-10-17 03:42:07 Error: [Error] Call to a member function find() on null
-Request URL: /offres/notifier-etudiants/1
-Referer URL: http://localhost/GestionDesStages2/offres
-2018-10-17 03:42:08 Warning: Warning (512): Unable to emit headers. Headers sent in file=E:\Program Files\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php line=853 in [E:\Program Files\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
-
-
-2018-10-17 03:42:08 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at E:\Program Files\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [E:\Program Files\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 148]
-
-
-2018-10-17 03:42:08 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at E:\Program Files\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [E:\Program Files\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
-
-
-2018-10-17 03:42:08 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at E:\Program Files\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [E:\Program Files\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
-
-
-2018-10-17 03:42:30 Error: [Error] Call to a member function find() on null
-Request URL: /offres/notifier-etudiants/1
-Referer URL: http://localhost/GestionDesStages2/offres
-2018-10-17 03:42:30 Warning: Warning (512): Unable to emit headers. Headers sent in file=E:\Program Files\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php line=853 in [E:\Program Files\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
-
-
-2018-10-17 03:42:30 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at E:\Program Files\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [E:\Program Files\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 148]
-
-
-2018-10-17 03:42:30 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at E:\Program Files\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [E:\Program Files\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
-
-
-2018-10-17 03:42:30 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at E:\Program Files\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [E:\Program Files\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
-
-
-2018-10-17 03:42:43 Error: [Error] Cannot use object of type Cake\Database\Statement\CallbackStatement as array
-Request URL: /offres/notifier-etudiants/1
-Referer URL: http://localhost/GestionDesStages2/offres
-2018-10-17 03:43:58 Error: [Error] Cannot use object of type Cake\ORM\Query as array
-Request URL: /offres/notifier-etudiants/1
-Referer URL: http://localhost/GestionDesStages2/offres
-2018-10-17 03:44:27 Error: [Error] Cannot use object of type Cake\ORM\Query as array
-Request URL: /offres/notifier-etudiants/1
-Referer URL: http://localhost/GestionDesStages2/offres
-2018-10-17 03:46:13 Error: [Error] Cannot use object of type Cake\ORM\Query as array
-Request URL: /offres/notifier-etudiants/1
-Referer URL: http://localhost/GestionDesStages2/offres
-2018-10-17 03:46:17 Error: [Error] Cannot use object of type Cake\ORM\Query as array
-Request URL: /offres/notifier-etudiants/1
-Referer URL: http://localhost/GestionDesStages2/offres
-2018-10-17 03:46:37 Error: [Error] Cannot use object of type Cake\ORM\Query as array
-Request URL: /offres/notifier-etudiants/1
-Referer URL: http://localhost/GestionDesStages2/offres
-2018-10-17 03:49:10 Error: [Error] Cannot use object of type Cake\Datasource\ResultSetDecorator as array
-Request URL: /offres/notifier-etudiants/1
-Referer URL: http://localhost/GestionDesStages2/offres
-2018-10-17 03:58:47 Warning: Warning (512): Unable to emit headers. Headers sent in file=E:\Program Files\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php line=853 in [E:\Program Files\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
-
-
-2018-10-17 03:58:47 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at E:\Program Files\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [E:\Program Files\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 148]
-
-
-2018-10-17 03:58:47 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at E:\Program Files\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [E:\Program Files\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
-
-
-2018-10-17 03:58:47 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at E:\Program Files\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [E:\Program Files\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
-
-
-2018-10-17 03:58:47 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at E:\Program Files\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [E:\Program Files\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
-
-
-2018-10-17 04:04:16 Warning: Warning (512): Unable to emit headers. Headers sent in file=E:\Program Files\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php line=853 in [E:\Program Files\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
-
-
-2018-10-17 04:04:16 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at E:\Program Files\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [E:\Program Files\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 148]
-
-
-2018-10-17 04:04:16 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at E:\Program Files\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [E:\Program Files\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
-
-
-2018-10-17 04:04:16 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at E:\Program Files\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [E:\Program Files\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
-
-
-2018-10-17 04:04:16 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at E:\Program Files\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [E:\Program Files\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
-
-
-=======
 2018-10-17 19:25:49 Error: [BadMethodCallException] You need specify one destination on to, cc or bcc.
 Request URL: /offres/postuler/1
 Referer URL: http://localhost/GestionDesStages2/offres
@@ -2466,4 +2305,14 @@ Exception Attributes: array (
   '_ext' => false,
 )
 Request URL: /login
->>>>>>> 77ffb0775b5d26c8068c64ac1ea5246f3b0d27ab
+2018-11-06 18:26:40 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Webroot could not be found.
+Exception Attributes: array (
+  'class' => 'Webroot',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /webroot/coverage/
+2018-11-07 01:41:20 Error: [InvalidArgumentException] Invalid email set for "to". You passed "a".
+Request URL: /offres/add
+Referer URL: http://localhost/Gestion/offres/add

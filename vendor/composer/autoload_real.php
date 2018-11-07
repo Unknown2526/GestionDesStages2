@@ -23,21 +23,6 @@ class ComposerAutoloaderInit839157af1f7ff49b510b4267407c1913
         self::$loader = $loader = new \Composer\Autoload\ClassLoader();
         spl_autoload_unregister(array('ComposerAutoloaderInit839157af1f7ff49b510b4267407c1913', 'loadClassLoader'));
 
-<<<<<<< HEAD
-        $map = require __DIR__ . '/autoload_namespaces.php';
-        foreach ($map as $namespace => $path) {
-            $loader->set($namespace, $path);
-        }
-
-        $map = require __DIR__ . '/autoload_psr4.php';
-        foreach ($map as $namespace => $path) {
-            $loader->setPsr4($namespace, $path);
-        }
-
-        $classMap = require __DIR__ . '/autoload_classmap.php';
-        if ($classMap) {
-            $loader->addClassMap($classMap);
-=======
         $useStaticLoader = PHP_VERSION_ID >= 50600 && !defined('HHVM_VERSION') && (!function_exists('zend_loader_file_encoded') || !zend_loader_file_encoded());
         if ($useStaticLoader) {
             require_once __DIR__ . '/autoload_static.php';
@@ -58,16 +43,10 @@ class ComposerAutoloaderInit839157af1f7ff49b510b4267407c1913
             if ($classMap) {
                 $loader->addClassMap($classMap);
             }
->>>>>>> 77ffb0775b5d26c8068c64ac1ea5246f3b0d27ab
         }
 
         $loader->register(true);
 
-<<<<<<< HEAD
-        $includeFiles = require __DIR__ . '/autoload_files.php';
-        foreach ($includeFiles as $file) {
-            composerRequire839157af1f7ff49b510b4267407c1913($file);
-=======
         if ($useStaticLoader) {
             $includeFiles = Composer\Autoload\ComposerStaticInit839157af1f7ff49b510b4267407c1913::$files;
         } else {
@@ -75,18 +54,12 @@ class ComposerAutoloaderInit839157af1f7ff49b510b4267407c1913
         }
         foreach ($includeFiles as $fileIdentifier => $file) {
             composerRequire839157af1f7ff49b510b4267407c1913($fileIdentifier, $file);
->>>>>>> 77ffb0775b5d26c8068c64ac1ea5246f3b0d27ab
         }
 
         return $loader;
     }
 }
 
-<<<<<<< HEAD
-function composerRequire839157af1f7ff49b510b4267407c1913($file)
-{
-    require $file;
-=======
 function composerRequire839157af1f7ff49b510b4267407c1913($fileIdentifier, $file)
 {
     if (empty($GLOBALS['__composer_autoload_files'][$fileIdentifier])) {
@@ -94,5 +67,4 @@ function composerRequire839157af1f7ff49b510b4267407c1913($fileIdentifier, $file)
 
         $GLOBALS['__composer_autoload_files'][$fileIdentifier] = true;
     }
->>>>>>> 77ffb0775b5d26c8068c64ac1ea5246f3b0d27ab
 }

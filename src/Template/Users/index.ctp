@@ -12,11 +12,6 @@
             <li><?= $this->Html->link(__('List Roles'), ['controller' => 'Roles', 'action' => 'index']) ?></li>
             <li><?= $this->Html->link(__('New Role'), ['controller' => 'Roles', 'action' => 'add']) ?></li>
         <?php endif; ?>
-<<<<<<< HEAD
-        <li><?= $this->Html->link(__('List Files'), ['controller' => 'Files', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New File'), ['controller' => 'Files', 'action' => 'add']) ?></li>
-=======
->>>>>>> 77ffb0775b5d26c8068c64ac1ea5246f3b0d27ab
         <li><?= $this->Html->link(__('List Administrateurs'), ['controller' => 'Administrateurs', 'action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('New Administrateur'), ['controller' => 'Administrateurs', 'action' => 'add']) ?></li>
         <li><?= $this->Html->link(__('List Etudiants'), ['controller' => 'Etudiants', 'action' => 'index']) ?></li>
@@ -40,10 +35,6 @@
                     <th scope="col"><?= $this->Paginator->sort('password') ?></th>
                 <?php endif; ?>
                 <th scope="col"><?= $this->Paginator->sort('role_id') ?></th>
-<<<<<<< HEAD
-                <th scope="col"><?= $this->Paginator->sort('file_id') ?></th>
-=======
->>>>>>> 77ffb0775b5d26c8068c64ac1ea5246f3b0d27ab
                 <?php if (false): ?>
                     <th scope="col"><?= $this->Paginator->sort('uuid') ?></th>
                     <th scope="col"><?= $this->Paginator->sort('verify') ?></th>
@@ -63,18 +54,7 @@
                     <?php if (false): ?>
                         <td><?= h($user->password) ?></td>
                     <?php endif; ?>
-<<<<<<< HEAD
-                    <td><?= $user->has('role') ? $this->Html->link($user->role->id, ['controller' => 'Roles', 'action' => 'view', $user->role->id]) : '' ?></td>
-                    <td><?=
-                        $user->has('file_id') ? $this->Html->image($user->file->path . $user->file->name, ["alt" => $user->file->name,
-                                    "width" => "220px",
-                                    "height" => "150px",
-                                    'url' => ['controller' => 'Files', 'action' => 'view', $user->file->id]
-                                ]) : ''
-                        ?></td>
-=======
                     <td><?= h($user->role->id) ?></td>
->>>>>>> 77ffb0775b5d26c8068c64ac1ea5246f3b0d27ab
                     <?php if (false): ?>
                         <td><?= h($user->uuid) ?></td>
                         <td><?= h($user->verify) ?></td>

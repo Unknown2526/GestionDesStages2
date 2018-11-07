@@ -5,10 +5,6 @@ namespace App\Controller;
 use App\Controller\AppController;
 use Cake\Mailer\Email;
 use Cake\ORM\TableRegistry;
-<<<<<<< HEAD
-use Cake\Utility\Text;
-=======
->>>>>>> 77ffb0775b5d26c8068c64ac1ea5246f3b0d27ab
 
 /**
  * Offres Controller
@@ -25,26 +21,19 @@ class OffresController extends AppController {
      * @return \Cake\Http\Response|void
      */
     public function index() {
-<<<<<<< HEAD
-=======
         $loguser = $this->request->session()->read('Auth.User');
 
->>>>>>> 77ffb0775b5d26c8068c64ac1ea5246f3b0d27ab
         $this->paginate = [
             'contain' => ['Users', 'Milieudestages', 'Regions']
         ];
         $offres = $this->paginate($this->Offres);
 
-<<<<<<< HEAD
-        $this->set(compact('offres'));
-=======
         if ($loguser['role_id'] === 'etudiant') {
             $links = $this->getLinks();
             $this->set(compact('offres', 'links'));
         } else {
             $this->set(compact('offres'));
         }
->>>>>>> 77ffb0775b5d26c8068c64ac1ea5246f3b0d27ab
     }
 
     /**
@@ -76,10 +65,7 @@ class OffresController extends AppController {
 
             if ($this->Offres->save($offre)) {
                 $this->Flash->success(__('The offre has been saved.'));
-<<<<<<< HEAD
-=======
                 $this->notifierEtudiants($offre['id']);
->>>>>>> 77ffb0775b5d26c8068c64ac1ea5246f3b0d27ab
 
                 return $this->redirect(['action' => 'index']);
             }
@@ -150,11 +136,7 @@ class OffresController extends AppController {
         }
 
         if ($role === "milieu") {
-<<<<<<< HEAD
-            if (in_array($action, ['edit', 'delete', 'notifierEtudiants'])) {
-=======
             if (in_array($action, ['edit', 'delete'])) {
->>>>>>> 77ffb0775b5d26c8068c64ac1ea5246f3b0d27ab
                 $passParam = $this->request->getParam('pass');
                 $sujet = $this->Offres->get($passParam);
 
@@ -170,20 +152,6 @@ class OffresController extends AppController {
         $offre = $this->Offres->get($this->request->getParam('pass'));
         $milieu = $this->getInfoMilieu($offre['milieudestage_id']);
         $etudiant = $this->getInfoEtudiant();
-<<<<<<< HEAD
-        $offreid = $this->request->getParam('pass');
-
-        $email = new Email('default');
-        $email->to($milieu['courriel_respo'])->subject('Postulation d\'un étudiant')
-                ->send('Bonjour,' . $etudiant['prenom'] . ' ' . $etudiant['prenom']
-                        . ' est intéressé à votre offre de stage numéro ' . $offreid[0]
-                        . '. Vous pouvez le contacter à son courriel ' . $etudiant['courriel']
-                        . ' ou à son téléphone ' . $etudiant['telephone'] . '.');
-        $this->Flash->success(__('You applied.'));
-        return $this->redirect(['action' => 'index']);
-    }
-
-=======
 
         if ($this->linkStudantAndOffer($etudiant['id'], $offre['id'])) {
             /*
@@ -215,7 +183,6 @@ class OffresController extends AppController {
         return $links->save($newLink);
     }
 
->>>>>>> 77ffb0775b5d26c8068c64ac1ea5246f3b0d27ab
     private function getInfoEtudiant() {
         $loguser = $this->request->session()->read('Auth.User');
 
@@ -227,13 +194,7 @@ class OffresController extends AppController {
     }
 
     private function getInfoMilieu($id) {
-<<<<<<< HEAD
-        $milieu = $this->Offres->Milieudestages->find('all', [
-            'conditions' => ['user_id' => $id],
-        ]);
-=======
         $milieu = $this->Offres->Milieudestages->find('all', ['user_id' => $id]);
->>>>>>> 77ffb0775b5d26c8068c64ac1ea5246f3b0d27ab
 
         return $milieu->first();
     }
@@ -250,39 +211,6 @@ class OffresController extends AppController {
 
         return $offre;
     }
-<<<<<<< HEAD
-    
-    public function notifierEtudiants() {
-        
-        $offreid = $this->request->getParam('pass');
-        $webroot = $this->request->webroot;
-        $etudiants = $this->getEmailStudents();
-        
-        foreach ($etudiants as $etudiant) {
-            
-            $email = new Email('default');
-            $email->emailFormat('html');
-            $email->to($etudiants['courriel'])->subject('New offer')
-                    ->send('We have a new internship offer.'
-                            . '<br><br><a href="localhost'.$webroot.'offres/view/'.$offreid[0].'">Click here to see the new offer</a>');
-        }
-         $this->Flash->success(__('You have notified the students.'));
-        return $this->redirect(['controller' => 'Milieudestages', 'action' => 'index']);
-    }
-    
-    public function getEmailStudents() {
-        
-        /*$etudiant = TableRegistry::get('Users');
-        $etudiant = $etudiant->find('all', array(
-            'conditions' => array('role_id' => 'etudiant')
-        ));*/
-        $etudiants = TableRegistry::get('Etudiants');
-        $etudiants = $etudiants->find('all');
-        
-        return $etudiants->toArray();
-    }
-
-=======
 
     public function notifierEtudiants($id) {
         $webroot = $this->request->webroot;
@@ -320,5 +248,4 @@ class OffresController extends AppController {
         return $array;
     }
 
->>>>>>> 77ffb0775b5d26c8068c64ac1ea5246f3b0d27ab
 }

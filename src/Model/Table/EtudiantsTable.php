@@ -10,10 +10,7 @@ use Cake\Validation\Validator;
  * Etudiants Model
  *
  * @property \App\Model\Table\UsersTable|\Cake\ORM\Association\BelongsTo $Users
-<<<<<<< HEAD
-=======
  * @property |\Cake\ORM\Association\BelongsToMany $Offres
->>>>>>> 77ffb0775b5d26c8068c64ac1ea5246f3b0d27ab
  *
  * @method \App\Model\Entity\Etudiant get($primaryKey, $options = [])
  * @method \App\Model\Entity\Etudiant newEntity($data = null, array $options = [])
@@ -38,13 +35,7 @@ class EtudiantsTable extends Table
     public function initialize(array $config)
     {
         parent::initialize($config);
-<<<<<<< HEAD
-        
-        $this->addBehavior('Translate', ['fields' => ['info_supp']]);
-        
-=======
 
->>>>>>> 77ffb0775b5d26c8068c64ac1ea5246f3b0d27ab
         $this->setTable('etudiants');
         $this->setDisplayField('id');
         $this->setPrimaryKey('id');
@@ -55,14 +46,11 @@ class EtudiantsTable extends Table
             'foreignKey' => 'user_id',
             'joinType' => 'INNER'
         ]);
-<<<<<<< HEAD
-=======
         $this->belongsToMany('Offres', [
             'foreignKey' => 'etudiant_id',
             'targetForeignKey' => 'offre_id',
             'joinTable' => 'etudiants_offres'
         ]);
->>>>>>> 77ffb0775b5d26c8068c64ac1ea5246f3b0d27ab
     }
 
     /**
@@ -122,8 +110,6 @@ class EtudiantsTable extends Table
 
         return $rules;
     }
-<<<<<<< HEAD
-=======
     
     public function findEtudiant(Query $query, array $options)
     {
@@ -132,5 +118,4 @@ class EtudiantsTable extends Table
         ]);
         return $query;
     }
->>>>>>> 77ffb0775b5d26c8068c64ac1ea5246f3b0d27ab
 }

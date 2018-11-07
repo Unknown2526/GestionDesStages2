@@ -12,11 +12,6 @@
             <li><?= $this->Html->link(__('List Roles'), ['controller' => 'Roles', 'action' => 'index']) ?></li>
             <li><?= $this->Html->link(__('New Role'), ['controller' => 'Roles', 'action' => 'add']) ?></li>
         <?php endif; ?>
-<<<<<<< HEAD
-        <li><?= $this->Html->link(__('List Files'), ['controller' => 'Files', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New File'), ['controller' => 'Files', 'action' => 'add']) ?></li>
-=======
->>>>>>> 77ffb0775b5d26c8068c64ac1ea5246f3b0d27ab
         <li><?= $this->Html->link(__('List Administrateurs'), ['controller' => 'Administrateurs', 'action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('New Administrateur'), ['controller' => 'Administrateurs', 'action' => 'add']) ?></li>
         <li><?= $this->Html->link(__('List Etudiants'), ['controller' => 'Etudiants', 'action' => 'index']) ?></li>
@@ -35,10 +30,6 @@
         echo $this->Form->control('username');
         echo $this->Form->control('password');
         echo $this->Form->control('role_id', ['options' => $roles]);
-<<<<<<< HEAD
-        echo $this->Form->control('file_id', ['options' => $files, 'empty' => true]);
-=======
->>>>>>> 77ffb0775b5d26c8068c64ac1ea5246f3b0d27ab
         ?>
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>

@@ -44,13 +44,8 @@ class MilieudestagesFixture extends TestFixture
         'date_rappel' => ['type' => 'datetime', 'length' => null, 'null' => true, 'default' => null, 'comment' => '', 'precision' => null],
         'actif' => ['type' => 'boolean', 'length' => null, 'null' => true, 'default' => null, 'comment' => '', 'precision' => null],
         'user_id' => ['type' => 'integer', 'length' => 11, 'unsigned' => false, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null, 'autoIncrement' => null],
-<<<<<<< HEAD
-        'created' => ['type' => 'datetime', 'length' => null, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null],
-        'modified' => ['type' => 'datetime', 'length' => null, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null],
-=======
         'created' => ['type' => 'datetime', 'length' => null, 'null' => true, 'default' => null, 'comment' => '', 'precision' => null],
         'modified' => ['type' => 'datetime', 'length' => null, 'null' => true, 'default' => null, 'comment' => '', 'precision' => null],
->>>>>>> 77ffb0775b5d26c8068c64ac1ea5246f3b0d27ab
         '_indexes' => [
             'region_admin_id' => ['type' => 'index', 'columns' => ['region_admin_id'], 'length' => []],
             'user_id' => ['type' => 'index', 'columns' => ['user_id'], 'length' => []],
@@ -77,20 +72,20 @@ class MilieudestagesFixture extends TestFixture
         $this->records = [
             [
                 'id' => 1,
-                'nom' => 'Lorem ipsum dolor sit amet',
-                'adresse' => 'Lorem ipsum dolor sit amet',
-                'ville' => 'Lorem ipsum dolor sit amet',
-                'province' => 'Lorem ipsum dolor sit amet',
-                'code_postal' => 'Lorem ipsum dolor sit amet',
+                'nom' => 'Momo',
+                'adresse' => '475 Boulevard Avenir',
+                'ville' => 'Laval',
+                'province' => 'Quebec',
+                'code_postal' => 'H7N 5H9',
                 'exigence' => 'Lorem ipsum dolor sit amet, aliquet feugiat. Convallis morbi fringilla gravida, phasellus feugiat dapibus velit nunc, pulvinar eget sollicitudin venenatis cum nullam, vivamus ut a sed, mollitia lectus. Nulla vestibulum massa neque ut et, id hendrerit sit, feugiat in taciti enim proin nibh, tempor dignissim, rhoncus duis vestibulum nunc mattis convallis.',
-                'nom_respo' => 'Lorem ipsum dolor sit amet',
-                'telephone_respo' => 'Lorem ipsum dolor sit amet',
-                'fax_respo' => 'Lorem ipsum dolor sit amet',
-                'courriel_respo' => 'Lorem ipsum dolor sit amet',
-                'adresse_admin' => 'Lorem ipsum dolor sit amet',
-                'ville_admin' => 'Lorem ipsum dolor sit amet',
-                'province_admin' => 'Lorem ipsum dolor sit amet',
-                'code_postal_admin' => 'Lorem ipsum dolor sit amet',
+                'nom_respo' => 'Anthony',
+                'telephone_respo' => '911',
+                'fax_respo' => '911',
+                'courriel_respo' => 'anthonychow8@gmail.com',
+                'adresse_admin' => '123 rue perdu',
+                'ville_admin' => 'Perdu',
+                'province_admin' => 'Quebec',
+                'code_postal_admin' => 'H3A 2C3',
                 'region_admin_id' => 1,
                 'facilite' => 'Lorem ipsum dolor sit amet',
                 'tache' => 'Lorem ipsum dolor sit amet, aliquet feugiat. Convallis morbi fringilla gravida, phasellus feugiat dapibus velit nunc, pulvinar eget sollicitudin venenatis cum nullam, vivamus ut a sed, mollitia lectus. Nulla vestibulum massa neque ut et, id hendrerit sit, feugiat in taciti enim proin nibh, tempor dignissim, rhoncus duis vestibulum nunc mattis convallis.',
@@ -99,21 +94,12 @@ class MilieudestagesFixture extends TestFixture
                 'info_contrat' => 'Lorem ipsum dolor sit amet',
                 'reponse_milieu' => 'Lorem ipsum dolor sit amet',
                 'autre_info' => 'Lorem ipsum dolor sit amet, aliquet feugiat. Convallis morbi fringilla gravida, phasellus feugiat dapibus velit nunc, pulvinar eget sollicitudin venenatis cum nullam, vivamus ut a sed, mollitia lectus. Nulla vestibulum massa neque ut et, id hendrerit sit, feugiat in taciti enim proin nibh, tempor dignissim, rhoncus duis vestibulum nunc mattis convallis.',
-<<<<<<< HEAD
-                'date_inv' => '2018-10-03 00:25:47',
-                'date_rappel' => '2018-10-03 00:25:47',
-                'actif' => 1,
-                'user_id' => 1,
-                'created' => '2018-10-03 00:25:47',
-                'modified' => '2018-10-03 00:25:47'
-=======
                 'date_inv' => null,
                 'date_rappel' => null,
                 'actif' => 1,
                 'user_id' => 2,
                 'created' => null,
                 'modified' => null
->>>>>>> 77ffb0775b5d26c8068c64ac1ea5246f3b0d27ab
             ],
         ];
         parent::init();

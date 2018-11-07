@@ -17,10 +17,6 @@
         <?php
         echo $this->Form->control('username');
         echo $this->Form->control('password');
-<<<<<<< HEAD
-        echo $this->Form->control('file_id', ['options' => $files, 'empty' => true]);
-=======
->>>>>>> 77ffb0775b5d26c8068c64ac1ea5246f3b0d27ab
         ?>
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>

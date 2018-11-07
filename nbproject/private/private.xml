@@ -2,9 +2,6 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-<<<<<<< HEAD
-        <group/>
-=======
         <group>
             <file>file:/C:/Program%20Files%20(x86)/Ampps/www/CakePHP-3.6.10/GestionDesStages%20-%20Backup/src/Model/Table/EtudiantsTable.php</file>
             <file>file:/C:/Program%20Files%20(x86)/Ampps/www/CakePHP-3.6.10/GestionDesStages%20-%20Backup/config/app.php</file>
@@ -14,6 +11,5 @@
             <file>file:/C:/Program%20Files%20(x86)/Ampps/www/CakePHP-3.6.10/GestionDesStages%20-%20Backup/tests/TestCase/Controller/EtudiantsControllerTest.php</file>
             <file>file:/C:/Program%20Files%20(x86)/Ampps/www/CakePHP-3.6.10/GestionDesStages%20-%20Backup/tests/TestCase/Controller/PagesControllerTest.php</file>
         </group>
->>>>>>> 77ffb0775b5d26c8068c64ac1ea5246f3b0d27ab
     </open-files>
 </project-private>

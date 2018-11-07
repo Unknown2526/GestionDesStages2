@@ -261,12 +261,7 @@ return [
     'Datasources' => [
         'default' => [
             'className' => 'Cake\Database\Connection',
-<<<<<<< HEAD
-            //'driver' => 'Cake\Database\Driver\Mysql',
-            'driver' => 'Cake\Database\Driver\Sqlite',
-=======
             'driver' => 'Cake\Database\Driver\Mysql',
->>>>>>> 77ffb0775b5d26c8068c64ac1ea5246f3b0d27ab
             'persistent' => false,
             'host' => 'localhost',
             /*
@@ -275,16 +270,9 @@ return [
              * the following line and set the port accordingly
              */
             //'port' => 'non_standard_port_number',
-<<<<<<< HEAD
-            //'username' => 'root',
-            //'password' => 'mysql',
-            //'database' => 'tp1',
-            'database' => ROOT . DS . 'sqlite' . DS . 'default.sqlite',
-=======
             'username' => 'root',
             'password' => 'mysql',
             'database' => 'tp1',
->>>>>>> 77ffb0775b5d26c8068c64ac1ea5246f3b0d27ab
             /*
              * You do not need to set this flag to use full utf-8 encoding (internal default since CakePHP 3.6).
              */
@@ -325,15 +313,9 @@ return [
             'persistent' => false,
             'host' => 'localhost',
             //'port' => 'non_standard_port_number',
-<<<<<<< HEAD
-            'username' => 'my_app',
-            'password' => 'secret',
-            'database' => 'test_myapp',
-=======
             'username' => 'root',
             'password' => 'mysql',
             'database' => 'test_tp1',
->>>>>>> 77ffb0775b5d26c8068c64ac1ea5246f3b0d27ab
             //'encoding' => 'utf8mb4',
             'timezone' => 'UTC',
             'cacheMetadata' => true,
