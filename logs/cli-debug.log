@@ -1,0 +1,12 @@
+2018-10-08 13:54:11 Notice: Notice (8): Undefined index: Images in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\bake\src\View\Helper\DocBlockHelper.php, line 238]
+
+
+2018-10-08 14:17:55 Notice: Notice (8): Undefined index: Files in [C:\Program Files (x86)\Ampps\www\tp1\vendor\cakephp\bake\src\View\Helper\DocBlockHelper.php, line 238]
+
+
+2018-10-24 13:44:11 Notice: Notice (8): Undefined index: Offres in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\bake\src\View\Helper\DocBlockHelper.php, line 238]
+
+
+2018-10-24 13:46:03 Notice: Notice (8): Undefined index: Etudiants in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\bake\src\View\Helper\DocBlockHelper.php, line 238]
+
+
