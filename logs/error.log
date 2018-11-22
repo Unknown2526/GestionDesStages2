@@ -2284,3 +2284,224 @@ Referer URL: http://localhost/GestionDesStages2/offres
 2018-10-24 19:41:59 Error: [InvalidArgumentException] Invalid email set for "to". You passed "etudiant".
 Request URL: /offres/add
 Referer URL: http://localhost/GestionDesStages2/offres/add
+2018-11-20 17:13:26 Error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "users" with primary key [NULL]
+Request URL: /users/changement-mot-de-passe
+Referer URL: http://localhost/GestionDesStages2/?redirect=%2FUsers%2Fchangementmotdepasse
+2018-11-20 17:17:13 Error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "users" with primary key [NULL]
+Request URL: /users/changement-mot-de-passe
+2018-11-20 17:17:37 Error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "users" with primary key [NULL]
+Request URL: /users/changement-mot-de-passe
+2018-11-20 17:19:00 Error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "users" with primary key [NULL]
+Request URL: /users/changement-mot-de-passe
+2018-11-20 17:19:16 Error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "users" with primary key [NULL]
+Request URL: /users/changement-mot-de-passe
+2018-11-20 17:21:30 Error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "users" with primary key [NULL]
+Request URL: /users/changement-mot-de-passe
+2018-11-20 17:23:13 Error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "users" with primary key [NULL]
+Request URL: /users/changement-mot-de-passe
+2018-11-20 17:28:39 Error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "users" with primary key [NULL]
+Request URL: /users/changement-mot-de-passe
+Referer URL: http://localhost/GestionDesStages2/
+2018-11-20 22:28:10 Error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "users" with primary key [NULL]
+Request URL: /users/changement-mot-de-passe
+Referer URL: http://localhost/GestionDesStages2/
+2018-11-22 02:26:16 Error: [Cake\View\Exception\MissingTemplateException] Template file "Users\changement_mot_de_passe.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users\\changement_mot_de_passe.ctp',
+)
+Request URL: /users/changement-mot-de-passe
+Referer URL: http://localhost/GestionDesStages2/
+2018-11-22 02:33:42 Warning: Warning (2): Creating default object from empty value in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\src\Controller\UsersController.php, line 267]
+
+
+2018-11-22 02:33:42 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php line=853 in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+
+
+2018-11-22 02:33:42 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 148]
+
+
+2018-11-22 02:33:42 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-11-22 02:33:42 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-11-22 02:37:17 Warning: Warning (2): Creating default object from empty value in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\src\Controller\UsersController.php, line 267]
+
+
+2018-11-22 02:37:17 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php line=853 in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+
+
+2018-11-22 02:37:17 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 148]
+
+
+2018-11-22 02:37:17 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-11-22 02:37:17 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-11-22 02:37:53 Error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "users" with primary key [NULL]
+Request URL: /users/changement-mot-de-passe
+2018-11-22 02:39:07 Warning: Warning (2): Creating default object from empty value in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\src\Controller\UsersController.php, line 268]
+
+
+2018-11-22 02:39:07 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php line=853 in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+
+
+2018-11-22 02:39:07 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 148]
+
+
+2018-11-22 02:39:07 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-11-22 02:39:07 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-11-22 03:00:22 Error: [Error] Call to a member function find() on null
+Request URL: /users/changement-mot-de-passe
+2018-11-22 03:00:22 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php line=853 in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+
+
+2018-11-22 03:00:22 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 148]
+
+
+2018-11-22 03:00:22 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-11-22 03:00:22 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-11-22 03:03:00 Error: [Error] Cannot use object of type App\Controller\UsersController as array
+Request URL: /users/changement-mot-de-passe
+2018-11-22 03:12:26 Warning: Warning (2): Creating default object from empty value in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\src\Controller\UsersController.php, line 272]
+
+
+2018-11-22 03:12:27 Error: [TypeError] Argument 1 passed to Cake\ORM\Table::save() must be an instance of Cake\Datasource\EntityInterface, instance of stdClass given, called in C:\Program Files (x86)\Ampps\www\GestionDesStages2\src\Controller\UsersController.php on line 273
+Request URL: /users/changement-mot-de-passe
+Referer URL: http://localhost/GestionDesStages2/users/changement-mot-de-passe
+2018-11-22 03:27:17 Error: [Error] Cannot use object of type App\Model\Table\UsersTable as array
+Request URL: /users/changement-mot-de-passe
+2018-11-22 03:27:26 Error: [Error] Cannot use object of type App\Model\Table\UsersTable as array
+Request URL: /users/changement-mot-de-passe
+2018-11-22 03:27:28 Error: [Error] Cannot use object of type App\Model\Table\UsersTable as array
+Request URL: /users/changement-mot-de-passe
+2018-11-22 03:27:41 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::login<() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login<',
+  'prefix' => '',
+  'plugin' => false,
+)
+Request URL: /users/login%3C
+2018-11-22 03:27:47 Error: [Error] Cannot use object of type App\Model\Table\UsersTable as array
+Request URL: /users/changement-mot-de-passe
+Referer URL: http://localhost/GestionDesStages2/?redirect=%2Fusers%2Flogin
+2018-11-22 03:28:30 Error: [Error] Cannot use object of type App\Model\Table\UsersTable as array
+Request URL: /users/changement-mot-de-passe
+2018-11-22 03:30:20 Error: [Error] Cannot use object of type App\Model\Table\UsersTable as array
+Request URL: /users/changement-mot-de-passe
+2018-11-22 03:30:24 Error: [Error] Cannot use object of type App\Model\Table\UsersTable as array
+Request URL: /users/changement-mot-de-passe
+2018-11-22 03:31:22 Error: [Error] Cannot use object of type Cake\ORM\Query as array
+Request URL: /users/changement-mot-de-passe
+Referer URL: http://localhost/GestionDesStages2/users/changement-mot-de-passe
+2018-11-22 03:33:40 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php line=853 in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+
+
+2018-11-22 03:33:40 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 148]
+
+
+2018-11-22 03:33:40 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-11-22 03:33:40 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-11-22 03:34:12 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php line=853 in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+
+
+2018-11-22 03:34:12 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 148]
+
+
+2018-11-22 03:34:12 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-11-22 03:34:12 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-11-22 03:36:19 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php line=853 in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+
+
+2018-11-22 03:36:19 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 148]
+
+
+2018-11-22 03:36:19 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-11-22 03:36:19 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-11-22 03:38:49 Error: [Error] Cannot use object of type Cake\ORM\Query as array
+Request URL: /users/changement-mot-de-passe
+Referer URL: http://localhost/GestionDesStages2/users/changement-mot-de-passe
+2018-11-22 03:40:13 Error: [Error] Cannot use object of type Cake\ORM\Query as array
+Request URL: /users/changement-mot-de-passe
+Referer URL: http://localhost/GestionDesStages2/users/changement-mot-de-passe
+2018-11-22 03:46:38 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php line=853 in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+
+
+2018-11-22 03:46:38 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 148]
+
+
+2018-11-22 03:46:38 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-11-22 03:46:38 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-11-22 03:51:06 Error: [TypeError] Argument 1 passed to Cake\ORM\Table::patchEntity() must be an instance of Cake\Datasource\EntityInterface, instance of Cake\ORM\Query given, called in C:\Program Files (x86)\Ampps\www\GestionDesStages2\src\Controller\UsersController.php on line 271
+Request URL: /users/changement-mot-de-passe
+Referer URL: http://localhost/GestionDesStages2/users/changement-mot-de-passe
+2018-11-22 03:54:51 Error: [TypeError] Argument 1 passed to Cake\ORM\Table::patchEntity() must be an instance of Cake\Datasource\EntityInterface, instance of Cake\ORM\Query given, called in C:\Program Files (x86)\Ampps\www\GestionDesStages2\src\Controller\UsersController.php on line 271
+Request URL: /users/changement-mot-de-passe
+Referer URL: http://localhost/GestionDesStages2/users/changement-mot-de-passe
+2018-11-22 03:56:27 Error: [TypeError] Argument 1 passed to Cake\ORM\Table::patchEntity() must be an instance of Cake\Datasource\EntityInterface, instance of Cake\ORM\Query given, called in C:\Program Files (x86)\Ampps\www\GestionDesStages2\src\Controller\UsersController.php on line 269
+Request URL: /users/changement-mot-de-passe
+Referer URL: http://localhost/GestionDesStages2/users/changement-mot-de-passe
+2018-11-22 04:01:29 Error: [TypeError] Argument 1 passed to Cake\ORM\Table::patchEntity() must be an instance of Cake\Datasource\EntityInterface, instance of Cake\ORM\Query given, called in C:\Program Files (x86)\Ampps\www\GestionDesStages2\src\Controller\UsersController.php on line 270
+Request URL: /users/changement-mot-de-passe
+Referer URL: http://localhost/GestionDesStages2/users/changement-mot-de-passe
+2018-11-22 04:08:35 Error: [RuntimeException] Table "App\Model\Table\UsersTable" is not associated with "username"
+Request URL: /users/changement-mot-de-passe
+Referer URL: http://localhost/GestionDesStages2/users/changement-mot-de-passe
+2018-11-22 04:29:38 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php line=853 in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+
+
+2018-11-22 04:29:38 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 148]
+
+
+2018-11-22 04:29:38 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-11-22 04:29:38 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-11-22 04:33:21 Error: [Error] Cannot use object of type Cake\ORM\Query as array
+Request URL: /users/changement-mot-de-passe
+Referer URL: http://localhost/GestionDesStages2/users/changement-mot-de-passe
+2018-11-22 04:39:33 Error: [TypeError] Argument 1 passed to Cake\ORM\Table::save() must be an instance of Cake\Datasource\EntityInterface, instance of Cake\ORM\Query given, called in C:\Program Files (x86)\Ampps\www\GestionDesStages2\src\Controller\UsersController.php on line 276
+Request URL: /users/changement-mot-de-passe
+Referer URL: http://localhost/GestionDesStages2/users/changement-mot-de-passe
+2018-11-22 04:43:57 Error: [TypeError] Argument 1 passed to Cake\ORM\Table::patchEntity() must be an instance of Cake\Datasource\EntityInterface, instance of Cake\ORM\Query given, called in C:\Program Files (x86)\Ampps\www\GestionDesStages2\src\Controller\UsersController.php on line 276
+Request URL: /users/changement-mot-de-passe
+Referer URL: http://localhost/GestionDesStages2/users/changement-mot-de-passe
+2018-11-22 04:49:29 Error: [TypeError] Argument 1 passed to Cake\ORM\Table::patchEntity() must be an instance of Cake\Datasource\EntityInterface, instance of Cake\ORM\Query given, called in C:\Program Files (x86)\Ampps\www\GestionDesStages2\src\Controller\UsersController.php on line 273
+Request URL: /users/changement-mot-de-passe
+Referer URL: http://localhost/GestionDesStages2/users/changement-mot-de-passe
+2018-11-22 04:50:04 Error: [TypeError] Argument 1 passed to Cake\ORM\Table::save() must be an instance of Cake\Datasource\EntityInterface, instance of Cake\ORM\Query given, called in C:\Program Files (x86)\Ampps\www\GestionDesStages2\src\Controller\UsersController.php on line 277
+Request URL: /users/changement-mot-de-passe
+Referer URL: http://localhost/GestionDesStages2/users/changement-mot-de-passe
+2018-11-22 04:54:30 Error: [TypeError] Argument 1 passed to Cake\ORM\Table::save() must be an instance of Cake\Datasource\EntityInterface, instance of Cake\ORM\Query given, called in C:\Program Files (x86)\Ampps\www\GestionDesStages2\src\Controller\UsersController.php on line 277
+Request URL: /users/changement-mot-de-passe
+Referer URL: http://localhost/GestionDesStages2/users/changement-mot-de-passe

@@ -222,7 +222,7 @@ class UsersController extends AppController {
 
     public function initialize() {
         parent::initialize();
-        $this->Auth->allow(['logout', 'addStudent', 'verifyEmail']);
+        $this->Auth->allow(['changementMotDePasse','logout', 'addStudent', 'verifyEmail']);
     }
 
     public function logout() {
@@ -261,22 +261,23 @@ class UsersController extends AppController {
     }
     
     public function changementMotDePasse(){
-        $user = $this->Users->get($id, [
-                'contain' => []
-            ]);
+       
+        $user = $this->Users->find('all', [
+            'contain' => ['étudiant','username'],
+        ]);
         // Vérification de correspondance des deux champs de mot de passe
         if ($this->request->is('post'))
         {
-                    if($this->request->data['password'] == $this->request->data['password2'])
+                    if($this->request->data['password'] === $this->request->data['password2'])
                     {
+                       
                         //recuperation du nouveau mot de passe
                         $user->password = $this->request->data['password'];
-                        //changement du first_connect
-                        $this->Users->first_connect = 0;
+                      
                         if($this->Users->save($user))
                         {
                             $this->Flash->success(__('Le mot de passe a bien été modifié.'));
-                            return $this->redirect(['action' => 'index']);
+                            return $this->redirect(['controller' => 'Users', 'action' => 'login']);
                         }
                         else
                         {

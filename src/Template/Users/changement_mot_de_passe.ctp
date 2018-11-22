@@ -9,8 +9,10 @@
     <fieldset>
         <legend><?= __('Modification du mot de passe') ?></legend>
         <?php
-            echo $this->Form->input('password', array('label' => 'Mot de passe'));
-            echo $this->Form->input('password2', array('type' => 'password', 'label' => 'Confirmer votre mot de passe'));
+        
+            echo $this->Form->control('username');
+            echo $this->Form->control('password', array('label' => 'Mot de passe'));
+            echo $this->Form->control('password2', array('type' => 'password', 'label' => 'Confirmer votre mot de passe'));
         ?>
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>
