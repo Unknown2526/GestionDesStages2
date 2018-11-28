@@ -51,15 +51,15 @@ class EtudiantsFixture extends TestFixture
         $this->records = [
             [
                 'id' => 1,
-                'nom' => 'Chow',
-                'prenom' => 'Anthony',
-                'telephone' => '911',
-                'courriel' => 'anthonychow8@gmail.com',
+                'nom' => 'Lorem ipsum dolor sit amet',
+                'prenom' => 'Lorem ipsum dolor sit amet',
+                'telephone' => 'Lorem ipsum dolor sit amet',
+                'courriel' => 'Lorem ipsum dolor sit amet',
                 'info_supp' => 'Lorem ipsum dolor sit amet, aliquet feugiat. Convallis morbi fringilla gravida, phasellus feugiat dapibus velit nunc, pulvinar eget sollicitudin venenatis cum nullam, vivamus ut a sed, mollitia lectus. Nulla vestibulum massa neque ut et, id hendrerit sit, feugiat in taciti enim proin nibh, tempor dignissim, rhoncus duis vestibulum nunc mattis convallis.',
                 'actif' => 1,
-                'user_id' => 3,
-                'created' => null,
-                'modified' => null
+                'user_id' => 1,
+                'created' => '2018-10-24 18:43:49',
+                'modified' => '2018-10-24 18:43:49'
             ],
         ];
         parent::init();

@@ -110,12 +110,4 @@ class EtudiantsTable extends Table
 
         return $rules;
     }
-    
-    public function findEtudiant(Query $query, array $options)
-    {
-        $query->where([
-            $this->alias() . '.id' => 1
-        ]);
-        return $query;
-    }
 }

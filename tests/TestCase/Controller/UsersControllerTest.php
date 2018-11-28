@@ -1,6 +1,7 @@
 <?php
 namespace App\Test\TestCase\Controller;
 
+use App\Controller\UsersController;
 use Cake\TestSuite\IntegrationTestCase;
 
 /**
@@ -16,8 +17,8 @@ class UsersControllerTest extends IntegrationTestCase
      */
     public $fixtures = [
         'app.users',
-        //'app.roles',
-        //'app.administrateurs',
+        'app.roles',
+        'app.administrateurs',
         'app.etudiants',
         'app.milieudestages',
         'app.offres'
@@ -30,8 +31,7 @@ class UsersControllerTest extends IntegrationTestCase
      */
     public function testIndex()
     {
-        $this->get('/users');
-        $this->assertResponseSuccess();
+        $this->markTestIncomplete('Not implemented yet.');
     }
 
     /**
@@ -41,8 +41,7 @@ class UsersControllerTest extends IntegrationTestCase
      */
     public function testView()
     {
-        $this->get('/users/view/1');
-        $this->assertResponseSuccess();
+        $this->markTestIncomplete('Not implemented yet.');
     }
 
     /**
@@ -50,73 +49,28 @@ class UsersControllerTest extends IntegrationTestCase
      *
      * @return void
      */
-    /*public function testAdd()
+    public function testAdd()
     {
         $this->markTestIncomplete('Not implemented yet.');
-    }*/
+    }
 
     /**
      * Test edit method
      *
      * @return void
      */
-    /*public function testEdit()
+    public function testEdit()
     {
         $this->markTestIncomplete('Not implemented yet.');
-    }*/
+    }
 
     /**
      * Test delete method
      *
      * @return void
      */
-    /*public function testDelete()
+    public function testDelete()
     {
         $this->markTestIncomplete('Not implemented yet.');
-    }*/
-    
-    /*public function testLogin()
-    {
-        $this->enableCsrfToken();
-        $this->enableSecurityToken();
-        
-        $this->post('/', [
-            'username' => 'milieu',
-            'password' => 'milieu'
-        ]);
-
-        $expected = [
-            'id' => 10,
-            'username' => 'milieu',
-            'password' => 'milieu',
-            'role_id' => 'milieu',
-            'file_id' => null,
-            'uuid' => '',
-            'verify' => 1,
-            'created' => '2018-09-23 03:17:22',
-            'modified' => '2018-10-10 04:09:49'
-        ];
-        $this->assertSession($expected, 'Auth.User');
-
-        $expected = [
-            'controller' => 'Offres',
-            'action' => 'index'
-        ];
-        $this->assertRedirect($expected);
-    }*/
-    
-    public function testLoginFailure()
-    {
-        $this->enableCsrfToken();
-        $this->enableSecurityToken();
-
-        $this->post('/', [
-            'username' => 'milieu',
-            'password' => 'admin'
-        ]);
-
-        $this->assertNull($this->_requestSession->read('Auth.User'));
-
-        $this->assertNoRedirect();
     }
 }

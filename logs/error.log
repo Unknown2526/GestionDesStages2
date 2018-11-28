@@ -2257,62 +2257,30 @@ Referer URL: http://localhost/GestionDesStages2/
 2018-10-24 16:31:52 Warning: Warning (2): in_array() expects parameter 2 to be array, integer given in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\src\Controller\OffresController.php, line 248]
 
 
-2018-10-26 14:57:43 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Home could not be found.
-Exception Attributes: array (
-  'class' => 'Home',
-  'plugin' => false,
-  'prefix' => false,
-  '_ext' => false,
-)
-Request URL: /home/
-2018-10-26 14:57:47 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Home could not be found.
-Exception Attributes: array (
-  'class' => 'Home',
-  'plugin' => false,
-  'prefix' => false,
-  '_ext' => false,
-)
-Request URL: /home
-2018-10-26 14:57:55 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Index could not be found.
-Exception Attributes: array (
-  'class' => 'Index',
-  'plugin' => false,
-  'prefix' => false,
-  '_ext' => false,
-)
-Request URL: /index
-2018-10-26 14:58:03 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Index could not be found.
-Exception Attributes: array (
-  'class' => 'Index',
-  'plugin' => false,
-  'prefix' => false,
-  '_ext' => false,
-)
-Request URL: /index
-2018-10-26 15:09:30 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Login could not be found.
-Exception Attributes: array (
-  'class' => 'Login',
-  'plugin' => false,
-  'prefix' => false,
-  '_ext' => false,
-)
-Request URL: /login/
-2018-10-26 15:09:33 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Login could not be found.
-Exception Attributes: array (
-  'class' => 'Login',
-  'plugin' => false,
-  'prefix' => false,
-  '_ext' => false,
-)
-Request URL: /login
-2018-11-06 18:26:40 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Webroot could not be found.
-Exception Attributes: array (
-  'class' => 'Webroot',
-  'plugin' => false,
-  'prefix' => false,
-  '_ext' => false,
-)
-Request URL: /webroot/coverage/
-2018-11-07 01:41:20 Error: [InvalidArgumentException] Invalid email set for "to". You passed "a".
+2018-10-24 17:55:57 Error: [BadMethodCallException] Unknown method "first"
+Request URL: /offres/unapply/1
+Referer URL: http://localhost/GestionDesStages2/offres
+2018-10-24 18:45:16 Error: [ParseError] syntax error, unexpected end of file, expecting function (T_FUNCTION) or const (T_CONST)
+Request URL: /etudiants/view/1
+Referer URL: http://localhost/GestionDesStages2/users/view/12
+2018-10-24 18:45:28 Error: [ParseError] syntax error, unexpected end of file, expecting function (T_FUNCTION) or const (T_CONST)
+Request URL: /etudiants
+Referer URL: http://localhost/GestionDesStages2/users/view/12
+2018-10-24 19:07:54 Error: [Error] Call to undefined method App\Controller\EtudiantsController::getInfoEtudiant()
+Request URL: /etudiants/view/1
+Referer URL: http://localhost/GestionDesStages2/offres
+2018-10-24 19:13:45 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php line=853 in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+
+
+2018-10-24 19:13:45 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 148]
+
+
+2018-10-24 19:13:45 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-10-24 19:13:45 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-10-24 19:41:59 Error: [InvalidArgumentException] Invalid email set for "to". You passed "etudiant".
 Request URL: /offres/add
-Referer URL: http://localhost/Gestion/offres/add
+Referer URL: http://localhost/GestionDesStages2/offres/add

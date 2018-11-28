@@ -11,6 +11,7 @@ $userrole = $loguser['role_id'];
         <li class="heading"><?= __('Actions') ?></li>
         <?php if ($userrole !== "etudiant"): ?>
             <li><?= $this->Html->link(__('New Offre'), ['action' => 'add']) ?></li>
+            <li><?= $this->Html->link(__('List Etudiants'), ['controller' => 'Etudiants', 'action' => 'index']) ?> </li>
         <?php endif; ?>
         <?php if ($userrole === "admin"): ?>
             <li><?= $this->Html->link(__('List Users'), ['controller' => 'Users', 'action' => 'index']) ?></li>

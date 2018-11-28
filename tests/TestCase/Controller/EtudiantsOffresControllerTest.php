@@ -36,38 +36,38 @@ class EtudiantsOffresControllerTest extends IntegrationTestCase
      *
      * @return void
      */
-    /*public function testView()
+    public function testView()
     {
         $this->markTestIncomplete('Not implemented yet.');
-    }*/
+    }
 
     /**
      * Test add method
      *
      * @return void
      */
-    /*public function testAdd()
+    public function testAdd()
     {
         $this->markTestIncomplete('Not implemented yet.');
-    }*/
+    }
 
     /**
      * Test edit method
      *
      * @return void
      */
-    /*public function testEdit()
+    public function testEdit()
     {
         $this->markTestIncomplete('Not implemented yet.');
-    }*/
+    }
 
     /**
      * Test delete method
      *
      * @return void
      */
-    /*public function testDelete()
+    public function testDelete()
     {
         $this->markTestIncomplete('Not implemented yet.');
-    }*/
+    }
 }

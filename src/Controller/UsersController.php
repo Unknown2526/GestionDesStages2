@@ -23,7 +23,7 @@ class UsersController extends AppController {
      */
     public function index() {
         $this->paginate = [
-            'contain' => ['Roles', 'Files']
+            'contain' => ['Roles']
         ];
         $users = $this->paginate($this->Users);
 
@@ -39,7 +39,7 @@ class UsersController extends AppController {
      */
     public function view($id = null) {
         $user = $this->Users->get($id, [
-            'contain' => ['Files', 'Roles', 'Administrateurs', 'Etudiants', 'Milieudestages', 'Offres']
+            'contain' => ['Roles', 'Administrateurs', 'Etudiants', 'Milieudestages', 'Offres']
         ]);
 
         $this->set('user', $user);
@@ -68,8 +68,7 @@ class UsersController extends AppController {
             $this->Flash->error(__('The username need to be a valide email.'));
         }
         $roles = $this->Users->Roles->find('list', ['limit' => 200]);
-        $files = $this->Users->Files->find('list', ['limit' => 200, 'keyField' => 'id', 'valueField' => 'name']);
-        $this->set(compact('user', 'roles', 'files'));
+        $this->set(compact('user', 'roles'));
     }
     
     public function addStudent() {
@@ -103,8 +102,7 @@ class UsersController extends AppController {
             }
             $this->Flash->error(__('The username need to be a valide email.'));
         }
-        $files = $this->Users->Files->find('list', ['limit' => 200, 'keyField' => 'id', 'valueField' => 'name']);
-        $this->set(compact('user', 'files'));
+        $this->set(compact('user'));
     }
 
     private function createRelatedProfil($user) {
@@ -147,8 +145,7 @@ class UsersController extends AppController {
             $this->Flash->error(__('The user could not be saved. Please, try again.'));
         }
         $roles = $this->Users->Roles->find('list', ['limit' => 200]);
-        $files = $this->Users->Files->find('list', ['limit' => 200, 'keyField' => 'id', 'valueField' => 'name']);
-        $this->set(compact('user', 'roles', 'files'));
+        $this->set(compact('user', 'roles'));
     }
 
     /**

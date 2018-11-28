@@ -24,8 +24,8 @@ class OffresFixture extends TestFixture
         'responsabilite' => ['type' => 'string', 'length' => 255, 'null' => false, 'default' => null, 'collate' => 'utf8_unicode_ci', 'comment' => '', 'precision' => null, 'fixed' => null],
         'user_id' => ['type' => 'integer', 'length' => 11, 'unsigned' => false, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null, 'autoIncrement' => null],
         'milieudestage_id' => ['type' => 'integer', 'length' => 11, 'unsigned' => false, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null, 'autoIncrement' => null],
-        'created' => ['type' => 'datetime', 'length' => null, 'null' => true, 'default' => null, 'comment' => '', 'precision' => null],
-        'modified' => ['type' => 'datetime', 'length' => null, 'null' => true, 'default' => null, 'comment' => '', 'precision' => null],
+        'created' => ['type' => 'datetime', 'length' => null, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null],
+        'modified' => ['type' => 'datetime', 'length' => null, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null],
         '_indexes' => [
             'user_id' => ['type' => 'index', 'columns' => ['user_id'], 'length' => []],
             'milieudestage_id' => ['type' => 'index', 'columns' => ['milieudestage_id'], 'length' => []],
@@ -54,14 +54,14 @@ class OffresFixture extends TestFixture
         $this->records = [
             [
                 'id' => 1,
-                'titre' => 'Concierge',
+                'titre' => 'Lorem ipsum dolor sit amet',
                 'region_id' => 1,
                 'tache' => 'Lorem ipsum dolor sit amet',
                 'responsabilite' => 'Lorem ipsum dolor sit amet',
                 'user_id' => 1,
                 'milieudestage_id' => 1,
-                'created' => null,
-                'modified' => null
+                'created' => '2018-10-24 18:44:01',
+                'modified' => '2018-10-24 18:44:01'
             ],
         ];
         parent::init();

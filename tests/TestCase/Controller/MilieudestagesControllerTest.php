@@ -20,12 +20,12 @@ class MilieudestagesControllerTest extends IntegrationTestCase
         'app.regions',
         'app.users',
         'app.offres',
-        //'app.missions',
-        //'app.typeclienteles',
-        //'app.typeetablissements',
-        //'app.milieudestages_missions',
-        //'app.milieudestages_typeclienteles',
-        //'app.milieudestages_typeetablissements'
+        'app.missions',
+        'app.typeclienteles',
+        'app.typeetablissements',
+        'app.milieudestages_missions',
+        'app.milieudestages_typeclienteles',
+        'app.milieudestages_typeetablissements'
     ];
 
     /**
@@ -35,8 +35,7 @@ class MilieudestagesControllerTest extends IntegrationTestCase
      */
     public function testIndex()
     {
-        $this->get('/milieudestages');
-        $this->assertResponseSuccess();
+        $this->markTestIncomplete('Not implemented yet.');
     }
 
     /**
@@ -46,8 +45,7 @@ class MilieudestagesControllerTest extends IntegrationTestCase
      */
     public function testView()
     {
-        $this->get('/milieudestages/view/1');
-        $this->assertResponseSuccess();
+        $this->markTestIncomplete('Not implemented yet.');
     }
 
     /**
@@ -57,15 +55,7 @@ class MilieudestagesControllerTest extends IntegrationTestCase
      */
     public function testAdd()
     {
-        $this->Auth = [
-            'Auth' => [
-                'username' => 'admin'
-            ]
-        ];
-        
-        $this->session($this->Auth);
-        $this->get('/milieudestages/add');
-        $this->assertResponseSuccess();
+        $this->markTestIncomplete('Not implemented yet.');
     }
 
     /**
@@ -75,16 +65,7 @@ class MilieudestagesControllerTest extends IntegrationTestCase
      */
     public function testEdit()
     {
-        //$this->markTestIncomplete('Not implemented yet.');
-        $this->Auth = [
-            'Auth' => [
-                'username' => 'milieu'
-            ]
-        ];
-        
-        $this->session($this->Auth);
-        $this->get('/milieudestages/edit');
-        $this->assertResponseSuccess();
+        $this->markTestIncomplete('Not implemented yet.');
     }
 
     /**
@@ -92,49 +73,8 @@ class MilieudestagesControllerTest extends IntegrationTestCase
      *
      * @return void
      */
-    /**public function testDelete()
+    public function testDelete()
     {
         $this->markTestIncomplete('Not implemented yet.');
-    }*/
-    
-    public function testAddAuthenticatedFails()
-    {
-        //Tester Milieu ne peut pas créer un milieu
-        $this->session([
-            'Auth' => [
-                'User' => [
-                    'id' => 1,
-                    'username' => 'milieu',
-                    'password' => 'milieu',
-                    'role_id' => 'milieu',
-                    'file_id' => null,
-                    'uuid' => '',
-                    'verify' => 1,
-                    'created' => null,
-                    'modified' => null
-                ]
-            ]
-        ]);
-        $this->get('/milieudestages/add');
-        $this->assertRedirect('/');;
-    
-        //Tester Etudiant ne peut pas créer un milieu
-        $this->session([
-            'Auth' => [
-                'User' => [
-                    'id' => 3,
-                    'username' => 'etudiant',
-                    'password' => 'etudiant',
-                    'role_id' => 'etudiant',
-                    'file_id' => null,
-                    'uuid' => '',
-                    'verify' => 1,
-                    'created' => null,
-                    'modified' => null
-                ]
-            ]
-        ]);
-        $this->get('/milieudestages/add');
-        $this->assertRedirect('/');
     }
 }

@@ -19,7 +19,7 @@ class EtudiantsControllerTest extends IntegrationTestCase
         'app.etudiants',
         'app.users',
         'app.offres',
-        //'app.etudiants_offres'
+        'app.etudiants_offres'
     ];
 
     /**
@@ -29,8 +29,7 @@ class EtudiantsControllerTest extends IntegrationTestCase
      */
     public function testIndex()
     {
-        $this->get('/etudiants');
-        $this->assertResponseSuccess();
+        $this->markTestIncomplete('Not implemented yet.');
     }
 
     /**
@@ -40,8 +39,7 @@ class EtudiantsControllerTest extends IntegrationTestCase
      */
     public function testView()
     {
-        $this->get('/etudiants/view/1');
-        $this->assertResponseSuccess();
+        $this->markTestIncomplete('Not implemented yet.');
     }
 
     /**
@@ -51,16 +49,7 @@ class EtudiantsControllerTest extends IntegrationTestCase
      */
     public function testAdd()
     {
-        //$this->markTestIncomplete('Not implemented yet.');
-        $this->Auth = [
-            'Auth' => [
-                'username' => 'admin'
-            ]
-        ];
-        
-        $this->session($this->Auth);
-        $this->get('/etudiants/add');
-        $this->assertResponseSuccess();
+        $this->markTestIncomplete('Not implemented yet.');
     }
 
     /**
@@ -68,18 +57,18 @@ class EtudiantsControllerTest extends IntegrationTestCase
      *
      * @return void
      */
-    /*public function testEdit()
+    public function testEdit()
     {
         $this->markTestIncomplete('Not implemented yet.');
-    }*/
+    }
 
     /**
      * Test delete method
      *
      * @return void
      */
-    /*public function testDelete()
+    public function testDelete()
     {
         $this->markTestIncomplete('Not implemented yet.');
-    }*/
+    }
 }

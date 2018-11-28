@@ -68,8 +68,8 @@ class EtudiantsOffresTableTest extends TestCase
      *
      * @return void
      */
-    /*public function testBuildRules()
+    public function testBuildRules()
     {
         $this->markTestIncomplete('Not implemented yet.');
-    }*/
+    }
 }

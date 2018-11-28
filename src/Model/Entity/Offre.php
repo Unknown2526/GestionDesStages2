@@ -43,6 +43,7 @@ class Offre extends Entity
         'modified' => true,
         'region' => true,
         'user' => true,
-        'milieudestage' => true
+        'milieudestage' => true,
+		'etudiants' => true
     ];
 }

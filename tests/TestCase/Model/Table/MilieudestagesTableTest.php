@@ -56,46 +56,34 @@ class MilieudestagesTableTest extends TestCase
 
         parent::tearDown();
     }
-    
-    public function testEdit()
-    {
-        $milieu = $this->Milieudestages->find('all');
-        $milieu = $milieu->first();
-        $milieu->nom = 'BLABLA';
-            
-        $this->Milieudestages->save($milieu);
-    
-        $milieuEdited = $this->Milieudestages->find('all')->first();
-        $this->assertEquals($milieu, $milieuEdited);
-    }
 
     /**
      * Test initialize method
      *
      * @return void
      */
-    /*public function testInitialize()
+    public function testInitialize()
     {
         $this->markTestIncomplete('Not implemented yet.');
-    }*/
+    }
 
     /**
      * Test validationDefault method
      *
      * @return void
      */
-    /*public function testValidationDefault()
+    public function testValidationDefault()
     {
         $this->markTestIncomplete('Not implemented yet.');
-    }*/
+    }
 
     /**
      * Test buildRules method
      *
      * @return void
      */
-    /*public function testBuildRules()
+    public function testBuildRules()
     {
         $this->markTestIncomplete('Not implemented yet.');
-    }*/
+    }
 }

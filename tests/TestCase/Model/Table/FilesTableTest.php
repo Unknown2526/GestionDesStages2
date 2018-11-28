@@ -66,8 +66,8 @@ class FilesTableTest extends TestCase
      *
      * @return void
      */
-    /*public function testValidationDefault()
+    public function testValidationDefault()
     {
         $this->markTestIncomplete('Not implemented yet.');
-    }*/
+    }
 }
