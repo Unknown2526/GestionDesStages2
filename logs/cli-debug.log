@@ -13,3 +13,6 @@
 2018-10-26 10:25:27 Notice: Notice (8): Undefined index: role_id in [C:\Program Files (x86)\Ampps\www\CakePHP-3.6.10\GestionDesStages\src\Controller\EtudiantsController.php, line 115]
 
 
+2018-11-28 19:30:37 Notice: Notice (8): Undefined index: Users in [C:\Program Files (x86)\Ampps\www\DevelopApp\GestionDesStages2\vendor\cakephp\bake\src\View\Helper\DocBlockHelper.php, line 238]
+
+
