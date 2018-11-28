@@ -28,6 +28,30 @@ class MilieudestagesController extends AppController {
 
         $this->set(compact('milieudestages'));
     }
+    
+    public function active() {
+        $this->paginate = [
+            'contain' => ['Regions', 'Users']
+        ];
+        
+        $this->paginate($this->Milieudestages);
+        
+        $milieudestages = $this->Milieudestages->find()->where(['actif' => 1])->all();
+        
+        $this->set(compact('milieudestages'));
+    }
+    
+    public function inactive() {
+        $this->paginate = [
+            'contain' => ['Regions', 'Users']
+        ];
+        
+        $this->paginate($this->Milieudestages);
+        
+        $milieudestages = $this->Milieudestages->find()->where(['actif' => 0])->all();
+        
+        $this->set(compact('milieudestages'));
+    }
 
     /**
      * View method
@@ -168,6 +192,8 @@ class MilieudestagesController extends AppController {
         
         return $admin->first();
     }
+    
+    
     
     private function secureAssociation($milieudestage) {
         $loguser = $this->request->session()->read('Auth.User');

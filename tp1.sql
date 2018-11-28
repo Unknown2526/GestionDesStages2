@@ -2,10 +2,10 @@
 -- version 4.4.15.9
 -- https://www.phpmyadmin.net
 --
--- Client :  localhost
--- Généré le :  Jeu 25 Octobre 2018 à 16:11
--- Version du serveur :  5.6.37
--- Version de PHP :  7.1.8
+-- Host: localhost
+-- Generation Time: Nov 28, 2018 at 02:56 AM
+-- Server version: 5.6.37
+-- PHP Version: 7.1.8
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -17,13 +17,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de données :  `tp1`
+-- Database: `tp1`
 --
 
 -- --------------------------------------------------------
 
 --
--- Structure de la table `administrateurs`
+-- Table structure for table `administrateurs`
 --
 
 CREATE TABLE IF NOT EXISTS `administrateurs` (
@@ -37,7 +37,7 @@ CREATE TABLE IF NOT EXISTS `administrateurs` (
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Contenu de la table `administrateurs`
+-- Dumping data for table `administrateurs`
 --
 
 INSERT INTO `administrateurs` (`id`, `nom`, `telephone`, `courriel`, `user_id`, `created`, `modified`) VALUES
@@ -46,7 +46,7 @@ INSERT INTO `administrateurs` (`id`, `nom`, `telephone`, `courriel`, `user_id`, 
 -- --------------------------------------------------------
 
 --
--- Structure de la table `etudiants`
+-- Table structure for table `etudiants`
 --
 
 CREATE TABLE IF NOT EXISTS `etudiants` (
@@ -63,7 +63,7 @@ CREATE TABLE IF NOT EXISTS `etudiants` (
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Contenu de la table `etudiants`
+-- Dumping data for table `etudiants`
 --
 
 INSERT INTO `etudiants` (`id`, `nom`, `prenom`, `telephone`, `courriel`, `info_supp`, `actif`, `user_id`, `created`, `modified`) VALUES
@@ -72,7 +72,19 @@ INSERT INTO `etudiants` (`id`, `nom`, `prenom`, `telephone`, `courriel`, `info_s
 -- --------------------------------------------------------
 
 --
--- Structure de la table `etudiants_offres`
+-- Table structure for table `etudiants_files`
+--
+
+CREATE TABLE IF NOT EXISTS `etudiants_files` (
+  `id` int(11) NOT NULL,
+  `etudiant_id` int(11) NOT NULL,
+  `file_id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `etudiants_offres`
 --
 
 CREATE TABLE IF NOT EXISTS `etudiants_offres` (
@@ -83,7 +95,7 @@ CREATE TABLE IF NOT EXISTS `etudiants_offres` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Contenu de la table `etudiants_offres`
+-- Dumping data for table `etudiants_offres`
 --
 
 INSERT INTO `etudiants_offres` (`etudiant_id`, `offre_id`, `created`, `modified`) VALUES
@@ -92,7 +104,21 @@ INSERT INTO `etudiants_offres` (`etudiant_id`, `offre_id`, `created`, `modified`
 -- --------------------------------------------------------
 
 --
--- Structure de la table `milieudestages`
+-- Table structure for table `files`
+--
+
+CREATE TABLE IF NOT EXISTS `files` (
+  `id` int(11) NOT NULL,
+  `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `path` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `created` datetime NOT NULL,
+  `modified` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `milieudestages`
 --
 
 CREATE TABLE IF NOT EXISTS `milieudestages` (
@@ -128,7 +154,7 @@ CREATE TABLE IF NOT EXISTS `milieudestages` (
 ) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Contenu de la table `milieudestages`
+-- Dumping data for table `milieudestages`
 --
 
 INSERT INTO `milieudestages` (`id`, `nom`, `adresse`, `ville`, `province`, `code_postal`, `exigence`, `nom_respo`, `telephone_respo`, `fax_respo`, `courriel_respo`, `adresse_admin`, `ville_admin`, `province_admin`, `code_postal_admin`, `region_admin_id`, `facilite`, `tache`, `remarque`, `info_solicitation`, `info_contrat`, `reponse_milieu`, `autre_info`, `date_inv`, `date_rappel`, `actif`, `user_id`, `created`, `modified`) VALUES
@@ -138,7 +164,7 @@ INSERT INTO `milieudestages` (`id`, `nom`, `adresse`, `ville`, `province`, `code
 -- --------------------------------------------------------
 
 --
--- Structure de la table `milieudestages_missions`
+-- Table structure for table `milieudestages_missions`
 --
 
 CREATE TABLE IF NOT EXISTS `milieudestages_missions` (
@@ -147,7 +173,7 @@ CREATE TABLE IF NOT EXISTS `milieudestages_missions` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Contenu de la table `milieudestages_missions`
+-- Dumping data for table `milieudestages_missions`
 --
 
 INSERT INTO `milieudestages_missions` (`milieudestage_id`, `mission_id`) VALUES
@@ -159,7 +185,7 @@ INSERT INTO `milieudestages_missions` (`milieudestage_id`, `mission_id`) VALUES
 -- --------------------------------------------------------
 
 --
--- Structure de la table `milieudestages_typeclienteles`
+-- Table structure for table `milieudestages_typeclienteles`
 --
 
 CREATE TABLE IF NOT EXISTS `milieudestages_typeclienteles` (
@@ -168,7 +194,7 @@ CREATE TABLE IF NOT EXISTS `milieudestages_typeclienteles` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Contenu de la table `milieudestages_typeclienteles`
+-- Dumping data for table `milieudestages_typeclienteles`
 --
 
 INSERT INTO `milieudestages_typeclienteles` (`milieudestage_id`, `typeclientele_id`) VALUES
@@ -179,7 +205,7 @@ INSERT INTO `milieudestages_typeclienteles` (`milieudestage_id`, `typeclientele_
 -- --------------------------------------------------------
 
 --
--- Structure de la table `milieudestages_typeetablissements`
+-- Table structure for table `milieudestages_typeetablissements`
 --
 
 CREATE TABLE IF NOT EXISTS `milieudestages_typeetablissements` (
@@ -188,7 +214,7 @@ CREATE TABLE IF NOT EXISTS `milieudestages_typeetablissements` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Contenu de la table `milieudestages_typeetablissements`
+-- Dumping data for table `milieudestages_typeetablissements`
 --
 
 INSERT INTO `milieudestages_typeetablissements` (`milieudestage_id`, `typeetablissement_id`) VALUES
@@ -198,7 +224,7 @@ INSERT INTO `milieudestages_typeetablissements` (`milieudestage_id`, `typeetabli
 -- --------------------------------------------------------
 
 --
--- Structure de la table `missions`
+-- Table structure for table `missions`
 --
 
 CREATE TABLE IF NOT EXISTS `missions` (
@@ -207,7 +233,7 @@ CREATE TABLE IF NOT EXISTS `missions` (
 ) ENGINE=InnoDB AUTO_INCREMENT=28 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Contenu de la table `missions`
+-- Dumping data for table `missions`
 --
 
 INSERT INTO `missions` (`id`, `nom`) VALUES
@@ -242,7 +268,7 @@ INSERT INTO `missions` (`id`, `nom`) VALUES
 -- --------------------------------------------------------
 
 --
--- Structure de la table `offres`
+-- Table structure for table `offres`
 --
 
 CREATE TABLE IF NOT EXISTS `offres` (
@@ -258,7 +284,7 @@ CREATE TABLE IF NOT EXISTS `offres` (
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Contenu de la table `offres`
+-- Dumping data for table `offres`
 --
 
 INSERT INTO `offres` (`id`, `titre`, `region_id`, `tache`, `responsabilite`, `user_id`, `milieudestage_id`, `created`, `modified`) VALUES
@@ -268,7 +294,7 @@ INSERT INTO `offres` (`id`, `titre`, `region_id`, `tache`, `responsabilite`, `us
 -- --------------------------------------------------------
 
 --
--- Structure de la table `regions`
+-- Table structure for table `regions`
 --
 
 CREATE TABLE IF NOT EXISTS `regions` (
@@ -279,7 +305,7 @@ CREATE TABLE IF NOT EXISTS `regions` (
 ) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Contenu de la table `regions`
+-- Dumping data for table `regions`
 --
 
 INSERT INTO `regions` (`id`, `nom`, `created`, `modified`) VALUES
@@ -304,7 +330,7 @@ INSERT INTO `regions` (`id`, `nom`, `created`, `modified`) VALUES
 -- --------------------------------------------------------
 
 --
--- Structure de la table `roles`
+-- Table structure for table `roles`
 --
 
 CREATE TABLE IF NOT EXISTS `roles` (
@@ -312,7 +338,7 @@ CREATE TABLE IF NOT EXISTS `roles` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Contenu de la table `roles`
+-- Dumping data for table `roles`
 --
 
 INSERT INTO `roles` (`id`) VALUES
@@ -323,7 +349,7 @@ INSERT INTO `roles` (`id`) VALUES
 -- --------------------------------------------------------
 
 --
--- Structure de la table `typeclienteles`
+-- Table structure for table `typeclienteles`
 --
 
 CREATE TABLE IF NOT EXISTS `typeclienteles` (
@@ -332,7 +358,7 @@ CREATE TABLE IF NOT EXISTS `typeclienteles` (
 ) ENGINE=InnoDB AUTO_INCREMENT=48 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Contenu de la table `typeclienteles`
+-- Dumping data for table `typeclienteles`
 --
 
 INSERT INTO `typeclienteles` (`id`, `type`) VALUES
@@ -387,7 +413,7 @@ INSERT INTO `typeclienteles` (`id`, `type`) VALUES
 -- --------------------------------------------------------
 
 --
--- Structure de la table `typeetablissements`
+-- Table structure for table `typeetablissements`
 --
 
 CREATE TABLE IF NOT EXISTS `typeetablissements` (
@@ -396,7 +422,7 @@ CREATE TABLE IF NOT EXISTS `typeetablissements` (
 ) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Contenu de la table `typeetablissements`
+-- Dumping data for table `typeetablissements`
 --
 
 INSERT INTO `typeetablissements` (`id`, `nom`) VALUES
@@ -410,7 +436,7 @@ INSERT INTO `typeetablissements` (`id`, `nom`) VALUES
 -- --------------------------------------------------------
 
 --
--- Structure de la table `users`
+-- Table structure for table `users`
 --
 
 CREATE TABLE IF NOT EXISTS `users` (
@@ -425,7 +451,7 @@ CREATE TABLE IF NOT EXISTS `users` (
 ) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Contenu de la table `users`
+-- Dumping data for table `users`
 --
 
 INSERT INTO `users` (`id`, `username`, `password`, `role_id`, `uuid`, `verify`, `created`, `modified`) VALUES
@@ -434,32 +460,46 @@ INSERT INTO `users` (`id`, `username`, `password`, `role_id`, `uuid`, `verify`, 
 (12, 'etudiant', '$2y$10$DS6bfZ7ahzk9nQCqvIMEQO.SObW9nhWEXyAiiIreLr8uNJPY2WORO', 'etudiant', '', 1, '2018-10-24 13:32:06', '2018-10-24 13:32:06');
 
 --
--- Index pour les tables exportées
+-- Indexes for dumped tables
 --
 
 --
--- Index pour la table `administrateurs`
+-- Indexes for table `administrateurs`
 --
 ALTER TABLE `administrateurs`
   ADD PRIMARY KEY (`id`),
   ADD KEY `user_id` (`user_id`);
 
 --
--- Index pour la table `etudiants`
+-- Indexes for table `etudiants`
 --
 ALTER TABLE `etudiants`
   ADD PRIMARY KEY (`id`),
   ADD KEY `user_id` (`user_id`);
 
 --
--- Index pour la table `etudiants_offres`
+-- Indexes for table `etudiants_files`
+--
+ALTER TABLE `etudiants_files`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `etudiant_id` (`etudiant_id`),
+  ADD KEY `file_id` (`file_id`);
+
+--
+-- Indexes for table `etudiants_offres`
 --
 ALTER TABLE `etudiants_offres`
   ADD PRIMARY KEY (`etudiant_id`,`offre_id`),
   ADD KEY `offre_id` (`offre_id`);
 
 --
--- Index pour la table `milieudestages`
+-- Indexes for table `files`
+--
+ALTER TABLE `files`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `milieudestages`
 --
 ALTER TABLE `milieudestages`
   ADD PRIMARY KEY (`id`),
@@ -467,7 +507,7 @@ ALTER TABLE `milieudestages`
   ADD KEY `user_id` (`user_id`);
 
 --
--- Index pour la table `milieudestages_missions`
+-- Indexes for table `milieudestages_missions`
 --
 ALTER TABLE `milieudestages_missions`
   ADD PRIMARY KEY (`milieudestage_id`,`mission_id`),
@@ -475,27 +515,27 @@ ALTER TABLE `milieudestages_missions`
   ADD KEY `milieudestage_id` (`milieudestage_id`);
 
 --
--- Index pour la table `milieudestages_typeclienteles`
+-- Indexes for table `milieudestages_typeclienteles`
 --
 ALTER TABLE `milieudestages_typeclienteles`
   ADD PRIMARY KEY (`milieudestage_id`,`typeclientele_id`),
   ADD KEY `typeclientele_id` (`typeclientele_id`) USING BTREE;
 
 --
--- Index pour la table `milieudestages_typeetablissements`
+-- Indexes for table `milieudestages_typeetablissements`
 --
 ALTER TABLE `milieudestages_typeetablissements`
   ADD PRIMARY KEY (`milieudestage_id`,`typeetablissement_id`),
   ADD KEY `typeetablissement_id` (`typeetablissement_id`);
 
 --
--- Index pour la table `missions`
+-- Indexes for table `missions`
 --
 ALTER TABLE `missions`
   ADD PRIMARY KEY (`id`);
 
 --
--- Index pour la table `offres`
+-- Indexes for table `offres`
 --
 ALTER TABLE `offres`
   ADD PRIMARY KEY (`id`),
@@ -504,138 +544,155 @@ ALTER TABLE `offres`
   ADD KEY `region_id` (`region_id`);
 
 --
--- Index pour la table `regions`
+-- Indexes for table `regions`
 --
 ALTER TABLE `regions`
   ADD PRIMARY KEY (`id`);
 
 --
--- Index pour la table `roles`
+-- Indexes for table `roles`
 --
 ALTER TABLE `roles`
   ADD PRIMARY KEY (`id`);
 
 --
--- Index pour la table `typeclienteles`
+-- Indexes for table `typeclienteles`
 --
 ALTER TABLE `typeclienteles`
   ADD PRIMARY KEY (`id`);
 
 --
--- Index pour la table `typeetablissements`
+-- Indexes for table `typeetablissements`
 --
 ALTER TABLE `typeetablissements`
   ADD PRIMARY KEY (`id`);
 
 --
--- Index pour la table `users`
+-- Indexes for table `users`
 --
 ALTER TABLE `users`
   ADD PRIMARY KEY (`id`),
   ADD KEY `role_id` (`role_id`);
 
 --
--- AUTO_INCREMENT pour les tables exportées
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT pour la table `administrateurs`
+-- AUTO_INCREMENT for table `administrateurs`
 --
 ALTER TABLE `administrateurs`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
 --
--- AUTO_INCREMENT pour la table `etudiants`
+-- AUTO_INCREMENT for table `etudiants`
 --
 ALTER TABLE `etudiants`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
 --
--- AUTO_INCREMENT pour la table `milieudestages`
+-- AUTO_INCREMENT for table `etudiants_files`
+--
+ALTER TABLE `etudiants_files`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table `files`
+--
+ALTER TABLE `files`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table `milieudestages`
 --
 ALTER TABLE `milieudestages`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=8;
 --
--- AUTO_INCREMENT pour la table `missions`
+-- AUTO_INCREMENT for table `missions`
 --
 ALTER TABLE `missions`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=28;
 --
--- AUTO_INCREMENT pour la table `offres`
+-- AUTO_INCREMENT for table `offres`
 --
 ALTER TABLE `offres`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
 --
--- AUTO_INCREMENT pour la table `regions`
+-- AUTO_INCREMENT for table `regions`
 --
 ALTER TABLE `regions`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=18;
 --
--- AUTO_INCREMENT pour la table `typeclienteles`
+-- AUTO_INCREMENT for table `typeclienteles`
 --
 ALTER TABLE `typeclienteles`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=48;
 --
--- AUTO_INCREMENT pour la table `typeetablissements`
+-- AUTO_INCREMENT for table `typeetablissements`
 --
 ALTER TABLE `typeetablissements`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7;
 --
--- AUTO_INCREMENT pour la table `users`
+-- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=13;
 --
--- Contraintes pour les tables exportées
+-- Constraints for dumped tables
 --
 
 --
--- Contraintes pour la table `administrateurs`
+-- Constraints for table `administrateurs`
 --
 ALTER TABLE `administrateurs`
   ADD CONSTRAINT `administrateurs_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
--- Contraintes pour la table `etudiants`
+-- Constraints for table `etudiants`
 --
 ALTER TABLE `etudiants`
   ADD CONSTRAINT `etudiants_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
--- Contraintes pour la table `etudiants_offres`
+-- Constraints for table `etudiants_files`
+--
+ALTER TABLE `etudiants_files`
+  ADD CONSTRAINT `etudiants_files_ibfk_1` FOREIGN KEY (`etudiant_id`) REFERENCES `etudiants` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `etudiants_files_ibfk_2` FOREIGN KEY (`file_id`) REFERENCES `files` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+--
+-- Constraints for table `etudiants_offres`
 --
 ALTER TABLE `etudiants_offres`
   ADD CONSTRAINT `etudiants_offres_ibfk_1` FOREIGN KEY (`etudiant_id`) REFERENCES `etudiants` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `etudiants_offres_ibfk_2` FOREIGN KEY (`offre_id`) REFERENCES `offres` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
--- Contraintes pour la table `milieudestages`
+-- Constraints for table `milieudestages`
 --
 ALTER TABLE `milieudestages`
   ADD CONSTRAINT `milieudestages_ibfk_3` FOREIGN KEY (`region_admin_id`) REFERENCES `regions` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `milieudestages_ibfk_4` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
--- Contraintes pour la table `milieudestages_missions`
+-- Constraints for table `milieudestages_missions`
 --
 ALTER TABLE `milieudestages_missions`
   ADD CONSTRAINT `milieudestages_missions_ibfk_1` FOREIGN KEY (`mission_id`) REFERENCES `missions` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `milieudestages_missions_ibfk_2` FOREIGN KEY (`milieudestage_id`) REFERENCES `milieudestages` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
--- Contraintes pour la table `milieudestages_typeclienteles`
+-- Constraints for table `milieudestages_typeclienteles`
 --
 ALTER TABLE `milieudestages_typeclienteles`
   ADD CONSTRAINT `milieudestages_typeclienteles_ibfk_1` FOREIGN KEY (`typeclientele_id`) REFERENCES `typeclienteles` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `milieudestages_typeclienteles_ibfk_2` FOREIGN KEY (`milieudestage_id`) REFERENCES `milieudestages` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
--- Contraintes pour la table `milieudestages_typeetablissements`
+-- Constraints for table `milieudestages_typeetablissements`
 --
 ALTER TABLE `milieudestages_typeetablissements`
   ADD CONSTRAINT `milieudestages_typeetablissements_ibfk_1` FOREIGN KEY (`typeetablissement_id`) REFERENCES `typeetablissements` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `milieudestages_typeetablissements_ibfk_2` FOREIGN KEY (`milieudestage_id`) REFERENCES `milieudestages` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
--- Contraintes pour la table `offres`
+-- Constraints for table `offres`
 --
 ALTER TABLE `offres`
   ADD CONSTRAINT `offres_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
@@ -643,7 +700,7 @@ ALTER TABLE `offres`
   ADD CONSTRAINT `offres_ibfk_3` FOREIGN KEY (`region_id`) REFERENCES `regions` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
--- Contraintes pour la table `users`
+-- Constraints for table `users`
 --
 ALTER TABLE `users`
   ADD CONSTRAINT `users_ibfk_1` FOREIGN KEY (`role_id`) REFERENCES `roles` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;

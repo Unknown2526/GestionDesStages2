@@ -17,7 +17,7 @@ $userrole = $loguser['role_id'];
             <li><?= $this->Html->link(__('List Users'), ['controller' => 'Users', 'action' => 'index']) ?></li>
             <li><?= $this->Html->link(__('New User'), ['controller' => 'Users', 'action' => 'add']) ?></li>
             <li><?= $this->Html->link(__('New Milieudestage'), ['controller' => 'Milieudestages', 'action' => 'add']) ?></li>
-            <li><?= $this->Html->link(__('List Milieudestage Active'), ['controller' => 'Milieudestages', 'action' => 'active']) ?></li>
+            <li><?= $this->Html->link(__('List Milieudestage'), ['controller' => 'Milieudestages', 'action' => 'index']) ?></li>
             <li><?= $this->Html->link(__('List Milieudestage inactive'), ['controller' => 'Milieudestages', 'action' => 'inactive']) ?></li>
         <?php endif; ?>
         <li><?= $this->Html->link(__('List Offres'), ['controller' => 'Offres', 'action' => 'index']) ?></li>
@@ -36,7 +36,7 @@ $userrole = $loguser['role_id'];
     </ul>
 </nav>
 <div class="milieudestages index large-9 medium-8 columns content">
-    <h3><?= __('Milieudestages') ?></h3>
+    <h3><?= __('Milieudestages Active') ?></h3>
     <table cellpadding="0" cellspacing="0">
         <thead>
             <tr>
