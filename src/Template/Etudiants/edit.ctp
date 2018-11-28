@@ -33,6 +33,9 @@ $userrole = $loguser['role_id'];
         echo $this->Form->control('telephone');
         echo $this->Form->control('courriel');
         echo $this->Form->control('info_supp');
+        
+        echo $this->Form->control('Upload Files', ['type' => 'file']);
+        
         echo ($userrole === "admin")?$this->Form->control('actif'):$this->Form->hidden('actif');
         echo ($userrole === "admin")?$this->Form->control('user_id', ['options' => $users]):$this->Form->hidden('user_id');
         ?>
