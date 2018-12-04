@@ -222,7 +222,7 @@ class UsersController extends AppController {
 
     public function initialize() {
         parent::initialize();
-        $this->Auth->allow(['changementMotDePasse','logout', 'addStudent', 'verifyEmail']);
+        $this->Auth->allow(['verificationEmail','changementMotDePasse','logout', 'addStudent', 'verifyEmail']);
     }
 
     public function logout() {
@@ -260,33 +260,65 @@ class UsersController extends AppController {
         $this->redirect(['controller' => 'Users', 'action' => 'login']);
     }
     
-    public function changementMotDePasse(){
+
+    
+     public function verificationEmail(){   
+         
+         if ($this->request->is('post')) {
+         
+             
+         $query = $this->Users->findByUsername($this->request->data['username']);
+            $user = $query->first();
+            if (is_null($user)) {
+                $this->Flash->error('Email address does not exist. Please try again');
+            } else {
+                     
+                    $this->sendResetEmail( $user);
+                    $this->redirect(['action' => 'login']);
+              
+            }
+        } 
+        
+      
+        
+    }
+         private function sendResetEmail($user) {
+        $email = new Email();
+        $email->to($user->username);
+        $email->subject('Reset your password');
+            $email ->send('veillez changer votre mot de passe au '
+                            . $_SERVER['HTTP_HOST'] 
+                            . $this->request->webroot . "Users/changementMotDePasse/".$user['id']
+
+                            );
+      
+      
+        
+    }
+        public function changementMotDePasse($id = null){
+            if($id != null){
+                $user = $this->Users->get($id, [
+                   'contain' => []
+               ]);
+
+                   if ($user['verify'] != 0) {
+                       if (!empty($this->request->data)) {
+                           $user = $this->Users->patchEntity($user, $this->request->data);
+                           if ($this->Users->save($user)) {
+                               $this->Flash->set(__('Your password has been updated.'));
+                               return $this->redirect(array('action' => 'login'));
+                           } else {
+                               $this->Flash->error(__('The password could not be updated. Please, try again.'));
+                           }
+                       }
+                   } else {
+                       $this->Flash->error('Invalid  your email is not verify or try again');
+                       $this->redirect(['action' => 'changementmotdepasse']);
+                   }
+                   unset($user->password);
+                   $this->set(compact('user'));
        
-        $user = $this->Users->find('all', [
-            'contain' => ['étudiant','username'],
-        ]);
-        // Vérification de correspondance des deux champs de mot de passe
-        if ($this->request->is('post'))
-        {
-                    if($this->request->data['password'] === $this->request->data['password2'])
-                    {
-                       
-                        //recuperation du nouveau mot de passe
-                        $user->password = $this->request->data['password'];
-                      
-                        if($this->Users->save($user))
-                        {
-                            $this->Flash->success(__('Le mot de passe a bien été modifié.'));
-                            return $this->redirect(['controller' => 'Users', 'action' => 'login']);
-                        }
-                        else
-                        {
-                            $this->Flash->error('Les mots de passe ne correspondent pas.');
-                        }
-                    } 
-        }
-        
-        
+        }     
     }
 
 }

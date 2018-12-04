@@ -2505,3 +2505,316 @@ Referer URL: http://localhost/GestionDesStages2/users/changement-mot-de-passe
 2018-11-22 04:54:30 Error: [TypeError] Argument 1 passed to Cake\ORM\Table::save() must be an instance of Cake\Datasource\EntityInterface, instance of Cake\ORM\Query given, called in C:\Program Files (x86)\Ampps\www\GestionDesStages2\src\Controller\UsersController.php on line 277
 Request URL: /users/changement-mot-de-passe
 Referer URL: http://localhost/GestionDesStages2/users/changement-mot-de-passe
+2018-11-23 00:52:05 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::verificationEmail() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'verificationEmail',
+  'prefix' => '',
+  'plugin' => false,
+)
+Request URL: /users/verification-email
+Referer URL: http://localhost/GestionDesStages2/?redirect=%2Fusers%2Flogin
+2018-11-27 17:26:57 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Regions could not be found.
+Exception Attributes: array (
+  'class' => 'Regions',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /regions
+2018-11-27 17:27:07 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Regions could not be found.
+Exception Attributes: array (
+  'class' => 'Regions',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /regions/add
+2018-11-27 17:27:50 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Regions could not be found.
+Exception Attributes: array (
+  'class' => 'Regions',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /regions
+2018-11-28 19:11:34 Error: [Cake\View\Exception\MissingTemplateException] Template file "Users\changementmotdepasse.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users\\changementmotdepasse.ctp',
+)
+Request URL: /Users/changementmotdepasse
+2018-11-28 19:12:35 Error: [Cake\View\Exception\MissingTemplateException] Template file "Users\changement_mot_dep_asse.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users\\changement_mot_dep_asse.ctp',
+)
+Request URL: /Users/changement_mot_dep_asse
+2018-11-28 20:18:57 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Users.email' in 'where clause'
+Request URL: /users/verification-email
+Referer URL: http://localhost/GestionDesStages2/users/verification-email
+2018-11-28 20:21:57 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Users.email' in 'where clause'
+Request URL: /users/verification-email
+Referer URL: http://localhost/GestionDesStages2/users/verification-email
+2018-11-28 20:34:02 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Users.email' in 'where clause'
+Request URL: /users/verification-email
+Referer URL: http://localhost/GestionDesStages2/users/verification-email
+2018-11-28 20:34:02 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php line=853 in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+
+
+2018-11-28 20:34:02 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 148]
+
+
+2018-11-28 20:34:02 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-11-28 20:34:02 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-11-28 20:35:17 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Users.email' in 'where clause'
+Request URL: /users/verification-email
+Referer URL: http://localhost/GestionDesStages2/users/verification-email
+2018-11-28 20:35:17 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php line=853 in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+
+
+2018-11-28 20:35:17 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 148]
+
+
+2018-11-28 20:35:17 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-11-28 20:35:18 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-11-28 20:37:49 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Users.email' in 'where clause'
+Request URL: /users/verification-email
+Referer URL: http://localhost/GestionDesStages2/users/verification-email
+2018-11-28 20:44:11 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Users.email' in 'where clause'
+Request URL: /users/verification-email
+Referer URL: http://localhost/GestionDesStages2/users/verification-email
+2018-11-28 22:59:03 Error: [ArgumentCountError] Too few arguments to function Cake\ORM\Table::updateAll(), 1 passed in C:\Program Files (x86)\Ampps\www\GestionDesStages2\src\Controller\UsersController.php on line 301 and exactly 2 expected
+Request URL: /users/verification-email
+Referer URL: http://localhost/GestionDesStages2/users/verification-email
+2018-11-28 23:01:54 Warning: Warning (2): A non-numeric value encountered in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\src\Controller\UsersController.php, line 312]
+
+
+2018-11-28 23:01:55 Warning: Warning (2): A non-numeric value encountered in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\src\Controller\UsersController.php, line 312]
+
+
+2018-11-28 23:01:56 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php line=853 in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+
+
+2018-11-28 23:01:56 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 148]
+
+
+2018-11-28 23:01:56 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-11-28 23:01:56 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-11-28 23:01:56 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-11-29 02:17:51 Error: [ArgumentCountError] Too few arguments to function Cake\ORM\Table::updateAll(), 1 passed in C:\Program Files (x86)\Ampps\www\GestionDesStages2\src\Controller\UsersController.php on line 301 and exactly 2 expected
+Request URL: /users/verification-email
+Referer URL: http://localhost/GestionDesStages2/users/verification-email
+2018-11-29 02:18:32 Error: [BadMethodCallException] Unknown method "update"
+Request URL: /users/verification-email
+Referer URL: http://localhost/GestionDesStages2/users/verification-email
+2018-11-29 02:22:48 Warning: Warning (2): A non-numeric value encountered in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\src\Controller\UsersController.php, line 317]
+
+
+2018-11-29 02:22:48 Warning: Warning (2): A non-numeric value encountered in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\src\Controller\UsersController.php, line 317]
+
+
+2018-11-29 02:22:48 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php line=853 in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+
+
+2018-11-29 02:22:48 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 148]
+
+
+2018-11-29 02:22:48 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-11-29 02:22:48 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-11-29 02:22:48 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-11-29 02:23:00 Warning: Warning (2): A non-numeric value encountered in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\src\Controller\UsersController.php, line 317]
+
+
+2018-11-29 02:23:00 Warning: Warning (2): A non-numeric value encountered in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\src\Controller\UsersController.php, line 317]
+
+
+2018-11-29 02:23:00 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php line=853 in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+
+
+2018-11-29 02:23:00 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 148]
+
+
+2018-11-29 02:23:00 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-11-29 02:23:00 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-11-29 02:23:00 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-11-29 02:25:15 Warning: Warning (2): A non-numeric value encountered in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\src\Controller\UsersController.php, line 317]
+
+
+2018-11-29 02:25:15 Warning: Warning (2): A non-numeric value encountered in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\src\Controller\UsersController.php, line 317]
+
+
+2018-11-29 02:25:16 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php line=853 in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+
+
+2018-11-29 02:25:16 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 148]
+
+
+2018-11-29 02:25:16 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-11-29 02:25:16 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-11-29 02:25:16 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-11-29 02:26:32 Warning: Warning (2): A non-numeric value encountered in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\src\Controller\UsersController.php, line 316]
+
+
+2018-11-29 02:26:32 Warning: Warning (2): A non-numeric value encountered in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\src\Controller\UsersController.php, line 316]
+
+
+2018-11-29 02:26:33 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php line=853 in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+
+
+2018-11-29 02:26:33 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 148]
+
+
+2018-11-29 02:26:33 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-11-29 02:26:33 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-11-29 02:26:33 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-11-29 02:29:25 Warning: Warning (2): A non-numeric value encountered in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\src\Controller\UsersController.php, line 316]
+
+
+2018-11-29 02:29:25 Warning: Warning (2): A non-numeric value encountered in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\src\Controller\UsersController.php, line 316]
+
+
+2018-11-29 02:29:25 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php line=853 in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+
+
+2018-11-29 02:29:26 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 148]
+
+
+2018-11-29 02:29:26 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-11-29 02:29:26 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-11-29 02:29:26 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-11-29 02:47:07 Error: [InvalidArgumentException] Cannot get an empty property
+Request URL: /users/verification-email
+Referer URL: http://localhost/GestionDesStages2/users/verification-email
+2018-11-29 02:47:07 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php line=853 in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+
+
+2018-11-29 02:47:07 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 148]
+
+
+2018-11-29 02:47:07 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-11-29 02:47:07 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-11-29 02:47:48 Error: [InvalidArgumentException] Cannot get an empty property
+Request URL: /users/verification-email
+Referer URL: http://localhost/GestionDesStages2/users/verification-email
+2018-11-29 02:47:48 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php line=853 in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+
+
+2018-11-29 02:47:48 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 148]
+
+
+2018-11-29 02:47:48 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-11-29 02:47:48 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-11-29 12:55:37 Warning: Warning (2): Illegal string offset 'id' in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\src\Controller\UsersController.php, line 265]
+
+
+2018-11-29 12:55:37 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php line=853 in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+
+
+2018-11-29 12:55:37 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 148]
+
+
+2018-11-29 12:55:37 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-11-29 12:55:37 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-11-29 12:55:37 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-11-29 13:05:25 Error: [InvalidArgumentException] Cannot get an empty property
+Request URL: /Users/changementmotdepasse/37
+2018-11-29 13:06:32 Error: [InvalidArgumentException] Cannot get an empty property
+Request URL: /Users/changementmotdepasse/37
+2018-11-29 13:07:00 Error: [InvalidArgumentException] Cannot get an empty property
+Request URL: /Users/changementmotdepasse/37
+2018-11-29 13:09:24 Error: [InvalidArgumentException] Cannot get an empty property
+Request URL: /Users/changementmotdepasse/37
+2018-11-29 14:45:35 Error: [InvalidArgumentException] Cannot get an empty property
+Request URL: /Users/changementmotdepasse/37
+2018-11-29 14:45:47 Error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "users" with primary key [NULL]
+Request URL: /Users/changementmotdepasse/
+2018-11-29 14:45:56 Error: [InvalidArgumentException] Cannot get an empty property
+Request URL: /Users/changementmotdepasse/37
+2018-11-30 01:11:46 Error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "users" with primary key [NULL]
+Request URL: /users/changementmotdepasse
+2018-11-30 01:13:48 Error: [ArgumentCountError] Too few arguments to function App\Controller\UsersController::changementMotDePasse(), 0 passed in C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Controller\Controller.php on line 596 and exactly 1 expected
+Request URL: /users/changementmotdepasse
+2018-11-30 01:16:10 Error: [ArgumentCountError] Too few arguments to function App\Controller\UsersController::changementMotDePasse(), 0 passed in C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Controller\Controller.php on line 596 and exactly 1 expected
+Request URL: /users/changementmotdepasse
+2018-11-30 01:16:16 Error: [ArgumentCountError] Too few arguments to function App\Controller\UsersController::changementMotDePasse(), 0 passed in C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Controller\Controller.php on line 596 and exactly 1 expected
+Request URL: /users/changementmotdepasse
+2018-11-30 01:19:26 Error: [ArgumentCountError] Too few arguments to function App\Controller\UsersController::changementMotDePasse(), 0 passed in C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Controller\Controller.php on line 596 and exactly 1 expected
+Request URL: /users/changementmotdepasse
+2018-11-30 20:24:01 Error: [ArgumentCountError] Too few arguments to function App\Controller\UsersController::changementMotDePasse(), 0 passed in C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Controller\Controller.php on line 596 and exactly 1 expected
+Request URL: /users/changementmotdepasse
+2018-12-04 20:13:08 Error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "users" with primary key [NULL]
+Request URL: /users/changementmotdepasse
+2018-12-04 20:15:49 Error: [ArgumentCountError] Too few arguments to function App\Controller\UsersController::changementMotDePasse(), 0 passed in C:\Program Files (x86)\Ampps\www\GestionDesStages2\vendor\cakephp\cakephp\src\Controller\Controller.php on line 596 and exactly 1 expected
+Request URL: /users/changementmotdepasse
+2018-12-04 20:16:09 Error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "users" with primary key [NULL]
+Request URL: /users/changementmotdepasse
+2018-12-04 20:20:20 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "users"
+Request URL: /users/changementmotdepasse
+2018-12-04 20:20:52 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "users"
+Request URL: /users/changementmotdepasse
+2018-12-04 20:21:43 Error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "users" with primary key [NULL]
+Request URL: /users/changementmotdepasse
+2018-12-04 20:22:50 Warning: Warning (2): Illegal string offset 'id' in [C:\Program Files (x86)\Ampps\www\GestionDesStages2\src\Controller\UsersController.php, line 299]
+
+
+2018-12-04 20:22:51 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "users"
+Request URL: /Users/changementmotdepasse/37
+2018-12-04 20:25:02 Error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "users" with primary key [NULL]
+Request URL: /users/changementmotdepasse

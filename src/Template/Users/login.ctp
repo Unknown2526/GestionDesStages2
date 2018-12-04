@@ -7,7 +7,7 @@
     <ul class="side-nav">
         <li class="heading"><?= __('Actions') ?></li>
         <li><?= $this->Html->link(__('Create new account'), ['controller' => 'Users', 'action' => 'addStudent']) ?></li>
-          <li><?= $this->Html->link(__('Change password student'), ['controller' => 'Users', 'action' => 'changementMotDePasse']) ?></li>
+          <li><?= $this->Html->link(__('Change password student'), ['controller' => 'Users', 'action' => 'verificationEmail']) ?></li>
     </ul>
 </nav>
 <div class="users form">
