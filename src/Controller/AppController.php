@@ -84,7 +84,7 @@ class AppController extends Controller {
 
     public function isAuthorized($user) {
         // Par défaut, on refuse l'accès.
-        return false;
+        return true;
     }
     
     public function changeLang($lang = 'en_US') {

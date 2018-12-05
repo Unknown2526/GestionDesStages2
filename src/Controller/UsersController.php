@@ -91,8 +91,8 @@ class UsersController extends AppController {
                 $email = new Email('default');
                 $email->emailFormat('html');
                 $email->to($username);
-                $email->subject('Postulation d\'un étudiant');
-                $email->send('CLiquer le lien dans la bar de recherche pour confirmer le compte: <a href="https://gestiondestages.ca/users/verifyEmail/' . $uuid . '"></a>');
+                $email->subject('Confirmation du compte');
+                $email->send('Cliquer le lien dans la bar de recherche pour confirmer le compte: <a href="https://gestiondestages.ca/users/verifyEmail/' . $uuid . '">Verifier votre compte</a>');
                 
                 $this->Flash->success(__('Now verify your email.'));
                 return $this->redirect(['action' => 'login']);

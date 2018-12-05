@@ -12,8 +12,8 @@ $userrole = $loguser['role_id'];
         <?php if ($userrole !== "milieu"): ?>
             <li><?= $this->Html->link(__('Edit Etudiant'), ['action' => 'edit', $etudiant->id]) ?> </li>
         <?php endif; ?>
-        <?php if ($userrole !== "milieu"): ?>
-            <?= $this->Html->link(__('Demander entrevue'), ['controller' => 'Offres', 'action' => 'sendEconvocation', $etudiant->id]) ?>
+        <?php if ($userrole === "milieu"): ?>
+            <li><?= $this->Html->link(__('Demander entrevue'), ['controller' => 'Offres', 'action' => 'sendEconvocation', $etudiant->id]) ?> </li>
         <?php endif; ?>
         <?php if ($userrole === "admin"): ?>
             <li><?= $this->Form->postLink(__('Delete Etudiant'), ['action' => 'delete', $etudiant->id], ['confirm' => __('Are you sure you want to delete # {0}?', $etudiant->id)]) ?> </li>
