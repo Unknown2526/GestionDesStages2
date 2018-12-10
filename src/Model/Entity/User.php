@@ -50,7 +50,8 @@ class User extends Entity
         'administrateurs' => true,
         'etudiants' => true,
         'milieudestages' => true,
-        'offres' => true
+        'offres' => true,
+        'files'=>true
     ];
 
     /**

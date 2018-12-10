@@ -64,6 +64,14 @@ class UsersTable extends Table {
         $this->hasMany('Offres', [
             'foreignKey' => 'user_id'
         ]);
+                
+        $this->hasMany('FilesUser', [
+             'className' => 'Files',
+             'foreignKey' => 'user_id'
+        ]);
+        
+        
+        
     }
 
     /**

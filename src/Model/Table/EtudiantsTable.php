@@ -51,6 +51,11 @@ class EtudiantsTable extends Table
             'targetForeignKey' => 'offre_id',
             'joinTable' => 'etudiants_offres'
         ]);
+        
+        
+        $this->hasMany('Files', [
+            'foreignKey' => 'etudiant_id'
+        ]);
     }
 
     /**

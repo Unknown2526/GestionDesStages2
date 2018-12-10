@@ -38,6 +38,15 @@ class FilesTable extends Table
         $this->setPrimaryKey('id');
 
         $this->addBehavior('Timestamp');
+        
+        
+         $this->belongsTo('Users', [
+            'foreignKey' => 'user_id'
+        ]);
+         
+          $this->belongsTo('Etudiants', [
+            'foreignKey' => 'etudiant_id'
+        ]);
     }
 
     /**

@@ -21,6 +21,7 @@ $userrole = $loguser['role_id'];
         <?php endif; ?>
         <li><?= $this->Html->link(__('List Milieudestages'), ['action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('List Offres'), ['controller' => 'Offres', 'action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('Add File'), ['controller' => 'Files', 'action' => 'add']) ?></li>
     </ul>
 </nav>
 <div class="etudiants form large-9 medium-8 columns content">
@@ -32,14 +33,19 @@ $userrole = $loguser['role_id'];
         echo $this->Form->control('prenom');
         echo $this->Form->control('telephone');
         echo $this->Form->control('courriel');
-        echo $this->Form->control('info_supp');
-        
-        echo $this->Form->control('Upload Files', ['type' => 'file']);
-        
+        echo $this->Form->control('info_supp',[ 'action' => 'addoc' ,'type' => 'file']);     
         echo ($userrole === "admin")?$this->Form->control('actif'):$this->Form->hidden('actif');
+        
+      // echo $this->Form->control('addFile', ['type' => 'file']);
+      
+     
         echo ($userrole === "admin")?$this->Form->control('user_id', ['options' => $users]):$this->Form->hidden('user_id');
         ?>
+        
+       
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>
     <?= $this->Form->end() ?>
 </div>
+
+

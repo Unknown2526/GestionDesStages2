@@ -59,10 +59,11 @@ $userrole = $loguser['role_id'];
                 <th scope="row"><?= __('Actif') ?></th>
                 <td><?= $etudiant->actif ? __('Yes') : __('No'); ?></td>
             </tr>
+            
         <?php endif; ?>
     </table>
     <div class="row">
         <h4><?= __('Info Supp') ?></h4>
-        <?= $this->Text->autoParagraph(h($etudiant->info_supp)); ?>
+        <?= $this->Text->autoParagraph($this->Html->link(h($etudiant->info_supp))); ?>
     </div>
 </div>
