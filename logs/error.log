@@ -2501,3 +2501,72 @@ Referer URL: http://localhost/DevelopApp/GestionDesStages2/etudiants
 2018-12-10 14:48:17 Error: [ParseError] syntax error, unexpected '.', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$'
 Request URL: /etudiants/view/1
 Referer URL: http://localhost/DevelopApp/GestionDesStages2/etudiants
+2018-12-10 15:08:35 Error: [ParseError] syntax error, unexpected ')', expecting ',' or ';'
+Request URL: /etudiants/view/1
+Referer URL: http://localhost/DevelopApp/GestionDesStages2/etudiants
+2018-12-10 15:10:03 Error: [ParseError] syntax error, unexpected ')', expecting ',' or ';'
+Request URL: /etudiants/view/1
+Referer URL: http://localhost/DevelopApp/GestionDesStages2/etudiants
+2018-12-10 15:11:26 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /img/%3Ca%20href%3D%22/DevelopApp/GestionDesStages2database.PNG%22%3E/DevelopApp/GestionDesStages2database.PNG%3C/a%3E
+Referer URL: http://localhost/DevelopApp/GestionDesStages2/etudiants/view/1
+2018-12-10 15:12:36 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /img/%3Ca%20href%3D%22/DevelopApp/GestionDesStages2database.PNG%22%3E/DevelopApp/GestionDesStages2database.PNG%3C/a%3E
+Referer URL: http://localhost/DevelopApp/GestionDesStages2/etudiants/view/1
+2018-12-10 16:18:22 Error: [ParseError] syntax error, unexpected ';', expecting ',' or ')'
+Request URL: /etudiants/view/1
+Referer URL: http://localhost/DevelopApp/GestionDesStages2/etudiants
+2018-12-10 16:20:02 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /img/Files/CMS_Creative_164657191_Kingfisher.jpg
+Referer URL: http://localhost/DevelopApp/GestionDesStages2/etudiants/view/1
+2018-12-10 16:27:32 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'etudiant_id' doesn't have a default value
+Request URL: /files/add
+Referer URL: http://localhost/DevelopApp/GestionDesStages2/files/add
+2018-12-10 16:27:32 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\Program Files (x86)\Ampps\www\DevelopApp\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php line=853 in [C:\Program Files (x86)\Ampps\www\DevelopApp\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+
+
+2018-12-10 16:27:32 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\DevelopApp\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\DevelopApp\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 148]
+
+
+2018-12-10 16:27:32 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\DevelopApp\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\DevelopApp\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-12-10 16:27:32 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\DevelopApp\GestionDesStages2\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\DevelopApp\GestionDesStages2\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+
+
+2018-12-10 16:28:11 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'etudiant_id' doesn't have a default value
+Request URL: /files/add
+Referer URL: http://localhost/DevelopApp/GestionDesStages2/files/add
+2018-12-10 16:32:07 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`tp1`.`files`, CONSTRAINT `files_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `etudiants` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+Request URL: /files/add
+Referer URL: http://localhost/DevelopApp/GestionDesStages2/files/add
+2018-12-10 16:34:55 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Files.user_id' in 'where clause'
+Request URL: /etudiants/view/1
+Referer URL: http://localhost/DevelopApp/GestionDesStages2/etudiants
+2018-12-10 16:35:00 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Files.user_id' in 'where clause'
+Request URL: /etudiants/view/1
+Referer URL: http://localhost/DevelopApp/GestionDesStages2/etudiants
+2018-12-10 16:38:16 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Files.user_id' in 'where clause'
+Request URL: /etudiants/view/1
+Referer URL: http://localhost/DevelopApp/GestionDesStages2/etudiants
+2018-12-10 16:39:17 Error: [InvalidArgumentException] The Files association is not defined on Files.
+Request URL: /etudiants/view/1
+Referer URL: http://localhost/DevelopApp/GestionDesStages2/etudiants

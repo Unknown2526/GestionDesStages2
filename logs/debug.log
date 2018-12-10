@@ -1148,3 +1148,24 @@ Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
 2018-12-06 16:11:43 Notice: Notice (8): Use of undefined constant id - assumed 'id' in [C:\Program Files (x86)\Ampps\www\DevelopApp\GestionDesStages2\src\Controller\FilesController.php, line 66]
 
 
+2018-12-10 15:11:25 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\DevelopApp\GestionDesStages2\src\Template\Etudiants\view.ctp, line 69]
+
+
+2018-12-10 15:11:25 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\DevelopApp\GestionDesStages2\src\Template\Etudiants\view.ctp, line 69]
+
+
+2018-12-10 16:19:32 Notice: Notice (8): Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' in [C:\Program Files (x86)\Ampps\www\DevelopApp\GestionDesStages2\src\Template\Etudiants\view.ctp, line 72]
+
+
+2018-12-10 16:19:32 Notice: Notice (8): Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' in [C:\Program Files (x86)\Ampps\www\DevelopApp\GestionDesStages2\src\Template\Etudiants\view.ctp, line 72]
+
+
+2018-12-10 16:19:32 Notice: Notice (8): Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' in [C:\Program Files (x86)\Ampps\www\DevelopApp\GestionDesStages2\src\Template\Etudiants\view.ctp, line 72]
+
+
+2018-12-10 16:27:32 Notice: Notice (8): Use of undefined constant id - assumed 'id' in [C:\Program Files (x86)\Ampps\www\DevelopApp\GestionDesStages2\src\Controller\FilesController.php, line 68]
+
+
+2018-12-10 16:40:26 Notice: Notice (8): Use of undefined constant conditions - assumed 'conditions' in [C:\Program Files (x86)\Ampps\www\DevelopApp\GestionDesStages2\src\Controller\EtudiantsController.php, line 42]
+
+

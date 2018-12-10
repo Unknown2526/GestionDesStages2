@@ -43,10 +43,7 @@ class FilesTable extends Table
          $this->belongsTo('Users', [
             'foreignKey' => 'user_id'
         ]);
-         
-          $this->belongsTo('Etudiants', [
-            'foreignKey' => 'etudiant_id'
-        ]);
+        
     }
 
     /**

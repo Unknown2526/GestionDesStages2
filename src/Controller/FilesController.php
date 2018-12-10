@@ -48,34 +48,35 @@ class FilesController extends AppController {
         $file = $this->Files->newEntity();
         if ($this->request->is('post')) {
             
-          //  debug($this->request->data); die();
+            //debug($this->request->data); die();
 
-            if (!empty($this->request->data['name']['name'])) {
-                $fileName = $this->request->data['name']['name'];
-                $uploadPath = 'Files/';
-                $uploadFile = $uploadPath . $fileName;
+            if (!empty($this->request->data['name'])) {
+                
+                foreach ($this->request->data['name'] as $file_data) {
+                    $fileName = $file_data['name'];
+                    $uploadPath = 'Files/';
+                    $uploadFile = $uploadPath . $fileName;
 
-                if (move_uploaded_file($this->request->data['name']['tmp_name'], 'file/' . $uploadFile)) {
+                    if (move_uploaded_file($file_data['tmp_name'], 'file/' . $uploadFile)) {
 
-                    $file = $this->Files->patchEntity($file, $this->request->getData());
-                    $file->name = $fileName;
-                    $file->path = $uploadPath;
-                    
-                    $loguser = $this->request->session()->read('Auth.User');
-                    
-                    $file->user_id= $loguser[id];
+                        $file = $this->Files->patchEntity($file, $file_data);
+                        $file->name = $fileName;
+                        $file->path = $uploadPath;
 
-                    if ($this->Files->save($file)) {
-                        $this->Flash->success(__('The file has been saved.'));
-                        return $this->redirect(['action' => 'index']);
+                        $loguser = $this->request->session()->read('Auth.User');
+
+                        $file->user_id= $loguser['id'];
+
+                        if ($this->Files->save($file)) {
+                            $this->Flash->success(__('The file has been saved.'));
+                            return $this->redirect(['controller' => 'Etudiants', 'action' => 'index']);
+                        } else {
+                            $this->Flash->error(__('Unable to upload file, please try again.'));
+                        }
                     } else {
-                        $this->Flash->error(__('Unable to upload file, please try again.'));
+                        $this->Flash->error(__('Please choose a file to upload.'));
                     }
-                } else {
-                    $this->Flash->error(__('Please choose a file to upload.'));
                 }
-
-
 
                 $this->Flash->error(__('The file could not be saved. Please, try again.'));
             }

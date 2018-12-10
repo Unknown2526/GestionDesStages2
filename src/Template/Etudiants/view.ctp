@@ -16,6 +16,7 @@ $userrole = $loguser['role_id'];
             <li><?= $this->Html->link(__('New Etudiant'), ['action' => 'add']) ?> </li>
             <li><?= $this->Html->link(__('List Users'), ['controller' => 'Users', 'action' => 'index']) ?> </li>
             <li><?= $this->Html->link(__('New User'), ['controller' => 'Users', 'action' => 'add']) ?> </li>
+            <li><?= $this->Html->link(__('New File'), ['controller' => 'Files', 'action' => 'add']) ?> </li>
         <?php endif; ?>
         <li><?= $this->Html->link(__('List Milieudestages'), ['controller' => 'Milieudestages', 'action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('List Offres'), ['controller' => 'Offres', 'action' => 'index']) ?></li>
@@ -63,7 +64,18 @@ $userrole = $loguser['role_id'];
         <?php endif; ?>
     </table>
     <div class="row">
-        <h4><?= __('Info Supp') ?></h4>
-        <?= $this->Text->autoParagraph($this->Html->link(h($etudiant->info_supp))); ?>
+        <h4><?= __('Fichiers') ?></h4>
+        
+        <?php 
+        
+        foreach ($etudiant->files as $file) {
+            
+            echo $this->Html->link("/file/".$file->path . $file->name);
+            echo "<br />";
+            
+        }
+        
+        ?>
+        
     </div>
 </div>

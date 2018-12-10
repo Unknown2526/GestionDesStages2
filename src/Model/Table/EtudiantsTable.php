@@ -54,7 +54,8 @@ class EtudiantsTable extends Table
         
         
         $this->hasMany('Files', [
-            'foreignKey' => 'etudiant_id'
+            'foreignKey' => 'user_id',
+            'bindingKey' => 'user_id'
         ]);
     }
 

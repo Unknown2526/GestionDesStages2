@@ -41,6 +41,7 @@ class Etudiant extends Entity
         'user_id' => true,
         'created' => true,
         'modified' => true,
-        'user' => true
+        'user' => true,
+        'files' => true
     ];
 }
